@@ -1,1 +1,0 @@
-# AI_Course_Ramat_Gan-
