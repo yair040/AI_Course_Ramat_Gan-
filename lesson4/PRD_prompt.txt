@@ -1,0 +1,10 @@
+prepare PRD document that will create in Python a program of a rectangular rotating through its center.
+The rectangle will be 2x4 units and its center is on the origin of the coordinate system.
+The rectangle lines will be pointed in blue and the corner points of the rectangle in red.
+Make the axes of the coordinate system equal in size.
+Title of the picture will be "Rotate Rectangle" in red.
+The rectangle will be rotate each step by pi/128 radians.
+Do this in 200 steps while delay of 10 milliseconds between each step.
+The rectangle corners points should be placed in a vector while the first point will be also copied as last point to close the lines in the picture.
+Create a matrix 4x4 that will present the rotation by pi/128 radians.
+The new points for the next step will be calculated by multiply the matrix in the current points vector to get the new points vector.
