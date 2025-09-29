@@ -1,0 +1,184 @@
+{
+  "project": {
+    "name": "Linear Regression Visualization with Random Line Sampling",
+    "version": "1.0.0",
+    "description": "Monte Carlo approach to finding best-fit line through random sampling",
+    "author": "Your Name",
+    "created_date": "2025-09-28",
+    "license": "MIT"
+  },
+  "parameters": {
+    "data_generation": {
+      "n_points": 1000,
+      "x_range": {
+        "min": 0,
+        "max": 1
+      },
+      "y_range": {
+        "min": 0,
+        "max": 1
+      },
+      "random_seed": null,
+      "comment": "Set random_seed to an integer for reproducible results"
+    },
+    "line_generation": {
+      "n_lines": 100,
+      "intercept_range": {
+        "min": 0,
+        "max": 1
+      },
+      "slope_range": {
+        "min": 0,
+        "max_formula": "pi/2 - 0.0017",
+        "max_value": 1.569096327,
+        "comment": "Slope must not reach pi/2 (vertical line)"
+      }
+    },
+    "error_calculation": {
+      "method": "squared_error",
+      "formula": "(y - a*x - b)^2",
+      "vectorized": true,
+      "comment": "All calculations must be vectorized (no loops)"
+    }
+  },
+  "visualization": {
+    "plot_settings": {
+      "title": "Scatter plot of points",
+      "figsize": [10, 8],
+      "dpi": 100
+    },
+    "scatter_plot": {
+      "color": "red",
+      "marker": "o",
+      "size": 10,
+      "alpha": 1.0,
+      "label": "Random Points"
+    },
+    "best_fit_line": {
+      "color": "blue",
+      "linestyle": "-",
+      "linewidth": 2,
+      "alpha": 0.8,
+      "label": "Best Fit Line",
+      "n_points": 100
+    },
+    "axes": {
+      "xlabel": "x",
+      "ylabel": "y",
+      "xlim": [0, 1],
+      "ylim": [0, 1],
+      "grid": false,
+      "grid_alpha": 0.3
+    },
+    "legend": {
+      "show": true,
+      "location": "best",
+      "fontsize": 10
+    }
+  },
+  "output": {
+    "save_plot": true,
+    "output_filename": "scatter_plot_with_best_fit.png",
+    "output_format": "png",
+    "output_directory": "./output",
+    "save_dpi": 300
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "show_progress": true,
+    "log_file": "linear_regression.log",
+    "messages": {
+      "start": "Starting Linear Regression Visualization...",
+      "generating_points": "Generating {n_points} random points...",
+      "generating_lines": "Generating {n_lines} random lines...",
+      "calculating_errors": "Calculating errors (vectorized)...",
+      "finding_best": "Finding best-fit line...",
+      "visualizing": "Creating visualization...",
+      "complete": "Process complete!"
+    }
+  },
+  "performance": {
+    "measure_execution_time": true,
+    "expected_max_time_seconds": 2,
+    "memory_optimization": true,
+    "parallel_processing": false
+  },
+  "validation": {
+    "validate_inputs": true,
+    "check_array_shapes": true,
+    "check_value_ranges": true,
+    "verify_no_loops": true,
+    "checks": {
+      "points_x_range": [0, 1],
+      "points_y_range": [0, 1],
+      "intercept_range": [0, 1],
+      "slope_range": [0, 1.569096327],
+      "error_array_length": 100,
+      "point_array_length": 1000
+    }
+  },
+  "advanced_options": {
+    "compare_with_least_squares": false,
+    "show_all_candidate_lines": false,
+    "candidate_lines_alpha": 0.1,
+    "display_error_histogram": false,
+    "save_coefficients": false,
+    "coefficients_filename": "line_coefficients.csv"
+  },
+  "dependencies": {
+    "python_version": ">=3.7",
+    "required_packages": [
+      {
+        "name": "numpy",
+        "version": ">=1.19.0",
+        "purpose": "Vectorized numerical computations"
+      },
+      {
+        "name": "matplotlib",
+        "version": ">=3.3.0",
+        "purpose": "Data visualization"
+      }
+    ],
+    "optional_packages": [
+      {
+        "name": "scipy",
+        "version": ">=1.5.0",
+        "purpose": "Least squares comparison (optional)"
+      },
+      {
+        "name": "pandas",
+        "version": ">=1.1.0",
+        "purpose": "Data export (optional)"
+      }
+    ]
+  },
+  "mathematical_constants": {
+    "pi": 3.141592653589793,
+    "pi_over_2": 1.5707963267948966,
+    "max_slope_offset": 0.0017,
+    "max_slope": 1.569096327
+  },
+  "testing": {
+    "run_tests": true,
+    "test_cases": {
+      "test_point_generation": true,
+      "test_line_generation": true,
+      "test_error_calculation": true,
+      "test_vectorization": true,
+      "test_visualization": true
+    },
+    "test_data": {
+      "small_sample_size": 10,
+      "test_seed": 42
+    }
+  },
+  "debug": {
+    "debug_mode": false,
+    "verbose_output": false,
+    "save_intermediate_results": false,
+    "print_array_shapes": false,
+    "print_best_line_coefficients": true,
+    "print_minimum_error": true
+  }
+}

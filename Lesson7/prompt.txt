@@ -1,0 +1,11 @@
+write PRD for a project that:
+1. create 1000 random points, x between 0 and 1, y between 0 and 1.
+2. plot the points in red.
+3. get random coefficients a and b so: y= a*x + b, b should be between 0 and 1 and a is the slop of the line between 0 and pi/2-0.0017, not to reach pi/2. the slop should be uniform random on this range.
+4. calculate for each point x,y the error (distance) to this line by the formula: (y-a*x-b)^2.
+5. Summarize the errors for this line for all 1000 points and save the error in an array.
+6. The calculation will be by vector calculation and not by loop.
+7. Do this for 100 random lines.
+8. take the array of errors and find the index of the minimal error.
+9. take the coefficients of this line and draw a line
+10. Title of the graph should be "Scatter plot of points".
