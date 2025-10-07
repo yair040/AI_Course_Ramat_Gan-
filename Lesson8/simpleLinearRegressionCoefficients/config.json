@@ -1,0 +1,453 @@
+{
+  "project": {
+    "name": "Linear Regression Coefficient Estimation Using Dot Product",
+    "short_name": "linear_regression_dot_product",
+    "version": "2.0.0",
+    "author": "Yair Levi",
+    "description": "Python application that generates synthetic linear regression data and estimates coefficients using explicit dot product operations",
+    "license": "MIT",
+    "repository": "https://github.com/yourusername/linear-regression-dot-product",
+    "created_date": "2025-10-01",
+    "last_updated": "2025-10-03",
+    "status": "active"
+  },
+  
+  "requirements": {
+    "python_version": ">=3.6",
+    "dependencies": {
+      "numpy": ">=1.19.0",
+      "matplotlib": ">=3.2.0"
+    },
+    "dev_dependencies": {
+      "pytest": ">=6.0.0",
+      "pytest-cov": ">=2.10.0",
+      "pylint": ">=2.6.0",
+      "black": ">=20.8b1"
+    }
+  },
+  
+  "configuration": {
+    "data_generation": {
+      "num_points": 1000,
+      "x_distribution": {
+        "type": "normal",
+        "mean": 0,
+        "std_dev": 1
+      },
+      "noise_distribution": {
+        "type": "normal",
+        "mean": 0,
+        "std_dev": 0.3
+      },
+      "random_seed": null,
+      "description": "Parameters for generating random data points"
+    },
+    
+    "regression_parameters": {
+      "beta_0": 0.2,
+      "beta_1": 0.9,
+      "description": "True regression coefficients: Y = beta_0 + beta_1*X + epsilon"
+    },
+    
+    "estimation_method": {
+      "algorithm": "ordinary_least_squares",
+      "implementation": "dot_product",
+      "formulas": {
+        "beta_1": "dot(X_dev, Y_dev) / dot(X_dev, X_dev)",
+        "beta_0": "Y_avg - beta_1 * X_avg"
+      },
+      "vectorized": true,
+      "use_loops": false
+    },
+    
+    "visualization": {
+      "figure_size": [12, 8],
+      "dpi": 100,
+      "style": {
+        "data_points": {
+          "color": "blue",
+          "alpha": 0.4,
+          "size": 20,
+          "marker": "o",
+          "edgecolor": "navy"
+        },
+        "true_line": {
+          "color": "red",
+          "linestyle": "-",
+          "linewidth": 3,
+          "label": "True Line"
+        },
+        "estimated_line": {
+          "color": "green",
+          "linestyle": "--",
+          "linewidth": 2.5,
+          "label": "Estimated Line"
+        }
+      },
+      "labels": {
+        "xlabel": "X",
+        "ylabel": "Y",
+        "title": "Linear Regression: Data Points with True and Estimated Lines",
+        "xlabel_fontsize": 14,
+        "ylabel_fontsize": 14,
+        "title_fontsize": 15
+      },
+      "grid": {
+        "enabled": true,
+        "alpha": 0.3
+      },
+      "legend": {
+        "enabled": true,
+        "fontsize": 11,
+        "location": "best"
+      }
+    },
+    
+    "output": {
+      "console": {
+        "verbose": true,
+        "show_progress": true,
+        "decimal_places": 6
+      },
+      "export": {
+        "enabled": false,
+        "formats": ["csv", "json"],
+        "output_directory": "./output"
+      }
+    }
+  },
+  
+  "file_structure": {
+    "source_files": [
+      "linear_regression_dot_product.py"
+    ],
+    "documentation": [
+      "README.md",
+      "PRD_LinearRegression_DotProduct.md",
+      "PROJECT_TASKS.md"
+    ],
+    "config_files": [
+      "project_config.json",
+      "requirements.txt"
+    ],
+    "test_files": [
+      "tests/test_data_generation.py",
+      "tests/test_coefficient_estimation.py",
+      "tests/test_visualization.py",
+      "tests/test_integration.py"
+    ],
+    "examples": [
+      "examples/basic_usage.py",
+      "examples/different_noise_levels.py",
+      "examples/reproducible_results.py"
+    ]
+  },
+  
+  "testing": {
+    "framework": "pytest",
+    "coverage_target": 90,
+    "test_scenarios": [
+      {
+        "name": "default_parameters",
+        "description": "Test with default configuration",
+        "parameters": {
+          "num_points": 1000,
+          "beta_0": 0.2,
+          "beta_1": 0.9,
+          "epsilon_sigma": 0.3
+        }
+      },
+      {
+        "name": "low_noise",
+        "description": "Test with low noise level",
+        "parameters": {
+          "num_points": 1000,
+          "beta_0": 0.2,
+          "beta_1": 0.9,
+          "epsilon_sigma": 0.1
+        }
+      },
+      {
+        "name": "high_noise",
+        "description": "Test with high noise level",
+        "parameters": {
+          "num_points": 1000,
+          "beta_0": 0.2,
+          "beta_1": 0.9,
+          "epsilon_sigma": 1.0
+        }
+      },
+      {
+        "name": "small_sample",
+        "description": "Test with small sample size",
+        "parameters": {
+          "num_points": 100,
+          "beta_0": 0.2,
+          "beta_1": 0.9,
+          "epsilon_sigma": 0.3
+        }
+      },
+      {
+        "name": "large_sample",
+        "description": "Test with large sample size",
+        "parameters": {
+          "num_points": 10000,
+          "beta_0": 0.2,
+          "beta_1": 0.9,
+          "epsilon_sigma": 0.3
+        }
+      }
+    ],
+    "validation": {
+      "max_relative_error_beta_0": 0.10,
+      "max_relative_error_beta_1": 0.05,
+      "expected_accuracy_percentage": 95
+    }
+  },
+  
+  "performance": {
+    "benchmarks": {
+      "data_generation_max_time_ms": 500,
+      "coefficient_estimation_max_time_ms": 100,
+      "total_execution_max_time_seconds": 3,
+      "max_memory_mb": 50
+    },
+    "optimization": {
+      "use_numpy_vectorization": true,
+      "use_dot_product": true,
+      "avoid_python_loops": true
+    }
+  },
+  
+  "educational_features": {
+    "dot_product_emphasis": true,
+    "show_formulas": true,
+    "explain_linear_algebra_connection": true,
+    "verbose_output": true,
+    "include_verification": true,
+    "learning_objectives": [
+      "Understand ordinary least squares estimation",
+      "Learn dot product operations in NumPy",
+      "See connection between linear algebra and statistics",
+      "Master vectorized numerical computing",
+      "Visualize regression relationships"
+    ]
+  },
+  
+  "quality_metrics": {
+    "code_quality": {
+      "pep8_compliance": true,
+      "max_function_length": 50,
+      "max_complexity": 10,
+      "documentation_coverage": 100
+    },
+    "test_quality": {
+      "unit_test_coverage": 90,
+      "integration_test_coverage": 80,
+      "manual_test_scenarios": 10
+    },
+    "accuracy": {
+      "coefficient_estimation_accuracy": 0.95,
+      "numerical_precision_decimal_places": 6
+    }
+  },
+  
+  "deployment": {
+    "platforms": ["Windows", "macOS", "Linux"],
+    "distribution_method": "GitHub repository",
+    "installation_method": "pip install -r requirements.txt",
+    "entry_point": "python linear_regression_dot_product.py"
+  },
+  
+  "usage_examples": [
+    {
+      "name": "basic_usage",
+      "description": "Run with default parameters",
+      "command": "python linear_regression_dot_product.py",
+      "expected_output": "Graph with 1000 points and two regression lines"
+    },
+    {
+      "name": "reproducible_results",
+      "description": "Use seed for reproducible results",
+      "configuration": {
+        "SEED": 42
+      },
+      "command": "python linear_regression_dot_product.py",
+      "expected_output": "Same results on every run"
+    },
+    {
+      "name": "high_accuracy",
+      "description": "Low noise for high accuracy",
+      "configuration": {
+        "EPSILON_SIGMA": 0.1
+      },
+      "command": "python linear_regression_dot_product.py",
+      "expected_output": "Estimates very close to true values"
+    }
+  ],
+  
+  "validation_criteria": {
+    "functional": [
+      "Generates exactly 1000 data points",
+      "X follows Normal(0, 1) distribution",
+      "Y calculated using Y = 0.2 + 0.9*X + epsilon",
+      "Coefficients estimated using dot product",
+      "Single graph displays all elements",
+      "True and estimated lines are distinguishable"
+    ],
+    "technical": [
+      "Uses np.dot() for all summations",
+      "No explicit Python loops in coefficient calculation",
+      "All operations vectorized",
+      "Execution time < 3 seconds",
+      "Memory usage < 50 MB"
+    ],
+    "quality": [
+      "All functions have docstrings",
+      "Code follows PEP 8",
+      "Author attribution present",
+      "Formulas clearly documented",
+      "Educational value demonstrated"
+    ]
+  },
+  
+  "mathematical_formulas": {
+    "data_generation_model": {
+      "X": "Normal(μ=0, σ=1)",
+      "epsilon": "Normal(0, σ_ε=0.3)",
+      "Y": "β₀ + β₁*X + ε"
+    },
+    "least_squares_estimation": {
+      "slope": {
+        "mathematical": "β₁ = Σ((Xi - X̄)(Yi - Ȳ)) / Σ((Xi - X̄)²)",
+        "dot_product": "β₁ = dot(X_dev, Y_dev) / dot(X_dev, X_dev)",
+        "interpretation": "Change in Y per unit change in X"
+      },
+      "intercept": {
+        "mathematical": "β₀ = Ȳ - β₁*X̄",
+        "interpretation": "Expected Y when X=0"
+      },
+      "deviation_vectors": {
+        "X_dev": "X - X̄",
+        "Y_dev": "Y - Ȳ"
+      }
+    }
+  },
+  
+  "known_issues": [
+    {
+      "id": 1,
+      "severity": "low",
+      "description": "Plot window may appear behind other windows on some systems",
+      "status": "open",
+      "workaround": "Manually bring window to front"
+    },
+    {
+      "id": 2,
+      "severity": "low",
+      "description": "Legend position may overlap with data in some edge cases",
+      "status": "open",
+      "workaround": "Manually adjust figure size"
+    }
+  ],
+  
+  "future_enhancements": [
+    {
+      "priority": "high",
+      "feature": "Command-line argument support",
+      "description": "Allow users to specify parameters via CLI",
+      "estimated_effort": "2 days"
+    },
+    {
+      "priority": "high",
+      "feature": "Confidence intervals",
+      "description": "Calculate and display confidence intervals for coefficients",
+      "estimated_effort": "3 days"
+    },
+    {
+      "priority": "medium",
+      "feature": "R² calculation",
+      "description": "Add goodness-of-fit metric",
+      "estimated_effort": "1 day"
+    },
+    {
+      "priority": "medium",
+      "feature": "Residual analysis",
+      "description": "Add residual plots and diagnostics",
+      "estimated_effort": "2 days"
+    },
+    {
+      "priority": "low",
+      "feature": "Multiple regression",
+      "description": "Extend to multiple independent variables",
+      "estimated_effort": "5 days"
+    },
+    {
+      "priority": "low",
+      "feature": "Interactive visualization",
+      "description": "Add sliders for parameter adjustment",
+      "estimated_effort": "4 days"
+    }
+  ],
+  
+  "metadata": {
+    "keywords": [
+      "linear regression",
+      "dot product",
+      "ordinary least squares",
+      "OLS",
+      "coefficient estimation",
+      "vectorization",
+      "NumPy",
+      "statistical learning",
+      "data science",
+      "machine learning",
+      "educational"
+    ],
+    "topics": [
+      "statistics",
+      "linear algebra",
+      "numerical computing",
+      "data visualization",
+      "scientific computing"
+    ],
+    "difficulty_level": "intermediate",
+    "target_audience": [
+      "statistics students",
+      "data science learners",
+      "Python developers",
+      "educators"
+    ]
+  },
+  
+  "contact": {
+    "author": "Yair Levi",
+    "email": "contact@example.com",
+    "github": "https://github.com/yourusername",
+    "issues": "https://github.com/yourusername/linear-regression-dot-product/issues",
+    "discussions": "https://github.com/yourusername/linear-regression-dot-product/discussions"
+  },
+  
+  "changelog": [
+    {
+      "version": "2.0.0",
+      "date": "2025-10-03",
+      "changes": [
+        "Implemented explicit dot product operations for coefficient estimation",
+        "Updated documentation to emphasize dot product approach",
+        "Added verification function for dot product equivalence",
+        "Enhanced educational content and comments"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2025-10-01",
+      "changes": [
+        "Initial implementation with vectorized operations",
+        "Basic data generation and coefficient estimation",
+        "Single graph visualization",
+        "Core documentation"
+      ]
+    }
+  ]
+}

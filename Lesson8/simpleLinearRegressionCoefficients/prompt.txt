@@ -1,0 +1,12 @@
+write a program in python that: 
+1. Set Author as Yair Levi. Generate random 1000 points on x axis. 
+The points should distributed at normal distribution with average myu=0 and standard deviation sigma=1. 
+For each of the points above calculate Y by the equation: 
+Y=beta0 +beta1X +Epsilon. 
+Epsilon should be at normal distribution. 
+Set beta0=0.2, beta1=0.9 
+Draw only the points and line in one graph. 
+2. Take all the points (x,y) above and find the coefficients beta0 and beta1 by the equations below. 
+Use vector calculations by dot product! 
+3. beta0 = (Y average) - beta1(X average) 
+4. beta1 = (sum from i=1 to n of ((Xi-X average)*(Yi-Y average))) / sum from i=1 to n of((Xi-X average)^2)
