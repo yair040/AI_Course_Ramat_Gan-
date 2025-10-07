@@ -1,0 +1,26 @@
+write a program in python that: 
+
+1. Set Author as Yair Levi. 2. 
+
+Use the equation: Y = beta(0) + beta(1)*x1 + beta(2)*x2... beta(50)*x50 + Epsilon 
+
+3. Choose Beta(0) random between -0.5 to 0.5. 
+
+4. Choose each Beta(i) random between -0.9 to 0.9. 5. 
+
+Generate random 50 points on x axis. 6. The points should distributed at normal distribution with average myu=0 and standard deviation sigma=1. 7. 
+
+Create vector of 20 values of Epsilon, the noise itself, should be at uniform distribution between -3.5 and 3.5. 
+
+8.  Number of Data Points (Yi) should be 100.
+
+9. For each Epsilon of the 20 Epsilon, calculate Y with the same Beta(i) and xi. 
+
+10.  For each of the 20 Y that got Calculate R-Squared. 10. Draw a graph of R-Squared against Epsilon used. 
+
+11. Use vector calculations by dot product!
+
+12. To the program above add another test, but now to the 50 predictors add more 5 predictors that are dependent of other predictors.
+Calculate R-squared against Epsilon also in this case in the same graph.
+
+13. Add  now Adjusted R-Squared to the graph, so 2 of the lines show R-Squared and 2 other lines will show the data as Adjust R Squared.
