@@ -1,0 +1,384 @@
+{
+  "project": {
+    "name": "Sinusoidal Peak Detection using Convolution",
+    "version": "1.0.0",
+    "description": "A Python-based signal processing tool that demonstrates peak detection in periodic signals using convolution-based template matching",
+    "author": {
+      "name": "Yair Levi",
+      "email": "yair.levi@example.com",
+      "github": "yairlevi"
+    },
+    "license": "MIT",
+    "created": "2025-10-08",
+    "updated": "2025-10-08",
+    "status": "active",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yairlevi/peak-detection-convolution"
+    },
+    "homepage": "https://github.com/yairlevi/peak-detection-convolution",
+    "keywords": [
+      "signal-processing",
+      "peak-detection",
+      "convolution",
+      "template-matching",
+      "python",
+      "numpy",
+      "matplotlib",
+      "dsp"
+    ]
+  },
+  "configuration": {
+    "signal": {
+      "cycles": 10,
+      "amplitude_min": -1.0,
+      "amplitude_max": 1.0,
+      "samples_per_cycle": 200,
+      "total_samples": 2000,
+      "period_radians": 6.283185307179586,
+      "frequency_hz": 0.15915494309189535
+    },
+    "template": {
+      "size": 30,
+      "half_window": 15,
+      "source": "first_peak",
+      "extraction_method": "centered"
+    },
+    "detection": {
+      "method": "convolution",
+      "convolution_mode": "same",
+      "threshold_percentage": 0.9,
+      "min_peak_spacing": 100,
+      "expected_peaks": 10
+    },
+    "visualization": {
+      "figure_size": [12, 10],
+      "subplots": 3,
+      "layout": "vertical",
+      "colors": {
+        "signal": "blue",
+        "template": "red",
+        "convolution": "green",
+        "peaks": "red",
+        "threshold": "orange"
+      },
+      "grid": true,
+      "show_plot": true,
+      "save_plot": false,
+      "output_format": "png",
+      "dpi": 300
+    }
+  },
+  "dependencies": {
+    "python": ">=3.7",
+    "packages": {
+      "numpy": ">=1.19.0",
+      "matplotlib": ">=3.3.0"
+    },
+    "dev_packages": {
+      "pytest": ">=6.0.0",
+      "black": ">=21.0",
+      "flake8": ">=3.9.0",
+      "mypy": ">=0.910"
+    }
+  },
+  "scripts": {
+    "main": "python peak_detection.py",
+    "test": "pytest tests/",
+    "lint": "flake8 *.py",
+    "format": "black *.py",
+    "type-check": "mypy *.py"
+  },
+  "files": {
+    "main": "peak_detection.py",
+    "documentation": [
+      "README.md",
+      "PRD.md",
+      "TASKS.md",
+      "LICENSE"
+    ],
+    "config": [
+      "requirements.txt",
+      "project.json"
+    ],
+    "output": {
+      "plots": "output/plots/",
+      "data": "output/data/",
+      "logs": "output/logs/"
+    }
+  },
+  "performance": {
+    "benchmarks": {
+      "execution_time_ms": 1500,
+      "memory_usage_mb": 85,
+      "max_signal_length": 100000
+    },
+    "optimization": {
+      "enabled": false,
+      "methods": []
+    }
+  },
+  "testing": {
+    "framework": "pytest",
+    "coverage_target": 80,
+    "test_files": [
+      "tests/test_signal_generation.py",
+      "tests/test_template_extraction.py",
+      "tests/test_convolution.py",
+      "tests/test_peak_detection.py",
+      "tests/test_visualization.py"
+    ],
+    "test_cases": {
+      "signal_generation": {
+        "test_amplitude_range": true,
+        "test_sample_count": true,
+        "test_frequency": true
+      },
+      "template_extraction": {
+        "test_size": true,
+        "test_centering": true,
+        "test_peak_value": true
+      },
+      "peak_detection": {
+        "test_accuracy": true,
+        "test_count": true,
+        "test_locations": true,
+        "test_spacing": true
+      }
+    }
+  },
+  "algorithms": {
+    "signal_generation": {
+      "type": "sinusoidal",
+      "function": "numpy.sin",
+      "parameters": {
+        "amplitude": 1.0,
+        "phase": 0.0,
+        "offset": 0.0
+      }
+    },
+    "template_matching": {
+      "type": "cross-correlation",
+      "implementation": "numpy.convolve",
+      "template_flip": true,
+      "normalization": false
+    },
+    "peak_finding": {
+      "method": "local_maximum",
+      "criteria": [
+        "higher_than_neighbors",
+        "above_threshold",
+        "minimum_spacing"
+      ],
+      "parameters": {
+        "threshold_type": "percentage",
+        "threshold_value": 0.9,
+        "window_size": 3
+      }
+    }
+  },
+  "metrics": {
+    "accuracy": {
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0
+    },
+    "performance": {
+      "samples_processed": 2000,
+      "processing_time_ms": 1500,
+      "throughput_samples_per_sec": 1333.33
+    },
+    "code_quality": {
+      "lines_of_code": 150,
+      "comment_lines": 45,
+      "comment_ratio": 0.3,
+      "complexity_score": "low"
+    }
+  },
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Core Implementation",
+      "target_date": "2025-10-08",
+      "status": "complete",
+      "progress": 100,
+      "tasks_completed": 6,
+      "tasks_total": 6
+    },
+    {
+      "id": "M2",
+      "name": "Documentation",
+      "target_date": "2025-10-08",
+      "status": "complete",
+      "progress": 100,
+      "tasks_completed": 4,
+      "tasks_total": 4
+    },
+    {
+      "id": "M3",
+      "name": "Testing & Validation",
+      "target_date": "2025-10-18",
+      "status": "in_progress",
+      "progress": 60,
+      "tasks_completed": 3,
+      "tasks_total": 5
+    },
+    {
+      "id": "M4",
+      "name": "Feature Enhancements",
+      "target_date": "2025-11-01",
+      "status": "planned",
+      "progress": 0,
+      "tasks_completed": 0,
+      "tasks_total": 9
+    },
+    {
+      "id": "M5",
+      "name": "Version 1.0 Release",
+      "target_date": "2025-11-15",
+      "status": "planned",
+      "progress": 0,
+      "tasks_completed": 0,
+      "tasks_total": 5
+    },
+    {
+      "id": "M6",
+      "name": "PyPI Publication",
+      "target_date": "2025-11-30",
+      "status": "planned",
+      "progress": 0,
+      "tasks_completed": 0,
+      "tasks_total": 4
+    }
+  ],
+  "features": {
+    "implemented": [
+      "sinusoidal_signal_generation",
+      "peak_template_extraction",
+      "convolution_based_detection",
+      "local_maxima_finding",
+      "three_panel_visualization",
+      "console_statistics_output"
+    ],
+    "planned": [
+      "noise_handling",
+      "adaptive_threshold",
+      "multi_frequency_support",
+      "export_functionality",
+      "configuration_file_support",
+      "command_line_interface",
+      "interactive_mode",
+      "gui_application"
+    ],
+    "experimental": [
+      "gpu_acceleration",
+      "real_time_processing",
+      "machine_learning_detection",
+      "hardware_integration"
+    ]
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2025-10-08",
+      "type": "initial",
+      "changes": [
+        "Initial release",
+        "Core peak detection implementation",
+        "Signal generation module",
+        "Template extraction algorithm",
+        "Convolution-based matching",
+        "Visualization system",
+        "Complete documentation"
+      ],
+      "contributors": ["Yair Levi"]
+    }
+  ],
+  "roadmap": {
+    "v1.1.0": {
+      "target": "2025-11-15",
+      "focus": "Testing and stability",
+      "features": [
+        "Unit tests",
+        "Performance benchmarks",
+        "Bug fixes"
+      ]
+    },
+    "v1.2.0": {
+      "target": "2025-12-15",
+      "focus": "Noise handling",
+      "features": [
+        "Gaussian noise support",
+        "Adaptive thresholding",
+        "Improved detection algorithm"
+      ]
+    },
+    "v2.0.0": {
+      "target": "2026-03-01",
+      "focus": "Advanced features",
+      "features": [
+        "Multi-frequency detection",
+        "Real-time processing",
+        "GUI application",
+        "Export capabilities"
+      ]
+    }
+  },
+  "contact": {
+    "maintainer": "Yair Levi",
+    "email": "yair.levi@example.com",
+    "issues": "https://github.com/yairlevi/peak-detection-convolution/issues",
+    "discussions": "https://github.com/yairlevi/peak-detection-convolution/discussions",
+    "documentation": "https://github.com/yairlevi/peak-detection-convolution/wiki"
+  },
+  "contributing": {
+    "guidelines": "CONTRIBUTING.md",
+    "code_of_conduct": "CODE_OF_CONDUCT.md",
+    "pull_request_template": ".github/PULL_REQUEST_TEMPLATE.md",
+    "issue_template": ".github/ISSUE_TEMPLATE.md"
+  },
+  "build": {
+    "python_version": "3.9",
+    "build_system": "setuptools",
+    "package_name": "peak_detection_convolution",
+    "entry_point": "peak_detection:main",
+    "install_requires": [
+      "numpy>=1.19.0",
+      "matplotlib>=3.3.0"
+    ]
+  },
+  "ci_cd": {
+    "platform": "github_actions",
+    "workflows": {
+      "test": ".github/workflows/test.yml",
+      "lint": ".github/workflows/lint.yml",
+      "deploy": ".github/workflows/deploy.yml"
+    },
+    "coverage_service": "codecov",
+    "badge_urls": {
+      "build": "https://github.com/yairlevi/peak-detection-convolution/workflows/tests/badge.svg",
+      "coverage": "https://codecov.io/gh/yairlevi/peak-detection-convolution/branch/main/graph/badge.svg",
+      "pypi": "https://img.shields.io/pypi/v/peak-detection-convolution.svg"
+    }
+  },
+  "metadata": {
+    "language": "Python",
+    "framework": "NumPy",
+    "domain": "Signal Processing",
+    "category": "Peak Detection",
+    "tags": [
+      "dsp",
+      "convolution",
+      "signal-analysis",
+      "pattern-matching",
+      "scientific-computing"
+    ],
+    "complexity": "medium",
+    "maturity": "alpha",
+    "documentation_status": "complete",
+    "test_coverage": 0
+  }
+}

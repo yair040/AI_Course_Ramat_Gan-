@@ -1,0 +1,13 @@
+Create python program that: 
+
+1. Creates sinus signal x (vector), 10 cycles, amplitude -1 to +1.
+
+   Each cycle is 2 pi.
+
+   For each cycle save 200 samples.
+
+ 2. Create h vector that contains 30 samples around the peak (included) of the previous x signal.
+
+ 3. Run convolution between x and h to get a output signal that will discover the 10 peak points.
+
+ 4. Draw the sinus graph and also the output vector that discovers the peaks.
