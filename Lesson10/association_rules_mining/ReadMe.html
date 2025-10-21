@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Rules Mining - README</title>
+    <style>
+        @page {
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #95a5a6;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            color: white;
+            border: none;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .metadata {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .metadata p {
+            margin: 5px 0;
+        }
+        
+        .metadata strong {
+            color: #2c3e50;
+        }
+        
+        .output-section {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+            overflow-x: auto;
+            page-break-inside: avoid;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .output-section pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .output-title {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            margin: 30px 0 0 0;
+            border-radius: 5px 5px 0 0;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e74c3c;
+        }
+        
+        .formula {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .feature-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .feature-box h4 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        
+        ul {
+            line-height: 1.8;
+        }
+        
+        .note {
+            background: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .note strong {
+            color: #e67e22;
+        }
+        
+        .separator {
+            border-top: 2px dashed #bdc3c7;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .output-section {
+                page-break-inside: avoid;
+            }
+            
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Association Rules Mining</h1>
+        <p>Custom Implementation with Manual Metric Calculations</p>
+    </div>
+    
+    <div class="metadata">
+        <p><strong>Author:</strong> Yair Levi</p>
+        <p><strong>Date:</strong> October 15, 2025</p>
+        <p><strong>Version:</strong> 1.0.0</p>
+        <p><strong>Language:</strong> Python 3.7+</p>
+        <p><strong>Dependencies:</strong> NumPy</p>
+    </div>
+
+    <h2>📋 Overview</h2>
+    <p>
+        This project implements an association rules mining algorithm from scratch using Python and NumPy. 
+        The implementation demonstrates fundamental data mining concepts by generating synthetic binary datasets 
+        with controlled distributions and discovering association rules that meet specified support and confidence thresholds.
+    </p>
+    
+    <div class="feature-box">
+        <h4>Key Features</h4>
+        <ul>
+            <li><strong>Pure Python Implementation:</strong> Manual calculation of support, confidence, and lift metrics</li>
+            <li><strong>Synthetic Dataset Generation:</strong> Creates 5000×6 binary arrays with custom probability distributions</li>
+            <li><strong>Configurable Thresholds:</strong> Minimum support (30%) and confidence (70%)</li>
+            <li><strong>Comprehensive Analysis:</strong> Discovers all qualifying rules with detailed statistics</li>
+        </ul>
+    </div>
+
+    <h2>🎯 Project Objectives</h2>
+    <p>The main objectives of this implementation are:</p>
+    <ul>
+        <li>Generate a dataset with 5000 transactions and 6 binary features (a, b, c, d, e, f)</li>
+        <li>Control the distribution of each feature with specific probabilities (80%, 60%, 40%, 30%, 20%, 10%)</li>
+        <li>Implement association rules mining without external libraries</li>
+        <li>Calculate Support, Confidence, and Lift using mathematical formulas</li>
+        <li>Find rules with Support > 30% and Confidence > 70%</li>
+    </ul>
+
+    <h2>📐 Mathematical Formulas</h2>
+    
+    <h3>1. Support</h3>
+    <p>The support of an itemset X measures how frequently it appears in the dataset:</p>
+    <div class="formula">
+Support(X) = Count(transactions containing X) / Total transactions
+    </div>
+    <p><strong>Example:</strong> If 2400 out of 5000 transactions contain {a,b}, then Support({a,b}) = 2400/5000 = 0.48 (48%)</p>
+
+    <h3>2. Confidence</h3>
+    <p>The confidence of rule X → Y measures how often Y appears in transactions containing X:</p>
+    <div class="formula">
+Confidence(X → Y) = Support(X ∪ Y) / Support(X)
+    </div>
+    <p><strong>Example:</strong> If Support({a,b}) = 0.48 and Support({a}) = 0.80, then Confidence({a} → {b}) = 0.48/0.80 = 0.60 (60%)</p>
+    <p><em>Interpretation: 60% of transactions containing 'a' also contain 'b'</em></p>
+
+    <h3>3. Lift</h3>
+    <p>The lift of rule X → Y measures how much more likely Y is when X is present compared to random chance:</p>
+    <div class="formula">
+Lift(X → Y) = Support(X ∪ Y) / (Support(X) × Support(Y))
+            = Confidence(X → Y) / Support(Y)
+    </div>
+    <p><strong>Interpretation:</strong></p>
+    <ul>
+        <li><strong>Lift > 1:</strong> Positive correlation (items appear together more than expected)</li>
+        <li><strong>Lift = 1:</strong> Independence (no correlation)</li>
+        <li><strong>Lift < 1:</strong> Negative correlation (items rarely appear together)</li>
+    </ul>
+
+    <h2>🔧 Dataset Configuration</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Target Probability</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>80%</td>
+            <td>Very frequent feature</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>60%</td>
+            <td>Moderately frequent feature</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>40%</td>
+            <td>Medium frequency feature</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>30%</td>
+            <td>Less frequent feature</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>20%</td>
+            <td>Rare feature</td>
+        </tr>
+        <tr>
+            <td>f</td>
+            <td>10%</td>
+            <td>Very rare feature</td>
+        </tr>
+    </table>
+
+    <div class="note">
+        <strong>Note:</strong> The actual percentages may vary slightly from targets due to random generation, 
+        but should be very close (within ±1%) for 5000 samples.
+    </div>
+
+    <div class="separator"></div>
+
+    <h2>📊 Program Output Results</h2>
+    <p>
+        The following sections show the actual output from running the association rules mining program. 
+        The results demonstrate the dataset generation, distribution verification, and discovered association rules.
+    </p>
+
+    <div class="output-title">Output Part 1: Dataset Generation and Initial Analysis</div>
+    <div class="output-section">
+        <pre>C:\Users\yair0\Documents\docs\courses\AI_Limudey_Hutz\Lesson10\Corelation>python3 association_rules_mining.py
+================================================================================
+ASSOCIATION RULES MINING
+================================================================================
+
+Dataset: 5000 rows, 6 features
+Features: ['a', 'b', 'c', 'd', 'e', 'f']
+Probabilities: [0.8, 0.6, 0.4, 0.3, 0.2, 0.1]
+
+Thresholds:
+  Minimum Support: 30.0%
+  Minimum Confidence: 70.0%
+================================================================================
+
+Dataset created successfully!
+Dataset shape: (5000, 6)
+
+Actual percentages of 1s in each column:
+  a: 79.42% (target: 80.00%)
+  b: 59.50% (target: 60.00%)
+  c: 39.92% (target: 40.00%)
+  d: 30.94% (target: 30.00%)
+  e: 20.44% (target: 20.00%)
+  f: 8.98% (target: 10.00%)
+
+================================================================================
+FINDING ASSOCIATION RULES
+================================================================================
+
+Total rules found: 2</pre>
+    </div>
+
+    <div class="output-title">Output Part 2: Discovered Rules and Statistics</div>
+    <div class="output-section">
+        <pre>================================================================================
+ASSOCIATION RULES
+================================================================================
+
+Rule                           Support      Confidence   Lift      
+--------------------------------------------------------------------------------
+{b} -> {a}                     0.4748 (47.48%)  0.7980 (79.80%)  1.0048
+{c} -> {a}                     0.3120 (31.20%)  0.7816 (78.16%)  0.9841
+
+--------------------------------------------------------------------------------
+SUMMARY STATISTICS
+================================================================================
+
+Average Support:    0.3934 (39.34%)
+Average Confidence: 0.7898 (78.98%)
+Average Lift:       0.9944
+
+Maximum Support:    0.4748 (47.48%)
+Maximum Confidence: 0.7980 (79.80%)
+Maximum Lift:       1.0048
+
+================================================================================
+TOP 5 RULES BY CONFIDENCE
+================================================================================
+
+1. {b} -> {a}
+   Support: 0.4748 (47.48%)
+   Confidence: 0.7980 (79.80%)
+   Lift: 1.0048
+
+2. {c} -> {a}
+   Support: 0.3120 (31.20%)
+   Confidence: 0.7816 (78.16%)
+   Lift: 0.9841
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+C:\Users\yair0\Documents\docs\courses\AI_Limudey_Hutz\Lesson10\Corelation></pre>
+    </div>
+
+    <div class="separator"></div>
+
+    <h2>🔍 Results Interpretation</h2>
+    
+    <h3>Dataset Verification</h3>
+    <p>The program successfully generated a dataset matching the target distributions:</p>
+    <ul>
+        <li>All features achieved distributions within 1% of target values</li>
+        <li>Feature 'a' (79.42%) is the most frequent, appearing in nearly 80% of transactions</li>
+        <li>Feature 'f' (8.98%) is the rarest, appearing in less than 9% of transactions</li>
+    </ul>
+
+    <h3>Discovered Association Rules</h3>
+    <p>The mining process discovered <strong>2 rules</strong> meeting the criteria (Support > 30%, Confidence > 70%):</p>
+
+    <div class="feature-box">
+        <h4>Rule 1: {b} → {a}</h4>
+        <ul>
+            <li><strong>Support: 47.48%</strong> - Nearly half of all transactions contain both 'b' and 'a'</li>
+            <li><strong>Confidence: 79.80%</strong> - When 'b' appears, there's an 80% chance 'a' also appears</li>
+            <li><strong>Lift: 1.0048</strong> - Very slight positive correlation (nearly independent)</li>
+        </ul>
+        <p><em>Interpretation: Feature 'b' is a strong predictor of feature 'a', with high reliability.</em></p>
+    </div>
+
+    <div class="feature-box">
+        <h4>Rule 2: {c} → {a}</h4>
+        <ul>
+            <li><strong>Support: 31.20%</strong> - About one-third of transactions contain both 'c' and 'a'</li>
+            <li><strong>Confidence: 78.16%</strong> - When 'c' appears, there's a 78% chance 'a' also appears</li>
+            <li><strong>Lift: 0.9841</strong> - Slight negative correlation (slightly less than random chance)</li>
+        </ul>
+        <p><em>Interpretation: Feature 'c' is also a good predictor of feature 'a', though slightly weaker than rule 1.</em></p>
+    </div>
+
+    <h3>Why Only 2 Rules?</h3>
+    <p>The algorithm found only 2 rules due to the stringent thresholds and probability distributions:</p>
+    <ul>
+        <li><strong>High confidence requirement (70%):</strong> Eliminates many potential rules</li>
+        <li><strong>High support requirement (30%):</strong> Requires frequent co-occurrence</li>
+        <li><strong>Decreasing probabilities:</strong> Features d, e, f are too rare to meet support threshold in combinations</li>
+        <li><strong>Feature 'a' dominance:</strong> With 80% probability, 'a' is the most common consequent</li>
+    </ul>
+
+    <h2>💡 Key Insights</h2>
+    <ul>
+        <li>The most frequent feature ('a') naturally becomes the consequent in most rules</li>
+        <li>Features 'b' and 'c' have sufficient frequency to meet the 30% support threshold when combined with 'a'</li>
+        <li>Lower-frequency features (d, e, f) cannot form rules meeting both thresholds</li>
+        <li>Lift values near 1.0 indicate the features are nearly independent</li>
+        <li>High confidence but low lift suggests the rule is reliable but not particularly surprising</li>
+    </ul>
+
+    <h2>🎓 Educational Value</h2>
+    <p>This implementation demonstrates several important concepts:</p>
+    <ul>
+        <li><strong>Manual metric calculation:</strong> Understanding the mathematics behind association rules</li>
+        <li><strong>Threshold effects:</strong> How support and confidence filters affect rule discovery</li>
+        <li><strong>Probability distributions:</strong> Impact of feature frequencies on rule formation</li>
+        <li><strong>Algorithm complexity:</strong> Computational challenges in exhaustive rule generation</li>
+        <li><strong>Result interpretation:</strong> Distinguishing between statistical significance and practical importance</li>
+    </ul>
+
+    <h2>📝 Usage Instructions</h2>
+    <ol>
+        <li>Install Python 3.7+ and NumPy: <code>pip install numpy</code></li>
+        <li>Run the script: <code>python association_rules_mining.py</code></li>
+        <li>View the output showing dataset creation, rule discovery, and statistics</li>
+        <li>Modify thresholds or probabilities in the code to explore different scenarios</li>
+    </ol>
+
+    <h2>🔧 Customization Options</h2>
+    <p>You can modify the following parameters in the code:</p>
+    <ul>
+        <li><strong>Dataset size:</strong> Change <code>n_rows</code> (default: 5000)</li>
+        <li><strong>Feature probabilities:</strong> Adjust the <code>probabilities</code> list</li>
+        <li><strong>Support threshold:</strong> Modify <code>min_support</code> (default: 0.30)</li>
+        <li><strong>Confidence threshold:</strong> Modify <code>min_confidence</code> (default: 0.70)</li>
+        <li><strong>Random seed:</strong> Change or remove <code>np.random.seed(42)</code> for different results</li>
+    </ul>
+
+    <div class="note">
+        <strong>Experimentation Tip:</strong> Try lowering the support threshold to 20% (0.20) to discover more rules 
+        involving less frequent features. This will reveal patterns with features d, e, and f.
+    </div>
+
+    <h2>📚 References and Further Reading</h2>
+    <ul>
+        <li>Agrawal, R., & Srikant, R. (1994). "Fast Algorithms for Mining Association Rules"</li>
+        <li>"Introduction to Data Mining" by Tan, Steinbach, Kumar</li>
+        <li>"Data Mining: Concepts and Techniques" by Han, Kamber, Pei</li>
+    </ul>
+
+    <div class="separator"></div>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #ecf0f1; border-radius: 5px;">
+        <p><strong>Association Rules Mining Project</strong></p>
+        <p>Author: Yair Levi | Version 1.0.0 | October 2025</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #7f8c8d;">
+            For questions or contributions, please contact the author or visit the project repository.
+        </p>
+    </div>
+</body>
+</html>

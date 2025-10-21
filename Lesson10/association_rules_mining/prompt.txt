@@ -1,0 +1,16 @@
+prepare a python program that creates a table with 6 features starting from "a" to "f".
+5000 rows, 
+Create this 2 dimensional array by NumPy. 
+This will be the dataset table.
+Fill this array with 0 and 1 randomly with the next constraints:
+column 1:  80% are 1.
+column 2:  60% are 1.
+column 3:  40% are 1.
+column 4:  30% are 1.
+column 5:  20% are 1.
+column 6:  10% are 1.
+Find association rules that have:
+Support > 30%
+Confidence > 70 %.
+Print the Support, Confidence and lift.
+For calculation of Support , Confidence and lift, use the equations and not libraries.
