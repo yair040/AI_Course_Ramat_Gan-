@@ -1,0 +1,10 @@
+write python program that:
+
+1. Take a dataset called "grocery_dataset.txt which contains lines when each line is another transaction of products that were bought together, separated by comas.
+
+2. Find 3 items that if appeared, other 2 item will appear in high probability. 
+
+3. support =0.3%, confidence = 40% and lift more than 1.
+
+4. Print the results and the best lift.
+5. Author: Yair Levi
