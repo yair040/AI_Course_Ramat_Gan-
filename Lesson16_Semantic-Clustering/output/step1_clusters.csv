@@ -1,0 +1,101 @@
+Index,Sentence,Cluster,Actual_Subject
+0,He scored the winning goal in extra time.,1,sport
+1,The curry was spicy enough to make me sweat.,2,food
+2,Our quarterly report exceeded all expectations.,0,work
+3,Tennis requires excellent hand-eye coordination.,1,sport
+4,She finally received a promotion after three years.,0,work
+5,Fresh basil makes any pasta dish taste better.,2,food
+6,The marathon runners trained for six months straight.,1,sport
+7,The deadline for this project is next Tuesday.,0,work
+8,I can't resist chocolate chip cookies straight from the oven.,2,food
+9,His swimming technique has improved dramatically this season.,1,sport
+10,The office is closed during national holidays.,0,work
+11,Sushi is best enjoyed with wasabi and soy sauce.,2,food
+12,They celebrated wildly after winning the championship.,1,sport
+13,Remote work has become increasingly common since 2020.,0,work
+14,She adds cinnamon to her coffee every morning.,2,food
+15,The referee made a controversial call in overtime.,1,sport
+16,Our team meeting starts promptly at nine.,1,work
+17,Homemade bread smells amazing while baking.,2,food
+18,Baseball games can sometimes last for hours.,1,sport
+19,The new software system streamlined our workflow considerably.,0,work
+20,"Thai food perfectly balances sweet, sour, and spicy flavors.",2,food
+21,The gymnast executed a flawless routine on the balance beam.,1,sport
+22,I have fifteen unread emails in my inbox.,0,work
+23,Avocado toast has become a breakfast staple.,2,food
+24,She broke the school record in the 100-meter dash.,1,sport
+25,The interview panel asked challenging but fair questions.,0,work
+26,Nothing beats a juicy watermelon on a hot day.,2,food
+27,The golf tournament was postponed due to lightning.,1,sport
+28,My colleague helped me troubleshoot the database issue.,0,work
+29,Garlic bread is the perfect side for lasagna.,2,food
+30,Rugby players rarely wear protective padding.,1,sport
+31,The company announced a merger with its competitor.,0,work
+32,He always adds hot sauce to his eggs.,2,food
+33,Their defensive strategy won them the championship.,1,sport
+34,The freelancer submitted her invoice for last month's work.,0,work
+35,Mushroom risotto requires constant stirring while cooking.,2,food
+36,The cyclist maintained an impressive pace uphill.,1,sport
+37,Her presentation impressed the board of directors.,0,work
+38,Freshly ground coffee beans make all the difference.,2,food
+39,The crowd erupted when she hit the game-winning shot.,1,sport
+40,We need to reschedule the client meeting.,0,work
+41,Slow-cooked barbecue ribs fell right off the bone.,2,food
+42,His archery skills have improved with consistent practice.,1,sport
+43,The office needs to order more printer paper.,0,work
+44,The secret ingredient in her cookies is brown butter.,2,food
+45,Ice hockey requires incredible balance and coordination.,1,sport
+46,Her networking skills helped her secure the position.,0,work
+47,A perfectly ripe avocado is worth waiting for.,2,food
+48,The volleyball team practices every day after school.,1,sport
+49,The conference call dropped midway through the presentation.,0,work
+50,Homemade pizza is fun to customize with toppings.,2,food
+51,Olympic divers make complex movements look effortless.,1,sport
+52,He asked for feedback on his quarterly performance.,0,work
+53,The restaurant's signature dish features truffle oil.,2,food
+54,Formula One racing combines technology and driving skill.,1,sport
+55,Her commute takes almost two hours each way.,1,work
+56,Maple syrup elevates ordinary pancakes to something special.,2,food
+57,The boxer trained rigorously for six months straight.,1,sport
+58,Our department came in under budget this year.,0,work
+59,He can't start his day without a hearty breakfast.,2,food
+60,The skateboarder landed an impressive trick first try.,1,sport
+61,The company implemented a flexible working hours policy.,0,work
+62,Roasting vegetables brings out their natural sweetness.,2,food
+63,She aced her opponent with a powerful serve.,1,sport
+64,The job requires extensive travel throughout Europe.,0,work
+65,Their family recipe for chili has evolved for generations.,2,food
+66,The quarterback threw a perfect spiral to the receiver.,1,sport
+67,The new intern is eager to learn everything.,0,work
+68,A squeeze of lemon brightens almost any dish.,2,food
+69,Synchronized swimming demands incredible strength and precision.,1,sport
+70,We need to update our outdated employee handbook.,0,work
+71,The chef garnished each plate with fresh herbs.,2,food
+72,The wrestler pinned his opponent in seconds.,1,sport
+73,Her startup secured funding from several investors.,0,work
+74,"Street tacos are best with simple, fresh ingredients.",2,food
+75,Mountain biking through rugged terrain tests your endurance.,1,sport
+76,The power outage delayed our project by days.,0,work
+77,A well-aged cheese complements this robust red wine.,2,food
+78,The cricket match lasted for five days.,1,sport
+79,Their team-building retreat was surprisingly productive.,1,work
+80,Homemade ice cream tastes better than store-bought varieties.,2,food
+81,The surfer caught a massive wave just before sunset.,1,sport
+82,The consulting contract was extended for another year.,0,work
+83,His grandmother's apple pie recipe remains unbeaten.,2,food
+84,Fencing requires quick reflexes and strategic thinking.,1,sport
+85,She negotiated a substantial salary increase.,0,work
+86,"The salmon was perfectly cooked, still moist inside.",2,food
+87,The fans traveled across the country for the final.,1,sport
+88,Our quarterly sales figures exceeded projections by fifteen percent.,0,work
+89,"Farm-fresh eggs have vibrant, orange yolks.",2,food
+90,Yoga improves flexibility and mental focus simultaneously.,1,sport
+91,The new hire quickly adapted to our company culture.,0,work
+92,This is about work.,0,work
+93,This is about work.,0,work
+94,This is about work.,0,work
+95,This is about work.,0,work
+96,This is about sport.,1,sport
+97,This is about food.,2,food
+98,This is about work.,0,work
+99,This is about food.,2,food

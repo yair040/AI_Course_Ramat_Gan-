@@ -1,0 +1,11 @@
+Index,Sentence,Cluster,Actual_Subject
+0,The quarterback threw a perfect spiral for the winning touchdown.,1,sport
+1,My colleague stayed late to finish the quarterly report.,0,work
+2,Fresh basil makes any homemade pizza taste incredible.,2,food
+3,She practices tennis three hours every day after school.,1,sport
+4,Our company recently implemented a flexible remote work policy.,0,work
+5,The curry was so spicy that my eyes watered.,2,food
+6,Liverpool fans celebrated wildly when their team scored.,1,sport
+7,"After the promotion, she had to manage twelve employees.",0,work
+8,Grandma's secret recipe includes cinnamon and nutmeg.,2,food
+9,The deadline for submitting the application is next Friday.,0,work
