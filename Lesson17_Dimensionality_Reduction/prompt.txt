@@ -1,0 +1,54 @@
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150-200 lines.
+Create also Claude.md, planning.md and tasks.md.
+
+1) create 100 short sentences, each sentence radomly is about one subject: sport, food or work.
+print these sentences and save in a file called sentences.txt.
+2) Convert these sentences to normalized vectors and save in a file called normalized.txt.
+3) By the use of PCA convert the vectors to PCA, clusterized them and display them in 3D dimentions as in the below.
+do not use sklearn but only numpy.
+measure time of each step and print it:
+a) For each feature, calcuate the Mean. Do it for all the features in all vectors.
+b) Centralize around the zero:
+In each vector for each feature, subtract the Mean from the feature value and replace the previous feature value by this value.
+c) Arrange these vectors in coloumns of matrix, let's call this matrix  X.
+d) Create the Covariance matrix:
+Take the transpose of X, multiply by X and divide by (n-1), while n is the number of vectors (100).
+The result is the Covariance matrix.
+Let's call it S.
+e) Calculate the eigenvalues of S, the Covariance matrix:
+Use the known equation of comparing the determinant of 
+S-(lambda*I) to zero.
+lambda is the eigenvectors ad I is the identity matrix.
+f) Calculate the eigenvectors of S, the Covariance matrix:
+Use the known equation of comparing 
+(S-(lambda*I))*V to zero, while V is the eigenvectors.
+g) Build a transformation matrix P from the eigenvectors of S that we found.
+The vectors will be arrange in the matrix according their eigenvectors.
+The vector with the biggest eigenvector in the first left column and so on.
+Take only the leftmost 3 vectors that are actually with highest eigenvalues values.
+h) Calculate the transpose of P.
+i) Convert the original 100 vectors to the new coordinate system:
+For each vector from section 2 (100 vectors) multiply the transpose of P in the vector to get the new vector.
+The new vectors will be 3D.
+Savethem in a file.
+j) Do clustering on the new 100 vectors by Kmeans when K=3.
+k) present the 100 new vectors in a graph and paint them according the cluster.
+If it is possible, present for each point in the graph a serial number that we can know what is the original sentence.
+4) By the use of PCA convert the vectors to PCA, clusterized them and display them in 3D dimentions.
+This time you can do it in the shortest way.
+Also here measure the time to process each step.
+Use PCA, use builtin library like sklearn.
+a) Do it on the vectors from section 2 (100 sentences).
+b) Do clustering on the new 100 vectors by Kmeans when K=3.
+c) present the 100 new vectors in a graph and paint them according the cluster.
+If it is possible, present for each point in the graph a serial number that we can know what is the original sentence.
+5) Do the same as in section 4, but for t-SNE and not PCA:
+By the use of t-SNE do reduction to 3D, clusterized them and display them in 3D dimentions.
+Also here measure the time to process each step.
+Use builtin libraries.
+a) Do it on the vectors from section 2 (100 sentences).
+b) Do clustering on the new 100 vectors by Kmeans when K=3.
+c) present the 100 new vectors in a graph and paint them according the cluster.
+If it is possible, present for each point in the graph a serial number that we can know what is the original sentence.
