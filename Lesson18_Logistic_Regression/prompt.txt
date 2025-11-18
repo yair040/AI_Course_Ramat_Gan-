@@ -1,0 +1,63 @@
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150-200 lines.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+For calculation use the steps as described below and do not use specific libraries, only Numpy.
+
+The purpose of the program is to create a sigmoid function (Logistic Regression) that can seperate between 2 groups of points.
+The method to create the sigmoid is by the Gradient Descent algorithm.
+
+1. Create the dataset:
+   Create 2 groups of data points.
+   Each group contains 1000 points.
+   Each point is 3D, contains x0, x1 and x2, these are the features.
+   x0 is always 1.
+   Data points of the first group: x1 between 0.1 and 0.4 and x2 also     between 0.1 and 0.4.
+   Data points of the second group: x1 between 0.6 and 0.9 and x2 also    between 0.6 and 0.9.
+   All points will be created by random within these limits.
+   y is the labels (target variable or ground truth) of the dataset.
+   For the first group y is 0 and for the second group y is 1.
+2. Create the initial 3 Beta values:
+   For the first iteration, create the initial Beta values by random       between -1 to +1.
+   Create Beta0, Beta1 and Beta2 in the appropriate Greek letters.
+   These are the Coefficients or Weights.
+3. The Greek Etha letter is the Learning Rate or Step Size and    determine it to 0.3.
+4. To calculate the probability for each sample i, use the sigmoid       function:
+   Use the known function:
+   p(i) = 1/(1+e^-(Beta0+beta1*x1+Beta2*x2))
+   p(i) is the probability for each sample i.
+5. Use the equation for the gradient (Derivative of the log-      likelihood) or Score function:
+   g = X^T(y-p)
+   G is a vector D3.
+   X is the dataset that was created in step 1 without the column y    (the labels). 
+   X^T is the transpose of X.
+   y is the vector of labels from step 1.
+   p is the vector of probability composed from the samples'    probability.
+6. The algorithm:
+   a. Compute p(i) for each sample, as in step 4.
+      For the first iteration, use the Coefficientsfrom step 2.
+   b. Compute the vector y-p. 
+   c. Compute g (the gradient) for Beta0, Beta1 and Beta2.
+   d. Updated the new Beta from previous Beta:
+      New Beta vector = previous Beta vector + Etha*g 
+      g is a D3 vector, Beta vector isalso D3 vector.
+   e. Go to step 4, and continue the loop till we get the maximum            likelihood.
+7. The output:
+   a. Show the final sigmoid equation with its Betas.
+   b. To the table of the dataset includes the labels,
+      Add a colomn of the final predict value from the sigmoid.
+      Add another colomn of square(label value-predict value) as the error.
+      Summarize the errors and divide by (n-1) while n is the number         of samples, this is the average error.
+      Display the final table + average error in GUI.
+      Consider display only part of it because its size.
+   c. Show in the graph the points while the 2 groups will be in       different color to distinguish between them.
+      If prediction is not in accordance with the label, sign a little       red x near it.
+   d. In another graph, show both, the advance of the likelihood             that depends on iteration number, and also show the calculated         error for this iteration.
+      The calculated error is the (sum of square(label value-predict       value))/(number of samples-1)
+
+
+   
+
+   
