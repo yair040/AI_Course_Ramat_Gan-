@@ -1,0 +1,9 @@
+Create Python program.
+If the program contains more than 250 lines, put it in 2 separate files.
+Author: Yair Levi
+The program will run on virtual platform, create requirement.txt for that.
+The program will create 3 clusters of points on x,y axis, all of them on normal distribution.
+Each cluster should has different standard error and mean.
+Total number of points should be 6000, each cluster 2000 points.
+2000 points should be overlapped by all three clusters.
+Print a graph of the points with cluster barrier demonstration.
