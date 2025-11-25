@@ -1,0 +1,119 @@
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150-200 lines.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When last file is full the first file will start to overwritten.
+The log files will be in the "log" subfolder.
+The program should use agents for its work.
+Each agent will have its log.
+Each agent should have csv file as an output, csv file as an input and setup file 
+for settings like required log level etc. 
+The setup file is a Jason file.
+Each agent also have a skill.
+
+All skills and agents are already generated and detailed here for the PRD.
+
+First agent is called "gmail_retrieve". 
+It uses the ./skills/gmail/skill.md skill.
+The skill is prepared manually in Claude cli and used to retrieve mails related to some filter.
+The skill will use Gmail API which its credentials are found in the current library in credentials.json.
+The skill will not expose the credentials.
+The filter is mails that their subject starts with "self checking of exercise #" and are found in folder "exercises".
+The agent will use the skin at ./skills/gmail/skill.md for retrieve the required mails.
+The agent will create an excel file (csv) with columns of "id", subject, date, URL, and status.
+The id field is unique and will be identify the mail, starting from 1.
+The agent will fill all columns.
+The date is the mail date.
+The URL is the URL to the GitHub found in the mail.
+The status will be "done" when all other fields are filled.
+The files will be located at ./files/ folder.
+The agent must write log.
+The agent is also prepared manually and will be at .claude/agents/gmail-retrieve.md.
+The python program related to the agent is in the ./skills/gmail/email_retrieve.py.
+
+Second agent is called "mail-code-analyzer".
+It uses the ./skills/url/skill.md skill.
+The skill is prepared manually in Claude cli and used to retrive the url located at the outpt file 
+of the previous agent (gmail_extract).
+It will clone the github url and copy only the python files in it to temp folder. 
+This kill should work with multiprocessing to get the 4 URL simultaneously.
+The agent will use this skill, then it will create a Excel file which each row coresponds 
+to another mail. The file contains the id of the mail (the same as got from the first agent) in the first column  and also a column for "grade" and a status column.
+The agent will fill all columns.
+For the "grade" column:
+1. Calculate the total sum of number of lines in the code files (in the temp folder) from code files that are less than 150 lines.
+2. Calculate the total sum of number of lines in the code files frm all code files thatare in the tmp folder.
+3. Divide the result in 1 by the result in 2 and multipy by 100. This will be the grade  
+The status will be "done" when all other fields are filled.
+The files will be located at ./files/ folder.
+The agent must write log.
+The agent is also prepared manually and will be at .claude/agents/
+The python program related to the agent is in the ./skills/
+
+The third agent is called "greeting-style-generator" agent
+It uses ./skills/style/skill.md skill. 
+The agent reads the last file that includes the grades.
+Divides the grades to 4 categories from highest to lowest according the grades.
+It use the skill to choose a random greeting sentence from the appropriate person related to the grade.
+For each grade use the skill to write greeting in different style:
+Trump style for the highest grade.
+Benny Hill style for the second high grade
+Kramer (from Seinfeld series) style for the third high grade.
+Chandler (from Friends series) style for the lowest grade. 
+Each style will not have a constant sentence, but a random sentence in this style.
+The agent must write log.
+
+The forth agent is called "gmail-draft-sender".
+The agent ill use skill file at ./check_exercise/skills/send_draft/skill.md.
+The skill will get mail address, subject, URL, text to send and a name and will send it to the draft box of Gmail.
+Each mail recipient is the mail address the skill gets.
+The mail subject is the subject the skill gets.
+The mail starts with "Regarding the " and continue with the URL (as a link pasted) that gets as an input.
+After the test it puts the text to send.
+Then send it to the draft of the Gmail account.
+skill will use Gmail API which its credentials are found in the current library in credentials.json.
+The skill will not expose the credentials.
+The skill should use logging.
+The agent will use the skill located at ./check_exercise/skills/send_draft/skill.md.
+All files below are located at ./check_exercise/files/ folder.
+The agent will retrieve from csv file that contains "personalized_greetings" in its filename, for each row (mail), the greeting for that row and the corresponding id mail.
+From csv file that contains "code_analysis_report" in its filename, it will retrieve the grade that appropriate to the id.
+From csv file that contains "gmail_extract" in its filename, it will retrieve the URL that appropriate to the id.
+The agent will use the skill to create and send the mail to the Gmail draft for each mail.
+The address sent to the skill is "yair040@gmail.com".
+The subject of the mail will be "self testing".
+The URL will also be send to the skill.
+The text sent to the skill will be "Your score is " + the "grade" in one line.
+Then the greeting follow the above line as the rest of the text.
+The agent should use logging.
+all skills and agent are already ready (but not the main program) and here for the PRD.
+
+The agents and skills above already done.
+Need to create th below main program.
+
+The main program will present a menu with a few options:
+1. run first agent ("gmail_retrieve").
+2. run second agent ("mail-code-analyzer").
+3. run third agent ("greeting-style-generator").
+4. run forth agent ("gmail-draft-sender").
+5. run the 4 above agents as a pipe, first "gmail_retrieve" when finished (status in csv file is "done") 
+   then run the agent "mail-code-analyzer", when finished (status in csv file is "done")
+   then run the agent "greeting-style-generator", when finished (status in csv file is "done")
+   then run the agent "gmail-draft-sender".
+6. Reset: 
+   a. The program will delete the content of ./check_exercise/files/ folder.
+   b. The program will delete the content of ./check_exercise/temp/ folder.
+
+When finished, create a package from all data in the ./check_exercise/ folder.
+Do not expose there the "credentials.json" and the "token.pickle" files.
+Use logging.
+
+

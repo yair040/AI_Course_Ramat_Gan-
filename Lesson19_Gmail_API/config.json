@@ -1,0 +1,56 @@
+{
+  "system": {
+    "log_level": "INFO",
+    "log_dir": "log",
+    "files_dir": "files",
+    "temp_dir": "temp",
+    "max_log_file_size_mb": 16,
+    "max_log_files": 20
+  },
+  "agents": {
+    "gmail_retrieve": {
+      "enabled": true,
+      "log_level": "INFO",
+      "timeout_seconds": 300,
+      "output_pattern": "gmail_extract",
+      "description": "Retrieve exercise submissions from Gmail"
+    },
+    "mail-code-analyzer": {
+      "enabled": true,
+      "log_level": "INFO",
+      "timeout_seconds": 600,
+      "output_pattern": "code_analysis_report",
+      "parallel_downloads": 4,
+      "max_file_lines": 150,
+      "description": "Analyze code quality from GitHub repositories"
+    },
+    "greeting-style-generator": {
+      "enabled": true,
+      "log_level": "INFO",
+      "timeout_seconds": 300,
+      "output_pattern": "personalized_greetings",
+      "grade_categories": 4,
+      "styles": {
+        "highest": "Trump",
+        "second": "Benny Hill",
+        "third": "Kramer",
+        "lowest": "Chandler"
+      },
+      "description": "Generate personalized feedback greetings"
+    },
+    "gmail-draft-sender": {
+      "enabled": true,
+      "log_level": "INFO",
+      "timeout_seconds": 300,
+      "recipient": "yair040@gmail.com",
+      "subject": "self testing",
+      "description": "Create Gmail draft emails with feedback"
+    }
+  },
+  "pipeline": {
+    "enabled": true,
+    "check_interval_seconds": 5,
+    "max_wait_seconds": 600,
+    "stop_on_error": true
+  }
+}
