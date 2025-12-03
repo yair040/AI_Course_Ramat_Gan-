@@ -1,0 +1,74 @@
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150-200 lines.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When last file is full the first file will start to overwritten.
+The log files will be in the "log" subfolder.
+
+The project should classify Iris flowers by Naive Bayes algorithm.
+The dataset is found as iris.csv.
+The dataset contains of 4 features columns and last label column.
+The first row is a header describing the columns names.
+The 4 features are: septal length, septal width, petal length and petal width.
+The last column is the label that is one of three classes: setosa, versicolor or virginica.
+
+1. Divide the dataset randomly to 75% training and 25% test.
+   Remove the label (class) in the test set from last column.
+2. run the training on the training set in 2 different ways:
+The first way, without using the libraries.
+Use only NumPy library. 
+Use the calculations as detailed below.
+a. For the training group, calculate for each class (of the 3 classes) the probability that a random Iris will be found at this class.
+This probability is P(Ci), while Ci is a specific class (i is the index).
+Show P(Ci) for each class.
+This is done by counting number of flowers in this class dividing to the total number of Iris.
+b. Each row (flower) has 4 features.
+For each class pass on each feature Xi (i is the index) and build an histogram for it, related the values at Xi.
+Since each class has 4 features, we get 4 histograms (one for each Xi).
+Since we have 3 classes, we get 12 histograms.
+if there is an empty bin in the histogram, put there 1.
+Show for each Xi feature the histogram for all classes for this Xi in the same graph. 
+So, we will get 4 graphs.
+Till here is the training step of the first method (way).
+
+The second way, use classification method by Naive Bayes and use ready libraries for that training.
+Use the same training set as above, do not choose random again.
+
+3. run the test (classification) in 2 different ways:
+Run the test on the test set (after dividing it earlier).
+For each sample need to find the label or class it is belonged to, so need to remove the label of it before testing.
+The first way, without using the libraries:
+Use only NumPy library. 
+Use the calculations as detailed below:
+For each sample from the test set, calculate its probability to be in each class of the 3 classes.
+The highest probability will be the label or class of the sample.
+First for the sample for each of its feature, take the value of the feature and find where it is located in the histogram bin from the training step.
+Do it for each of the classes (3 classes).
+Now calculate the probability of this bin by dividing its area by the total area of the histogram. 
+Do it for each of the classes (3 classes).
+So, for each feature of the sample, Xi, you calculate P(Xi|Ci).
+We have found previously P(Ci) the probability to be randomly to be in class Ci (for all 3 classes).
+Use the logarithmic form of the Naive Bayes algorithm to find the sample to be in each class:
+P(Ci|X) = log(P(Ci)) + Σ log(P(Xi|Ci))
+Take the highest probability as the class label for the feature.
+
+The second way, use classification method by Naive Bayes and use ready libraries for that test.
+Use the same test set as above, do not choose random again.
+
+At the end show the Confusion matrix for both methods.
+
+
+
+
+
+
+
+
