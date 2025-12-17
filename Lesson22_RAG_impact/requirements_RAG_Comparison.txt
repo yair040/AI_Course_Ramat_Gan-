@@ -1,0 +1,134 @@
+# Requirements for Context Window vs RAG Comparison Project
+# Python 3.8+ required
+# WSL (Linux) environment
+
+# ============================================================================
+# Core API Client
+# ============================================================================
+anthropic>=0.40.0              # Anthropic API client for Claude
+python-dotenv>=1.0.0           # Environment variable management (optional)
+
+# ============================================================================
+# PDF Processing
+# ============================================================================
+PyPDF2>=3.0.0                  # PDF reading library
+pdfplumber>=0.10.0             # Robust PDF text extraction (primary)
+pypdf>=3.17.0                  # Alternative PDF parser
+
+# ============================================================================
+# RAG Components
+# ============================================================================
+sentence-transformers>=2.2.0   # Text embeddings (all-MiniLM-L6-v2)
+chromadb>=0.4.0                # Vector database for RAG
+chromadb-client>=0.4.0         # ChromaDB client
+
+# Alternative vector databases (uncomment if needed):
+# faiss-cpu>=1.7.4             # Facebook AI Similarity Search (CPU version)
+# faiss-gpu>=1.7.4             # Facebook AI Similarity Search (GPU version)
+
+# ============================================================================
+# NLP & Machine Learning
+# ============================================================================
+transformers>=4.30.0           # Hugging Face transformers
+torch>=2.0.0                   # PyTorch for embeddings
+tokenizers>=0.15.0             # Fast tokenizers
+
+# ============================================================================
+# Visualization
+# ============================================================================
+matplotlib>=3.7.0              # Plotting library
+seaborn>=0.12.0                # Statistical visualization
+pillow>=10.0.0                 # Image processing (for PNG saving)
+
+# ============================================================================
+# Data Processing
+# ============================================================================
+numpy>=1.24.0                  # Numerical operations
+scipy>=1.10.0                  # Scientific computing (for similarity metrics)
+
+# Optional: For advanced data analysis
+# pandas>=2.0.0                # Data manipulation and analysis
+
+# ============================================================================
+# Utilities
+# ============================================================================
+tqdm>=4.65.0                   # Progress bars
+requests>=2.31.0               # HTTP requests (dependency for anthropic)
+
+# Optional: Token counting
+# tiktoken>=0.5.0              # OpenAI tokenizer (works with Claude)
+
+# ============================================================================
+# Development Tools (Optional)
+# ============================================================================
+# pytest>=7.4.0                # Testing framework
+# black>=23.0.0                # Code formatter
+# pylint>=3.0.0                # Code linter
+# mypy>=1.5.0                  # Type checker
+
+# ============================================================================
+# System Dependencies
+# ============================================================================
+# These may need to be installed via apt-get on WSL:
+# - python3-dev
+# - build-essential
+# - libpoppler-cpp-dev (for pdfplumber)
+#
+# Install with:
+# sudo apt-get update
+# sudo apt-get install python3-dev build-essential libpoppler-cpp-dev
+
+# ============================================================================
+# Installation Notes
+# ============================================================================
+#
+# 1. Create virtual environment:
+#    python3 -m venv venv
+#    source venv/bin/activate
+#
+# 2. Upgrade pip:
+#    pip install --upgrade pip
+#
+# 3. Install requirements:
+#    pip install -r requirements.txt
+#
+# 4. Verify installation:
+#    python -c "import anthropic; import pdfplumber; import chromadb; print('OK')"
+#
+# 5. If torch installation fails, try:
+#    pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# 6. If ChromaDB installation fails, try:
+#    pip install chromadb --no-cache-dir
+#
+# ============================================================================
+# Expected Installation Size
+# ============================================================================
+# - Total download: ~2-3 GB
+# - Installed size: ~4-5 GB
+# - PyTorch is the largest package (~1-2 GB)
+# - Transformers models will download on first use (~100-500 MB)
+#
+# ============================================================================
+# Minimum System Requirements
+# ============================================================================
+# - Python: 3.8 or higher
+# - RAM: 4 GB minimum, 8 GB recommended
+# - Disk: 10 GB free space
+# - CPU: Multi-core recommended for multiprocessing
+# - GPU: Optional (for faster embedding generation)
+#
+# ============================================================================
+# Version Lock for Reproducibility
+# ============================================================================
+# For production, consider pinning exact versions:
+# anthropic==0.40.0
+# pdfplumber==0.10.0
+# sentence-transformers==2.2.2
+# chromadb==0.4.18
+# torch==2.1.0
+# matplotlib==3.7.3
+# numpy==1.24.3
+#
+# Generate locked versions with:
+# pip freeze > requirements.lock.txt

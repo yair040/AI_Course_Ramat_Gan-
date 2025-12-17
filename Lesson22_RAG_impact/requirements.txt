@@ -1,0 +1,27 @@
+# Requirements for Context Window vs RAG Comparison
+# Python 3.8+ required
+
+# Core API Client
+anthropic>=0.40.0
+
+# PDF Processing
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+
+# RAG Components
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+
+# NLP & ML
+transformers>=4.30.0
+torch>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data Processing
+numpy>=1.24.0
+
+# Utilities
+tqdm>=4.65.0
