@@ -1,0 +1,445 @@
+2025-12-20 16:02:52,825 - __main__ - INFO - log_config_info - ============================================================
+2025-12-20 16:02:52,829 - __main__ - INFO - log_config_info - Iris SVM Classification System Started
+2025-12-20 16:02:52,831 - __main__ - INFO - log_config_info - ============================================================
+2025-12-20 16:02:52,833 - __main__ - INFO - log_config_info - Configuration: {'train_split': 0.75, 'test_split': 0.25, 'random_state': 42, 'num_iterations': 5, 'svm_kernel': 'rbf', 'svm_c': 10.0, 'svm_gamma': 'auto'}
+2025-12-20 16:02:52,836 - __main__ - INFO - log_config_info - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/log
+2025-12-20 16:02:52,840 - __main__ - INFO - log_config_info - Log rotation: 20 files × 16MB
+2025-12-20 16:02:52,843 - __main__ - INFO - log_config_info - ============================================================
+2025-12-20 16:02:52,845 - __main__ - INFO - main - Starting Iris SVM Classification System
+2025-12-20 16:02:52,848 - iris_classifier.iteration_runner - INFO - run_with_multiprocessing - Using multiprocessing with 5 workers
+2025-12-20 16:02:52,897 - iris_classifier.iteration_runner - INFO - run_single_iteration - 
+============================================================
+2025-12-20 16:02:52,897 - iris_classifier.iteration_runner - INFO - run_single_iteration - 
+============================================================
+2025-12-20 16:02:52,898 - iris_classifier.iteration_runner - INFO - run_single_iteration - 
+============================================================
+2025-12-20 16:02:52,899 - iris_classifier.iteration_runner - INFO - run_single_iteration - Starting Iteration 2/5
+2025-12-20 16:02:52,898 - iris_classifier.iteration_runner - INFO - run_single_iteration - 
+============================================================
+2025-12-20 16:02:52,898 - iris_classifier.iteration_runner - INFO - run_single_iteration - 
+============================================================
+2025-12-20 16:02:52,900 - iris_classifier.iteration_runner - INFO - run_single_iteration - Starting Iteration 3/5
+2025-12-20 16:02:52,900 - iris_classifier.iteration_runner - INFO - run_single_iteration - ============================================================
+2025-12-20 16:02:52,901 - iris_classifier.iteration_runner - INFO - run_single_iteration - Starting Iteration 5/5
+2025-12-20 16:02:52,900 - iris_classifier.iteration_runner - INFO - run_single_iteration - Starting Iteration 4/5
+2025-12-20 16:02:52,899 - iris_classifier.iteration_runner - INFO - run_single_iteration - Starting Iteration 1/5
+2025-12-20 16:02:52,902 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,901 - iris_classifier.iteration_runner - INFO - run_single_iteration - ============================================================
+2025-12-20 16:02:52,902 - iris_classifier.iteration_runner - INFO - run_single_iteration - ============================================================
+2025-12-20 16:02:52,902 - iris_classifier.iteration_runner - INFO - run_single_iteration - ============================================================
+2025-12-20 16:02:52,902 - iris_classifier.iteration_runner - INFO - run_single_iteration - ============================================================
+2025-12-20 16:02:52,903 - tasks.task_stage1 - INFO - run_stage1 - ITERATION 2 - STAGE 1: Group A vs Group B
+2025-12-20 16:02:52,903 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,904 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,904 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,905 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,905 - tasks.task_stage1 - INFO - run_stage1 - ITERATION 3 - STAGE 1: Group A vs Group B
+2025-12-20 16:02:52,905 - tasks.task_stage1 - INFO - run_stage1 - ITERATION 1 - STAGE 1: Group A vs Group B
+2025-12-20 16:02:52,904 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,906 - tasks.task_stage1 - INFO - run_stage1 - ITERATION 4 - STAGE 1: Group A vs Group B
+2025-12-20 16:02:52,906 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,906 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:52,907 - tasks.task_stage1 - INFO - run_stage1 - ITERATION 5 - STAGE 1: Group A vs Group B
+2025-12-20 16:02:52,907 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,908 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,908 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:52,909 - tasks.task_stage1 - INFO - run_stage1 - ============================================================
+2025-12-20 16:02:52,909 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:52,909 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:52,910 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:52,932 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:52,932 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:52,932 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:52,933 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:52,932 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:52,940 - tasks.task_stage1 - INFO - run_stage1 - Class mapping: {'setosa': 0, 'versicolor': 1, 'virginica': 2}
+2025-12-20 16:02:52,940 - tasks.task_stage1 - INFO - run_stage1 - Class mapping: {'setosa': 0, 'versicolor': 1, 'virginica': 2}
+2025-12-20 16:02:52,940 - tasks.task_stage1 - INFO - run_stage1 - Class mapping: {'setosa': 0, 'versicolor': 1, 'virginica': 2}
+2025-12-20 16:02:52,940 - tasks.task_stage1 - INFO - run_stage1 - Class mapping: {'setosa': 0, 'versicolor': 1, 'virginica': 2}
+2025-12-20 16:02:52,940 - tasks.task_stage1 - INFO - run_stage1 - Class mapping: {'setosa': 0, 'versicolor': 1, 'virginica': 2}
+2025-12-20 16:02:52,941 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:52,942 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:52,942 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:52,943 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:52,942 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:52,952 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:52,952 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:52,952 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:52,952 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:52,952 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:52,953 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:52,954 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:52,955 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:52,955 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:52,958 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [37 38 37]
+2025-12-20 16:02:52,957 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:52,959 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:52,958 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [37 37 38]
+2025-12-20 16:02:52,960 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:52,959 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [13 12 13]
+2025-12-20 16:02:52,961 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [13 13 12]
+2025-12-20 16:02:52,961 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:52,959 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:52,963 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,962 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,962 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:52,963 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,964 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:52,965 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [37 75]
+2025-12-20 16:02:52,965 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,965 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [37 75]
+2025-12-20 16:02:52,967 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [38 74]
+2025-12-20 16:02:52,967 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,967 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,969 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,968 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [38 74]
+2025-12-20 16:02:52,968 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,970 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [13 25]
+2025-12-20 16:02:52,971 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,970 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [38 74]
+2025-12-20 16:02:52,971 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [12 26]
+2025-12-20 16:02:52,971 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:52,971 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [13 25]
+2025-12-20 16:02:52,973 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:52,972 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [12 26]
+2025-12-20 16:02:52,972 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Grouping classes for Stage 1: [0] vs [1, 2]
+2025-12-20 16:02:52,974 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:52,975 - iris_classifier.preprocessor - INFO - group_classes_stage1 - Stage 1 class distribution: [12 26]
+2025-12-20 16:02:52,974 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:52,976 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [5.825      3.05892857 3.73571429 1.19553571], Std: [0.81267855 0.44169996 1.71635292 0.75691908]
+2025-12-20 16:02:52,976 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [5.86160714 3.04821429 3.75446429 1.2       ], Std: [0.83657951 0.42215056 1.76720564 0.77309674]
+2025-12-20 16:02:52,977 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:52,978 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [5.84375    3.08125    3.76428571 1.21964286], Std: [0.77468672 0.43966937 1.73934805 0.76611721]
+2025-12-20 16:02:52,979 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:52,979 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:52,981 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 112, Features: 4
+2025-12-20 16:02:52,980 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:52,980 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [5.85803571 3.05982143 3.76696429 1.19732143], Std: [0.86660652 0.42813128 1.78857427 0.77407316]
+2025-12-20 16:02:52,982 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [5.87767857 3.06160714 3.76517857 1.19285714], Std: [0.84944413 0.43879818 1.7746081  0.76808136]
+2025-12-20 16:02:52,982 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 112, Features: 4
+2025-12-20 16:02:52,984 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:52,983 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 112, Features: 4
+2025-12-20 16:02:52,985 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:52,987 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 112, Features: 4
+2025-12-20 16:02:52,989 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 112, Features: 4
+2025-12-20 16:02:52,989 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.006 seconds
+2025-12-20 16:02:52,991 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.004 seconds
+2025-12-20 16:02:52,991 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.003 seconds
+2025-12-20 16:02:52,992 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 7 10]
+2025-12-20 16:02:52,994 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [3 7]
+2025-12-20 16:02:52,994 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [5 8]
+2025-12-20 16:02:52,994 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.004 seconds
+2025-12-20 16:02:53,001 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 38 test samples
+2025-12-20 16:02:52,996 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 38 test samples
+2025-12-20 16:02:53,003 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [6 8]
+2025-12-20 16:02:52,995 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.004 seconds
+2025-12-20 16:02:52,997 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 38 test samples
+2025-12-20 16:02:53,005 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 38 test samples
+2025-12-20 16:02:53,004 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 38 samples
+2025-12-20 16:02:53,005 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 38 samples
+2025-12-20 16:02:53,008 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [5 8]
+2025-12-20 16:02:53,012 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 38 samples
+2025-12-20 16:02:53,012 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 38 samples
+2025-12-20 16:02:53,014 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 1
+2025-12-20 16:02:53,013 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 1
+2025-12-20 16:02:53,020 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 1
+2025-12-20 16:02:53,016 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 38 test samples
+2025-12-20 16:02:53,019 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 1
+2025-12-20 16:02:53,024 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 38 samples
+2025-12-20 16:02:53,027 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 1
+2025-12-20 16:02:53,037 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Accuracy: 0.9737
+2025-12-20 16:02:53,037 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Accuracy: 1.0000
+2025-12-20 16:02:53,037 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Accuracy: 1.0000
+2025-12-20 16:02:53,037 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Accuracy: 1.0000
+2025-12-20 16:02:53,037 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Accuracy: 1.0000
+2025-12-20 16:02:53,039 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Precision: 1.0000
+2025-12-20 16:02:53,039 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Precision: 0.9815
+2025-12-20 16:02:53,040 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Precision: 1.0000
+2025-12-20 16:02:53,040 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Precision: 1.0000
+2025-12-20 16:02:53,042 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Recall: 1.0000
+2025-12-20 16:02:53,043 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Recall: 1.0000
+2025-12-20 16:02:53,041 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Precision: 1.0000
+2025-12-20 16:02:53,042 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Recall: 0.9583
+2025-12-20 16:02:53,043 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Recall: 1.0000
+2025-12-20 16:02:53,044 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 F1-Score: 1.0000
+2025-12-20 16:02:53,044 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 F1-Score: 1.0000
+2025-12-20 16:02:53,045 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Recall: 1.0000
+2025-12-20 16:02:53,046 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 F1-Score: 0.9688
+2025-12-20 16:02:53,046 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 F1-Score: 1.0000
+2025-12-20 16:02:53,048 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 F1-Score: 1.0000
+2025-12-20 16:02:53,047 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Confusion Matrix:
+[[13  0]
+ [ 0 25]]
+2025-12-20 16:02:53,047 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Confusion Matrix:
+[[12  0]
+ [ 0 26]]
+2025-12-20 16:02:53,049 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Confusion Matrix:
+[[12  0]
+ [ 0 26]]
+2025-12-20 16:02:53,048 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Confusion Matrix:
+[[11  1]
+ [ 0 26]]
+2025-12-20 16:02:53,049 - tasks.task_stage1 - INFO - run_stage1 - Stage 1 completed successfully
+2025-12-20 16:02:53,048 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 1 Confusion Matrix:
+[[13  0]
+ [ 0 25]]
+2025-12-20 16:02:53,049 - tasks.task_stage1 - INFO - run_stage1 - Stage 1 completed successfully
+2025-12-20 16:02:53,050 - tasks.task_stage1 - INFO - run_stage1 - Stage 1 completed successfully
+2025-12-20 16:02:53,051 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,050 - tasks.task_stage1 - INFO - run_stage1 - Stage 1 completed successfully
+2025-12-20 16:02:53,051 - tasks.task_stage1 - INFO - run_stage1 - Stage 1 completed successfully
+2025-12-20 16:02:53,052 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,051 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,053 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,052 - tasks.task_stage2 - INFO - run_stage2 - ITERATION 2 - STAGE 2: Class 1 vs Class 2
+2025-12-20 16:02:53,052 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,053 - tasks.task_stage2 - INFO - run_stage2 - ITERATION 5 - STAGE 2: Class 1 vs Class 2
+2025-12-20 16:02:53,054 - tasks.task_stage2 - INFO - run_stage2 - ITERATION 3 - STAGE 2: Class 1 vs Class 2
+2025-12-20 16:02:53,053 - tasks.task_stage2 - INFO - run_stage2 - ITERATION 1 - STAGE 2: Class 1 vs Class 2
+2025-12-20 16:02:53,054 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,054 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,054 - tasks.task_stage2 - INFO - run_stage2 - ITERATION 4 - STAGE 2: Class 1 vs Class 2
+2025-12-20 16:02:53,055 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,055 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,056 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:53,055 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:53,056 - tasks.task_stage2 - INFO - run_stage2 - ============================================================
+2025-12-20 16:02:53,056 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:53,057 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:53,057 - iris_classifier.data_loader - INFO - load_iris_data - Loading data from: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/iris.csv
+2025-12-20 16:02:53,061 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:53,062 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:53,062 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:53,062 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:53,063 - iris_classifier.data_loader - INFO - load_iris_data - Data loaded successfully: 150 samples, 5 features
+2025-12-20 16:02:53,063 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:53,064 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:53,064 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:53,064 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:53,065 - iris_classifier.data_loader - INFO - split_data - Splitting data: 75% train, 25% test
+2025-12-20 16:02:53,067 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:53,067 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:53,068 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:53,068 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:53,068 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:53,069 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:53,070 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [37 38 37]
+2025-12-20 16:02:53,071 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:53,070 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:53,069 - iris_classifier.data_loader - INFO - split_data - Train set: 112 samples
+2025-12-20 16:02:53,071 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [37 37 38]
+2025-12-20 16:02:53,071 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [13 12 13]
+2025-12-20 16:02:53,071 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:53,072 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:53,073 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training samples: 75
+2025-12-20 16:02:53,072 - iris_classifier.data_loader - INFO - split_data - Test set: 38 samples
+2025-12-20 16:02:53,072 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [13 13 12]
+2025-12-20 16:02:53,073 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:53,076 - iris_classifier.data_loader - INFO - split_data - Train class distribution: [38 37 37]
+2025-12-20 16:02:53,074 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:53,076 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training samples: 75
+2025-12-20 16:02:53,075 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training distribution: [ 0 38 37]
+2025-12-20 16:02:53,078 - iris_classifier.data_loader - INFO - split_data - Test class distribution: [12 13 13]
+2025-12-20 16:02:53,077 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training samples: 74
+2025-12-20 16:02:53,078 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training samples: 74
+2025-12-20 16:02:53,080 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training samples: 74
+2025-12-20 16:02:53,079 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test samples: 25
+2025-12-20 16:02:53,079 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training distribution: [ 0 37 38]
+2025-12-20 16:02:53,081 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training distribution: [ 0 37 37]
+2025-12-20 16:02:53,081 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training distribution: [ 0 37 37]
+2025-12-20 16:02:53,082 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 training distribution: [ 0 37 37]
+2025-12-20 16:02:53,083 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test distribution: [ 0 12 13]
+2025-12-20 16:02:53,085 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test samples: 26
+2025-12-20 16:02:53,084 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test samples: 25
+2025-12-20 16:02:53,087 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:53,087 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test distribution: [ 0 13 13]
+2025-12-20 16:02:53,085 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test samples: 26
+2025-12-20 16:02:53,086 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test samples: 27
+2025-12-20 16:02:53,088 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:53,087 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test distribution: [ 0 13 12]
+2025-12-20 16:02:53,088 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test distribution: [ 0 13 13]
+2025-12-20 16:02:53,089 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 test distribution: [ 1 13 13]
+2025-12-20 16:02:53,089 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:53,089 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [6.23066667 2.87066667 4.85466667 1.668     ], Std: [0.64228204 0.31865272 0.76998586 0.41734398]
+2025-12-20 16:02:53,090 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:53,089 - iris_classifier.preprocessor - INFO - normalize_features - Normalizing features with StandardScaler
+2025-12-20 16:02:53,090 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [6.33108108 2.86891892 4.93648649 1.67972973], Std: [0.66290223 0.33888756 0.84334827 0.43339631]
+2025-12-20 16:02:53,091 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:53,091 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [6.24133333 2.90666667 4.904      1.7       ], Std: [0.59331685 0.34344658 0.75761732 0.4150502 ]
+2025-12-20 16:02:53,092 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 75, Features: 4
+2025-12-20 16:02:53,092 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [6.30675676 2.87432432 4.94189189 1.69054054], Std: [0.69871138 0.36244694 0.86976337 0.43001223]
+2025-12-20 16:02:53,092 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:53,092 - iris_classifier.preprocessor - INFO - normalize_features - Feature scaling complete - Mean: [6.3027027  2.87567568 4.92567568 1.69189189], Std: [0.65243266 0.32458323 0.81804989 0.43019692]
+2025-12-20 16:02:53,092 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:53,093 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:53,094 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 74, Features: 4
+2025-12-20 16:02:53,094 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.001 seconds
+2025-12-20 16:02:53,096 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 75, Features: 4
+2025-12-20 16:02:53,095 - iris_classifier.svm_trainer - INFO - train_svm - Training SVM: kernel=rbf, C=10.0, gamma=auto
+2025-12-20 16:02:53,097 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 74, Features: 4
+2025-12-20 16:02:53,098 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 7 10]
+2025-12-20 16:02:53,098 - iris_classifier.svm_trainer - INFO - train_svm - Training samples: 74, Features: 4
+2025-12-20 16:02:53,098 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.001 seconds
+2025-12-20 16:02:53,099 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 25 test samples
+2025-12-20 16:02:53,099 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 6 10]
+2025-12-20 16:02:53,100 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 25 samples
+2025-12-20 16:02:53,100 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 26 test samples
+2025-12-20 16:02:53,100 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.002 seconds
+2025-12-20 16:02:53,100 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.001 seconds
+2025-12-20 16:02:53,100 - iris_classifier.svm_trainer - INFO - train_svm - SVM training completed in 0.002 seconds
+2025-12-20 16:02:53,101 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 2
+2025-12-20 16:02:53,102 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 26 samples
+2025-12-20 16:02:53,102 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 7 10]
+2025-12-20 16:02:53,102 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 7 12]
+2025-12-20 16:02:53,102 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 2
+2025-12-20 16:02:53,102 - iris_classifier.svm_trainer - INFO - train_svm - Support vectors: [ 8 12]
+2025-12-20 16:02:53,103 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 26 test samples
+2025-12-20 16:02:53,103 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 27 test samples
+2025-12-20 16:02:53,104 - iris_classifier.svm_trainer - INFO - predict_svm - Making predictions on 25 test samples
+2025-12-20 16:02:53,104 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 26 samples
+2025-12-20 16:02:53,105 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 27 samples
+2025-12-20 16:02:53,105 - iris_classifier.svm_trainer - INFO - predict_svm - Predictions complete: 25 samples
+2025-12-20 16:02:53,105 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 2
+2025-12-20 16:02:53,106 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 2
+2025-12-20 16:02:53,106 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Stage 2
+2025-12-20 16:02:53,110 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Accuracy: 0.5000
+2025-12-20 16:02:53,110 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Accuracy: 0.5200
+2025-12-20 16:02:53,111 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Accuracy: 0.4615
+2025-12-20 16:02:53,111 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Precision: 0.2500
+2025-12-20 16:02:53,111 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Precision: 0.2600
+2025-12-20 16:02:53,112 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Accuracy: 0.4815
+2025-12-20 16:02:53,112 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Precision: 0.2400
+2025-12-20 16:02:53,112 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Recall: 0.5000
+2025-12-20 16:02:53,113 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Recall: 0.5000
+2025-12-20 16:02:53,114 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Recall: 0.4615
+2025-12-20 16:02:53,113 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Precision: 0.1605
+2025-12-20 16:02:53,114 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 F1-Score: 0.3333
+2025-12-20 16:02:53,115 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Accuracy: 0.4800
+2025-12-20 16:02:53,116 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 F1-Score: 0.3158
+2025-12-20 16:02:53,115 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 F1-Score: 0.3421
+2025-12-20 16:02:53,118 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Precision: 0.2400
+2025-12-20 16:02:53,117 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Recall: 0.3333
+2025-12-20 16:02:53,118 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Confusion Matrix:
+[[13  0]
+ [13  0]]
+2025-12-20 16:02:53,119 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Confusion Matrix:
+[[ 0 13]
+ [ 1 12]]
+2025-12-20 16:02:53,120 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Confusion Matrix:
+[[ 0 12]
+ [ 0 13]]
+2025-12-20 16:02:53,121 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 F1-Score: 0.2167
+2025-12-20 16:02:53,120 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Recall: 0.5000
+2025-12-20 16:02:53,121 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 completed successfully
+2025-12-20 16:02:53,124 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 completed successfully
+2025-12-20 16:02:53,122 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 completed successfully
+2025-12-20 16:02:53,126 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 F1-Score: 0.3243
+2025-12-20 16:02:53,125 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Confusion Matrix:
+[[ 0  0  1]
+ [ 0  0 13]
+ [ 0  0 13]]
+2025-12-20 16:02:53,128 - iris_classifier.evaluator - INFO - combine_stage_predictions - Combining Stage 1 and Stage 2 predictions
+2025-12-20 16:02:53,127 - iris_classifier.evaluator - INFO - combine_stage_predictions - Combining Stage 1 and Stage 2 predictions
+2025-12-20 16:02:53,127 - iris_classifier.evaluator - INFO - combine_stage_predictions - Combining Stage 1 and Stage 2 predictions
+2025-12-20 16:02:53,131 - iris_classifier.evaluator - INFO - combine_stage_predictions - Final prediction distribution: [12 26]
+2025-12-20 16:02:53,129 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 completed successfully
+2025-12-20 16:02:53,129 - iris_classifier.evaluator - INFO - evaluate_predictions - Stage 2 Confusion Matrix:
+[[ 0 13]
+ [ 0 12]]
+2025-12-20 16:02:53,130 - iris_classifier.evaluator - INFO - combine_stage_predictions - Final prediction distribution: [12  1 25]
+2025-12-20 16:02:53,132 - iris_classifier.evaluator - INFO - combine_stage_predictions - Final prediction distribution: [13  0 25]
+2025-12-20 16:02:53,133 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Overall
+2025-12-20 16:02:53,134 - iris_classifier.evaluator - INFO - combine_stage_predictions - Combining Stage 1 and Stage 2 predictions
+2025-12-20 16:02:53,136 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Overall
+2025-12-20 16:02:53,135 - tasks.task_stage2 - INFO - run_stage2 - Stage 2 completed successfully
+2025-12-20 16:02:53,136 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Overall
+2025-12-20 16:02:53,137 - iris_classifier.evaluator - INFO - combine_stage_predictions - Final prediction distribution: [11  0 27]
+2025-12-20 16:02:53,139 - iris_classifier.evaluator - INFO - combine_stage_predictions - Combining Stage 1 and Stage 2 predictions
+2025-12-20 16:02:53,140 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Overall
+2025-12-20 16:02:53,141 - iris_classifier.evaluator - INFO - combine_stage_predictions - Final prediction distribution: [13  0 25]
+2025-12-20 16:02:53,143 - iris_classifier.evaluator - INFO - evaluate_predictions - Evaluating predictions for Overall
+2025-12-20 16:02:53,145 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Accuracy: 0.6579
+2025-12-20 16:02:53,146 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Accuracy: 0.6842
+2025-12-20 16:02:53,146 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Accuracy: 0.6316
+2025-12-20 16:02:53,146 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Precision: 0.5000
+2025-12-20 16:02:53,147 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Precision: 0.5067
+2025-12-20 16:02:53,148 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Precision: 0.4933
+2025-12-20 16:02:53,148 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Recall: 0.6667
+2025-12-20 16:02:53,148 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Recall: 0.6667
+2025-12-20 16:02:53,149 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Recall: 0.6410
+2025-12-20 16:02:53,149 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall F1-Score: 0.5614
+2025-12-20 16:02:53,149 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Accuracy: 0.6316
+2025-12-20 16:02:53,150 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall F1-Score: 0.5439
+2025-12-20 16:02:53,150 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall F1-Score: 0.5556
+2025-12-20 16:02:53,151 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Precision: 0.4938
+2025-12-20 16:02:53,152 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Confusion Matrix:
+[[12  0  0]
+ [ 0  0 13]
+ [ 0  1 12]]
+2025-12-20 16:02:53,151 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Accuracy: 0.6579
+2025-12-20 16:02:53,151 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Confusion Matrix:
+[[13  0  0]
+ [ 0  0 12]
+ [ 0  0 13]]
+2025-12-20 16:02:53,153 - iris_classifier.iteration_runner - INFO - run_single_iteration - Iteration 5 completed successfully
+2025-12-20 16:02:53,153 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Recall: 0.6389
+2025-12-20 16:02:53,153 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Confusion Matrix:
+[[12  0  0]
+ [ 0 13  0]
+ [ 0 13  0]]
+2025-12-20 16:02:53,154 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Precision: 0.4933
+2025-12-20 16:02:53,154 - iris_classifier.iteration_runner - INFO - run_single_iteration - Iteration 2 completed successfully
+2025-12-20 16:02:53,155 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall F1-Score: 0.5355
+2025-12-20 16:02:53,155 - iris_classifier.iteration_runner - INFO - run_single_iteration - Overall Accuracy: 0.6316
+2025-12-20 16:02:53,156 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Recall: 0.6667
+2025-12-20 16:02:53,156 - iris_classifier.iteration_runner - INFO - run_single_iteration - Iteration 1 completed successfully
+2025-12-20 16:02:53,157 - iris_classifier.iteration_runner - INFO - run_single_iteration - Overall Accuracy: 0.6842
+2025-12-20 16:02:53,158 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Confusion Matrix:
+[[11  0  1]
+ [ 0  0 13]
+ [ 0  0 13]]
+2025-12-20 16:02:53,159 - iris_classifier.iteration_runner - INFO - run_single_iteration - Overall Accuracy: 0.6579
+2025-12-20 16:02:53,159 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall F1-Score: 0.5495
+2025-12-20 16:02:53,160 - iris_classifier.iteration_runner - INFO - run_single_iteration - Iteration 4 completed successfully
+2025-12-20 16:02:53,161 - iris_classifier.evaluator - INFO - evaluate_predictions - Overall Confusion Matrix:
+[[13  0  0]
+ [ 0  0 13]
+ [ 0  0 12]]
+2025-12-20 16:02:53,161 - iris_classifier.iteration_runner - INFO - run_single_iteration - Overall Accuracy: 0.6316
+2025-12-20 16:02:53,162 - iris_classifier.iteration_runner - INFO - run_single_iteration - Iteration 3 completed successfully
+2025-12-20 16:02:53,164 - iris_classifier.iteration_runner - INFO - run_single_iteration - Overall Accuracy: 0.6579
+2025-12-20 16:02:53,171 - iris_classifier.iteration_runner - INFO - run_with_multiprocessing - All iterations completed via multiprocessing
+2025-12-20 16:02:53,174 - tasks.task_analysis - INFO - analyze_results - ============================================================
+2025-12-20 16:02:53,176 - tasks.task_analysis - INFO - analyze_results - ANALYZING RESULTS FROM ALL ITERATIONS
+2025-12-20 16:02:53,178 - tasks.task_analysis - INFO - analyze_results - ============================================================
+2025-12-20 16:02:53,180 - iris_classifier.statistics - INFO - aggregate_results - Aggregating results from 5 iterations
+2025-12-20 16:02:53,184 - iris_classifier.statistics - INFO - aggregate_results - ============================================================
+2025-12-20 16:02:53,186 - iris_classifier.statistics - INFO - aggregate_results - AGGREGATED RESULTS SUMMARY
+2025-12-20 16:02:53,188 - iris_classifier.statistics - INFO - aggregate_results - ============================================================
+2025-12-20 16:02:53,189 - iris_classifier.statistics - INFO - aggregate_results - 
+STAGE1:
+2025-12-20 16:02:53,192 - iris_classifier.statistics - INFO - aggregate_results -   Accuracy: 0.9947 ± 0.0105
+2025-12-20 16:02:53,194 - iris_classifier.statistics - INFO - aggregate_results -   Range: [0.9737, 1.0000]
+2025-12-20 16:02:53,196 - iris_classifier.statistics - INFO - aggregate_results - 
+STAGE2:
+2025-12-20 16:02:53,198 - iris_classifier.statistics - INFO - aggregate_results -   Accuracy: 0.4886 ± 0.0199
+2025-12-20 16:02:53,200 - iris_classifier.statistics - INFO - aggregate_results -   Range: [0.4615, 0.5200]
+2025-12-20 16:02:53,203 - iris_classifier.statistics - INFO - aggregate_results - 
+OVERALL:
+2025-12-20 16:02:53,205 - iris_classifier.statistics - INFO - aggregate_results -   Accuracy: 0.6526 ± 0.0197
+2025-12-20 16:02:53,207 - iris_classifier.statistics - INFO - aggregate_results -   Range: [0.6316, 0.6842]
+2025-12-20 16:02:53,210 - iris_classifier.statistics - INFO - aggregate_results - ============================================================
+2025-12-20 16:02:53,213 - iris_classifier.visualizer - INFO - generate_all_plots - Generating all visualization plots
+2025-12-20 16:02:53,216 - iris_classifier.visualizer - INFO - plot_accuracy_distribution - Creating accuracy distribution plot
+2025-12-20 16:02:55,153 - iris_classifier.visualizer - INFO - plot_accuracy_distribution - Accuracy distribution plot saved to: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/results/accuracy_distribution.png
+2025-12-20 16:02:55,155 - iris_classifier.visualizer - INFO - plot_confusion_matrix - Creating confusion matrix plot
+2025-12-20 16:02:55,950 - iris_classifier.visualizer - INFO - plot_confusion_matrix - Confusion matrix plot saved to: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/results/confusion_matrix.png
+2025-12-20 16:02:55,952 - iris_classifier.visualizer - INFO - plot_metrics_comparison - Creating metrics comparison plot
+2025-12-20 16:02:56,907 - iris_classifier.visualizer - INFO - plot_metrics_comparison - Metrics comparison plot saved to: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/results/metrics_comparison.png
+2025-12-20 16:02:56,926 - iris_classifier.visualizer - INFO - generate_all_plots - All plots generated successfully
+2025-12-20 16:02:56,928 - tasks.task_analysis - INFO - save_summary - Saving results summary
+2025-12-20 16:02:56,940 - tasks.task_analysis - INFO - save_summary - Results summary saved to: /mnt/c/Users/yair0/AI_continue/Lesson23/Lesson23_SVM/results/results_summary.json
+2025-12-20 16:02:56,952 - tasks.task_analysis - INFO - analyze_results - Results analysis completed successfully
+2025-12-20 16:02:56,960 - __main__ - INFO - main - Total runtime: 4.12 seconds
+2025-12-20 16:02:56,970 - iris_classifier.output_formatter - INFO - print_summary - Summary printed to console
+2025-12-20 16:02:56,973 - __main__ - INFO - main - Program completed successfully
