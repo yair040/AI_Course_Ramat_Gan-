@@ -1,0 +1,19 @@
+# Iris SVM Classification System
+# Author: Yair Levi
+# Python Dependencies
+
+# Core Scientific Computing
+numpy>=1.21.0,<2.0.0
+pandas>=1.3.0,<3.0.0
+
+# Machine Learning
+scikit-learn>=1.0.0,<2.0.0
+
+# Visualization
+matplotlib>=3.4.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+
+# Optional: Enhanced logging and utilities
+# Uncomment if needed for advanced features
+# colorlog>=6.0.0  # Colored logging output
+# tqdm>=4.60.0     # Progress bars
