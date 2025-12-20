@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-16T19:07:35.324797",
+    "model": "claude-3-5-haiku-20241022",
+    "iterations": 3,
+    "query": "What are the side effects of taking calcium carbonate?",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "top_k": 3
+  },
+  "context_window": [
+    {
+      "answer": "Based on the safety data sheets and fact sheets provided, here are the potential side effects of calcium carbonate:\n\nIrritation and Mild Side Effects:\n1. Eye irritation\n2. Skin irritation\n3. Respiratory tract irritation (may cause coughing)\n4. Possible mild gastrointestinal effects\n\nPotential Serious Effects with High Exposure:\n1. At very high levels, calcium carbonate could potentially cause:\n- Damage to internal organs\n- Interruption of normal bodily functions\n- Risk of health complications\n\nSafety Precautions:\n1. Avoid dust formation\n2. Use personal protective equipment if handling large quantities\n3. Wash hands after handling\n4. Seek medical attention if significant exposure occurs\n\nWorkplace Exposure Limits:\n- OSHA recommends a maximum exposure of:\n  - 15 mg/m³ (total particulate)\n  - 5 mg/m³ (respirable fraction)\n\nMedical Recommendations:\n- If significant exposure occurs, consult a healthcare professional\n- Monitor for signs of respiratory or skin irritation\n- Wash exposed skin thoroughly\n- Rinse eyes with water if contact occurs\n\nThe documents emphasize that for typical dietary or small-scale usage, calcium carbonate is generally considered safe when used as directed.",
+      "time_seconds": 20.417073726654053,
+      "input_tokens": 98608,
+      "output_tokens": 293,
+      "total_tokens": 98901,
+      "cost": 0.08005840000000002,
+      "iteration": 1,
+      "method": "context_window"
+    },
+    {
+      "answer": "Based on the Safety Data Sheets and fact sheets provided, here are the potential side effects of taking calcium carbonate:\n\nPhysical/Skin Exposure Side Effects:\n- Irritation to eyes and skin\n- May cause irritation to nose, throat, and respiratory system\n- Can cause coughing\n\nIngestion Side Effects:\n- May cause gastrointestinal irritation\n- Potential nausea\n- Potential vomiting\n- Potential diarrhea\n\nSafety Recommendations:\n- Wash skin thoroughly if contact occurs\n- Flush eyes with water for at least 15 minutes if eye contact occurs\n- Move to fresh air if respiratory irritation occurs\n- Seek medical attention if symptoms persist or are severe\n\nExposure Limits:\n- OSHA permissible exposure limit: \n  - 15 mg/m3 (total particulate)\n  - 5 mg/m3 (respirable fraction)\n\nAdditional Precautions:\n- Avoid dust formation\n- Use personal protective equipment if handling large quantities\n- Keep away from food, drink, and animal feedingstuffs\n\nThe material safety data sheets emphasize that while calcium carbonate is generally considered low toxicity, proper handling and exposure precautions are still important.",
+      "time_seconds": 21.72118306159973,
+      "input_tokens": 98608,
+      "output_tokens": 281,
+      "total_tokens": 98889,
+      "cost": 0.08001040000000001,
+      "iteration": 2,
+      "method": "context_window"
+    },
+    {
+      "answer": "Based on the safety data sheets for calcium carbonate, here are the potential side effects:\n\nPhysical/Health Risks:\n1. Irritation\n- Can irritate eyes and skin\n- May cause irritation to nose, throat, and respiratory system\n- Can cause coughing\n\n2. Exposure Effects\n- If inhaled: May cause respiratory tract irritation\n- If swallowed: May cause gastrointestinal irritation, nausea, vomiting, and diarrhea\n- Contact with skin or eyes can cause irritation\n\n3. Potential Long-Term Health Effects\n- Most safety data sheets indicate no known significant long-term health effects\n- No evidence of carcinogenicity\n- Not classified as a reproductive toxicant\n\nFirst Aid Recommendations:\n- Eye Contact: Rinse with water for at least 15 minutes\n- Skin Contact: Wash with soap and water\n- Inhalation: Move to fresh air\n- Ingestion: Rinse mouth, call a doctor if feeling unwell\n\nWorkplace/Safety Precautions:\n- Use personal protective equipment if handling large quantities\n- Avoid dust formation\n- Use respiratory protection if dust is present\n- Ensure good ventilation\n\nNote: These side effects are generally associated with industrial/large-scale exposure. For medical advice about specific calcium carbonate supplements, consult a healthcare professional.",
+      "time_seconds": 22.462794303894043,
+      "input_tokens": 98608,
+      "output_tokens": 305,
+      "total_tokens": 98913,
+      "cost": 0.08010640000000001,
+      "iteration": 3,
+      "method": "context_window"
+    }
+  ],
+  "rag": [
+    {
+      "answer": "Based on the safety data sheets provided, here are some potential side effects of calcium carbonate:\n\nAcute/Short-term Effects:\n1. Eye Irritation\n- Can cause irritation to eyes\n- Recommended to rinse eyes with water for at least 15 minutes if exposed\n\n2. Skin Irritation\n- Can cause skin irritation\n- Recommended to wash contaminated skin with soap and water\n\n3. Respiratory Irritation\n- Can cause irritation to nose, throat, and respiratory system\n- May cause coughing\n- Persons with pre-existing respiratory diseases might have increased sensitivity\n\n4. Potential Digestive Issues\n- Ingestion may cause:\n- Gastrointestinal irritation\n- Nausea\n- Vomiting\n- Diarrhea\n\nExposure Risks:\n- Persons with pre-existing eye or respiratory diseases might have increased sensitivity\n- High-level exposure might require monitoring of serum calcium and electrolytes\n\nImportant Notes:\n- These side effects are primarily from industrial/laboratory exposure scenarios\n- Medical/supplement forms are typically more controlled and regulated\n- Always consult a healthcare professional about potential side effects specific to your individual health situation\n\nThe documents do not provide comprehensive medical advice about therapeutic calcium carbonate use, so consulting a healthcare provider is recommended for personalized guidance.",
+      "time_seconds": 7.468729019165039,
+      "input_tokens": 3023,
+      "output_tokens": 296,
+      "total_tokens": 3319,
+      "cost": 0.0036024000000000004,
+      "iteration": 1,
+      "method": "rag",
+      "chunks_retrieved": 3
+    },
+    {
+      "answer": "Based on the safety data sheets provided, here are some potential side effects of calcium carbonate:\n\nAcute/Short-term Side Effects:\n1. Eye Irritation\n- Irritating to eyes\n- May require immediate flushing with water for at least 15 minutes\n\n2. Skin Irritation\n- Can cause irritation to skin\n- May be harmful in contact with skin\n\n3. Respiratory Irritation\n- Can cause irritation to nose, throat, and respiratory system\n- May cause coughing\n- Can be harmful if inhaled\n\n4. Digestive System Effects\n- May cause gastrointestinal irritation\n- Can potentially cause nausea, vomiting, and diarrhea if ingested\n\n5. Increased Sensitivity\n- Persons with pre-existing eye or respiratory diseases might have increased sensitivity\n\nOther Notes:\n- Generally considered low toxicity\n- No known chronic effects mentioned in these documents\n- Individuals with pre-existing skin or eye disorders may be more susceptible to side effects\n\nImportant Disclaimer: While these documents provide general safety information, they are not comprehensive medical guidance. Anyone experiencing adverse effects should consult a healthcare professional for personalized medical advice.",
+      "time_seconds": 6.354446887969971,
+      "input_tokens": 3023,
+      "output_tokens": 265,
+      "total_tokens": 3288,
+      "cost": 0.0034784000000000004,
+      "iteration": 2,
+      "method": "rag",
+      "chunks_retrieved": 3
+    },
+    {
+      "answer": "Based on the safety data sheets provided, here are some potential side effects of calcium carbonate:\n\n1. Physical/Skin Contact Effects:\n- Irritation to eyes and skin\n- May cause skin irritation\n- May be harmful in contact with skin\n\n2. Respiratory Effects:\n- May cause irritation to nose, throat, and respiratory system\n- Can cause coughing\n- May cause respiratory tract irritation\n- Persons with pre-existing respiratory diseases might have increased sensitivity\n\n3. Ingestion Effects:\n- May be harmful if swallowed\n- Can cause gastrointestinal irritation\n- May cause nausea, vomiting, and diarrhea\n\n4. Medical Considerations:\n- Persons with pre-existing eye or respiratory disorders might have increased sensitivity\n- For high-level exposures, monitoring of serum calcium and electrolytes might be recommended\n\nThe documents indicate that calcium carbonate is generally used safely in human medicine as an antacid, calcium supplement, and food additive. However, like many substances, it can cause irritation or discomfort if not used appropriately.\n\nFor specific medical advice about side effects or proper usage, it's always recommended to consult with a healthcare professional.",
+      "time_seconds": 6.4345831871032715,
+      "input_tokens": 3023,
+      "output_tokens": 270,
+      "total_tokens": 3293,
+      "cost": 0.0034984000000000005,
+      "iteration": 3,
+      "method": "rag",
+      "chunks_retrieved": 3
+    }
+  ],
+  "comparison": {
+    "time_savings_percent": 68.6417500152709,
+    "token_savings_percent": 96.93432581534967,
+    "cost_savings_percent": 95.59521549269033,
+    "speedup_factor": 3.1889534667495223,
+    "cost_reduction_factor": 22.702586206896555,
+    "answer_similarity": 0.928193986415863
+  }
+}
