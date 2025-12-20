@@ -1,0 +1,614 @@
+2025-12-14 04:49:10,144 - context_window_test - INFO - ======================================================================
+2025-12-14 04:49:10,145 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 04:49:10,146 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 04:49:10,147 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 04:49:10,148 - context_window_test - INFO - ======================================================================
+2025-12-14 05:00:37,177 - context_window_test - INFO - ======================================================================
+2025-12-14 05:00:37,179 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 05:00:37,180 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 05:00:37,181 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 05:00:37,182 - context_window_test - INFO - ======================================================================
+2025-12-14 12:17:28,254 - context_window_test - INFO - ======================================================================
+2025-12-14 12:17:28,257 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 12:17:28,259 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 12:17:28,261 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 12:17:28,263 - context_window_test - INFO - ======================================================================
+2025-12-14 13:45:47,111 - context_window_test - INFO - ======================================================================
+2025-12-14 13:45:47,114 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 13:45:47,118 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 13:45:47,120 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 13:45:47,123 - context_window_test - INFO - ======================================================================
+2025-12-14 13:48:28,915 - context_window_test - INFO - ======================================================================
+2025-12-14 13:48:28,917 - context_window_test - INFO -                CONTEXT WINDOW SIZE IMPACT TEST
+2025-12-14 13:48:28,919 - context_window_test - INFO -                     Testing Claude Haiku 4.5
+2025-12-14 13:48:28,920 - context_window_test - INFO - ======================================================================
+2025-12-14 13:48:28,921 - context_window_test - INFO - 
+2025-12-14 13:48:28,921 - context_window_test - INFO - Configuration:
+2025-12-14 13:48:28,922 - context_window_test - INFO -   - Model: claude-haiku-4-5-20250929
+2025-12-14 13:48:28,922 - context_window_test - INFO -   - Documents: 7 (ranging from 2,000 to 50,000 words)
+2025-12-14 13:48:28,923 - context_window_test - INFO -   - Query: 'Who was the first Prime Minister of Israel?'
+2025-12-14 13:48:28,923 - context_window_test - INFO -   - Expected Answer: 'Ben Gurion was the first Prime Minister of Israel'
+2025-12-14 13:48:28,924 - context_window_test - INFO -   - Similarity Threshold: 0.85
+2025-12-14 13:48:28,924 - context_window_test - INFO - 
+2025-12-14 13:48:28,925 - context_window_test - INFO - Step 1/5: Loading API key and initializing client...
+2025-12-14 13:48:28,948 - context_window_test - INFO - API key loaded successfully from file
+2025-12-14 13:48:31,007 - context_window_test - INFO - Anthropic client initialized with model: claude-haiku-4-5-20250929
+2025-12-14 13:48:31,008 - context_window_test - INFO - ✓ Client initialized successfully
+2025-12-14 13:48:31,009 - context_window_test - INFO - 
+2025-12-14 13:48:31,010 - context_window_test - INFO - Step 2/5: Generating 7 test documents...
+2025-12-14 13:48:31,011 - context_window_test - INFO - Generating 7 documents with multiprocessing...
+2025-12-14 13:48:31,096 - context_window_test - INFO - Created doc_2000.txt - Target: 2000, Actual: 2009 words
+2025-12-14 13:48:31,100 - context_window_test - INFO - Created doc_5000.txt - Target: 5000, Actual: 5009 words
+2025-12-14 13:48:31,122 - context_window_test - INFO - Created doc_20000.txt - Target: 20000, Actual: 20009 words
+2025-12-14 13:48:31,159 - context_window_test - INFO - Created doc_10000.txt - Target: 10000, Actual: 10009 words
+2025-12-14 13:48:31,166 - context_window_test - INFO - Created doc_40000.txt - Target: 40000, Actual: 40009 words
+2025-12-14 13:48:31,220 - context_window_test - INFO - Created doc_50000.txt - Target: 50000, Actual: 50009 words
+2025-12-14 13:48:31,229 - context_window_test - INFO - Created doc_30000.txt - Target: 30000, Actual: 30009 words
+2025-12-14 13:48:31,261 - context_window_test - INFO - Successfully generated all 7 documents
+2025-12-14 13:48:31,269 - context_window_test - INFO - ✓ Generated 7 documents: doc_2000.txt, doc_5000.txt, doc_10000.txt, doc_20000.txt, doc_30000.txt, doc_40000.txt, doc_50000.txt
+2025-12-14 13:48:31,271 - context_window_test - INFO - 
+2025-12-14 13:48:31,274 - context_window_test - INFO - Step 3/5: Processing documents and querying Claude...
+2025-12-14 13:48:31,277 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 13:48:31,279 - context_window_test - INFO - 
+[Document 1/7] Processing doc_2000.txt...
+2025-12-14 13:48:31,281 - context_window_test - INFO - Processing document: doc_2000.txt
+2025-12-14 13:48:31,288 - context_window_test - INFO - Loaded document: doc_2000.txt (13067 characters)
+2025-12-14 13:48:31,290 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 13:48:31,292 - context_window_test - INFO - Token count: 3,266
+2025-12-14 13:48:31,587 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXNdVo6oV3Ew7WWh5x'}
+2025-12-14 13:48:31,593 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXNdVo6oV3Ew7WWh5x'}
+2025-12-14 13:48:32,866 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXU3BQxr37yfqbd9zf'}
+2025-12-14 13:48:32,869 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXU3BQxr37yfqbd9zf'}
+2025-12-14 13:48:35,561 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXdbuUxRK8CW7heAds'}
+2025-12-14 13:48:35,567 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 13:48:35,570 - context_window_test - ERROR - Failed to process document doc_2000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXdbuUxRK8CW7heAds'}
+2025-12-14 13:48:35,576 - context_window_test - ERROR - Failed to process doc_2000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXdbuUxRK8CW7heAds'}
+2025-12-14 13:48:35,578 - context_window_test - WARNING - Skipping doc_2000.txt and continuing with remaining documents...
+2025-12-14 13:48:35,580 - context_window_test - INFO - 
+[Document 2/7] Processing doc_5000.txt...
+2025-12-14 13:48:35,584 - context_window_test - INFO - Processing document: doc_5000.txt
+2025-12-14 13:48:35,601 - context_window_test - INFO - Loaded document: doc_5000.txt (32599 characters)
+2025-12-14 13:48:35,603 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 13:48:35,610 - context_window_test - INFO - Token count: 8,149
+2025-12-14 13:48:35,919 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXh5WGctGVoKriMqrP'}
+2025-12-14 13:48:35,924 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXh5WGctGVoKriMqrP'}
+2025-12-14 13:48:37,156 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXnWS7Bzc9MBmpajZ3'}
+2025-12-14 13:48:37,162 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXnWS7Bzc9MBmpajZ3'}
+2025-12-14 13:48:39,549 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXxcPv3PZXiqFe7av2'}
+2025-12-14 13:48:39,554 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 13:48:39,558 - context_window_test - ERROR - Failed to process document doc_5000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXxcPv3PZXiqFe7av2'}
+2025-12-14 13:48:39,560 - context_window_test - ERROR - Failed to process doc_5000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXxcPv3PZXiqFe7av2'}
+2025-12-14 13:48:39,562 - context_window_test - WARNING - Skipping doc_5000.txt and continuing with remaining documents...
+2025-12-14 13:48:39,570 - context_window_test - INFO - 
+[Document 3/7] Processing doc_10000.txt...
+2025-12-14 13:48:39,576 - context_window_test - INFO - Processing document: doc_10000.txt
+2025-12-14 13:48:39,603 - context_window_test - INFO - Loaded document: doc_10000.txt (65142 characters)
+2025-12-14 13:48:39,608 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 13:48:39,612 - context_window_test - INFO - Token count: 16,285
+2025-12-14 13:48:39,826 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXyyWFMBKtuwghkgrs'}
+2025-12-14 13:48:39,829 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XXyyWFMBKtuwghkgrs'}
+2025-12-14 13:48:41,160 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XY5gYpB1P7C4zuzFB4'}
+2025-12-14 13:48:41,163 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XY5gYpB1P7C4zuzFB4'}
+2025-12-14 13:48:43,462 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XYFSgBkPcykmBNw3Zo'}
+2025-12-14 13:48:43,469 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 13:48:43,471 - context_window_test - ERROR - Failed to process document doc_10000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XYFSgBkPcykmBNw3Zo'}
+2025-12-14 13:48:43,473 - context_window_test - ERROR - Failed to process doc_10000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XYFSgBkPcykmBNw3Zo'}
+2025-12-14 13:48:43,476 - context_window_test - WARNING - Skipping doc_10000.txt and continuing with remaining documents...
+2025-12-14 13:48:43,482 - context_window_test - INFO - 
+[Document 4/7] Processing doc_20000.txt...
+2025-12-14 13:48:43,485 - context_window_test - INFO - Processing document: doc_20000.txt
+2025-12-14 13:48:43,511 - context_window_test - INFO - Loaded document: doc_20000.txt (130245 characters)
+2025-12-14 13:48:43,514 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 13:48:43,521 - context_window_test - INFO - Token count: 32,561
+2025-12-14 13:48:43,907 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XYH2gFfKDSqtDkZ8gd'}
+2025-12-14 13:48:43,912 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6XYH2gFfKDSqtDkZ8gd'}
+2025-12-14 13:48:43,944 - context_window_test - WARNING - 
+Test interrupted by user
+2025-12-14 13:59:31,299 - context_window_test - INFO - ======================================================================
+2025-12-14 13:59:31,302 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 13:59:31,305 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 13:59:31,308 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 13:59:31,309 - context_window_test - INFO - ======================================================================
+2025-12-14 14:09:57,866 - context_window_test - INFO - ======================================================================
+2025-12-14 14:09:57,873 - context_window_test - INFO -                CONTEXT WINDOW SIZE IMPACT TEST
+2025-12-14 14:09:57,877 - context_window_test - INFO -                     Testing Claude Haiku 4.5
+2025-12-14 14:09:57,883 - context_window_test - INFO - ======================================================================
+2025-12-14 14:09:57,889 - context_window_test - INFO - 
+2025-12-14 14:09:57,892 - context_window_test - INFO - Configuration:
+2025-12-14 14:09:57,897 - context_window_test - INFO -   - Model: claude-haiku-4-5-20250929
+2025-12-14 14:09:57,901 - context_window_test - INFO -   - Documents: 7 (ranging from 2,000 to 50,000 words)
+2025-12-14 14:09:57,907 - context_window_test - INFO -   - Query: 'Who was the first Prime Minister of Israel?'
+2025-12-14 14:09:57,910 - context_window_test - INFO -   - Expected Answer: 'Ben Gurion was the first Prime Minister of Israel'
+2025-12-14 14:09:57,916 - context_window_test - INFO -   - Similarity Threshold: 0.85
+2025-12-14 14:09:57,921 - context_window_test - INFO - 
+2025-12-14 14:09:57,925 - context_window_test - INFO - Step 1/5: Loading API key and initializing client...
+2025-12-14 14:09:57,951 - context_window_test - INFO - API key loaded successfully from file
+2025-12-14 14:10:01,336 - context_window_test - INFO - Anthropic client initialized with model: claude-haiku-4-5-20250929
+2025-12-14 14:10:01,345 - context_window_test - INFO - ✓ Client initialized successfully
+2025-12-14 14:10:01,351 - context_window_test - INFO - 
+2025-12-14 14:10:01,354 - context_window_test - INFO - Step 2/5: Generating 7 test documents...
+2025-12-14 14:10:01,360 - context_window_test - INFO - Generating 7 documents with multiprocessing...
+2025-12-14 14:10:01,561 - context_window_test - INFO - Created doc_5000.txt - Target: 5000, Actual: 5009 words
+2025-12-14 14:10:01,565 - context_window_test - INFO - Created doc_2000.txt - Target: 2000, Actual: 2009 words
+2025-12-14 14:10:01,575 - context_window_test - INFO - Created doc_20000.txt - Target: 20000, Actual: 20009 words
+2025-12-14 14:10:01,604 - context_window_test - INFO - Created doc_30000.txt - Target: 30000, Actual: 30009 words
+2025-12-14 14:10:01,617 - context_window_test - INFO - Created doc_10000.txt - Target: 10000, Actual: 10009 words
+2025-12-14 14:10:01,640 - context_window_test - INFO - Created doc_40000.txt - Target: 40000, Actual: 40009 words
+2025-12-14 14:10:01,679 - context_window_test - INFO - Created doc_50000.txt - Target: 50000, Actual: 50009 words
+2025-12-14 14:10:01,735 - context_window_test - INFO - Successfully generated all 7 documents
+2025-12-14 14:10:01,742 - context_window_test - INFO - ✓ Generated 7 documents: doc_2000.txt, doc_5000.txt, doc_10000.txt, doc_20000.txt, doc_30000.txt, doc_40000.txt, doc_50000.txt
+2025-12-14 14:10:01,748 - context_window_test - INFO - 
+2025-12-14 14:10:01,752 - context_window_test - INFO - Step 3/5: Processing documents and querying Claude...
+2025-12-14 14:10:01,756 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 14:10:01,759 - context_window_test - INFO - 
+[Document 1/7] Processing doc_2000.txt...
+2025-12-14 14:10:01,763 - context_window_test - INFO - Processing document: doc_2000.txt
+2025-12-14 14:10:01,779 - context_window_test - INFO - Loaded document: doc_2000.txt (13067 characters)
+2025-12-14 14:10:01,782 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:01,785 - context_window_test - INFO - Token count: 3,266
+2025-12-14 14:10:02,185 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAWF2tqnsG9CN96bV5'}
+2025-12-14 14:10:02,192 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAWF2tqnsG9CN96bV5'}
+2025-12-14 14:10:03,521 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAbcz9poyKZXFCGsMb'}
+2025-12-14 14:10:03,525 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAbcz9poyKZXFCGsMb'}
+2025-12-14 14:10:05,887 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAma2RdSkrk6xbxAJo'}
+2025-12-14 14:10:05,891 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:05,894 - context_window_test - ERROR - Failed to process document doc_2000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAma2RdSkrk6xbxAJo'}
+2025-12-14 14:10:05,898 - context_window_test - ERROR - Failed to process doc_2000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAma2RdSkrk6xbxAJo'}
+2025-12-14 14:10:05,902 - context_window_test - WARNING - Skipping doc_2000.txt and continuing with remaining documents...
+2025-12-14 14:10:05,906 - context_window_test - INFO - 
+[Document 2/7] Processing doc_5000.txt...
+2025-12-14 14:10:05,910 - context_window_test - INFO - Processing document: doc_5000.txt
+2025-12-14 14:10:05,930 - context_window_test - INFO - Loaded document: doc_5000.txt (32599 characters)
+2025-12-14 14:10:05,935 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:05,939 - context_window_test - INFO - Token count: 8,149
+2025-12-14 14:10:06,407 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAobZmm86aJw2YZ6Co'}
+2025-12-14 14:10:06,415 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAobZmm86aJw2YZ6Co'}
+2025-12-14 14:10:07,734 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAueCcvtKf1pD8oYgT'}
+2025-12-14 14:10:07,742 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZAueCcvtKf1pD8oYgT'}
+2025-12-14 14:10:09,992 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZB5bVSXmvYYMf4Y3kX'}
+2025-12-14 14:10:09,996 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:10,000 - context_window_test - ERROR - Failed to process document doc_5000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZB5bVSXmvYYMf4Y3kX'}
+2025-12-14 14:10:10,004 - context_window_test - ERROR - Failed to process doc_5000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZB5bVSXmvYYMf4Y3kX'}
+2025-12-14 14:10:10,010 - context_window_test - WARNING - Skipping doc_5000.txt and continuing with remaining documents...
+2025-12-14 14:10:10,015 - context_window_test - INFO - 
+[Document 3/7] Processing doc_10000.txt...
+2025-12-14 14:10:10,018 - context_window_test - INFO - Processing document: doc_10000.txt
+2025-12-14 14:10:10,043 - context_window_test - INFO - Loaded document: doc_10000.txt (65142 characters)
+2025-12-14 14:10:10,077 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:10,081 - context_window_test - INFO - Token count: 16,285
+2025-12-14 14:10:10,298 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZB734LeTopF8i1CgbM'}
+2025-12-14 14:10:10,303 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZB734LeTopF8i1CgbM'}
+2025-12-14 14:10:11,529 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBCFLUA5TYyfwjN8Ln'}
+2025-12-14 14:10:11,534 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBCFLUA5TYyfwjN8Ln'}
+2025-12-14 14:10:13,895 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBMmKtRT228aCRZrmw'}
+2025-12-14 14:10:13,899 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:13,903 - context_window_test - ERROR - Failed to process document doc_10000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBMmKtRT228aCRZrmw'}
+2025-12-14 14:10:13,908 - context_window_test - ERROR - Failed to process doc_10000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBMmKtRT228aCRZrmw'}
+2025-12-14 14:10:13,913 - context_window_test - WARNING - Skipping doc_10000.txt and continuing with remaining documents...
+2025-12-14 14:10:13,921 - context_window_test - INFO - 
+[Document 4/7] Processing doc_20000.txt...
+2025-12-14 14:10:13,925 - context_window_test - INFO - Processing document: doc_20000.txt
+2025-12-14 14:10:13,948 - context_window_test - INFO - Loaded document: doc_20000.txt (130245 characters)
+2025-12-14 14:10:13,952 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:13,956 - context_window_test - INFO - Token count: 32,561
+2025-12-14 14:10:14,297 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBPchWtf5PPB65VoYv'}
+2025-12-14 14:10:14,303 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBPchWtf5PPB65VoYv'}
+2025-12-14 14:10:15,632 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBVNiywPWLq6oWKsk9'}
+2025-12-14 14:10:15,637 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBVNiywPWLq6oWKsk9'}
+2025-12-14 14:10:17,889 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBfQizCtDvdRfyGszR'}
+2025-12-14 14:10:17,896 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:17,899 - context_window_test - ERROR - Failed to process document doc_20000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBfQizCtDvdRfyGszR'}
+2025-12-14 14:10:17,902 - context_window_test - ERROR - Failed to process doc_20000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBfQizCtDvdRfyGszR'}
+2025-12-14 14:10:17,908 - context_window_test - WARNING - Skipping doc_20000.txt and continuing with remaining documents...
+2025-12-14 14:10:17,913 - context_window_test - INFO - 
+[Document 5/7] Processing doc_30000.txt...
+2025-12-14 14:10:17,916 - context_window_test - INFO - Processing document: doc_30000.txt
+2025-12-14 14:10:17,947 - context_window_test - INFO - Loaded document: doc_30000.txt (195342 characters)
+2025-12-14 14:10:17,953 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:17,958 - context_window_test - INFO - Token count: 48,835
+2025-12-14 14:10:18,293 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBgirSF5NyB5n2SHwU'}
+2025-12-14 14:10:18,298 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBgirSF5NyB5n2SHwU'}
+2025-12-14 14:10:19,625 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBnU8TmoCgtN6Kt7Br'}
+2025-12-14 14:10:19,628 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBnU8TmoCgtN6Kt7Br'}
+2025-12-14 14:10:21,981 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBxRuutz2s82gDiRM2'}
+2025-12-14 14:10:21,985 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:21,990 - context_window_test - ERROR - Failed to process document doc_30000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBxRuutz2s82gDiRM2'}
+2025-12-14 14:10:21,994 - context_window_test - ERROR - Failed to process doc_30000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBxRuutz2s82gDiRM2'}
+2025-12-14 14:10:21,999 - context_window_test - WARNING - Skipping doc_30000.txt and continuing with remaining documents...
+2025-12-14 14:10:22,003 - context_window_test - INFO - 
+[Document 6/7] Processing doc_40000.txt...
+2025-12-14 14:10:22,008 - context_window_test - INFO - Processing document: doc_40000.txt
+2025-12-14 14:10:22,034 - context_window_test - INFO - Loaded document: doc_40000.txt (260431 characters)
+2025-12-14 14:10:22,037 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:22,041 - context_window_test - INFO - Token count: 65,107
+2025-12-14 14:10:22,286 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBz9qyeQg2NbJ7Xeio'}
+2025-12-14 14:10:22,291 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZBz9qyeQg2NbJ7Xeio'}
+2025-12-14 14:10:23,618 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZC5amhATPY5ygsuzRH'}
+2025-12-14 14:10:23,623 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZC5amhATPY5ygsuzRH'}
+2025-12-14 14:10:25,865 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCFYoQRYL4qo3WnP8Q'}
+2025-12-14 14:10:25,870 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:25,873 - context_window_test - ERROR - Failed to process document doc_40000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCFYoQRYL4qo3WnP8Q'}
+2025-12-14 14:10:25,878 - context_window_test - ERROR - Failed to process doc_40000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCFYoQRYL4qo3WnP8Q'}
+2025-12-14 14:10:25,882 - context_window_test - WARNING - Skipping doc_40000.txt and continuing with remaining documents...
+2025-12-14 14:10:25,887 - context_window_test - INFO - 
+[Document 7/7] Processing doc_50000.txt...
+2025-12-14 14:10:25,892 - context_window_test - INFO - Processing document: doc_50000.txt
+2025-12-14 14:10:25,931 - context_window_test - INFO - Loaded document: doc_50000.txt (325540 characters)
+2025-12-14 14:10:25,938 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 14:10:25,944 - context_window_test - INFO - Token count: 81,385
+2025-12-14 14:10:26,271 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCGx8nUDA576TAgatc'}
+2025-12-14 14:10:26,276 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCGx8nUDA576TAgatc'}
+2025-12-14 14:10:27,591 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCNgv9ePditwJjwrsK'}
+2025-12-14 14:10:27,598 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCNgv9ePditwJjwrsK'}
+2025-12-14 14:10:30,025 - context_window_test - ERROR - API error during query: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCYntLzyyfNwa4FeZZ'}
+2025-12-14 14:10:30,029 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 14:10:30,035 - context_window_test - ERROR - Failed to process document doc_50000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCYntLzyyfNwa4FeZZ'}
+2025-12-14 14:10:30,039 - context_window_test - ERROR - Failed to process doc_50000.txt: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20250929'}, 'request_id': 'req_011CW6ZCYntLzyyfNwa4FeZZ'}
+2025-12-14 14:10:30,044 - context_window_test - WARNING - Skipping doc_50000.txt and continuing with remaining documents...
+2025-12-14 14:10:30,048 - context_window_test - INFO - 
+2025-12-14 14:10:30,053 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 14:10:30,061 - context_window_test - INFO - ✓ Completed processing 0 documents
+2025-12-14 14:10:30,064 - context_window_test - INFO - 
+2025-12-14 14:10:30,068 - context_window_test - ERROR - No documents were processed successfully. Exiting.
+2025-12-14 15:25:54,029 - context_window_test - INFO - ======================================================================
+2025-12-14 15:25:54,036 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 15:25:54,047 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 15:25:54,059 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 15:25:54,064 - context_window_test - INFO - ======================================================================
+2025-12-14 15:36:56,123 - context_window_test - INFO - ======================================================================
+2025-12-14 15:36:56,126 - context_window_test - INFO -                CONTEXT WINDOW SIZE IMPACT TEST
+2025-12-14 15:36:56,127 - context_window_test - INFO -                     Testing Claude Haiku 4.5
+2025-12-14 15:36:56,129 - context_window_test - INFO - ======================================================================
+2025-12-14 15:36:56,131 - context_window_test - INFO - 
+2025-12-14 15:36:56,133 - context_window_test - INFO - Configuration:
+2025-12-14 15:36:56,134 - context_window_test - INFO -   - Model: claude-3-5-haiku-20241022
+2025-12-14 15:36:56,136 - context_window_test - INFO -   - Documents: 7 (ranging from 2,000 to 50,000 words)
+2025-12-14 15:36:56,139 - context_window_test - INFO -   - Query: 'Who was the first Prime Minister of Israel?'
+2025-12-14 15:36:56,140 - context_window_test - INFO -   - Expected Answer: 'Ben Gurion was the first Prime Minister of Israel'
+2025-12-14 15:36:56,142 - context_window_test - INFO -   - Similarity Threshold: 0.85
+2025-12-14 15:36:56,144 - context_window_test - INFO - 
+2025-12-14 15:36:56,146 - context_window_test - INFO - Step 1/5: Loading API key and initializing client...
+2025-12-14 15:36:56,154 - context_window_test - INFO - API key loaded successfully from file
+2025-12-14 15:36:57,265 - context_window_test - INFO - Anthropic client initialized with model: claude-3-5-haiku-20241022
+2025-12-14 15:36:57,268 - context_window_test - INFO - ✓ Client initialized successfully
+2025-12-14 15:36:57,270 - context_window_test - INFO - 
+2025-12-14 15:36:57,272 - context_window_test - INFO - Step 2/5: Generating 7 test documents...
+2025-12-14 15:36:57,273 - context_window_test - INFO - Generating 7 documents with multiprocessing...
+2025-12-14 15:36:57,383 - context_window_test - INFO - Created doc_5000.txt - Target: 5000, Actual: 5009 words
+2025-12-14 15:36:57,385 - context_window_test - INFO - Created doc_10000.txt - Target: 10000, Actual: 10009 words
+2025-12-14 15:36:57,389 - context_window_test - INFO - Created doc_2000.txt - Target: 2000, Actual: 2009 words
+2025-12-14 15:36:57,413 - context_window_test - INFO - Created doc_20000.txt - Target: 20000, Actual: 20009 words
+2025-12-14 15:36:57,438 - context_window_test - INFO - Created doc_30000.txt - Target: 30000, Actual: 30009 words
+2025-12-14 15:36:57,444 - context_window_test - INFO - Created doc_40000.txt - Target: 40000, Actual: 40009 words
+2025-12-14 15:36:57,469 - context_window_test - INFO - Created doc_50000.txt - Target: 50000, Actual: 50009 words
+2025-12-14 15:36:57,489 - context_window_test - INFO - Successfully generated all 7 documents
+2025-12-14 15:36:57,493 - context_window_test - INFO - ✓ Generated 7 documents: doc_2000.txt, doc_5000.txt, doc_10000.txt, doc_20000.txt, doc_30000.txt, doc_40000.txt, doc_50000.txt
+2025-12-14 15:36:57,495 - context_window_test - INFO - 
+2025-12-14 15:36:57,497 - context_window_test - INFO - Step 3/5: Processing documents and querying Claude...
+2025-12-14 15:36:57,499 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 15:36:57,501 - context_window_test - INFO - 
+[Document 1/7] Processing doc_2000.txt...
+2025-12-14 15:36:57,503 - context_window_test - INFO - Processing document: doc_2000.txt
+2025-12-14 15:36:57,515 - context_window_test - INFO - Loaded document: doc_2000.txt (13067 characters)
+2025-12-14 15:36:57,517 - context_window_test - WARNING - Error counting tokens, using approximation: 'Anthropic' object has no attribute 'count_tokens'
+2025-12-14 15:36:57,519 - context_window_test - INFO - Token count: 3,266
+2025-12-14 15:36:59,366 - context_window_test - INFO - Query completed in 1.84 seconds
+2025-12-14 15:36:59,368 - context_window_test - INFO - Successfully processed doc_2000.txt: 3,266 tokens, 1.84s
+2025-12-14 15:36:59,370 - context_window_test - INFO - Checking accuracy for doc_2000.txt...
+2025-12-14 15:36:59,373 - context_window_test - INFO - Loading NLP model for similarity checking...
+2025-12-14 15:36:59,374 - context_window_test - INFO - This may take a moment on first run (downloading model)...
+2025-12-14 15:37:40,700 - context_window_test - WARNING - 
+Test interrupted by user
+2025-12-14 15:42:39,774 - context_window_test - INFO - ======================================================================
+2025-12-14 15:42:39,782 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 15:42:39,793 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 15:42:39,798 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 15:42:39,803 - context_window_test - INFO - ======================================================================
+2025-12-14 16:05:00,602 - context_window_test - INFO - ======================================================================
+2025-12-14 16:05:00,606 - context_window_test - INFO -                CONTEXT WINDOW SIZE IMPACT TEST
+2025-12-14 16:05:00,609 - context_window_test - INFO -                     Testing Claude Haiku 4.5
+2025-12-14 16:05:00,612 - context_window_test - INFO - ======================================================================
+2025-12-14 16:05:00,616 - context_window_test - INFO - 
+2025-12-14 16:05:00,622 - context_window_test - INFO - Configuration:
+2025-12-14 16:05:00,630 - context_window_test - INFO -   - Model: claude-3-5-haiku-20241022
+2025-12-14 16:05:00,634 - context_window_test - INFO -   - Documents: 7 (ranging from 2,000 to 50,000 words)
+2025-12-14 16:05:00,639 - context_window_test - INFO -   - Query: 'Who was the first Prime Minister of Israel?'
+2025-12-14 16:05:00,643 - context_window_test - INFO -   - Expected Answer: 'Ben Gurion was the first Prime Minister of Israel'
+2025-12-14 16:05:00,648 - context_window_test - INFO -   - Similarity Threshold: 0.85
+2025-12-14 16:05:00,654 - context_window_test - INFO - 
+2025-12-14 16:05:00,657 - context_window_test - INFO - Step 1/5: Loading API key and initializing client...
+2025-12-14 16:05:00,673 - context_window_test - INFO - API key loaded successfully from file
+2025-12-14 16:05:04,035 - context_window_test - INFO - Anthropic client initialized with model: claude-3-5-haiku-20241022
+2025-12-14 16:05:04,039 - context_window_test - INFO - ✓ Client initialized successfully
+2025-12-14 16:05:04,047 - context_window_test - INFO - 
+2025-12-14 16:05:04,055 - context_window_test - INFO - Step 2/5: Generating 7 test documents...
+2025-12-14 16:05:04,059 - context_window_test - INFO - Generating 7 documents with multiprocessing...
+2025-12-14 16:05:04,250 - context_window_test - INFO - Created doc_2000.txt - Target: 2000, Actual: 2009 words
+2025-12-14 16:05:04,251 - context_window_test - INFO - Created doc_5000.txt - Target: 5000, Actual: 5009 words
+2025-12-14 16:05:04,274 - context_window_test - INFO - Created doc_20000.txt - Target: 20000, Actual: 20009 words
+2025-12-14 16:05:04,303 - context_window_test - INFO - Created doc_40000.txt - Target: 40000, Actual: 40009 words
+2025-12-14 16:05:04,301 - context_window_test - INFO - Created doc_30000.txt - Target: 30000, Actual: 30009 words
+2025-12-14 16:05:04,320 - context_window_test - INFO - Created doc_10000.txt - Target: 10000, Actual: 10009 words
+2025-12-14 16:05:04,352 - context_window_test - INFO - Created doc_50000.txt - Target: 50000, Actual: 50009 words
+2025-12-14 16:05:04,405 - context_window_test - INFO - Successfully generated all 7 documents
+2025-12-14 16:05:04,413 - context_window_test - INFO - ✓ Generated 7 documents: doc_2000.txt, doc_5000.txt, doc_10000.txt, doc_20000.txt, doc_30000.txt, doc_40000.txt, doc_50000.txt
+2025-12-14 16:05:04,417 - context_window_test - INFO - 
+2025-12-14 16:05:04,421 - context_window_test - INFO - Step 3/5: Processing documents and querying Claude...
+2025-12-14 16:05:04,424 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 16:05:04,427 - context_window_test - INFO - 
+[Document 1/7] Processing doc_2000.txt...
+2025-12-14 16:05:04,430 - context_window_test - INFO - Processing document: doc_2000.txt
+2025-12-14 16:05:04,447 - context_window_test - INFO - Loaded document: doc_2000.txt (13067 characters)
+2025-12-14 16:05:06,446 - context_window_test - INFO - Query completed in 1.97 seconds, 3,936 input tokens
+2025-12-14 16:05:06,451 - context_window_test - INFO - Successfully processed doc_2000.txt: 3,936 tokens, 1.97s
+2025-12-14 16:05:06,459 - context_window_test - INFO - Checking accuracy for doc_2000.txt...
+2025-12-14 16:05:06,467 - context_window_test - INFO - Loading NLP model for similarity checking...
+2025-12-14 16:05:06,476 - context_window_test - INFO - This may take a moment on first run (downloading model)...
+2025-12-14 16:05:31,631 - context_window_test - INFO - NLP model loaded successfully
+2025-12-14 16:05:32,091 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 16:05:32,096 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 16:05:32,099 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 16:05:32,103 - context_window_test - INFO - Accuracy check complete: doc_2000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 16:05:32,108 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 3,936 | Time: 1.97s | Similarity: 0.9730
+2025-12-14 16:05:32,113 - context_window_test - INFO - 
+[Document 2/7] Processing doc_5000.txt...
+2025-12-14 16:05:32,116 - context_window_test - INFO - Processing document: doc_5000.txt
+2025-12-14 16:05:32,133 - context_window_test - INFO - Loaded document: doc_5000.txt (32599 characters)
+2025-12-14 16:05:34,564 - context_window_test - INFO - Query completed in 2.43 seconds, 9,801 input tokens
+2025-12-14 16:05:34,571 - context_window_test - INFO - Successfully processed doc_5000.txt: 9,801 tokens, 2.43s
+2025-12-14 16:05:34,576 - context_window_test - INFO - Checking accuracy for doc_5000.txt...
+2025-12-14 16:05:34,603 - context_window_test - INFO - Similarity calculation: 0.9803
+2025-12-14 16:05:34,607 - context_window_test - INFO - Response (cleaned): 'Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 16:05:34,612 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9803 (threshold: 0.85)
+2025-12-14 16:05:34,621 - context_window_test - INFO - Accuracy check complete: doc_5000.txt - Accuracy=1, Similarity=0.9803
+2025-12-14 16:05:34,624 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 9,801 | Time: 2.43s | Similarity: 0.9803
+2025-12-14 16:05:34,627 - context_window_test - INFO - 
+[Document 3/7] Processing doc_10000.txt...
+2025-12-14 16:05:34,631 - context_window_test - INFO - Processing document: doc_10000.txt
+2025-12-14 16:05:34,649 - context_window_test - INFO - Loaded document: doc_10000.txt (65142 characters)
+2025-12-14 16:05:39,130 - context_window_test - INFO - Query completed in 4.48 seconds, 19,571 input tokens
+2025-12-14 16:05:39,136 - context_window_test - INFO - Successfully processed doc_10000.txt: 19,571 tokens, 4.48s
+2025-12-14 16:05:39,142 - context_window_test - INFO - Checking accuracy for doc_10000.txt...
+2025-12-14 16:05:39,218 - context_window_test - INFO - Similarity calculation: 0.8038
+2025-12-14 16:05:39,221 - context_window_test - INFO - Response (cleaned): 'the text, the first Prime Minister of Israel was Ben Gurion. This information appears briefly within...'
+2025-12-14 16:05:39,225 - context_window_test - WARNING - ✗ INCORRECT - Similarity: 0.8038 (threshold: 0.85)
+2025-12-14 16:05:39,229 - context_window_test - INFO - Accuracy check complete: doc_10000.txt - Accuracy=0, Similarity=0.8038
+2025-12-14 16:05:39,234 - context_window_test - INFO - → Result: INCORRECT ✗ | Tokens: 19,571 | Time: 4.48s | Similarity: 0.8038
+2025-12-14 16:05:39,238 - context_window_test - INFO - 
+[Document 4/7] Processing doc_20000.txt...
+2025-12-14 16:05:39,243 - context_window_test - INFO - Processing document: doc_20000.txt
+2025-12-14 16:05:39,265 - context_window_test - INFO - Loaded document: doc_20000.txt (130245 characters)
+2025-12-14 16:05:46,767 - context_window_test - INFO - Query completed in 7.50 seconds, 39,116 input tokens
+2025-12-14 16:05:46,771 - context_window_test - INFO - Successfully processed doc_20000.txt: 39,116 tokens, 7.50s
+2025-12-14 16:05:46,779 - context_window_test - INFO - Checking accuracy for doc_20000.txt...
+2025-12-14 16:05:46,810 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 16:05:46,812 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 16:05:46,813 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 16:05:46,815 - context_window_test - INFO - Accuracy check complete: doc_20000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 16:05:46,816 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 39,116 | Time: 7.50s | Similarity: 0.9730
+2025-12-14 16:05:46,818 - context_window_test - INFO - 
+[Document 5/7] Processing doc_30000.txt...
+2025-12-14 16:05:46,819 - context_window_test - INFO - Processing document: doc_30000.txt
+2025-12-14 16:05:46,828 - context_window_test - INFO - Loaded document: doc_30000.txt (195342 characters)
+2025-12-14 16:05:57,612 - context_window_test - INFO - Query completed in 10.78 seconds, 58,655 input tokens
+2025-12-14 16:05:57,617 - context_window_test - INFO - Successfully processed doc_30000.txt: 58,655 tokens, 10.78s
+2025-12-14 16:05:57,622 - context_window_test - INFO - Checking accuracy for doc_30000.txt...
+2025-12-14 16:05:57,651 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 16:05:57,655 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 16:05:57,657 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 16:05:57,659 - context_window_test - INFO - Accuracy check complete: doc_30000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 16:05:57,663 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 58,655 | Time: 10.78s | Similarity: 0.9730
+2025-12-14 16:05:57,667 - context_window_test - INFO - 
+[Document 6/7] Processing doc_40000.txt...
+2025-12-14 16:05:57,670 - context_window_test - INFO - Processing document: doc_40000.txt
+2025-12-14 16:05:57,693 - context_window_test - INFO - Loaded document: doc_40000.txt (260431 characters)
+2025-12-14 16:06:09,672 - context_window_test - INFO - Query completed in 11.98 seconds, 78,196 input tokens
+2025-12-14 16:06:09,675 - context_window_test - INFO - Successfully processed doc_40000.txt: 78,196 tokens, 11.98s
+2025-12-14 16:06:09,680 - context_window_test - INFO - Checking accuracy for doc_40000.txt...
+2025-12-14 16:06:09,718 - context_window_test - INFO - Similarity calculation: 0.9803
+2025-12-14 16:06:09,721 - context_window_test - INFO - Response (cleaned): 'Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 16:06:09,723 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9803 (threshold: 0.85)
+2025-12-14 16:06:09,724 - context_window_test - INFO - Accuracy check complete: doc_40000.txt - Accuracy=1, Similarity=0.9803
+2025-12-14 16:06:09,725 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 78,196 | Time: 11.98s | Similarity: 0.9803
+2025-12-14 16:06:09,727 - context_window_test - INFO - 
+[Document 7/7] Processing doc_50000.txt...
+2025-12-14 16:06:09,728 - context_window_test - INFO - Processing document: doc_50000.txt
+2025-12-14 16:06:09,737 - context_window_test - INFO - Loaded document: doc_50000.txt (325540 characters)
+2025-12-14 16:06:12,185 - context_window_test - ERROR - API error during query: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2JHXV7amX9AbVMG34'}
+2025-12-14 16:06:12,193 - context_window_test - WARNING - API error (attempt 1/3), retrying in 1s: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2JHXV7amX9AbVMG34'}
+2025-12-14 16:06:15,940 - context_window_test - ERROR - API error during query: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2ZrekV4KpV1roDCaU'}
+2025-12-14 16:06:15,947 - context_window_test - WARNING - API error (attempt 2/3), retrying in 2s: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2ZrekV4KpV1roDCaU'}
+2025-12-14 16:06:20,340 - context_window_test - ERROR - API error during query: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2uKBbHpTacn5D5ddi'}
+2025-12-14 16:06:20,348 - context_window_test - ERROR - API failed after 3 attempts
+2025-12-14 16:06:20,352 - context_window_test - ERROR - Failed to process document doc_50000.txt: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2uKBbHpTacn5D5ddi'}
+2025-12-14 16:06:20,360 - context_window_test - ERROR - Failed to process doc_50000.txt: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (ed7670f6-0ba2-48c9-b047-f38ab5151474) of 100,000 input tokens per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CW6i2uKBbHpTacn5D5ddi'}
+2025-12-14 16:06:20,366 - context_window_test - WARNING - Skipping doc_50000.txt and continuing with remaining documents...
+2025-12-14 16:06:20,371 - context_window_test - INFO - 
+2025-12-14 16:06:20,380 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 16:06:20,383 - context_window_test - INFO - ✓ Completed processing 6 documents
+2025-12-14 16:06:20,387 - context_window_test - INFO - 
+2025-12-14 16:06:20,393 - context_window_test - INFO - Step 4/5: Generating visualization...
+2025-12-14 16:06:20,398 - context_window_test - INFO - Generating visualization...
+2025-12-14 16:06:27,150 - context_window_test - INFO - Graph saved to results_graph.png
+2025-12-14 16:06:27,167 - context_window_test - INFO - Visualization complete
+2025-12-14 16:06:27,178 - context_window_test - INFO - ✓ Graph saved to results_graph.png
+2025-12-14 16:06:27,180 - context_window_test - INFO - 
+2025-12-14 16:06:27,188 - context_window_test - INFO - Step 5/5: Test complete!
+2025-12-14 16:06:27,195 - context_window_test - INFO - ======================================================================
+2025-12-14 16:06:27,204 - context_window_test - INFO -                          SUMMARY
+2025-12-14 16:06:27,208 - context_window_test - INFO - ======================================================================
+2025-12-14 16:06:27,211 - context_window_test - INFO - Total documents processed: 6
+2025-12-14 16:06:27,216 - context_window_test - INFO - Correct answers: 5
+2025-12-14 16:06:27,225 - context_window_test - INFO - Incorrect answers: 1
+2025-12-14 16:06:27,234 - context_window_test - INFO - Total query time: 39.13 seconds
+2025-12-14 16:06:27,243 - context_window_test - INFO - Average time per document: 6.52 seconds
+2025-12-14 16:06:27,246 - context_window_test - INFO - 
+2025-12-14 16:06:27,249 - context_window_test - INFO - Hypothesis Analysis:
+2025-12-14 16:06:27,256 - context_window_test - INFO -   - Smallest document (2,000 words): Accuracy = 1
+2025-12-14 16:06:27,259 - context_window_test - INFO -   - Largest document (40,000 words): Accuracy = 1
+2025-12-14 16:06:27,266 - context_window_test - INFO -   → Hypothesis NOT SUPPORTED: Accuracy remained consistent
+2025-12-14 16:06:27,272 - context_window_test - INFO - 
+2025-12-14 16:06:27,276 - context_window_test - INFO - ======================================================================
+2025-12-14 16:06:27,285 - context_window_test - INFO - Test completed successfully!
+2025-12-14 16:06:27,289 - context_window_test - INFO - Results graph: results_graph.png
+2025-12-14 16:06:27,296 - context_window_test - INFO - Log files: ./log/
+2025-12-14 16:06:27,305 - context_window_test - INFO - ======================================================================
+2025-12-14 18:34:33,015 - context_window_test - INFO - ======================================================================
+2025-12-14 18:34:33,016 - context_window_test - INFO - Logging system initialized successfully
+2025-12-14 18:34:33,018 - context_window_test - INFO - Log directory: /mnt/c/Users/yair0/OneDrive/Documents/AI/AI_course_Ramat_Gan/Lesson22/exercise2_used_context_window/log
+2025-12-14 18:34:33,019 - context_window_test - INFO - Ring buffer: 20 files × 16MB each
+2025-12-14 18:34:33,020 - context_window_test - INFO - ======================================================================
+2025-12-14 18:46:43,968 - context_window_test - INFO - ======================================================================
+2025-12-14 18:46:43,974 - context_window_test - INFO -                CONTEXT WINDOW SIZE IMPACT TEST
+2025-12-14 18:46:43,978 - context_window_test - INFO -                     Testing Claude Haiku 4.5
+2025-12-14 18:46:43,981 - context_window_test - INFO - ======================================================================
+2025-12-14 18:46:43,991 - context_window_test - INFO - 
+2025-12-14 18:46:43,994 - context_window_test - INFO - Configuration:
+2025-12-14 18:46:43,996 - context_window_test - INFO -   - Model: claude-3-5-haiku-20241022
+2025-12-14 18:46:43,999 - context_window_test - INFO -   - Documents: 7 (ranging from 2,000 to 50,000 words)
+2025-12-14 18:46:44,003 - context_window_test - INFO -   - Query: 'Who was the first Prime Minister of Israel?'
+2025-12-14 18:46:44,008 - context_window_test - INFO -   - Expected Answer: 'Ben Gurion was the first Prime Minister of Israel'
+2025-12-14 18:46:44,014 - context_window_test - INFO -   - Similarity Threshold: 0.85
+2025-12-14 18:46:44,018 - context_window_test - INFO - 
+2025-12-14 18:46:44,019 - context_window_test - INFO - Step 1/5: Loading API key and initializing client...
+2025-12-14 18:46:44,029 - context_window_test - INFO - API key loaded successfully from file
+2025-12-14 18:46:47,499 - context_window_test - INFO - Anthropic client initialized with model: claude-3-5-haiku-20241022
+2025-12-14 18:46:47,508 - context_window_test - INFO - ✓ Client initialized successfully
+2025-12-14 18:46:47,513 - context_window_test - INFO - 
+2025-12-14 18:46:47,516 - context_window_test - INFO - Step 2/5: Generating 7 test documents...
+2025-12-14 18:46:47,524 - context_window_test - INFO - Generating 7 documents with multiprocessing...
+2025-12-14 18:46:47,669 - context_window_test - INFO - Created doc_20000.txt - Target: 20000, Actual: 20009 words
+2025-12-14 18:46:47,672 - context_window_test - INFO - Created doc_40000.txt - Target: 40000, Actual: 40009 words
+2025-12-14 18:46:47,670 - context_window_test - INFO - Created doc_10000.txt - Target: 10000, Actual: 10009 words
+2025-12-14 18:46:47,703 - context_window_test - INFO - Created doc_5000.txt - Target: 5000, Actual: 5009 words
+2025-12-14 18:46:47,725 - context_window_test - INFO - Created doc_50000.txt - Target: 50000, Actual: 50009 words
+2025-12-14 18:46:47,729 - context_window_test - INFO - Created doc_2000.txt - Target: 2000, Actual: 2009 words
+2025-12-14 18:46:47,775 - context_window_test - INFO - Created doc_30000.txt - Target: 30000, Actual: 30009 words
+2025-12-14 18:46:47,825 - context_window_test - INFO - Successfully generated all 7 documents
+2025-12-14 18:46:47,836 - context_window_test - INFO - ✓ Generated 7 documents: doc_2000.txt, doc_5000.txt, doc_10000.txt, doc_20000.txt, doc_30000.txt, doc_40000.txt, doc_50000.txt
+2025-12-14 18:46:47,842 - context_window_test - INFO - 
+2025-12-14 18:46:47,845 - context_window_test - INFO - Step 3/5: Processing documents and querying Claude...
+2025-12-14 18:46:47,847 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 18:46:47,851 - context_window_test - INFO - 
+[Document 1/7] Processing doc_2000.txt...
+2025-12-14 18:46:47,853 - context_window_test - INFO - Processing document: doc_2000.txt
+2025-12-14 18:46:47,866 - context_window_test - INFO - Loaded document: doc_2000.txt (13067 characters)
+2025-12-14 18:46:49,634 - context_window_test - INFO - Query completed in 1.77 seconds, 3,936 input tokens
+2025-12-14 18:46:49,638 - context_window_test - INFO - Successfully processed doc_2000.txt: 3,936 tokens, 1.77s
+2025-12-14 18:46:49,642 - context_window_test - INFO - Checking accuracy for doc_2000.txt...
+2025-12-14 18:46:49,648 - context_window_test - INFO - Loading NLP model for similarity checking...
+2025-12-14 18:46:49,651 - context_window_test - INFO - This may take a moment on first run (downloading model)...
+2025-12-14 18:46:56,908 - context_window_test - INFO - NLP model loaded successfully
+2025-12-14 18:46:57,415 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 18:46:57,419 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 18:46:57,425 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 18:46:57,430 - context_window_test - INFO - Accuracy check complete: doc_2000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 18:46:57,434 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 3,936 | Time: 1.77s | Similarity: 0.9730
+2025-12-14 18:46:57,438 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:47:07,442 - context_window_test - INFO - 
+[Document 2/7] Processing doc_5000.txt...
+2025-12-14 18:47:07,448 - context_window_test - INFO - Processing document: doc_5000.txt
+2025-12-14 18:47:07,471 - context_window_test - INFO - Loaded document: doc_5000.txt (32599 characters)
+2025-12-14 18:47:10,212 - context_window_test - INFO - Query completed in 2.74 seconds, 9,801 input tokens
+2025-12-14 18:47:10,217 - context_window_test - INFO - Successfully processed doc_5000.txt: 9,801 tokens, 2.74s
+2025-12-14 18:47:10,219 - context_window_test - INFO - Checking accuracy for doc_5000.txt...
+2025-12-14 18:47:10,246 - context_window_test - INFO - Similarity calculation: 0.9803
+2025-12-14 18:47:10,248 - context_window_test - INFO - Response (cleaned): 'Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 18:47:10,249 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9803 (threshold: 0.85)
+2025-12-14 18:47:10,250 - context_window_test - INFO - Accuracy check complete: doc_5000.txt - Accuracy=1, Similarity=0.9803
+2025-12-14 18:47:10,251 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 9,801 | Time: 2.74s | Similarity: 0.9803
+2025-12-14 18:47:10,253 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:47:20,258 - context_window_test - INFO - 
+[Document 3/7] Processing doc_10000.txt...
+2025-12-14 18:47:20,262 - context_window_test - INFO - Processing document: doc_10000.txt
+2025-12-14 18:47:20,285 - context_window_test - INFO - Loaded document: doc_10000.txt (65142 characters)
+2025-12-14 18:47:24,666 - context_window_test - INFO - Query completed in 4.37 seconds, 19,571 input tokens
+2025-12-14 18:47:24,675 - context_window_test - INFO - Successfully processed doc_10000.txt: 19,571 tokens, 4.37s
+2025-12-14 18:47:24,684 - context_window_test - INFO - Checking accuracy for doc_10000.txt...
+2025-12-14 18:47:24,714 - context_window_test - INFO - Similarity calculation: 0.9117
+2025-12-14 18:47:24,718 - context_window_test - INFO - Response (cleaned): 'the text, Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 18:47:24,719 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9117 (threshold: 0.85)
+2025-12-14 18:47:24,721 - context_window_test - INFO - Accuracy check complete: doc_10000.txt - Accuracy=1, Similarity=0.9117
+2025-12-14 18:47:24,722 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 19,571 | Time: 4.37s | Similarity: 0.9117
+2025-12-14 18:47:24,725 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:47:34,726 - context_window_test - INFO - 
+[Document 4/7] Processing doc_20000.txt...
+2025-12-14 18:47:34,733 - context_window_test - INFO - Processing document: doc_20000.txt
+2025-12-14 18:47:34,751 - context_window_test - INFO - Loaded document: doc_20000.txt (130245 characters)
+2025-12-14 18:47:41,753 - context_window_test - INFO - Query completed in 7.00 seconds, 39,116 input tokens
+2025-12-14 18:47:41,760 - context_window_test - INFO - Successfully processed doc_20000.txt: 39,116 tokens, 7.00s
+2025-12-14 18:47:41,767 - context_window_test - INFO - Checking accuracy for doc_20000.txt...
+2025-12-14 18:47:41,803 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 18:47:41,806 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 18:47:41,811 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 18:47:41,817 - context_window_test - INFO - Accuracy check complete: doc_20000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 18:47:41,820 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 39,116 | Time: 7.00s | Similarity: 0.9730
+2025-12-14 18:47:41,849 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:47:51,853 - context_window_test - INFO - 
+[Document 5/7] Processing doc_30000.txt...
+2025-12-14 18:47:51,858 - context_window_test - INFO - Processing document: doc_30000.txt
+2025-12-14 18:47:51,885 - context_window_test - INFO - Loaded document: doc_30000.txt (195342 characters)
+2025-12-14 18:48:02,176 - context_window_test - INFO - Query completed in 10.29 seconds, 58,655 input tokens
+2025-12-14 18:48:02,183 - context_window_test - INFO - Successfully processed doc_30000.txt: 58,655 tokens, 10.29s
+2025-12-14 18:48:02,191 - context_window_test - INFO - Checking accuracy for doc_30000.txt...
+2025-12-14 18:48:02,228 - context_window_test - INFO - Similarity calculation: 0.9803
+2025-12-14 18:48:02,230 - context_window_test - INFO - Response (cleaned): 'Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 18:48:02,231 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9803 (threshold: 0.85)
+2025-12-14 18:48:02,232 - context_window_test - INFO - Accuracy check complete: doc_30000.txt - Accuracy=1, Similarity=0.9803
+2025-12-14 18:48:02,235 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 58,655 | Time: 10.29s | Similarity: 0.9803
+2025-12-14 18:48:02,236 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:48:12,237 - context_window_test - INFO - 
+[Document 6/7] Processing doc_40000.txt...
+2025-12-14 18:48:12,243 - context_window_test - INFO - Processing document: doc_40000.txt
+2025-12-14 18:48:12,268 - context_window_test - INFO - Loaded document: doc_40000.txt (260431 characters)
+2025-12-14 18:48:26,214 - context_window_test - INFO - Query completed in 13.94 seconds, 78,196 input tokens
+2025-12-14 18:48:26,221 - context_window_test - INFO - Successfully processed doc_40000.txt: 78,196 tokens, 13.94s
+2025-12-14 18:48:26,223 - context_window_test - INFO - Checking accuracy for doc_40000.txt...
+2025-12-14 18:48:26,284 - context_window_test - INFO - Similarity calculation: 0.9730
+2025-12-14 18:48:26,288 - context_window_test - INFO - Response (cleaned): 'the first Prime Minister of Israel was Ben Gurion....'
+2025-12-14 18:48:26,291 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9730 (threshold: 0.85)
+2025-12-14 18:48:26,295 - context_window_test - INFO - Accuracy check complete: doc_40000.txt - Accuracy=1, Similarity=0.9730
+2025-12-14 18:48:26,299 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 78,196 | Time: 13.94s | Similarity: 0.9730
+2025-12-14 18:48:26,303 - context_window_test - INFO - Waiting 10s before next document to avoid rate limits...
+2025-12-14 18:48:36,308 - context_window_test - INFO - 
+[Document 7/7] Processing doc_50000.txt...
+2025-12-14 18:48:36,313 - context_window_test - INFO - Processing document: doc_50000.txt
+2025-12-14 18:48:36,343 - context_window_test - INFO - Loaded document: doc_50000.txt (325540 characters)
+2025-12-14 18:48:52,972 - context_window_test - INFO - Query completed in 16.63 seconds, 97,745 input tokens
+2025-12-14 18:48:52,979 - context_window_test - INFO - Successfully processed doc_50000.txt: 97,745 tokens, 16.63s
+2025-12-14 18:48:52,983 - context_window_test - INFO - Checking accuracy for doc_50000.txt...
+2025-12-14 18:48:53,036 - context_window_test - INFO - Similarity calculation: 0.9117
+2025-12-14 18:48:53,040 - context_window_test - INFO - Response (cleaned): 'the text, Ben Gurion was the first Prime Minister of Israel....'
+2025-12-14 18:48:53,044 - context_window_test - INFO - ✓ CORRECT - Similarity: 0.9117 (threshold: 0.85)
+2025-12-14 18:48:53,048 - context_window_test - INFO - Accuracy check complete: doc_50000.txt - Accuracy=1, Similarity=0.9117
+2025-12-14 18:48:53,050 - context_window_test - INFO - → Result: CORRECT ✓ | Tokens: 97,745 | Time: 16.63s | Similarity: 0.9117
+2025-12-14 18:48:53,053 - context_window_test - INFO - 
+2025-12-14 18:48:53,056 - context_window_test - INFO - ----------------------------------------------------------------------
+2025-12-14 18:48:53,058 - context_window_test - INFO - ✓ Completed processing 7 documents
+2025-12-14 18:48:53,061 - context_window_test - INFO - 
+2025-12-14 18:48:53,065 - context_window_test - INFO - Step 4/5: Generating visualization...
+2025-12-14 18:48:53,069 - context_window_test - INFO - Generating visualization...
+2025-12-14 18:48:58,984 - context_window_test - INFO - Graph saved to results_graph.png
+2025-12-14 18:48:58,999 - context_window_test - INFO - Visualization complete
+2025-12-14 18:48:59,008 - context_window_test - INFO - ✓ Graph saved to results_graph.png
+2025-12-14 18:48:59,013 - context_window_test - INFO - 
+2025-12-14 18:48:59,017 - context_window_test - INFO - Step 5/5: Test complete!
+2025-12-14 18:48:59,019 - context_window_test - INFO - ======================================================================
+2025-12-14 18:48:59,024 - context_window_test - INFO -                          SUMMARY
+2025-12-14 18:48:59,027 - context_window_test - INFO - ======================================================================
+2025-12-14 18:48:59,031 - context_window_test - INFO - Total documents processed: 7
+2025-12-14 18:48:59,038 - context_window_test - INFO - Correct answers: 7
+2025-12-14 18:48:59,042 - context_window_test - INFO - Incorrect answers: 0
+2025-12-14 18:48:59,046 - context_window_test - INFO - Total query time: 56.73 seconds
+2025-12-14 18:48:59,050 - context_window_test - INFO - Average time per document: 8.10 seconds
+2025-12-14 18:48:59,053 - context_window_test - INFO - 
+2025-12-14 18:48:59,056 - context_window_test - INFO - Hypothesis Analysis:
+2025-12-14 18:48:59,060 - context_window_test - INFO -   - Smallest document (2,000 words): Accuracy = 1
+2025-12-14 18:48:59,063 - context_window_test - INFO -   - Largest document (50,000 words): Accuracy = 1
+2025-12-14 18:48:59,066 - context_window_test - INFO -   → Hypothesis NOT SUPPORTED: Accuracy remained consistent
+2025-12-14 18:48:59,070 - context_window_test - INFO - 
+2025-12-14 18:48:59,073 - context_window_test - INFO - ======================================================================
+2025-12-14 18:48:59,076 - context_window_test - INFO - Test completed successfully!
+2025-12-14 18:48:59,079 - context_window_test - INFO - Results graph: results_graph.png
+2025-12-14 18:48:59,082 - context_window_test - INFO - Log files: ./log/
+2025-12-14 18:48:59,084 - context_window_test - INFO - ======================================================================
