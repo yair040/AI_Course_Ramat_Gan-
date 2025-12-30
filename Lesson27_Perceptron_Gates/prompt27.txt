@@ -1,0 +1,34 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson27\perceptron_gates.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+Using Keras library neural network by perceptrons.
+You have the AND problem and the XOR problem.
+1. Plan a network with minimum of perceptrons to implement AND and XOT gates.
+   When using Keras, you need to define number of layers and number of perceptrons in each layer.
+   Need also to define the activation function.
+2. Create Dataset of XOR and of AND gates.
+3. Add random noise to the datasets.
+   The noise will be positive and result close to the real points (15%). 
+   Add the noise to the real Truth Table of AND gate and XOR gate.
+   Create 600 samples for AND gate dataset and 600 samples for XOR gate dataset.
+4. Use the Error function as the min square error: (expected-result)^2
+   Set the Learning step as the default.
+5. Draw the network schema with perceptrons including input, weights, output and connections between the layers.
+6. Draw the points to see the points' clouds.
+

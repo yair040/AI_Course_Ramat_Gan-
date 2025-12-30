@@ -1,0 +1,21 @@
+# Perceptron Gates Neural Network Project
+# Author: Yair Levi
+# Date: 2025-12-30
+
+# Core ML Framework
+tensorflow>=2.15.0,<3.0.0
+keras>=3.0.0
+
+# Numerical Computing
+numpy>=1.24.0,<2.0.0
+
+# Visualization
+matplotlib>=3.8.0,<4.0.0
+
+# Optional but recommended
+# For better network visualization
+networkx>=3.2.0,<4.0.0
+
+# Development tools (optional)
+# ipython>=8.12.0  # For interactive debugging
+# jupyter>=1.0.0   # For notebook experiments
