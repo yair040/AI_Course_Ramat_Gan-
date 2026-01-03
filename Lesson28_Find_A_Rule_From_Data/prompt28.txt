@@ -1,0 +1,40 @@
+1. Author is Yair Levi
+2. Create PRD in English for Python program in Google Colab.
+3. The title is "Machine that finds a rule from data".
+4. It is a demo code. 
+5. Purpose of the PRD is to define how to create the project that was described in the presentation.
+6. The program implements the attached presentation.
+7. Keras is required.
+8. The implementation is by neurons like in deep learning, but not Perceptrons, means without activation function. 
+9. Use Adam optimizer from Keras with step learning of 0.1.
+10. Each time put single scalar and check if the out is as expected.
+11. The input and output data are known ahead:
+   The input array: celsius_q = np.array([-40, -10, 0, 8, 15,22,38], dtype=float)
+   The output array: fahrenheit_a = np.array([-40, 14, 32, 46.4, 59,71.6,100], dtype=float)
+12. No noise injection.
+13. Use metrics as MSE (Mean Squared Error).
+14. I assume backpropogation is necessary.
+15. Run 500 epochs on the dataset.
+16. 2 tasks: 
+    a. find the target with one neuron. 
+    b. find the target with more than one neuron.
+17. Show the error graph by Keras.
+18. Print the rule (equation) that was found.
+19. The program should draw the neuron network (include input, output and weights) for each of the 2 tasks.
+20. After the training, test the model on 100 degrees celsius.
+21. Calculate the error from the real result.
+22. Do not use files but instead functions.
+23. The main program will call tasks.
+24. Each Python function no more than 150 lines.
+25. Use multiprocessing if it possible.
+26. Use logging, starting from INFO level.
+    The log will be in the format of Ring buffer of 20 files.
+    Each file is up to 16MB.
+    When the last file is full the first file will start to be overwritten.
+    The log files will be in the "log" subfolder.
+
+
+
+
+
+
