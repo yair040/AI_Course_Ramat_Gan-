@@ -1,0 +1,31 @@
+{
+  "video_path": "Fake_video/Diana_certificate.mp4",
+  "verdict": "REAL",
+  "confidence": 0.7506,
+  "analysis_date": "2026-01-07T05:37:33.966876",
+  "processing_time_sec": 194.91,
+  "scores": {
+    "facial": 0.9538,
+    "temporal": 0.4211,
+    "lighting": 0.7834,
+    "geometry": 0.8404,
+    "metadata": 0.8333
+  },
+  "anomalies": [
+    {
+      "timestamp": 0.0,
+      "frame": 0,
+      "type": "temporal_anomaly",
+      "severity": "medium",
+      "description": "temporal score below threshold: 0.42"
+    }
+  ],
+  "metadata": {
+    "width": 720,
+    "height": 1560,
+    "fps": 24.0,
+    "frame_count": 142,
+    "duration": 5.916666666666667,
+    "codec": 875967080
+  }
+}

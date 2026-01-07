@@ -1,0 +1,46 @@
+# DeepFake Detection Tool - Requirements
+# Author: Yair Levi
+# Python 3.9+
+
+# Core Video Processing
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+ffmpeg-python>=0.2.0
+
+# Computer Vision & Face Detection (optional - can work without)
+# Uncomment if you want advanced face detection:
+# dlib>=19.24.0
+# face-recognition>=1.3.0
+# mediapipe>=0.10.0
+
+# Deep Learning Frameworks
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Scientific Computing
+numpy>=1.24.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+scikit-image>=0.22.0
+
+# Data Handling
+pandas>=2.1.0
+pillow>=10.1.0
+
+# Visualization & Reporting
+matplotlib>=3.8.0
+
+# Metadata Extraction (optional)
+# pymediainfo>=6.1.0
+
+# Utilities
+tqdm>=4.66.0
+pyyaml>=6.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Code Quality
+pylint>=3.0.0
+black>=23.12.0

@@ -1,0 +1,69 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson26\Lesson26_DeepFake.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+
+
+
+Build a python tool that get a video file and determines if it is DeepFake or real video.
+The program will not handle the audio.
+The program will check if fake or real by the next criteria:
+1. Inconsistencies in facial expression:
+   Genuine smiles or frowns trigger tiny lines and creases that deepfakes often skip. 
+   Look for mismatched eye shapes, uneven teeth alignment, or unnatural jaw angles. 
+   Blurring, flickering, or odd color transitions where the face meets hair, ears, or neck. 
+2. Unnatural movements.
+3. Metadata inspection: container, codec, timestamps inconsistencies (e.g. creation after editing).
+4. Source verification.
+5. Sudden posture/lightning change between frames.
+6. Inconsistent or lack of eye blinking.
+7. Shadows or light reflection - examine if real or fake.
+   Ensure lighting color and intensity match the scene’s environment.
+- Verify consistent lighting direction and color temperature across face, body, background, and reflections (glasses, eyes, surfaces).
+- Check specular highlights in eyes and skin: synthetic faces often have unrealistic or missing micro-reflections and mismatched catchlights.
+- Shadows geometry: ensure shadows’ direction and softness match scene illumination.
+8. Pupil dilation in the eyes:
+   Change with surrounded light and when looking at close or fare objects.
+9. Incongruent skin and facial features:
+   e.g. strangely uniform skin, lacking wrinkles etc.
+10. Deep-learning detectors and anomaly models
+- Run specialized detectors trained on real vs. synthetic samples (face-swap detectors, lip-sync detectors, GAN-detection networks). Use ensembles — no single model is definitive.
+- Use temporal CNNs, RNNs, or transformer-based networks that examine frame sequences to detect temporal inconsistencies.
+- Use explainable outputs (saliency maps) to find regions responsible for a classifier decision.
+11. Geometry and physiology checks
+- Facial geometry consistency: inspect eye spacing, ear position, jawline continuity across frames.
+- Micro-expressions and saccades: deepfakes often miss micro-muscle activations and natural gaze shifts.
+- Head rotation and parallax: synthesized faces may not preserve correct 3D parallax when the camera or head moves.
+12. Compression and re-encoding signatures
+- Re-encoding artifacts: repeated transcoding changes GOP structure, bitrate patterns, and quantization noise; examine stream-level anomalies.
+- Frame duplication or interpolation artifacts when footage has been upsampled or frame-rate converted by generation pipelines.
+
+
+If there is an option to train by external database, do this.
+
+
+
+
+
+add to the readme.md the next:
+
+Reference:
+
+1. http://techtarget.com/searchsecurity/tip/How-to-detect-deepfakes-manually-and-using-AI
+2. https://www.resemble.ai/deepfake-detection-methods-techniques/
+3. https://www.quora.com/How-does-an-expert-detect-fake-videos-from-real-videos

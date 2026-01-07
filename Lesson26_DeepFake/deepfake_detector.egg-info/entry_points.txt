@@ -1,0 +1,2 @@
+[console_scripts]
+deepfake-detect = deepfake_detector.main:main

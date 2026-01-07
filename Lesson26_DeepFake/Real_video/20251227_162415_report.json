@@ -1,0 +1,31 @@
+{
+  "video_path": "Real_video/20251227_162415.mp4",
+  "verdict": "REAL",
+  "confidence": 0.7816,
+  "analysis_date": "2026-01-07T06:05:36.784649",
+  "processing_time_sec": 1004.06,
+  "scores": {
+    "facial": 1.0,
+    "temporal": 0.4408,
+    "lighting": 0.8038,
+    "geometry": 0.9062,
+    "metadata": 0.8333
+  },
+  "anomalies": [
+    {
+      "timestamp": 0.0,
+      "frame": 0,
+      "type": "temporal_anomaly",
+      "severity": "medium",
+      "description": "temporal score below threshold: 0.44"
+    }
+  ],
+  "metadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.00515425962742,
+    "frame_count": 326,
+    "duration": 10.8648,
+    "codec": 875967080
+  }
+}

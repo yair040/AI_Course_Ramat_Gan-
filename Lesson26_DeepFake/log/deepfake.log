@@ -1,0 +1,100 @@
+[2025-12-28 11:43:43] [INFO] [deepfake_detector] ============================================================
+[2025-12-28 11:43:43] [INFO] [deepfake_detector] DeepFake Detection Tool - Starting Analysis
+[2025-12-28 11:43:43] [INFO] [deepfake_detector] Video: Diana_certificate.mp4
+[2025-12-28 11:43:43] [INFO] [deepfake_detector] Configuration: 1 frame skip, 16 batch size, 4 workers
+[2025-12-28 11:43:43] [INFO] [deepfake_detector] ============================================================
+[2025-12-28 11:43:43] [WARNING] [deepfake_detector.metadata_analyzer] pymediainfo not available, using OpenCV only
+[2025-12-28 11:43:43] [WARNING] [deepfake_detector.ml_detector] Model not found: face_swap
+[2025-12-28 11:43:43] [WARNING] [deepfake_detector.ml_detector] Model not found: lip_sync
+[2025-12-28 11:43:43] [WARNING] [deepfake_detector.ml_detector] Model not found: gan
+[2025-12-28 11:43:43] [WARNING] [deepfake_detector.ml_detector] No ML models loaded, using heuristic fallback
+[2025-12-28 11:43:43] [INFO] [deepfake_detector.detector] Initialized detector with 6 analyzers
+[2025-12-28 11:43:43] [INFO] [deepfake_detector.detector] Starting analysis: Diana_certificate.mp4
+[2025-12-28 11:43:43] [INFO] [deepfake_detector.video_processor] Loaded video: Diana_certificate.mp4, 720x1560, 24.00 FPS, 5.92s
+[2025-12-28 11:43:44] [INFO] [deepfake_detector.detector] Collected 9 batches
+[2025-12-28 11:43:44] [INFO] [deepfake_detector.detector] Running facial analyzer...
+[2025-12-28 11:45:07] [INFO] [deepfake_detector.detector] Running temporal analyzer...
+[2025-12-28 11:45:54] [INFO] [deepfake_detector.detector] Running lighting analyzer...
+[2025-12-28 11:46:00] [INFO] [deepfake_detector.detector] Running geometry analyzer...
+[2025-12-28 11:47:34] [INFO] [deepfake_detector.detector] Running ml analyzer...
+[2025-12-28 11:47:35] [INFO] [deepfake_detector.detector] Running metadata analyzer...
+[2025-12-28 11:47:35] [WARNING] [deepfake_detector.metadata_analyzer] Modified timestamp before created timestamp
+[2025-12-28 11:47:35] [INFO] [deepfake_detector.detector] Analysis complete: REAL (80.73% confidence) in 231.47s
+[2025-12-28 11:47:35] [INFO] [deepfake_detector.report_generator] Report saved to: Diana_certificate_report.json
+[2026-01-07 05:27:29] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:27:29] [INFO] [deepfake_detector] DeepFake Detection Tool - Starting Analysis
+[2026-01-07 05:27:29] [INFO] [deepfake_detector] Video: Diana_certificate.mp4
+[2026-01-07 05:27:29] [INFO] [deepfake_detector] Configuration: 1 frame skip, 16 batch size, 4 workers
+[2026-01-07 05:27:29] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:27:29] [WARNING] [deepfake_detector.metadata_analyzer] pymediainfo not available, using OpenCV only
+[2026-01-07 05:27:29] [WARNING] [deepfake_detector.ml_detector] Model not found: face_swap
+[2026-01-07 05:27:29] [WARNING] [deepfake_detector.ml_detector] Model not found: lip_sync
+[2026-01-07 05:27:29] [WARNING] [deepfake_detector.ml_detector] Model not found: gan
+[2026-01-07 05:27:29] [WARNING] [deepfake_detector.ml_detector] No ML models loaded, using heuristic fallback
+[2026-01-07 05:27:29] [INFO] [deepfake_detector.detector] Initialized detector with 6 analyzers
+[2026-01-07 05:27:29] [INFO] [deepfake_detector.detector] Starting analysis: Diana_certificate.mp4
+[2026-01-07 05:27:30] [INFO] [deepfake_detector.video_processor] Loaded video: Diana_certificate.mp4, 720x1560, 24.00 FPS, 5.92s
+[2026-01-07 05:27:30] [INFO] [deepfake_detector.detector] Collected 9 batches
+[2026-01-07 05:27:30] [INFO] [deepfake_detector.detector] Running facial analyzer...
+[2026-01-07 05:28:46] [INFO] [deepfake_detector.detector] Running temporal analyzer...
+[2026-01-07 05:29:23] [INFO] [deepfake_detector.detector] Running lighting analyzer...
+[2026-01-07 05:29:29] [INFO] [deepfake_detector.detector] Running geometry analyzer...
+[2026-01-07 05:30:43] [INFO] [deepfake_detector.detector] Running ml analyzer...
+[2026-01-07 05:30:44] [INFO] [deepfake_detector.detector] Running metadata analyzer...
+[2026-01-07 05:30:44] [WARNING] [deepfake_detector.metadata_analyzer] Modified timestamp before created timestamp
+[2026-01-07 05:30:44] [INFO] [deepfake_detector.detector] Analysis complete: REAL (80.73% confidence) in 194.28s
+[2026-01-07 05:30:44] [INFO] [deepfake_detector.report_generator] Report saved to: Fake_video/Diana_certificate_report.json
+[2026-01-07 05:34:19] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:34:19] [INFO] [deepfake_detector] DeepFake Detection Tool - Starting Analysis
+[2026-01-07 05:34:19] [INFO] [deepfake_detector] Video: Diana_certificate.mp4
+[2026-01-07 05:34:19] [INFO] [deepfake_detector] Configuration: 1 frame skip, 16 batch size, 4 workers
+[2026-01-07 05:34:19] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:34:19] [WARNING] [deepfake_detector.metadata_analyzer] pymediainfo not available, using OpenCV only
+[2026-01-07 05:34:19] [INFO] [deepfake_detector.detector] Initialized detector with 5 analyzers
+[2026-01-07 05:34:19] [INFO] [deepfake_detector.detector] Starting analysis: Diana_certificate.mp4
+[2026-01-07 05:34:19] [INFO] [deepfake_detector.video_processor] Loaded video: Diana_certificate.mp4, 720x1560, 24.00 FPS, 5.92s
+[2026-01-07 05:34:19] [INFO] [deepfake_detector.detector] Collected 9 batches
+[2026-01-07 05:34:19] [INFO] [deepfake_detector.detector] Running facial analyzer...
+[2026-01-07 05:35:35] [INFO] [deepfake_detector.detector] Running temporal analyzer...
+[2026-01-07 05:36:14] [INFO] [deepfake_detector.detector] Running lighting analyzer...
+[2026-01-07 05:36:19] [INFO] [deepfake_detector.detector] Running geometry analyzer...
+[2026-01-07 05:37:33] [INFO] [deepfake_detector.detector] Running metadata analyzer...
+[2026-01-07 05:37:33] [WARNING] [deepfake_detector.metadata_analyzer] Modified timestamp before created timestamp
+[2026-01-07 05:37:33] [INFO] [deepfake_detector.detector] Analysis complete: REAL (75.06% confidence) in 194.91s
+[2026-01-07 05:37:33] [INFO] [deepfake_detector.report_generator] Report saved to: Fake_video/Diana_certificate_report.json
+[2026-01-07 05:42:22] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:42:22] [INFO] [deepfake_detector] DeepFake Detection Tool - Starting Analysis
+[2026-01-07 05:42:22] [INFO] [deepfake_detector] Video: diana2.mp4
+[2026-01-07 05:42:22] [INFO] [deepfake_detector] Configuration: 1 frame skip, 16 batch size, 4 workers
+[2026-01-07 05:42:22] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:42:22] [WARNING] [deepfake_detector.metadata_analyzer] pymediainfo not available, using OpenCV only
+[2026-01-07 05:42:22] [INFO] [deepfake_detector.detector] Initialized detector with 5 analyzers
+[2026-01-07 05:42:22] [INFO] [deepfake_detector.detector] Starting analysis: diana2.mp4
+[2026-01-07 05:42:22] [INFO] [deepfake_detector.video_processor] Loaded video: diana2.mp4, 720x1560, 24.00 FPS, 5.92s
+[2026-01-07 05:42:23] [INFO] [deepfake_detector.detector] Collected 9 batches
+[2026-01-07 05:42:23] [INFO] [deepfake_detector.detector] Running facial analyzer...
+[2026-01-07 05:43:40] [INFO] [deepfake_detector.detector] Running temporal analyzer...
+[2026-01-07 05:44:18] [INFO] [deepfake_detector.detector] Running lighting analyzer...
+[2026-01-07 05:44:23] [INFO] [deepfake_detector.detector] Running geometry analyzer...
+[2026-01-07 05:45:38] [INFO] [deepfake_detector.detector] Running metadata analyzer...
+[2026-01-07 05:45:38] [WARNING] [deepfake_detector.metadata_analyzer] Modified timestamp before created timestamp
+[2026-01-07 05:45:38] [INFO] [deepfake_detector.detector] Analysis complete: REAL (76.33% confidence) in 195.97s
+[2026-01-07 05:45:38] [INFO] [deepfake_detector.report_generator] Report saved to: Fake_video/diana2_report.json
+[2026-01-07 05:48:52] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:48:52] [INFO] [deepfake_detector] DeepFake Detection Tool - Starting Analysis
+[2026-01-07 05:48:52] [INFO] [deepfake_detector] Video: 20251227_162415.mp4
+[2026-01-07 05:48:52] [INFO] [deepfake_detector] Configuration: 1 frame skip, 16 batch size, 4 workers
+[2026-01-07 05:48:52] [INFO] [deepfake_detector] ============================================================
+[2026-01-07 05:48:52] [WARNING] [deepfake_detector.metadata_analyzer] pymediainfo not available, using OpenCV only
+[2026-01-07 05:48:52] [INFO] [deepfake_detector.detector] Initialized detector with 5 analyzers
+[2026-01-07 05:48:52] [INFO] [deepfake_detector.detector] Starting analysis: 20251227_162415.mp4
+[2026-01-07 05:48:53] [INFO] [deepfake_detector.video_processor] Loaded video: 20251227_162415.mp4, 1080x1920, 30.01 FPS, 10.86s
+[2026-01-07 05:48:56] [INFO] [deepfake_detector.detector] Collected 21 batches
+[2026-01-07 05:48:56] [INFO] [deepfake_detector.detector] Running facial analyzer...
+[2026-01-07 05:54:09] [INFO] [deepfake_detector.detector] Running temporal analyzer...
+[2026-01-07 05:56:58] [INFO] [deepfake_detector.detector] Running lighting analyzer...
+[2026-01-07 05:57:29] [INFO] [deepfake_detector.detector] Running geometry analyzer...
+[2026-01-07 06:05:36] [INFO] [deepfake_detector.detector] Running metadata analyzer...
+[2026-01-07 06:05:36] [WARNING] [deepfake_detector.metadata_analyzer] Modified timestamp before created timestamp
+[2026-01-07 06:05:36] [INFO] [deepfake_detector.detector] Analysis complete: REAL (78.16% confidence) in 1004.06s
+[2026-01-07 06:05:36] [INFO] [deepfake_detector.report_generator] Report saved to: Real_video/20251227_162415_report.json
