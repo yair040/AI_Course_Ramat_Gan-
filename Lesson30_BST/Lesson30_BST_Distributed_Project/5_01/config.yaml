@@ -1,0 +1,27 @@
+# Configuration for Main Orchestrator
+node_id: "5_01"
+node_name: "Main Orchestrator"
+parent_node: "null"
+node_type: "internal"
+
+# Resource limits
+max_memory_mb: 512
+max_cpu_percent: 50
+timeout_seconds: 300
+
+# Token tracking
+token_limit_per_operation: 1000
+enable_token_tracking: true
+
+# Logging
+log_level: "INFO"
+log_to_parent: true
+log_buffer_size: 100
+
+# Status reporting
+status_report_interval_seconds: 60
+aggregate_child_status: true
+
+# Decision escalation
+auto_escalate_on_error: true
+escalation_threshold: 0.7
