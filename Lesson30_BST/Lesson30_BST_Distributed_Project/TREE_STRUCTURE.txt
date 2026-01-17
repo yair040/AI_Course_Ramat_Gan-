@@ -1,0 +1,213 @@
+BST TREE STRUCTURE - Visual Representation
+==========================================
+
+Project Root: Lesson30_BST_Distributed_Project/
+│
+├── Documentation Files:
+│   ├── README.md
+│   ├── BST_DESIGN.md
+│   ├── DECISION_ESCALATION_SYSTEM.md
+│   ├── AGGREGATION_SYSTEM.md
+│   ├── TEST_SCENARIOS.md
+│   ├── SIMULATION_RESULTS.md
+│   ├── QUICK_REFERENCE.md
+│   └── TREE_STRUCTURE.txt (this file)
+│
+├── shared_level_5/ (System-wide utilities)
+│
+└── 5_01/ ═══════════════════════════════════════ ROOT NODE
+    │
+    ├── Node Files: config.yaml, prd.md, todo.md, requirements.md,
+    │               status.json, logs.json, tokens.json, source.py
+    │
+    ├── shared_level_4/ (Subsystem utilities)
+    │
+    ├── 4_01/ ═══════════════════════════════════ LEFT SUBTREE: Analysis Pipeline
+    │   │
+    │   ├── Node Files: [same structure]
+    │   │
+    │   ├── shared_level_3/ (Pipeline utilities)
+    │   │
+    │   ├── 3_01/ ═══════════════════════════════ Facial & Visual Analysis
+    │   │   │
+    │   │   ├── Node Files: [same structure]
+    │   │   │
+    │   │   ├── shared_level_2/ (Component utilities)
+    │   │   │
+    │   │   ├── 2_01/ ═══════════════════════════ Facial Features Analysis
+    │   │   │   │
+    │   │   │   ├── Node Files: [same structure]
+    │   │   │   │
+    │   │   │   ├── shared_level_1/ (I/O utilities)
+    │   │   │   │
+    │   │   │   ├── 1_01/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Face Detection Service
+    │   │   │   │   └── Files: config.yaml, prd.md, todo.md, requirements.md,
+    │   │   │   │               status.json, logs.json, tokens.json, source.py
+    │   │   │   │
+    │   │   │   └── 1_02/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Facial Landmark Extractor
+    │   │   │       └── Files: [same structure]
+    │   │   │
+    │   │   └── 2_02/ ═══════════════════════════ Lighting & Shadow Analysis
+    │   │       │
+    │   │       ├── Node Files: [same structure]
+    │   │       │
+    │   │       ├── shared_level_1/
+    │   │       │
+    │   │       ├── 1_03/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Eye & Blink Analyzer
+    │   │       │   └── Files: [same structure]
+    │   │       │
+    │   │       └── 1_04/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Shadow Geometry Validator
+    │   │           └── Files: [same structure]
+    │   │
+    │   └── 3_02/ ═══════════════════════════════ Temporal & ML Analysis
+    │       │
+    │       ├── Node Files: [same structure]
+    │       │
+    │       ├── shared_level_2/
+    │       │
+    │       ├── 2_03/ ═══════════════════════════ Temporal Motion Analysis
+    │       │   │
+    │       │   ├── Node Files: [same structure]
+    │       │   │
+    │       │   ├── shared_level_1/
+    │       │   │
+    │       │   ├── 1_05/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Optical Flow Computer
+    │       │   │   └── Files: [same structure]
+    │       │   │
+    │       │   └── 1_06/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Motion Vector Analyzer
+    │       │       └── Files: [same structure]
+    │       │
+    │       └── 2_04/ ═══════════════════════════ ML Model Coordination
+    │           │
+    │           ├── Node Files: [same structure]
+    │           │
+    │           ├── shared_level_1/
+    │           │
+    │           ├── 1_07/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: ML Model Loader
+    │           │   └── Files: [same structure]
+    │           │
+    │           └── 1_08/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: ML Inference Engine
+    │               └── Files: [same structure]
+    │
+    └── 4_02/ ═══════════════════════════════════ RIGHT SUBTREE: Infrastructure & I/O
+        │
+        ├── Node Files: [same structure]
+        │
+        ├── shared_level_3/
+        │
+        ├── 3_03/ ═══════════════════════════════ Video Processing Pipeline
+        │   │
+        │   ├── Node Files: [same structure]
+        │   │
+        │   ├── shared_level_2/
+        │   │
+        │   ├── 2_05/ ═══════════════════════════ Video Input Handler
+        │   │   │
+        │   │   ├── Node Files: [same structure]
+        │   │   │
+        │   │   ├── shared_level_1/
+        │   │   │
+        │   │   ├── 1_09/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Video File Reader
+        │   │   │   └── Files: [same structure]
+        │   │   │
+        │   │   └── 1_10/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Metadata Extractor
+        │   │       └── Files: [same structure]
+        │   │
+        │   └── 2_06/ ═══════════════════════════ Frame Processing
+        │       │
+        │       ├── Node Files: [same structure]
+        │       │
+        │       ├── shared_level_1/
+        │       │
+        │       ├── 1_11/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Frame Decoder
+        │       │   └── Files: [same structure]
+        │       │
+        │       └── 1_12/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Frame Buffer Manager
+        │           └── Files: [same structure]
+        │
+        └── 3_04/ ═══════════════════════════════ Reporting & Monitoring
+            │
+            ├── Node Files: [same structure]
+            │
+            ├── shared_level_2/
+            │
+            ├── 2_07/ ═══════════════════════════ Report Generation
+            │   │
+            │   ├── Node Files: [same structure]
+            │   │
+            │   ├── shared_level_1/
+            │   │
+            │   ├── 1_13/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: JSON Report Writer
+            │   │   └── Files: [same structure]
+            │   │
+            │   └── 1_14/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Visualization Generator
+            │       └── Files: [same structure]
+            │
+            └── 2_08/ ═══════════════════════════ Log & Status Management
+                │
+                ├── Node Files: [same structure]
+                │
+                ├── shared_level_1/
+                │
+                ├── 1_15/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Log File Writer
+                │   └── Files: [same structure]
+                │
+                └── 1_16/ ■■■■■■■■■■■■■■■■■■■■■■ LEAF: Metrics Aggregator
+                    └── Files: [same structure]
+
+
+LEGEND:
+═══════ Internal Node (coordination)
+■■■■■■■ Leaf Node (external I/O only)
+
+STATISTICS:
+-----------
+Total Nodes: 31
+├── Root: 1 (5_01)
+├── Level 2: 2 (4_01, 4_02)
+├── Level 3: 4 (3_01, 3_02, 3_03, 3_04)
+├── Level 4: 8 (2_01 through 2_08)
+└── Level 5: 16 (1_01 through 1_16) - ALL LEAVES
+
+Total Shared Folders: 31
+├── shared_level_5: 1 (at root)
+├── shared_level_4: 1 (in 5_01)
+├── shared_level_3: 2 (in each 4_xx)
+├── shared_level_2: 4 (in each 3_xx)
+└── shared_level_1: 8 (in each 2_xx)
+
+Total Files Generated: 248
+├── Node files: 31 nodes × 8 files = 248
+└── Each node has: config.yaml, prd.md, todo.md, requirements.md,
+                   status.json, logs.json, tokens.json, source.py
+
+EXAMPLE PATHS:
+--------------
+Root node: ./5_01/
+Left child of root: ./5_01/4_01/
+Leftmost leaf: ./5_01/4_01/3_01/2_01/1_01/
+Rightmost leaf: ./5_01/4_02/3_04/2_08/1_16/
+
+NAVIGATION COMMANDS:
+--------------------
+# Go to root
+cd 5_01
+
+# Navigate to a specific leaf (example: 1_09)
+cd 5_01/4_02/3_03/2_05/1_09
+
+# List all leaves
+find 5_01 -name "1_*" -type d
+
+# List all level 4 nodes
+find 5_01 -name "2_*" -type d
+
+# View structure depth
+find 5_01 -type d | awk -F/ '{print NF-1}' | sort -n | uniq -c
+
+Expected output:
+  1 depth 1  (5_01)
+  2 depth 2  (4_01, 4_02)
+  4 depth 3  (3_xx nodes)
+  8 depth 4  (2_xx nodes)
+ 16 depth 5  (1_xx leaf nodes)

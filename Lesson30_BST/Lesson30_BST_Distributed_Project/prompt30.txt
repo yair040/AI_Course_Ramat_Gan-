@@ -1,0 +1,19 @@
+1. Take the PRD file (of Deep Fake project) that located at ../../Lesson26/Lesson26_DeepFake/prd.md and use it to divide it to subprojects that will ordered in BST (Binary Search Tree) folder structure.
+2. The BST will be 5 levels deep (16 leaves).
+3. Each node (if possible) has its token numbers handler, logs, status, configuration, PRD, to do list, requirement and source code.
+These will be handled in files.
+4. Put the root in the current folder (Lesson30_BST_Distributed_Project).
+Under the root will be all other folders.
+5. modules that communicate with external world (like read file etc.) will be located in the leaves.
+6. The code in the nodes will not be duplicated.
+7. Folder names:
+A leaf folder will be named as 1_xx while xx is the leaf number from 01 to 16.
+The layer above is 2_xx while xx from 01 to 08.
+The root folder will be 5_01.
+8. Each level has (if required) a shared folder with all things that are common to all layers below.
+9. When a decision in a leaf is required it will delivered to the layer above to decide if to decide there or deliver upwards.
+10. The logs will be aggregated and filtered in each level before delivering to the level above.
+The same is for the status and number of token used.
+11. create test scenarios that test the whole BST tree or parts of it, but cover the whole BST.
+Define the input and required output.
+Simulate without code implemented to see if there are issues and all modules are used.
