@@ -1,0 +1,23 @@
+# Balanced Token Tree - Python Dependencies
+# Author: Yair Levi
+# Date: 2026-01-15
+# Python Version: 3.8+
+# Environment: WSL (Windows Subsystem for Linux)
+
+# Core visualization library
+matplotlib>=3.5.0,<4.0.0
+
+# Numerical operations (dependency of matplotlib, but explicit for clarity)
+numpy>=2.0.0,<2.3.0
+
+# Optional: Enhanced graph layouts (if needed for future enhancements)
+# networkx>=2.6.0,<4.0.0
+
+# Standard library modules (no installation needed):
+# - logging (ring buffer rotation)
+# - logging.handlers (RotatingFileHandler)
+# - multiprocessing (parallel processing)
+# - random (token generation)
+# - typing (type hints)
+# - pathlib (path management)
+# - argparse (CLI arguments)

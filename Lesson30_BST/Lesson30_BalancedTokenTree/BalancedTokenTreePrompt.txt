@@ -1,0 +1,43 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson30\Lesson30_BalancedTokenTree.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+
+1. Create a BST tree with 5 levels (16 leaves).
+2. Enumerate the nodes and leaves:
+   Leaves will be named from 1_1 to 1_16 (16 leaves).
+   Next level nodes will be from 2_1 to 2_8 (8 nodes).
+   Next level nodes will be from 3_1 to 3_4 (4 nodes).
+   Next level nodes will be from 4_1 to 4_2 (2 nodes).
+   Next level will be the root 5_1.
+3. For each leaf pick a random numbers of tokens from 0 to 1000.
+   Draw the tree with number of tokens in each leaf.
+   For each node above the leaves summarize number of tokens of his children and it will be its value.
+   Do this until the root level.
+   Draw in a graph the tree with number of tokens in each leaf and node.
+4. Use the next algorithm that takes the tokens in leaves and change locations so the tree will be more balanced:
+   a. Take the number of tokens in each leaf and put them in an array.
+      Sort the array by tokens number.
+   b. Delete the tokens number from the leaves and the nodes.
+   c. Take from the array the biggest number and the smallest number and put them in 2 leaves under the same parent.
+   d. Delete these 2 numbers from the array.
+   e. Repeat on steps "c" and "d" untill the array is empty and all leaves are populated with token numbers.
+   f. For each node above the leaves summarize number of tokens of his children and it will be its value.
+      Do this until the root level.
+5. Draw in a graph the tree with number of tokens in each leaf and node.
+6. Redo steps 3 till 5 to run one more iteration.

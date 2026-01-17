@@ -1,0 +1,180 @@
+2026-01-16 13:55:56 - root - INFO - Logging system initialized
+2026-01-16 13:55:56 - root - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson30/Lesson30_BalancedTokenTree/log
+2026-01-16 13:55:56 - root - INFO - Ring buffer: 20 files × 16.0 MB = 320 MB total
+2026-01-16 13:55:56 - __main__ - INFO - Balanced Token Tree Program
+2026-01-16 13:55:56 - __main__ - INFO - Author: Yair Levi
+2026-01-16 13:55:56 - __main__ - INFO - Random seed: 42
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Starting Balanced Token Tree Pipeline
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Creating tree structure (5 levels, 16 leaves)
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Tree created: 16 leaves, 31 total nodes
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - ITERATION 0
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Step 1: Assigning random tokens
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Using random seed: 42
+2026-01-16 13:55:56 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6925
+2026-01-16 13:55:56 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Initial)
+2026-01-16 13:55:59 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_initial.png
+2026-01-16 13:55:59 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-16 13:55:59 - balanced_token_tree.tasks - INFO - === Balancing Iteration 0 ===
+2026-01-16 13:55:59 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 0)
+2026-01-16 13:55:59 - balanced_token_tree.balancing - INFO - Original total tokens: 6925
+2026-01-16 13:55:59 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-16 13:55:59 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6925
+2026-01-16 13:55:59 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=865.62, Variance=107461.23, Range=[167, 1471]
+2026-01-16 13:55:59 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Balanced)
+2026-01-16 13:56:02 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_balanced.png
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - ITERATION 1 (New Random Distribution)
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - Step 1: Assigning NEW random tokens
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - Using random seed: 1042
+2026-01-16 13:56:02 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6633
+2026-01-16 13:56:02 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Initial)
+2026-01-16 13:56:03 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_initial.png
+2026-01-16 13:56:03 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-16 13:56:03 - balanced_token_tree.tasks - INFO - === Balancing Iteration 1 ===
+2026-01-16 13:56:03 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 1)
+2026-01-16 13:56:03 - balanced_token_tree.balancing - INFO - Original total tokens: 6633
+2026-01-16 13:56:03 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-16 13:56:03 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6633
+2026-01-16 13:56:03 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=829.12, Variance=76164.11, Range=[311, 1320]
+2026-01-16 13:56:03 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Balanced)
+2026-01-16 13:56:04 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_balanced.png
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO - Pipeline completed successfully!
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO - Visualizations saved:
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_initial.png
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_balanced.png
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_initial.png
+2026-01-16 13:56:04 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_balanced.png
+2026-01-16 13:56:04 - __main__ - INFO - 
+Program completed successfully!
+2026-01-17 02:45:57 - root - INFO - Logging system initialized
+2026-01-17 02:45:57 - root - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson30/Lesson30_BalancedTokenTree/log
+2026-01-17 02:45:57 - root - INFO - Ring buffer: 20 files × 16.0 MB = 320 MB total
+2026-01-17 02:45:57 - __main__ - INFO - Balanced Token Tree Program
+2026-01-17 02:45:57 - __main__ - INFO - Author: Yair Levi
+2026-01-17 02:45:57 - __main__ - INFO - Random seed: 42
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Starting Balanced Token Tree Pipeline
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Creating tree structure (5 levels, 16 leaves)
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Tree created: 16 leaves, 31 total nodes
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - ITERATION 0
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Step 1: Assigning random tokens
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Using random seed: 42
+2026-01-17 02:45:57 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6925
+2026-01-17 02:45:57 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Initial)
+2026-01-17 02:46:03 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_initial.png
+2026-01-17 02:46:03 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-17 02:46:03 - balanced_token_tree.tasks - INFO - === Balancing Iteration 0 ===
+2026-01-17 02:46:03 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 0)
+2026-01-17 02:46:03 - balanced_token_tree.balancing - INFO - Original total tokens: 6925
+2026-01-17 02:46:03 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-17 02:46:03 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6925
+2026-01-17 02:46:03 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=865.62, Variance=107461.23, Range=[167, 1471]
+2026-01-17 02:46:03 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Balanced)
+2026-01-17 02:46:07 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_balanced.png
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - ITERATION 1 (New Random Distribution)
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - Step 1: Assigning NEW random tokens
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - Using random seed: 1042
+2026-01-17 02:46:07 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6633
+2026-01-17 02:46:07 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Initial)
+2026-01-17 02:46:12 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_initial.png
+2026-01-17 02:46:12 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-17 02:46:12 - balanced_token_tree.tasks - INFO - === Balancing Iteration 1 ===
+2026-01-17 02:46:12 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 1)
+2026-01-17 02:46:12 - balanced_token_tree.balancing - INFO - Original total tokens: 6633
+2026-01-17 02:46:12 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-17 02:46:12 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6633
+2026-01-17 02:46:12 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=829.12, Variance=76164.11, Range=[311, 1320]
+2026-01-17 02:46:12 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Balanced)
+2026-01-17 02:46:16 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_balanced.png
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO - Pipeline completed successfully!
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO - Visualizations saved:
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_initial.png
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_balanced.png
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_initial.png
+2026-01-17 02:46:16 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_balanced.png
+2026-01-17 02:46:16 - __main__ - INFO - 
+Program completed successfully!
+2026-01-17 02:58:06 - root - INFO - Logging system initialized
+2026-01-17 02:58:06 - root - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson30/Lesson30_BalancedTokenTree/log
+2026-01-17 02:58:06 - root - INFO - Ring buffer: 20 files × 16.0 MB = 320 MB total
+2026-01-17 02:58:06 - __main__ - INFO - Balanced Token Tree Program
+2026-01-17 02:58:06 - __main__ - INFO - Author: Yair Levi
+2026-01-17 02:58:06 - __main__ - INFO - Random seed: 42
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Starting Balanced Token Tree Pipeline
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Creating tree structure (5 levels, 16 leaves)
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Tree created: 16 leaves, 31 total nodes
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - ITERATION 0
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Step 1: Assigning random tokens
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Using random seed: 42
+2026-01-17 02:58:06 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6925
+2026-01-17 02:58:06 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Initial)
+2026-01-17 02:58:12 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_initial.png
+2026-01-17 02:58:12 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-17 02:58:12 - balanced_token_tree.tasks - INFO - === Balancing Iteration 0 ===
+2026-01-17 02:58:12 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 0)
+2026-01-17 02:58:12 - balanced_token_tree.balancing - INFO - Original total tokens: 6925
+2026-01-17 02:58:12 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-17 02:58:12 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6925
+2026-01-17 02:58:13 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=865.62, Variance=959.98, Range=[834, 938]
+2026-01-17 02:58:13 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 0 (Balanced)
+2026-01-17 02:58:16 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_0_balanced.png
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - ITERATION 1 (New Random Distribution)
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - Step 1: Assigning NEW random tokens
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - Assigning random tokens to leaves (0-1000)
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - Using random seed: 1042
+2026-01-17 02:58:16 - balanced_token_tree.tasks - INFO - Initial tokens assigned - Total: 6633
+2026-01-17 02:58:16 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Initial)
+2026-01-17 02:58:21 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_initial.png
+2026-01-17 02:58:21 - balanced_token_tree.tasks - INFO - Step 2: Applying balancing algorithm
+2026-01-17 02:58:21 - balanced_token_tree.tasks - INFO - === Balancing Iteration 1 ===
+2026-01-17 02:58:21 - balanced_token_tree.balancing - INFO - Applying balancing algorithm (Iteration 1)
+2026-01-17 02:58:21 - balanced_token_tree.balancing - INFO - Original total tokens: 6633
+2026-01-17 02:58:21 - balanced_token_tree.balancing - INFO - Created 8 balanced pairs
+2026-01-17 02:58:21 - balanced_token_tree.balancing - INFO - Balancing complete. Total tokens preserved: 6633
+2026-01-17 02:58:21 - balanced_token_tree.tasks - INFO - Level 2 stats: Mean=829.12, Variance=20348.86, Range=[676, 1054]
+2026-01-17 02:58:21 - balanced_token_tree.visualization - INFO - Generating tree visualization: Tree - Iteration 1 (Balanced)
+2026-01-17 02:58:25 - balanced_token_tree.visualization - INFO - Visualization saved to: output/tree_iteration_1_balanced.png
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO - 
+============================================================
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO - Pipeline completed successfully!
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO - ============================================================
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO - Visualizations saved:
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_initial.png
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_0_balanced.png
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_initial.png
+2026-01-17 02:58:25 - balanced_token_tree.tasks - INFO -   - output/tree_iteration_1_balanced.png
+2026-01-17 02:58:25 - __main__ - INFO - 
+Program completed successfully!
