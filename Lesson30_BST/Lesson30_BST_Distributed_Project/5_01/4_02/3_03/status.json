@@ -1,0 +1,20 @@
+{
+  "node_id": "3_03",
+  "node_name": "Video Processing Pipeline",
+  "status": "initialized",
+  "health": "healthy",
+  "last_updated": "2026-01-13T00:00:00Z",
+  "uptime_seconds": 0,
+  "operations_completed": 0,
+  "operations_failed": 0,
+  "operations_in_progress": 0,
+  "current_operation": null,
+  "resource_usage": {
+    "memory_mb": 0,
+    "cpu_percent": 0,
+    "disk_io_mb": 0
+  },
+  "child_statuses": {},
+  "errors": [],
+  "warnings": []
+}
