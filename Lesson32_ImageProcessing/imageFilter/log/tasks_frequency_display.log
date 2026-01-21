@@ -1,0 +1,91 @@
+2026-01-20 22:08:39 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-20 22:10:33 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-20 22:10:33 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum.png
+2026-01-20 22:10:33 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-20 22:10:33 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-20 22:10:34 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum.png
+2026-01-21 06:24:49 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-21 06:24:49 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_original.png
+2026-01-21 06:24:49 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-21 06:24:49 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-21 06:24:50 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_original.png
+2026-01-21 06:24:50 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_HighPassFilter.png
+2026-01-21 06:24:50 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after HighPassFilter
+2026-01-21 06:24:50 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after HighPassFilter
+2026-01-21 06:24:50 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_HighPassFilter.png
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_LowPassFilter.png
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after LowPassFilter
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after LowPassFilter
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_LowPassFilter.png
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_BandPassFilter.png
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after BandPassFilter
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after BandPassFilter
+2026-01-21 06:24:51 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_BandPassFilter.png
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_original.png
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_original.png
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_HighPassFilter.png
+2026-01-21 06:29:43 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after HighPassFilter
+2026-01-21 06:29:44 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after HighPassFilter
+2026-01-21 06:29:44 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_HighPassFilter.png
+2026-01-21 06:29:44 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_LowPassFilter.png
+2026-01-21 06:29:44 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after LowPassFilter
+2026-01-21 06:29:44 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after LowPassFilter
+2026-01-21 06:29:45 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_LowPassFilter.png
+2026-01-21 06:29:45 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_BandPassFilter.png
+2026-01-21 06:29:45 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after BandPassFilter
+2026-01-21 06:29:45 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after BandPassFilter
+2026-01-21 06:29:45 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_BandPassFilter.png
+2026-01-21 06:30:24 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-21 06:30:24 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_original.png
+2026-01-21 06:30:24 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-21 06:30:24 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-21 06:30:24 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_original.png
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_HighPassFilter.png
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after HighPassFilter
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after HighPassFilter
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_HighPassFilter.png
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_LowPassFilter.png
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after LowPassFilter
+2026-01-21 06:30:25 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after LowPassFilter
+2026-01-21 06:30:26 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_LowPassFilter.png
+2026-01-21 06:30:26 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_BandPassFilter.png
+2026-01-21 06:30:26 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after BandPassFilter
+2026-01-21 06:30:26 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after BandPassFilter
+2026-01-21 06:30:26 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_BandPassFilter.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_original.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_original.png
+2026-01-21 06:31:11 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_HighPassFilter.png
+2026-01-21 06:31:11 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after HighPassFilter
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after HighPassFilter
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_HighPassFilter.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_LowPassFilter.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after LowPassFilter
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after LowPassFilter
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_LowPassFilter.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_BandPassFilter.png
+2026-01-21 06:31:12 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after BandPassFilter
+2026-01-21 06:31:13 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after BandPassFilter
+2026-01-21 06:31:13 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_BandPassFilter.png
+2026-01-21 06:48:57 - tasks.frequency_display - INFO - Logger 'tasks.frequency_display' initialized at 20 level
+2026-01-21 06:48:57 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_original.png
+2026-01-21 06:48:57 - tasks.frequency_display - INFO - Visualizing spectrum: Original Frequency Spectrum
+2026-01-21 06:48:57 - tasks.frequency_display - INFO - Spectrum visualization created: Original Frequency Spectrum
+2026-01-21 06:48:58 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_original.png
+2026-01-21 06:48:58 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_HighPassFilter.png
+2026-01-21 06:48:58 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after HighPassFilter
+2026-01-21 06:48:58 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after HighPassFilter
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_HighPassFilter.png
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_LowPassFilter.png
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after LowPassFilter
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after LowPassFilter
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_LowPassFilter.png
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Saving spectrum to /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output/image_spectrum_BandPassFilter.png
+2026-01-21 06:48:59 - tasks.frequency_display - INFO - Visualizing spectrum: Frequency Spectrum after BandPassFilter
+2026-01-21 06:49:00 - tasks.frequency_display - INFO - Spectrum visualization created: Frequency Spectrum after BandPassFilter
+2026-01-21 06:49:00 - tasks.frequency_display - INFO - Spectrum saved successfully: image_spectrum_BandPassFilter.png

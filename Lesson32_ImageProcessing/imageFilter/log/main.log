@@ -1,0 +1,186 @@
+2026-01-20 22:08:40 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-20 22:08:40 - main - INFO - ============================================================
+2026-01-20 22:08:40 - main - INFO - Image Frequency Filter Application Started
+2026-01-20 22:08:40 - main - INFO - ============================================================
+2026-01-20 22:08:40 - main - INFO - Processing image: image.jpg
+2026-01-20 22:08:40 - main - INFO - Filter mode: all
+2026-01-20 22:08:40 - main - INFO - Step 1: Loading image...
+2026-01-20 22:08:40 - main - ERROR - Application failed: Image not found: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/input/image.jpg
+Traceback (most recent call last):
+  File "/mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/main.py", line 103, in main
+    image = load_image(input_path, grayscale=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/utils/image_loader.py", line 58, in load_image
+    raise FileNotFoundError(f"Image not found: {path}")
+FileNotFoundError: Image not found: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/input/image.jpg
+2026-01-20 22:10:33 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-20 22:10:33 - main - INFO - ============================================================
+2026-01-20 22:10:33 - main - INFO - Image Frequency Filter Application Started
+2026-01-20 22:10:33 - main - INFO - ============================================================
+2026-01-20 22:10:33 - main - INFO - Processing image: image.jpg
+2026-01-20 22:10:33 - main - INFO - Filter mode: all
+2026-01-20 22:10:33 - main - INFO - Step 1: Loading image...
+2026-01-20 22:10:33 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-20 22:10:33 - main - INFO - Step 3: Visualizing frequency spectrum...
+2026-01-20 22:10:34 - main - INFO - Step 4: Creating and applying filters...
+2026-01-20 22:10:34 - main - INFO - Created HPF with cutoff=30.0
+2026-01-20 22:10:34 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-20 22:10:34 - main - INFO - Applying filters in parallel...
+2026-01-20 22:10:34 - main - INFO - Step 5: Reconstructing images from filtered spectra...
+2026-01-20 22:10:34 - main - INFO - Reconstructing: HighPassFilter
+2026-01-20 22:10:35 - main - INFO - Reconstructing: BandPassFilter
+2026-01-20 22:10:35 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-20 22:10:36 - main - INFO - ============================================================
+2026-01-20 22:10:36 - main - INFO - Processing completed successfully!
+2026-01-20 22:10:36 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-20 22:10:36 - main - INFO - ============================================================
+2026-01-21 06:24:49 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-21 06:24:49 - main - INFO - ============================================================
+2026-01-21 06:24:49 - main - INFO - Image Frequency Filter Application Started
+2026-01-21 06:24:49 - main - INFO - ============================================================
+2026-01-21 06:24:49 - main - INFO - Processing image: image.jpg
+2026-01-21 06:24:49 - main - INFO - Filter mode: all
+2026-01-21 06:24:49 - main - INFO - Step 1: Loading image...
+2026-01-21 06:24:49 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-21 06:24:49 - main - INFO - Step 3: Visualizing original frequency spectrum...
+2026-01-21 06:24:50 - main - INFO - Step 4: Creating and applying filters...
+2026-01-21 06:24:50 - main - INFO - Created HPF with cutoff=30.0
+2026-01-21 06:24:50 - main - INFO - Created LPF with cutoff=30.0
+2026-01-21 06:24:50 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-21 06:24:50 - main - INFO - Applying filters in parallel...
+2026-01-21 06:24:50 - main - INFO - Step 5: Processing filtered results...
+2026-01-21 06:24:50 - main - INFO - Processing: HighPassFilter
+2026-01-21 06:24:50 - main - INFO - Saved filtered spectrum: HighPassFilter
+2026-01-21 06:24:50 - main - INFO - Reconstructing image: HighPassFilter
+2026-01-21 06:24:50 - main - INFO - Processing: LowPassFilter
+2026-01-21 06:24:51 - main - INFO - Saved filtered spectrum: LowPassFilter
+2026-01-21 06:24:51 - main - INFO - Reconstructing image: LowPassFilter
+2026-01-21 06:24:51 - main - INFO - Processing: BandPassFilter
+2026-01-21 06:24:51 - main - INFO - Saved filtered spectrum: BandPassFilter
+2026-01-21 06:24:51 - main - INFO - Reconstructing image: BandPassFilter
+2026-01-21 06:24:52 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-21 06:24:53 - main - INFO - ============================================================
+2026-01-21 06:24:53 - main - INFO - Processing completed successfully!
+2026-01-21 06:24:53 - main - INFO - Total filters applied: 3
+2026-01-21 06:24:53 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-21 06:24:53 - main - INFO - ============================================================
+2026-01-21 06:29:43 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-21 06:29:43 - main - INFO - ============================================================
+2026-01-21 06:29:43 - main - INFO - Image Frequency Filter Application Started
+2026-01-21 06:29:43 - main - INFO - ============================================================
+2026-01-21 06:29:43 - main - INFO - Processing image: image.jpg
+2026-01-21 06:29:43 - main - INFO - Filter mode: all
+2026-01-21 06:29:43 - main - INFO - Step 1: Loading image...
+2026-01-21 06:29:43 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-21 06:29:43 - main - INFO - Step 3: Visualizing original frequency spectrum...
+2026-01-21 06:29:43 - main - INFO - Step 4: Creating and applying filters...
+2026-01-21 06:29:43 - main - INFO - Created HPF with cutoff=30.0
+2026-01-21 06:29:43 - main - INFO - Created LPF with cutoff=30.0
+2026-01-21 06:29:43 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-21 06:29:43 - main - INFO - Applying filters in parallel...
+2026-01-21 06:29:43 - main - INFO - Step 5: Processing filtered results...
+2026-01-21 06:29:43 - main - INFO - Processing: HighPassFilter
+2026-01-21 06:29:44 - main - INFO - Saved filtered spectrum: HighPassFilter
+2026-01-21 06:29:44 - main - INFO - Reconstructing image: HighPassFilter
+2026-01-21 06:29:44 - main - INFO - Processing: LowPassFilter
+2026-01-21 06:29:45 - main - INFO - Saved filtered spectrum: LowPassFilter
+2026-01-21 06:29:45 - main - INFO - Reconstructing image: LowPassFilter
+2026-01-21 06:29:45 - main - INFO - Processing: BandPassFilter
+2026-01-21 06:29:45 - main - INFO - Saved filtered spectrum: BandPassFilter
+2026-01-21 06:29:45 - main - INFO - Reconstructing image: BandPassFilter
+2026-01-21 06:29:45 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-21 06:29:46 - main - INFO - ============================================================
+2026-01-21 06:29:46 - main - INFO - Processing completed successfully!
+2026-01-21 06:29:46 - main - INFO - Total filters applied: 3
+2026-01-21 06:29:46 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-21 06:29:46 - main - INFO - ============================================================
+2026-01-21 06:30:24 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-21 06:30:24 - main - INFO - ============================================================
+2026-01-21 06:30:24 - main - INFO - Image Frequency Filter Application Started
+2026-01-21 06:30:24 - main - INFO - ============================================================
+2026-01-21 06:30:24 - main - INFO - Processing image: image.jpg
+2026-01-21 06:30:24 - main - INFO - Filter mode: all
+2026-01-21 06:30:24 - main - INFO - Step 1: Loading image...
+2026-01-21 06:30:24 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-21 06:30:24 - main - INFO - Step 3: Visualizing original frequency spectrum...
+2026-01-21 06:30:24 - main - INFO - Step 4: Creating and applying filters...
+2026-01-21 06:30:24 - main - INFO - Created HPF with cutoff=30.0
+2026-01-21 06:30:24 - main - INFO - Created LPF with cutoff=30.0
+2026-01-21 06:30:24 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-21 06:30:24 - main - INFO - Applying filters in parallel...
+2026-01-21 06:30:25 - main - INFO - Step 5: Processing filtered results...
+2026-01-21 06:30:25 - main - INFO - Processing: HighPassFilter
+2026-01-21 06:30:25 - main - INFO - Saved filtered spectrum: HighPassFilter
+2026-01-21 06:30:25 - main - INFO - Reconstructing image: HighPassFilter
+2026-01-21 06:30:25 - main - INFO - Processing: LowPassFilter
+2026-01-21 06:30:26 - main - INFO - Saved filtered spectrum: LowPassFilter
+2026-01-21 06:30:26 - main - INFO - Reconstructing image: LowPassFilter
+2026-01-21 06:30:26 - main - INFO - Processing: BandPassFilter
+2026-01-21 06:30:26 - main - INFO - Saved filtered spectrum: BandPassFilter
+2026-01-21 06:30:26 - main - INFO - Reconstructing image: BandPassFilter
+2026-01-21 06:30:26 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-21 06:30:27 - main - INFO - ============================================================
+2026-01-21 06:30:27 - main - INFO - Processing completed successfully!
+2026-01-21 06:30:27 - main - INFO - Total filters applied: 3
+2026-01-21 06:30:27 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-21 06:30:27 - main - INFO - ============================================================
+2026-01-21 06:31:12 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-21 06:31:12 - main - INFO - ============================================================
+2026-01-21 06:31:12 - main - INFO - Image Frequency Filter Application Started
+2026-01-21 06:31:12 - main - INFO - ============================================================
+2026-01-21 06:31:12 - main - INFO - Processing image: image.jpg
+2026-01-21 06:31:12 - main - INFO - Filter mode: all
+2026-01-21 06:31:12 - main - INFO - Step 1: Loading image...
+2026-01-21 06:31:12 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-21 06:31:12 - main - INFO - Step 3: Visualizing original frequency spectrum...
+2026-01-21 06:31:12 - main - INFO - Step 4: Creating and applying filters...
+2026-01-21 06:31:12 - main - INFO - Created HPF with cutoff=30.0
+2026-01-21 06:31:13 - main - INFO - Created LPF with cutoff=30.0
+2026-01-21 06:31:13 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-21 06:31:13 - main - INFO - Applying filters in parallel...
+2026-01-21 06:31:11 - main - INFO - Step 5: Processing filtered results...
+2026-01-21 06:31:11 - main - INFO - Processing: HighPassFilter
+2026-01-21 06:31:12 - main - INFO - Saved filtered spectrum: HighPassFilter
+2026-01-21 06:31:12 - main - INFO - Reconstructing image: HighPassFilter
+2026-01-21 06:31:12 - main - INFO - Processing: LowPassFilter
+2026-01-21 06:31:12 - main - INFO - Saved filtered spectrum: LowPassFilter
+2026-01-21 06:31:12 - main - INFO - Reconstructing image: LowPassFilter
+2026-01-21 06:31:12 - main - INFO - Processing: BandPassFilter
+2026-01-21 06:31:13 - main - INFO - Saved filtered spectrum: BandPassFilter
+2026-01-21 06:31:13 - main - INFO - Reconstructing image: BandPassFilter
+2026-01-21 06:31:13 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-21 06:31:14 - main - INFO - ============================================================
+2026-01-21 06:31:14 - main - INFO - Processing completed successfully!
+2026-01-21 06:31:14 - main - INFO - Total filters applied: 3
+2026-01-21 06:31:14 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-21 06:31:14 - main - INFO - ============================================================
+2026-01-21 06:48:57 - main - INFO - Logger 'main' initialized at 20 level
+2026-01-21 06:48:57 - main - INFO - ============================================================
+2026-01-21 06:48:57 - main - INFO - Image Frequency Filter Application Started
+2026-01-21 06:48:57 - main - INFO - ============================================================
+2026-01-21 06:48:57 - main - INFO - Processing image: image.jpg
+2026-01-21 06:48:57 - main - INFO - Filter mode: all
+2026-01-21 06:48:57 - main - INFO - Step 1: Loading image...
+2026-01-21 06:48:57 - main - INFO - Step 2: Applying FFT transformation...
+2026-01-21 06:48:57 - main - INFO - Step 3: Visualizing original frequency spectrum...
+2026-01-21 06:48:58 - main - INFO - Step 4: Creating and applying filters...
+2026-01-21 06:48:58 - main - INFO - Created HPF with cutoff=30.0
+2026-01-21 06:48:58 - main - INFO - Created LPF with cutoff=30.0
+2026-01-21 06:48:58 - main - INFO - Created BPF with band=[20.0, 80.0]
+2026-01-21 06:48:58 - main - INFO - Applying filters in parallel...
+2026-01-21 06:48:58 - main - INFO - Step 5: Processing filtered results...
+2026-01-21 06:48:58 - main - INFO - Processing: HighPassFilter
+2026-01-21 06:48:59 - main - INFO - Saved filtered spectrum: HighPassFilter
+2026-01-21 06:48:59 - main - INFO - Reconstructing image: HighPassFilter
+2026-01-21 06:48:59 - main - INFO - Processing: LowPassFilter
+2026-01-21 06:48:59 - main - INFO - Saved filtered spectrum: LowPassFilter
+2026-01-21 06:48:59 - main - INFO - Reconstructing image: LowPassFilter
+2026-01-21 06:48:59 - main - INFO - Processing: BandPassFilter
+2026-01-21 06:49:00 - main - INFO - Saved filtered spectrum: BandPassFilter
+2026-01-21 06:49:00 - main - INFO - Reconstructing image: BandPassFilter
+2026-01-21 06:49:00 - main - INFO - Step 6: Creating comparison visualization...
+2026-01-21 06:49:01 - main - INFO - ============================================================
+2026-01-21 06:49:01 - main - INFO - Processing completed successfully!
+2026-01-21 06:49:01 - main - INFO - Total filters applied: 3
+2026-01-21 06:49:01 - main - INFO - Results saved to: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/imageFilter/output
+2026-01-21 06:49:01 - main - INFO - ============================================================

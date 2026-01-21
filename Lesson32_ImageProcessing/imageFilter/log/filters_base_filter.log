@@ -1,0 +1,24 @@
+2026-01-20 22:08:35 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-20 22:10:29 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-20 22:10:34 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-20 22:10:34 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal
+2026-01-21 06:24:48 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-21 06:24:50 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-21 06:24:50 - filters.base_filter - INFO - Initialized LowPassFilter with type: ideal
+2026-01-21 06:24:50 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal
+2026-01-21 06:29:42 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-21 06:29:43 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-21 06:29:43 - filters.base_filter - INFO - Initialized LowPassFilter with type: ideal
+2026-01-21 06:29:43 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal
+2026-01-21 06:30:23 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-21 06:30:24 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-21 06:30:24 - filters.base_filter - INFO - Initialized LowPassFilter with type: ideal
+2026-01-21 06:30:24 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal
+2026-01-21 06:31:11 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-21 06:31:12 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-21 06:31:13 - filters.base_filter - INFO - Initialized LowPassFilter with type: ideal
+2026-01-21 06:31:13 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal
+2026-01-21 06:48:56 - filters.base_filter - INFO - Logger 'filters.base_filter' initialized at 20 level
+2026-01-21 06:48:58 - filters.base_filter - INFO - Initialized HighPassFilter with type: ideal
+2026-01-21 06:48:58 - filters.base_filter - INFO - Initialized LowPassFilter with type: ideal
+2026-01-21 06:48:58 - filters.base_filter - INFO - Initialized BandPassFilter with type: ideal

@@ -1,0 +1,92 @@
+2026-01-20 22:08:40 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-20 22:10:33 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-20 22:10:35 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:24:49 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-21 06:24:50 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:24:50 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:24:50 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:24:50 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-21 06:24:50 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Normalized image: [20.98, 253.63] -> [0, 255]
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-21 06:24:51 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:29:43 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-21 06:29:44 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:29:44 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:29:44 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:29:44 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-21 06:29:44 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Normalized image: [20.98, 253.63] -> [0, 255]
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-21 06:29:45 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:30:24 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-21 06:30:25 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:30:25 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:30:25 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:30:25 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-21 06:30:25 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Normalized image: [20.98, 253.63] -> [0, 255]
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-21 06:30:26 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Normalized image: [20.98, 253.63] -> [0, 255]
+2026-01-21 06:31:12 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:31:13 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:31:13 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:31:13 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:31:13 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-21 06:31:13 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:48:57 - tasks.inverse_transform - INFO - Logger 'tasks.inverse_transform' initialized at 20 level
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Normalized image: [-112.09, 124.38] -> [0, 255]
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Normalized image: [20.98, 253.63] -> [0, 255]
+2026-01-21 06:48:59 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8
+2026-01-21 06:49:00 - tasks.inverse_transform - INFO - Reconstructing image from filtered FFT
+2026-01-21 06:49:00 - tasks.inverse_transform - INFO - Applying inverse FFT to shape (512, 512)
+2026-01-21 06:49:00 - tasks.inverse_transform - INFO - Inverse FFT completed: output shape (512, 512)
+2026-01-21 06:49:00 - tasks.inverse_transform - INFO - Normalized image: [-105.73, 121.18] -> [0, 255]
+2026-01-21 06:49:00 - tasks.inverse_transform - INFO - Image reconstruction complete: shape (512, 512), dtype uint8

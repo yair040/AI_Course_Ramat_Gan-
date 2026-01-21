@@ -1,0 +1,25 @@
+# Image Frequency Filter Application
+# Author: Yair Levi
+# Virtual Environment Location: ../../venv/
+# Python Version: 3.8+
+
+# Core numerical and scientific computing
+numpy>=1.21.0,<2.0.0
+scipy>=1.7.0,<2.0.0
+
+# Image processing
+opencv-python>=4.5.0,<5.0.0
+Pillow>=9.0.0,<11.0.0
+
+# Visualization
+matplotlib>=3.4.0,<4.0.0
+
+# Optional: Alternative FFT implementations (for performance comparison)
+# pyfftw>=0.13.0,<1.0.0
+
+# Development and testing (optional, uncomment if needed)
+# pytest>=7.0.0,<8.0.0
+# pytest-cov>=3.0.0,<5.0.0
+# black>=22.0.0,<24.0.0
+# flake8>=4.0.0,<7.0.0
+# mypy>=0.950,<2.0.0

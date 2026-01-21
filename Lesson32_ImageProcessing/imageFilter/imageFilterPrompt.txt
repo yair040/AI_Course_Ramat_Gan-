@@ -1,0 +1,27 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson32_imageProcessing\imageFilter\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+The program will apply filters to an image:
+1. Convert the image to frequency by FFT.
+2. Show the frequencies in the image.
+3. Throw the low frequency by HPF filter.
+4. Convert back by iFFT and we get the picture back.
+5. Ask to show the picture.
+6. After step "b" above till "e", apply BPF band pass filter.
+7. After step "b" above till "e", apply HPF high pass filter.

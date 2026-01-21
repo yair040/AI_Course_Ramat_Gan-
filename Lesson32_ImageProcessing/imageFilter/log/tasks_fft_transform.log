@@ -1,0 +1,40 @@
+2026-01-20 22:08:36 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-20 22:10:29 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-20 22:10:33 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-20 22:10:33 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-20 22:10:33 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:24:48 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-21 06:24:49 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-21 06:24:49 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-21 06:24:49 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:24:50 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 143421.76]
+2026-01-21 06:24:50 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 32517425.00]
+2026-01-21 06:24:51 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 309262.34]
+2026-01-21 06:29:42 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-21 06:29:43 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-21 06:29:43 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-21 06:29:43 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:29:43 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 143421.76]
+2026-01-21 06:29:44 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 32517425.00]
+2026-01-21 06:29:45 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 309262.34]
+2026-01-21 06:30:23 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-21 06:30:24 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-21 06:30:24 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-21 06:30:24 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:30:25 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 143421.76]
+2026-01-21 06:30:25 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 32517425.00]
+2026-01-21 06:30:26 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 309262.34]
+2026-01-21 06:31:11 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-21 06:31:12 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-21 06:31:12 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-21 06:31:12 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:31:11 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 143421.76]
+2026-01-21 06:31:12 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 32517425.00]
+2026-01-21 06:31:12 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 309262.34]
+2026-01-21 06:48:56 - tasks.fft_transform - INFO - Logger 'tasks.fft_transform' initialized at 20 level
+2026-01-21 06:48:57 - tasks.fft_transform - INFO - Applying FFT to image of shape (512, 512)
+2026-01-21 06:48:57 - tasks.fft_transform - INFO - FFT completed: output shape (512, 512)
+2026-01-21 06:48:57 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [5.25, 32517425.00]
+2026-01-21 06:48:58 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 143421.76]
+2026-01-21 06:48:59 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 32517425.00]
+2026-01-21 06:48:59 - tasks.fft_transform - INFO - Magnitude spectrum calculated: range [0.00, 309262.34]

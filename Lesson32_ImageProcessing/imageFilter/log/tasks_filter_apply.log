@@ -1,0 +1,53 @@
+2026-01-20 22:08:40 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-20 22:10:33 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Applying 2 filters in parallel with 2 processes
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-20 22:10:34 - tasks.filter_apply - INFO - Parallel filtering completed: 2 filters successful
+2026-01-21 06:24:49 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Applying 3 filters in parallel with 3 processes
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Applying filter: LowPassFilter
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:24:50 - tasks.filter_apply - INFO - Parallel filtering completed: 3 filters successful
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Applying 3 filters in parallel with 3 processes
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Applying filter: LowPassFilter
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:29:43 - tasks.filter_apply - INFO - Parallel filtering completed: 3 filters successful
+2026-01-21 06:30:24 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-21 06:30:24 - tasks.filter_apply - INFO - Applying 3 filters in parallel with 3 processes
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Applying filter: LowPassFilter
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:30:25 - tasks.filter_apply - INFO - Parallel filtering completed: 3 filters successful
+2026-01-21 06:31:12 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-21 06:31:13 - tasks.filter_apply - INFO - Applying 3 filters in parallel with 3 processes
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Applying filter: LowPassFilter
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:31:11 - tasks.filter_apply - INFO - Parallel filtering completed: 3 filters successful
+2026-01-21 06:48:57 - tasks.filter_apply - INFO - Logger 'tasks.filter_apply' initialized at 20 level
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Applying 3 filters in parallel with 3 processes
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Applying filter: HighPassFilter
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Applying filter: LowPassFilter
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Applying filter: BandPassFilter
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Filter applied successfully
+2026-01-21 06:48:58 - tasks.filter_apply - INFO - Parallel filtering completed: 3 filters successful
