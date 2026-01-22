@@ -1,0 +1,189 @@
+2026-01-21 22:54:51 - TriangleEdgeDetection - INFO - Logging system initialized
+2026-01-21 22:54:51 - TriangleEdgeDetection - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/log
+2026-01-21 22:54:51 - TriangleEdgeDetection - INFO - Log file: triangle_edge_detection.log
+2026-01-21 22:54:51 - TriangleEdgeDetection - INFO - Ring buffer: 20 files x 16.0MB
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Triangle Edge Detection System
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Configuration: width=512, height=512, cutoff=30, filter=highpass
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - STARTING TRIANGLE EDGE DETECTION PIPELINE
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - === TASK 1: Generate Triangle Image ===
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Generating triangle image: 512x512
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Triangle image generated successfully
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Task 1 completed: Generated 512x512 triangle image
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - === TASK 2: Apply Frequency Domain Filter ===
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Applying frequency domain filter: highpass, cutoff=30
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Frequency domain filtering complete
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Task 2 completed: Applied frequency domain filter
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - === TASK 3: Reconstruct Image via Inverse FFT ===
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Reconstructing image via inverse FFT...
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Inverse FFT reconstruction complete
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Task 3 completed: Reconstructed edge-enhanced image
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - === TASK 5: Interactive Threshold Display ===
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Starting interactive threshold display
+2026-01-21 22:54:56 - TriangleEdgeDetection - INFO - Initial threshold: 48
+2026-01-21 22:54:59 - TriangleEdgeDetection - INFO - Interactive display ready. Press 'q' or 'ESC' to quit.
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - Interrupted by user (Ctrl+C)
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - Final threshold value: 61
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - Interactive display closed
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - Task 5 completed: Interactive display closed
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - PIPELINE COMPLETED SUCCESSFULLY
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 05:14:36 - TriangleEdgeDetection - INFO - Program completed successfully
+2026-01-22 10:16:31 - TriangleEdgeDetection - INFO - Logging system initialized
+2026-01-22 10:16:31 - TriangleEdgeDetection - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/log
+2026-01-22 10:16:31 - TriangleEdgeDetection - INFO - Log file: triangle_edge_detection.log
+2026-01-22 10:16:31 - TriangleEdgeDetection - INFO - Ring buffer: 20 files x 16.0MB
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Triangle Edge Detection and Reconstruction System
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Configuration: width=512, height=512, cutoff=30
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Fixed threshold: 48 (non-interactive mode)
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - STARTING TRIANGLE EDGE DETECTION AND RECONSTRUCTION
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - === TASK 1: Generate Triangle Image ===
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Generating triangle image: 512x512
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Triangle image generated successfully
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Task 1 completed: Generated 512x512 triangle image
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/01_original_triangle.png
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - === TASK 2: Apply Frequency Domain Filter ===
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Applying frequency domain filter: highpass, cutoff=30
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Frequency domain filtering complete
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Task 2 completed: Applied frequency domain filter
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - === TASK 3: Reconstruct Image via Inverse FFT ===
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Reconstructing image via inverse FFT...
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Inverse FFT reconstruction complete
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Task 3 completed: Reconstructed edge-enhanced image
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/02_edge_detected.png
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - === TASK 4: Apply Threshold (value=48) ===
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Task 4 completed: Applied threshold
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/03_thresholded.png
+2026-01-22 10:16:40 - TriangleEdgeDetection - INFO - === TASK 5: Display Result ===
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Task 5 completed: Displayed result
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - === TASK 7: Detect Triangle Mathematically ===
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Step 7a: Detecting lines with Hough transform
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Detecting lines using Hough transform
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Detected 39 lines
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Selecting best 3 lines from 6 candidates
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Selected 3 best lines with maximum angular separation
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Selected 3 best lines from 6 candidates
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/05_hough_lines.png
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Step 7b: Finding triangle vertices from line intersections
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Calculating triangle vertices from line intersections
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Successfully calculated 3 triangle vertices
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Step 7c: Printing detected vertices
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Detection mean error: 17.31 pixels
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - === TASK 6: Draw Triangle Overlay ===
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Coordinate system: Y-axis points downward (image coordinates)
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Task 6 completed: Drew triangle overlay
+2026-01-22 10:16:46 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/04_triangle_overlay.png
+2026-01-22 10:16:48 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:16:48 - TriangleEdgeDetection - INFO - PIPELINE COMPLETED SUCCESSFULLY
+2026-01-22 10:16:48 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:16:48 - TriangleEdgeDetection - INFO - Program completed successfully
+2026-01-22 10:19:56 - TriangleEdgeDetection - INFO - Logging system initialized
+2026-01-22 10:19:56 - TriangleEdgeDetection - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/log
+2026-01-22 10:19:57 - TriangleEdgeDetection - INFO - Log file: triangle_edge_detection.log
+2026-01-22 10:19:57 - TriangleEdgeDetection - INFO - Ring buffer: 20 files x 16.0MB
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Triangle Edge Detection and Reconstruction System
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Configuration: width=512, height=512, cutoff=30
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Fixed threshold: 48 (non-interactive mode)
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - STARTING TRIANGLE EDGE DETECTION AND RECONSTRUCTION
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - === TASK 1: Generate Triangle Image ===
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Generating triangle image: 512x512
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Triangle image generated successfully
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Task 1 completed: Generated 512x512 triangle image
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/01_original_triangle.png
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - === TASK 2: Apply Frequency Domain Filter ===
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Applying frequency domain filter: highpass, cutoff=30
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Frequency domain filtering complete
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Task 2 completed: Applied frequency domain filter
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - === TASK 3: Reconstruct Image via Inverse FFT ===
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Reconstructing image via inverse FFT...
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Inverse FFT reconstruction complete
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Task 3 completed: Reconstructed edge-enhanced image
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/02_edge_detected.png
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - === TASK 4: Apply Threshold (value=48) ===
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Task 4 completed: Applied threshold
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/03_thresholded.png
+2026-01-22 10:20:00 - TriangleEdgeDetection - INFO - === TASK 5: Display Result ===
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Task 5 completed: Displayed result
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - === TASK 7: Detect Triangle Mathematically ===
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Step 7a: Detecting lines with Hough transform
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Detecting lines using Hough transform
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Detected 39 lines
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Selecting best 3 lines from 6 candidates
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Selected 3 best lines with maximum angular separation
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Selected 3 best lines from 6 candidates
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/05_hough_lines.png
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Step 7b: Finding triangle vertices from line intersections
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Calculating triangle vertices from line intersections
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Successfully calculated 3 triangle vertices
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Step 7c: Printing detected vertices
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Detection mean error: 17.31 pixels
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - === TASK 6: Draw Triangle Overlay ===
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Coordinate system: Y-axis points downward (image coordinates)
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Task 6 completed: Drew triangle overlay
+2026-01-22 10:20:04 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/04_triangle_overlay.png
+2026-01-22 10:20:06 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:20:06 - TriangleEdgeDetection - INFO - PIPELINE COMPLETED SUCCESSFULLY
+2026-01-22 10:20:06 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 10:20:06 - TriangleEdgeDetection - INFO - Program completed successfully
+2026-01-22 16:37:52 - TriangleEdgeDetection - INFO - Logging system initialized
+2026-01-22 16:37:52 - TriangleEdgeDetection - INFO - Log directory: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/log
+2026-01-22 16:37:52 - TriangleEdgeDetection - INFO - Log file: triangle_edge_detection.log
+2026-01-22 16:37:52 - TriangleEdgeDetection - INFO - Ring buffer: 20 files x 16.0MB
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Triangle Edge Detection and Reconstruction System
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Configuration: width=512, height=512, cutoff=30
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Fixed threshold: 48 (non-interactive mode)
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - STARTING TRIANGLE EDGE DETECTION AND RECONSTRUCTION
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - === TASK 1: Generate Triangle Image ===
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Generating triangle image: 512x512
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Triangle image generated successfully
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Task 1 completed: Generated 512x512 triangle image
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/01_original_triangle.png
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - === TASK 2: Apply Frequency Domain Filter ===
+2026-01-22 16:37:54 - TriangleEdgeDetection - INFO - Applying frequency domain filter: highpass, cutoff=30
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Frequency domain filtering complete
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Task 2 completed: Applied frequency domain filter
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - === TASK 3: Reconstruct Image via Inverse FFT ===
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Reconstructing image via inverse FFT...
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Inverse FFT reconstruction complete
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Task 3 completed: Reconstructed edge-enhanced image
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/02_edge_detected.png
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - === TASK 4: Apply Threshold (value=80) ===
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Task 4 completed: Applied threshold
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/03_thresholded.png
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Applying edge thinning for improved accuracy
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Thinning edges to single-pixel width
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/03b_thinned_edges.png
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - Edge thinning successful
+2026-01-22 16:37:55 - TriangleEdgeDetection - INFO - === TASK 5: Display Result ===
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Task 5 completed: Displayed result
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - === TASK 7: Detect Triangle Mathematically ===
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Step 7a: Detecting lines with Hough transform
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Detecting lines using Hough transform
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Detected 3 lines
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Filtered to 3 distinct lines
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Selected 3 best lines from 3 candidates
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/05_hough_lines.png
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Step 7b: Finding triangle vertices from line intersections
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Calculating triangle vertices from line intersections
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Successfully calculated 3 triangle vertices
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Step 7c: Printing detected vertices
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Detection mean error: 1.22 pixels
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Vertex 1 error: 1.82 pixels
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Vertex 2 error: 1.10 pixels
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Vertex 3 error: 0.76 pixels
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - === TASK 6: Draw Triangle Overlay ===
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Coordinate system: Y-axis points downward (image coordinates)
+2026-01-22 16:37:58 - TriangleEdgeDetection - INFO - Task 6 completed: Drew triangle overlay
+2026-01-22 16:37:59 - TriangleEdgeDetection - INFO - Image saved: /mnt/c/Users/yair0/AI_continue/Lesson32_imageProcessing/TriangleFinding/output/04_triangle_overlay.png
+2026-01-22 16:38:00 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 16:38:00 - TriangleEdgeDetection - INFO - PIPELINE COMPLETED SUCCESSFULLY
+2026-01-22 16:38:00 - TriangleEdgeDetection - INFO - ============================================================
+2026-01-22 16:38:00 - TriangleEdgeDetection - INFO - Program completed successfully

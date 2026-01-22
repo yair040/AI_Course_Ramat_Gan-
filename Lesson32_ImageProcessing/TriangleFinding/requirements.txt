@@ -1,0 +1,18 @@
+# Triangle Edge Detection System
+# Author: Yair Levi
+# Python 3.8+
+
+# Core dependencies
+numpy>=1.21.0,<2.0.0
+opencv-contrib-python>=4.5.0,<5.0.0
+scipy>=1.7.0,<2.0.0
+
+# Optional dependencies for enhanced functionality
+matplotlib>=3.3.0,<4.0.0
+
+# Development dependencies (optional, uncomment for development)
+# pytest>=7.0.0
+# pytest-cov>=3.0.0
+# black>=22.0.0
+# pylint>=2.12.0
+# mypy>=0.950
