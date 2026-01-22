@@ -1,0 +1,33 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson32_imageProcessing\TriangleFinding\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+The program will triangle in an image:
+1. Create a image with a triangle, the triangle should be inside white and outside black.
+2. Apply low pass filter for edge finding on that image.
+3. Apply iFFT to get back an image with edges.
+4. Apply a threshold to get binary picture.
+5. Show me the picture and let me change the threshold and see the updated picture (in a loop).
+
+
+5. Play with the threshold, so we see the triangle.
+6. Draw again the final triangle to see it, while the positive Y axis is downward.
+7. Find the triangle mathematically:
+   a. By Hough algorithm find 3 lines.
+   b. Find 3 different points that are common to 2 edges, these are the triangle vertices.
+   c. Print the vertices coordinates. 
