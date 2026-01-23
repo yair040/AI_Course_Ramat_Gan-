@@ -1,0 +1,168 @@
+2026-01-23 07:10:19 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:10:19 - jpeg_compressing.main - INFO - JPEG Compression Analysis Tool - Started
+2026-01-23 07:10:19 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:10:19 - jpeg_compressing.main - ERROR - Fatal error: Input image not found: input/goldhill.bmp
+Traceback (most recent call last):
+  File "/mnt/c/Users/yair0/AI_continue/Lesson33_jpeg_compressing/jpeg_compressing/main.py", line 111, in main
+    input_path = validate_input_image(args.input)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/yair0/AI_continue/Lesson33_jpeg_compressing/jpeg_compressing/main.py", line 85, in validate_input_image
+    raise FileNotFoundError(f"Input image not found: {path}")
+FileNotFoundError: Input image not found: input/goldhill.bmp
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - JPEG Compression Analysis Tool - Started
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - Input image: jpeg_compressing/input/goldhill.bmp
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - Quality levels: [10, 20, 30, 40, 50, 60, 70, 80, 90, 95]
+2026-01-23 07:14:28 - jpeg_compressing.main - INFO - Loading original image...
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - Image loaded: (576, 720, 3), Size: 1215.00 KB
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - Task 1: Compressing image...
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Starting compression of goldhill.bmp at 10 quality levels
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Using 10 parallel processes
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=60: compressed_q60.jpg (49.96 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=30: compressed_q30.jpg (30.80 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=40: compressed_q40.jpg (37.13 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=70: compressed_q70.jpg (60.02 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=90: compressed_q90.jpg (119.58 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=20: compressed_q20.jpg (23.27 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=50: compressed_q50.jpg (43.22 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=95: compressed_q95.jpg (183.98 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=10: compressed_q10.jpg (14.71 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=80: compressed_q80.jpg (76.86 KB)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.compress_task - INFO - Compression complete: 10/10 succeeded
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - Task 2: Decompressing images...
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Starting decompression of 10 images
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Using 10 parallel processes
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=10 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=30 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=40 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=50 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=60 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=70 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=20 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=80 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=90 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=95 (in-memory only)
+2026-01-23 07:14:29 - jpeg_compressing.tasks.decompress_task - INFO - Decompression complete: 10/10 succeeded
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - Task 3: Calculating errors...
+2026-01-23 07:14:29 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:29 - jpeg_compressing.tasks.error_task - INFO - Calculating error metrics for all quality levels
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=10: MSE=124.4820, MAE=8.3712, Size=14.71KB, Ratio=82.59x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=20: MSE=76.5271, MAE=6.4681, Size=23.27KB, Ratio=52.21x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=30: MSE=60.0484, MAE=5.7020, Size=30.80KB, Ratio=39.45x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=40: MSE=51.4590, MAE=5.2762, Size=37.13KB, Ratio=32.72x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=50: MSE=45.7080, MAE=4.9776, Size=43.22KB, Ratio=28.11x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=60: MSE=40.8976, MAE=4.7146, Size=49.96KB, Ratio=24.32x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=70: MSE=35.4951, MAE=4.3990, Size=60.02KB, Ratio=20.24x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=80: MSE=29.3232, MAE=4.0125, Size=76.86KB, Ratio=15.81x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=90: MSE=20.8481, MAE=3.4024, Size=119.58KB, Ratio=10.16x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Q=95: MSE=14.2933, MAE=2.8180, Size=183.98KB, Ratio=6.60x
+2026-01-23 07:14:30 - jpeg_compressing.tasks.error_task - INFO - Metrics saved to /mnt/c/Users/yair0/AI_continue/Lesson33_jpeg_compressing/jpeg_compressing/output/metrics/metrics.csv
+2026-01-23 07:14:30 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:30 - jpeg_compressing.main - INFO - Task 4: Creating byte histograms...
+2026-01-23 07:14:30 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:30 - jpeg_compressing.tasks.visualize_task - INFO - Creating byte distribution histograms
+2026-01-23 07:14:34 - jpeg_compressing.tasks.visualize_task - INFO - Saved original histogram: byte_histogram_original.png
+2026-01-23 07:14:39 - jpeg_compressing.tasks.visualize_task - INFO - Saved compressed histograms: byte_histogram_compressed.png
+2026-01-23 07:14:39 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:39 - jpeg_compressing.main - INFO - Task 5: Creating error histogram...
+2026-01-23 07:14:39 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:39 - jpeg_compressing.tasks.visualize_task - INFO - Creating error vs. quality plot
+2026-01-23 07:14:41 - jpeg_compressing.tasks.visualize_task - INFO - Saved error plot: error_vs_quality.png
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - ANALYSIS COMPLETE
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - Processed 10 quality levels
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - MSE range: 14.2933 - 124.4820
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - Compression ratio range: 6.60x - 82.59x
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - Check 'output/' directory for results
+2026-01-23 07:14:41 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - JPEG Compression Analysis Tool - Started
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - Input image: jpeg_compressing/input/goldhill.bmp
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - Quality levels: [10, 20, 30, 40, 50, 60, 70, 80, 90, 95]
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - Loading original image...
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - Image loaded: (576, 720, 3), Size: 1215.00 KB
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - Task 1: Compressing image...
+2026-01-23 07:57:00 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:00 - jpeg_compressing.tasks.compress_task - INFO - Starting compression of goldhill.bmp at 10 quality levels
+2026-01-23 07:57:00 - jpeg_compressing.tasks.compress_task - INFO - Using 10 parallel processes
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=50: compressed_q50.jpg (43.22 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=10: compressed_q10.jpg (14.71 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=40: compressed_q40.jpg (37.13 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=70: compressed_q70.jpg (60.02 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=60: compressed_q60.jpg (49.96 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=20: compressed_q20.jpg (23.27 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=30: compressed_q30.jpg (30.80 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=95: compressed_q95.jpg (183.98 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=80: compressed_q80.jpg (76.86 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compressed at Q=90: compressed_q90.jpg (119.58 KB)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.compress_task - INFO - Compression complete: 10/10 succeeded
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - Task 2: Decompressing images...
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Starting decompression of 10 images
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Using 10 parallel processes
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=30 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=60 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=40 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=20 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=50 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=70 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=80 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=10 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=90 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompressed Q=95 (in-memory only)
+2026-01-23 07:57:01 - jpeg_compressing.tasks.decompress_task - INFO - Decompression complete: 10/10 succeeded
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - Task 3: Calculating errors...
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Calculating error metrics for all quality levels
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=10: MSE=124.4820, MAE=8.3712, Size=14.71KB, Ratio=82.59x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=20: MSE=76.5271, MAE=6.4681, Size=23.27KB, Ratio=52.21x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=30: MSE=60.0484, MAE=5.7020, Size=30.80KB, Ratio=39.45x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=40: MSE=51.4590, MAE=5.2762, Size=37.13KB, Ratio=32.72x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=50: MSE=45.7080, MAE=4.9776, Size=43.22KB, Ratio=28.11x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=60: MSE=40.8976, MAE=4.7146, Size=49.96KB, Ratio=24.32x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=70: MSE=35.4951, MAE=4.3990, Size=60.02KB, Ratio=20.24x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=80: MSE=29.3232, MAE=4.0125, Size=76.86KB, Ratio=15.81x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=90: MSE=20.8481, MAE=3.4024, Size=119.58KB, Ratio=10.16x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Q=95: MSE=14.2933, MAE=2.8180, Size=183.98KB, Ratio=6.60x
+2026-01-23 07:57:01 - jpeg_compressing.tasks.error_task - INFO - Metrics saved to /mnt/c/Users/yair0/AI_continue/Lesson33_jpeg_compressing/jpeg_compressing/output/metrics/metrics.csv
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - Task 4: Creating file size histogram...
+2026-01-23 07:57:01 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:01 - jpeg_compressing.tasks.visualize_task - INFO - Creating file size histogram
+2026-01-23 07:57:03 - jpeg_compressing.tasks.visualize_task - INFO - Saved file size histogram: file_size_histogram.png
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - Task 5: Creating error histogram...
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:03 - jpeg_compressing.tasks.visualize_task - INFO - Creating error histogram
+2026-01-23 07:57:03 - jpeg_compressing.tasks.visualize_task - INFO - Saved error histogram: error_histogram.png
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - 
+============================================================
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - ANALYSIS COMPLETE
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - ============================================================
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - Processed 10 quality levels
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - MSE range: 14.2933 - 124.4820
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - Compression ratio range: 6.60x - 82.59x
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - Check 'output/' directory for results
+2026-01-23 07:57:03 - jpeg_compressing.main - INFO - ============================================================

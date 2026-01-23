@@ -1,0 +1,29 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson33_jpeg_compressing\jpeg_compressing\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will 
+
+The program will do:
+1. Compress an image with jpeg.
+2. Decompress the jpeg to original picture.
+3. Find the difference (error) between the 2 pictures.
+   Since we want to evaluate the error in different settings, use abs or square, what is more appropriate.
+4. For steps 1 to 3 above, repeat on different Q (Quality) level of compressing.
+   Use 10 different Q levels.
+5. Draw an histogram of picture bytes before compressing (one column) and after compressing as depended on Q.
+6. Draw an histogram of error between original picture and picture after decompressing as depended in Q.
+
+Look and decide what Q you prefer.

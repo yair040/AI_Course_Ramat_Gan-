@@ -1,0 +1,20 @@
+# JPEG Compression Analysis Tool
+# Requirements for Python Virtual Environment
+# Author: Yair Levi
+# Python Version: 3.8+
+# Platform: WSL (Windows Subsystem for Linux)
+
+# Image Processing
+Pillow>=10.0.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Data Analysis
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Optional: Progress bars (for future enhancement)
+# tqdm>=4.65.0
