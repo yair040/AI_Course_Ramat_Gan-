@@ -1,0 +1,54 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson34_Gmail_API_AI_Agents\gmail_api\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+
+The program:
+In short:
+Prepare python code that connect to Gmail, scan for a specific mail by a search criteria, check for event in the mail and put it in the calendar.
+The details:
+1. For credentials and token to access the API use the files in folder ./credentials.
+   The credentials are found at credentials.json file and the token is found at token.pickle file.
+2. Create a configuration file.
+   a. The program will use the configuration that define the search criteria for the required mail.
+      The search can be done by one of the below criteria. Need to edit this configuration file before running.
+      1. A word in the subject. 
+      2. The sender.
+      3. The mail label
+      4. The mail unread status.
+   b. The file will also define the interval in seconds to search mail in polling mode.
+3. When starting the program ask the user if the program should run in one time mode 
+   or polling mode, and run according to that.
+   a. One time mode:
+      Search for the mail by the search criteria and if it doesn't exist then exit 
+      with appropriate message.
+   b. Polling mode: 
+      The code run in a loop and check if there is a mail by the criteria.
+      Scan interval will be taken from the configuration file.
+      On each search, label the mail you find as "read" so you will not scan 
+      it next time if the search was for "unread" mails.
+      Limit the scan only from the previous day of running the program onward.
+4. Parsing meeting details from the meeting:
+   Find from the mail body all the required details for the meeting:
+   Date, time start and end, subject, location and details.
+5. The python code adds this event to the calendar by using the calendar API. 
+6. For parsing the meeting details from the mail, use API Key from Anthropic.
+   The API Key files are located at ../../Anthropic_API_Key as "api_key.dat",
+   "key.txt" and "key.txt.pub".
+7. Do not expose any of the API keys. 
+
+

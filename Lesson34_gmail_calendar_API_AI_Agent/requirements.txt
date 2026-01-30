@@ -1,0 +1,27 @@
+# Gmail Event Scanner & Calendar Integration
+# Python Dependencies
+# Author: Yair Levi
+
+# Google API Libraries
+google-auth>=2.25.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+google-api-python-client>=2.110.0
+
+# Anthropic Claude API
+anthropic>=0.18.0
+
+# Configuration Management
+pyyaml>=6.0.1
+
+# Date/Time Handling
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# HTML Parsing (for email body extraction)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Optional but recommended
+# Email validation
+email-validator>=2.1.0
