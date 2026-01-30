@@ -1,0 +1,228 @@
+2026-01-29 16:09:18 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-29 16:09:18 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-29 16:09:18 - gmail_scanner - INFO - MainProcess - Refreshing expired credentials
+2026-01-29 16:09:19 - gmail_scanner - CRITICAL - MainProcess - Fatal error: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+2026-01-30 08:15:07 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 08:15:07 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 08:15:07 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 08:15:08 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 08:15:27 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 08:15:27 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 08:15:27 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 08:15:27 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 08:15:28 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 08:15:28 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 08:15:30 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 08:15:31 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T10%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-01-30 08:15:31 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 08:15:31 - gmail_scanner - ERROR - MainProcess - Failed to create event: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-01-30 08:15:31 - gmail_scanner - ERROR - MainProcess - Failed to process email 19c0a152ba3ae435: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Request had insufficient authentication scopes.". Details: "[{'message': 'Insufficient Permission', 'domain': 'global', 'reason': 'insufficientPermissions'}]">
+2026-01-30 08:15:31 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 08:31:07 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 08:31:07 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 08:31:07 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 08:31:07 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 08:31:43 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 08:31:43 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 08:31:43 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 08:31:43 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 08:31:44 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 08:31:44 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 08:31:46 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 08:31:46 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T10%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2026-01-30 08:31:46 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 08:31:46 - gmail_scanner - ERROR - MainProcess - Failed to create event: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2026-01-30 08:31:46 - gmail_scanner - ERROR - MainProcess - Failed to process email 19c0a152ba3ae435: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?alt=json returned "Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.". Details: "[{'message': 'Google Calendar API has not been used in project 259131453717 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview?project=259131453717 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.', 'domain': 'usageLimits', 'reason': 'accessNotConfigured', 'extendedHelp': 'https://console.developers.google.com'}]">
+2026-01-30 08:31:46 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 08:42:51 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 08:42:51 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 08:42:51 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 08:42:51 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 08:42:55 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 08:42:55 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 08:42:56 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 08:42:56 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 08:42:56 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 08:42:56 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 08:42:58 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 08:42:58 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T10%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 08:42:58 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 08:42:58 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=NXJmZHVianUwZHFpMnZrb2h2aXM1NGd0dm8geWFpcjA0MEBt
+2026-01-30 08:42:58 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 08:58:45 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 08:58:45 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 08:58:46 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 08:58:46 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 08:59:26 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 08:59:26 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 08:59:26 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 08:59:26 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 08:59:27 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 08:59:27 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 08:59:30 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 08:59:31 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T11%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 08:59:31 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 08:59:31 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=NXRhZGUxdDY4bDczbTdzYTh0MjAwZGlmY3MgeWFpcjA0MEBt
+2026-01-30 08:59:31 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 09:06:04 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 09:06:04 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 09:06:04 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 09:06:04 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 09:06:27 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 09:06:27 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 09:06:28 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 09:06:28 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 09:06:28 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 09:06:28 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 09:06:30 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 09:06:30 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T11%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 09:06:30 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 09:06:31 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=b2MzOTdkcTZ2cmlldGlldTd2aGQ1a3E4cTQgeWFpcjA0MEBt
+2026-01-30 09:06:31 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 09:11:50 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 09:11:50 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 09:11:50 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 09:11:50 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 09:12:46 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 09:12:46 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 09:12:47 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 09:12:47 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 09:12:47 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 09:12:47 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 09:12:49 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 09:12:49 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T10%3A00%3A00&timeMax=2026-01-30T11%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 09:12:49 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 09:12:50 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=YW5hMmpwdGQyaTVsZnE3ZXY5NDEybTRqbmsgeWFpcjA0MEBt
+2026-01-30 09:12:50 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 09:15:11 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 09:15:11 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 09:15:11 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 09:15:11 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 09:15:27 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 09:15:29 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 09:15:30 - gmail_scanner - INFO - MainProcess - Duplicate event found: Vacation planning and hotel registration
+2026-01-30 09:15:30 - gmail_scanner - WARNING - MainProcess - Event already exists: Vacation planning and hotel registration
+2026-01-30 09:15:30 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 09:24:34 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 09:24:34 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 09:24:34 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 09:24:34 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 09:24:39 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 09:24:39 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation after:2026/01/29
+2026-01-30 09:24:40 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 09:24:40 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 09:24:40 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 09:24:40 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 09:24:43 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 09:24:43 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 09:24:43 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=cTZhdnN1c3VuNDRjOWJhZ2V2dXU4b2k1MzAgeWFpcjA0MEBt
+2026-01-30 09:24:43 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 11:29:31 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 11:29:31 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 11:29:31 - gmail_scanner - INFO - MainProcess - Refreshing expired credentials
+2026-01-30 11:29:31 - gmail_scanner - INFO - MainProcess - Saving credentials to token.pickle
+2026-01-30 11:29:31 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 11:29:32 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 11:29:39 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 11:29:39 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:29:39 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 11:29:39 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 11:29:40 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 11:29:40 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 11:29:42 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 11:29:42 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T13%3A00%3A00&timeMax=2026-01-30T14%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 11:29:42 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 11:29:43 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=NmliMWY5ZnNmbHZhanZndXZjN3F1bmdxODggeWFpcjA0MEBt
+2026-01-30 11:29:43 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 11:34:00 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 11:34:00 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 11:34:00 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 11:34:01 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 11:34:08 - gmail_scanner - INFO - MainProcess - Starting polling mode (interval: 300s)
+2026-01-30 11:34:08 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:34:09 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 11:34:09 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 11:34:09 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 11:34:12 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 11:34:12 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T13%3A00%3A00&timeMax=2026-01-30T14%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 11:34:12 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 11:34:12 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=Z3V2Z21jZ3FsZTRjYjZlZHQzYmQ2cXQzbmcgeWFpcjA0MEBt
+2026-01-30 11:34:13 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 11:39:13 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:39:13 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 11:39:13 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 11:44:13 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:44:13 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 11:44:14 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 11:44:14 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 11:44:16 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 11:44:17 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T13%3A00%3A00&timeMax=2026-01-30T14%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 11:44:17 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 11:44:17 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=aHY1cWowcW1haWRuOHR1dWx0Z2Z0MnJnOTggeWFpcjA0MEBt
+2026-01-30 11:44:17 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 11:49:17 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:49:18 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 11:49:18 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 11:49:18 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 11:49:20 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 11:49:20 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T13%3A00%3A00&timeMax=2026-01-30T14%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 11:49:20 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 11:49:21 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=dG8wN2tmc3FxM3V0aWVrM2h1dThocWMwdmsgeWFpcjA0MEBt
+2026-01-30 11:49:21 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 11:54:21 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:54:21 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 11:54:21 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 11:59:21 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 11:59:22 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 11:59:22 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 12:04:22 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 12:04:23 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 12:04:23 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 12:09:23 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 12:09:23 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 12:09:23 - gmail_scanner - INFO - MainProcess - Sleeping for 300 seconds
+2026-01-30 12:11:45 - gmail_scanner - INFO - MainProcess - Polling mode stopped by user
+2026-01-30 12:23:05 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 12:23:05 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 12:23:05 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 12:23:05 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 12:23:59 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 12:23:59 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 12:24:00 - gmail_scanner - INFO - MainProcess - Found 0 matching emails
+2026-01-30 12:24:00 - gmail_scanner - INFO - MainProcess - No matching emails found
+2026-01-30 12:25:12 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 12:25:12 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 12:25:12 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 12:25:12 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 12:25:17 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 12:25:17 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 12:25:17 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 12:25:17 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 12:25:18 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 12:25:18 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 12:25:20 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 12:25:20 - gmail_scanner - WARNING - MainProcess - Duplicate check failed: <HttpError 400 when requesting https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=2026-01-30T13%3A00%3A00&timeMax=2026-01-30T14%3A00%3A00&singleEvents=true&orderBy=startTime&alt=json returned "Bad Request". Details: "[{'domain': 'global', 'reason': 'badRequest', 'message': 'Bad Request'}]">
+2026-01-30 12:25:20 - gmail_scanner - INFO - MainProcess - Creating calendar event: Vacation planning and hotel registration
+2026-01-30 12:25:21 - gmail_scanner - INFO - MainProcess - Event created successfully: https://www.google.com/calendar/event?eid=Y2Zlc2R0N3E1cms2bjg2MXMyOTlmNzdoMWMgeWFpcjA0MEBt
+2026-01-30 12:25:21 - gmail_scanner - INFO - MainProcess - One-time mode completed
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Application starting
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Loading existing credentials from token.pickle
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Refreshing expired credentials
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Saving credentials to token.pickle
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Google credentials ready
+2026-01-30 13:11:36 - gmail_scanner - INFO - MainProcess - Loading Anthropic API key from api_key.dat
+2026-01-30 13:11:48 - gmail_scanner - INFO - MainProcess - Starting one-time mode
+2026-01-30 13:11:48 - gmail_scanner - INFO - MainProcess - Searching emails with query: subject:meeting before vacation is:unread after:2026/01/29
+2026-01-30 13:11:49 - gmail_scanner - INFO - MainProcess - Found 1 matching emails
+2026-01-30 13:11:49 - gmail_scanner - INFO - MainProcess - Processing 1 emails
+2026-01-30 13:11:49 - gmail_scanner - INFO - MainProcess - Processing email: meeting before vacation
+2026-01-30 13:11:49 - gmail_scanner - INFO - MainProcess - Sending email to Claude for parsing
+2026-01-30 13:11:51 - gmail_scanner - INFO - MainProcess - Validated meeting: Vacation planning and hotel registration on 2026-01-30
+2026-01-30 13:12:03 - gmail_scanner - INFO - MainProcess - Duplicate event found: Vacation planning and hotel registration
+2026-01-30 13:12:03 - gmail_scanner - WARNING - MainProcess - Event already exists: Vacation planning and hotel registration
+2026-01-30 13:12:03 - gmail_scanner - INFO - MainProcess - One-time mode completed
