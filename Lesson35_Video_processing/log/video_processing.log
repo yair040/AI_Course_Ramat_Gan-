@@ -1,0 +1,88 @@
+[2026-02-03 19:20:40] [INFO] [video_processing] Logger initialized successfully
+[2026-02-03 19:20:40] [INFO] [video_processing] Log file: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/log/video_processing.log
+[2026-02-03 19:20:40] [INFO] [video_processing] Ring buffer: 20 files x 16MB
+[2026-02-03 19:20:43] [INFO] [video_processing] Video Processing Analysis Tool v1.0.0
+[2026-02-03 19:20:43] [INFO] [video_processing] Author: Yair Levi
+[2026-02-03 19:20:43] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-03 19:20:43] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-03 19:20:43] [INFO] [video_processing] Resolved input path: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:20:43] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:20:43] [INFO] [video_processing] TASK 1: VIDEO METADATA ANALYSIS
+[2026-02-03 19:20:43] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:20:43] [INFO] [video_processing] Starting metadata analysis for: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:20:43] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-03 19:20:43] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-03 19:20:43] [INFO] [video_processing] Extracting metadata from: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:20:45] [INFO] [video_processing] Metadata extraction complete
+[2026-02-03 19:20:45] [INFO] [video_processing] Extracting frame data from: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:20:49] [INFO] [video_processing] Extracted data for 136 frames
+[2026-02-03 19:20:49] [INFO] [video_processing] Metadata analysis complete
+[2026-02-03 19:20:49] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:20:49] [INFO] [video_processing] TASK 2: MOTION VECTOR VISUALIZATION
+[2026-02-03 19:20:49] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:20:49] [INFO] [video_processing] Starting motion vector extraction for: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:20:49] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-03 19:20:49] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-03 19:20:49] [INFO] [video_processing] Extracting frames to: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/decoded_frames
+[2026-02-03 19:21:01] [INFO] [video_processing] Extracted 136 frames
+[2026-02-03 19:21:01] [INFO] [video_processing] Extracted 136 frames
+[2026-02-03 19:21:01] [INFO] [video_processing] Analyzing frame motion patterns
+[2026-02-03 19:21:01] [INFO] [video_processing] Processing 136 frames using 12 workers
+[2026-02-03 19:21:01] [INFO] [video_processing] Motion vector extraction complete in 12.58s
+[2026-02-03 19:21:01] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:21:01] [INFO] [video_processing] TASK 3: OVERLAY MOVING OBJECT ON VIDEO
+[2026-02-03 19:21:01] [INFO] [video_processing] ======================================================================
+[2026-02-03 19:21:01] [INFO] [video_processing] Task 3 starting - source video: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-03 19:21:01] [INFO] [video_processing] Source: 1920x1080 @ 30.0 fps
+[2026-02-03 19:21:09] [INFO] [video_processing] Extracted 136 raw frames
+[2026-02-03 19:23:51] [INFO] [video_processing] Overlaid object on 100/136 frames
+[2026-02-03 19:24:28] [INFO] [video_processing] Moving object overlay complete
+[2026-02-03 19:24:31] [INFO] [video_processing] Encoded output video: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test_with_object.mp4
+[2026-02-03 19:24:31] [INFO] [video_processing] Task 3 complete in 210.17s -> /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test_with_object.mp4
+[2026-02-03 19:24:32] [INFO] [video_processing] Cleaned up temp frames
+[2026-02-03 19:24:32] [INFO] [video_processing] Completed 3/3 tasks successfully
+[2026-02-03 19:24:32] [INFO] [video_processing] All tasks completed successfully!
+[2026-02-04 11:05:10] [INFO] [video_processing] Logger initialized successfully
+[2026-02-04 11:05:10] [INFO] [video_processing] Log file: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/log/video_processing.log
+[2026-02-04 11:05:10] [INFO] [video_processing] Ring buffer: 20 files x 16MB
+[2026-02-04 11:05:13] [INFO] [video_processing] Video Processing Analysis Tool v1.0.0
+[2026-02-04 11:05:14] [INFO] [video_processing] Author: Yair Levi
+[2026-02-04 11:05:14] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-04 11:05:14] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-04 11:05:14] [INFO] [video_processing] Resolved input path: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:14] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:14] [INFO] [video_processing] TASK 1: VIDEO METADATA ANALYSIS
+[2026-02-04 11:05:14] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:14] [INFO] [video_processing] Starting metadata analysis for: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:14] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-04 11:05:14] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-04 11:05:14] [INFO] [video_processing] Extracting metadata from: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:15] [INFO] [video_processing] Metadata extraction complete
+[2026-02-04 11:05:15] [INFO] [video_processing] Extracting frame data from: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:17] [INFO] [video_processing] Extracted data for 136 frames
+[2026-02-04 11:05:17] [INFO] [video_processing] Metadata analysis complete
+[2026-02-04 11:05:17] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:17] [INFO] [video_processing] TASK 2: MOTION VECTOR VISUALIZATION
+[2026-02-04 11:05:17] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:17] [INFO] [video_processing] Starting motion vector extraction for: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:17] [INFO] [video_processing] FFmpeg found at: /usr/bin/ffmpeg
+[2026-02-04 11:05:17] [INFO] [video_processing] FFprobe found at: /usr/bin/ffprobe
+[2026-02-04 11:05:19] [INFO] [video_processing] Extracting frames to: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/decoded_frames
+[2026-02-04 11:05:32] [INFO] [video_processing] Extracted 136 frames
+[2026-02-04 11:05:32] [INFO] [video_processing] Extracted 136 frames
+[2026-02-04 11:05:32] [INFO] [video_processing] Analyzing frame motion patterns
+[2026-02-04 11:05:32] [INFO] [video_processing] Processing 136 frames using 12 workers
+[2026-02-04 11:05:32] [INFO] [video_processing] Motion vector extraction complete in 14.72s
+[2026-02-04 11:05:32] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:32] [INFO] [video_processing] TASK 3: OVERLAY MOVING OBJECT ON VIDEO
+[2026-02-04 11:05:32] [INFO] [video_processing] ======================================================================
+[2026-02-04 11:05:32] [INFO] [video_processing] Task 3 starting - source video: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test.mp4
+[2026-02-04 11:05:32] [INFO] [video_processing] Source: 1920x1080 @ 30.0 fps
+[2026-02-04 11:05:42] [INFO] [video_processing] Extracted 136 raw frames
+[2026-02-04 11:08:55] [INFO] [video_processing] Overlaid object on 100/136 frames
+[2026-02-04 11:10:08] [INFO] [video_processing] Moving object overlay complete
+[2026-02-04 11:10:14] [INFO] [video_processing] Encoded output video: /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test_with_object.mp4
+[2026-02-04 11:10:14] [INFO] [video_processing] Task 3 complete in 281.32s -> /mnt/c/Users/yair0/AI_continue/Lesson35_video_processing/Video_processing/test_with_object.mp4
+[2026-02-04 11:10:15] [INFO] [video_processing] Cleaned up temp frames
+[2026-02-04 11:10:15] [INFO] [video_processing] Completed 3/3 tasks successfully
+[2026-02-04 11:10:15] [INFO] [video_processing] All tasks completed successfully!

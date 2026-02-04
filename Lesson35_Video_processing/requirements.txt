@@ -1,0 +1,24 @@
+# Requirements for Video Compression Analysis Tool
+# Author: Yair Levi
+# Date: February 1, 2026
+# Python Version: 3.8+
+
+# Image processing for frame generation (Task 3)
+Pillow>=10.0.0
+
+# Alternative image processing library (optional, can use opencv-python instead)
+# opencv-python>=4.8.0
+
+# Numeric operations (if needed for calculations)
+numpy>=1.24.0
+
+# Note: FFmpeg and FFprobe are external binaries and must be installed separately
+# They are not Python packages and cannot be installed via pip
+# 
+# Installation on WSL (Ubuntu):
+#   sudo apt update
+#   sudo apt install ffmpeg
+#
+# Verification:
+#   ffmpeg -version
+#   ffprobe -version
