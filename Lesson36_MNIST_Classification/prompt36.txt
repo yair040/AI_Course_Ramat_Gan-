@@ -1,0 +1,41 @@
+Author is Yair Levi
+Create Document (PRD?) for Python program that works on Google Colab.
+The document will contains the Python instructions with explanation before each section that we can copy it to Google Colab.
+
+The program will do classification according to the MNIST database of handwritten digits.
+1. Explain on the digits MNIST database, show some pictures and download the MNIST database of handwritten digits.
+2. Preprocessing:
+   Explain on each step.
+   a. Normalization: Normalize the numbers that enter to the input between 0-1.
+   b. Flattening: The input is pictures 28x28=784 features.
+                  There is only gray level and no RGB.
+                  Flatten the data from 2D picture to 1D vector, do it in Keras.
+   c. Labels: The labels (10 digits) need to convert to One-hot encoding to be compared later with output of the network to see if there is an error, unless it is done in Keras. 
+3. Build the network architecture in Fully Connected:
+   Explain on layers, input output, hidden layers, activation function and Loss function.
+   a. Put the number of layers in the network and number of perceptrons in each layer as the default, but let the user control it.
+   b. Use Softmax as activation function for the output layer and ReLU for the hidden layers.
+   c. Loss Function: Use Cross-Entropy as a Loss Function in classification that measures the performance of a model by calculating the difference between predicted probability distributions.
+   e. Output: 10 output perceptrons with probability, then using SoftMax for decision.
+4. dividing the data:
+   If this step is done while loading data (Keras), merge it with this step but add explanation.
+   Training: 85% of the samples.
+   Test: 15% of the samples.
+5. Training (Fit):
+   a. Optimization method: 
+      Use Gradient Descent as optimization method in the training.
+      Use backpropagation with learning rate when using the gradient descent with Adam algorithm.
+      Show the learning step (rate).
+   b. Draw a graph of the Cross-Entropy and evaluation graph to see the improvement with training.
+6. Test:
+   a. put a few pictures as output to see if succeed to know the number.
+   b. run test on the test group.
+   c. Draw the confusion matrix 10x10.
+   d. In cases it was not correct, xxplain why it didn't guess correctly.
+7. (manualy) Improvement: 
+   Try to improve and show improvement by confusion matrix 10x10.
+   Try play some all parameters.
+   Explain what caused the improvement.
+
+
+
