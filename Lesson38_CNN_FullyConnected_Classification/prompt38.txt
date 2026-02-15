@@ -1,0 +1,235 @@
+The below is a summary of a lecture presented by DR. Yoram Segal about Full Connected Neural Network and CNN (Convolutional Neural Network) and their use in Multi Class classification.
+Prepare a well designed document from the material below to clarify the subject and explain it clearly.
+Add graphs, diagrams and examples as required.
+
+Multi class classification by Fully Connected network:
+1. Training: 
+The network in the training create the probability vector relative to the object that was enter as input.
+It composed from probability for each class.
+We convert the object from object label to a vector of one hot coding, all items in this vector is 0 except the number in the location of class of real object that is 1.
+To calculate the error, we subtract these 2 vector and we get the error vector.
+To get the error size, we do dot product on the result vector.
+After we get the error, we perform back propagation to tune the weights so the error will be decreased.
+2. Testing:
+In the test step, we get probability vector for the object we test.
+We use 2 measures:
+a. Threshold:
+   Take only the probability over some threshold.
+   This is done to prevent cases that all probabilities are low and one class is only a little higher.
+b. After apply the threshold, take the maximum probability.
+   This is to prevent cases where more than one class is passed the threshold.
+
+Building the Confusion Matrix:
+It is built mainly during the test (evaluation) step, but it can used also in the training step on the validation set to monitor performance
+You run the test, sample after sample.
+In the confusion matrix, one axis is the real object and the other axis is the predicted object.
+For each sample you increase the counter in the cell of intersection of real object and predicted object.
+
+The drawback of using FC network to analyze pictures is that we need to flattened the picture for the input and so we loss the 2D dimensional context.
+It "understand" the picture only by probability of brightness in specific locations in the straight 1D vector and finds the common probability for similar pictures with the same label.
+It actually builds a vector of probabilities of brightness along the linear picture vector for some specific pattern that we want to identify.
+In the test when we get a new picture object, we compare its probability brightness vector (after flattened) to the probability vectors found in the training to various picture objects and finds the most similar. 
+
+Because of the nature of FC, there is no geometric relations, if you move the cat, the network lost the relationships between the points probability to the object (cat) and does not understand that it is the same object.
+
+Another drawback of FC network is that it has too much parameters and because of this it consumes too much memory, the training is a slow process and there is a risk of overfitting.
+
+CNN (Convolutional Neural Network):
+A Convolutional Neural Network (CNN) is a specialized type of deep neural network. While all CNNs are neural networks, they are specifically designed to process data with a grid-like topology, such as images. 
+Use the neighbors.
+Keep the spatial structure of the picture.
+This is similar to how the eye processing the image.
+works in parallel, so you can use the GPU efficiently. 
+
+Example for 2D:
+We can take 2D picture and each 4x4 pixels we average to 1 pixel.
+If original picture was 128x128 we get now a picture of 64x64 pixels.
+We can continue on the process again to get a picture of 32x32 pixels and so on.
+Each picture is in another deeper network layer and the more deeper layer show the relationship between farer neighbors.
+
+Advantages of CNN over FC network is that the same filter scan the whole picture, much fewer parameters and translation invariance, means that if we move the object from one location to another in the picture, it still can be identified.
+
+Convolution by the kernel:
+The kernel has weights and it goes on the pixels has a mask.
+Each time sum of multiply each point in the kernel in the pixels in the picture it masks.
+This creates a new pixel in the new picture.
+The new pixel location in the new picture overlaps the location of the center of the kernel.
+Next time, move the kernel one pixel to the right and do the same again to get the second new pixel.
+The same you do from top to bottom.
+The kernel values can be not only 1 (that makes average) but other values.
+This operation is actually dot production. 
+If we have a kernel of [-1,2,-1] and move it on the picture we will get 0 where the pixels have the same value.
+If we have a white picture with a black vertical line, only when move on the line we get non zero value, that identify a change, otherwise we get 0. 
+If all kernel weights are 1/(kernel size) e.g. 1/(3x3)=1/9 then we get averaging.
+Classic kernel is not 1D, but rather something like 3x3 or others.
+The kernel is a tool to find shapes in a picture.
+It performs dot product between the kernel and a picture part in the kernel size.
+
+When we have a black rectangle on white background and we want to find the rectangle vertical borders, we will take a kernel of [-1, 2, -1], move it horizontally on each row and it will discover when there is a horizontal change in the picture. 
+This kernel moving horizontally will not discover a horizontal border.
+The kernel weights determines what shapes it will find.
+
+Let's use the example that each layer averages 4 pixels and we have a few layers.
+If we use later the same kernel on the layers, in the first layer we find small shapes and in deeper layer we find bigger shape.
+
+The convolution can be used by the kernel to find specific patterns in 1D signal or 2D picture.
+In a match, the result will be high value pixel.
+
+Convolution operation creates a new picture that emphasis what we are looking for.
+In convolution the training is to find what kernel we need to work with and what will be the weights.
+
+The formal definition to 1D convolution:
+(f*g)(t) = Σ f(τ)×g(t-τ)
+f is the signal
+* is the convolution sign.
+g is the kernel
+In the equation we invert the kernel.
+
+2D feature map in convolution:
+In 2D image convolution, the formula O = I -K+1 represents the spatial size (width or height) of the output feature map when applying a convolution with no padding and a stride of 1.
+Here is a breakdown of the formula:
+O: Output feature map dimension (width or height).
+I: Input image dimension (width or height).
+K: Kernel (or filter) size. 
+Key Components of the Formula O = I -K+1:
+I-K: This calculates how many pixels are left over after the first placement of the filter on the edge of the image.
++1: This accounts for the initial position of the kernel before any sliding occurs.
+No Padding: This formula strictly applies to "no padding", where the kernel only moves within the bounds of the input. 
+Example: 
+If you have a 5x5 input image (I=5) and a 3x3 filter (K=3).
+Output = 5-3+1=3
+The resulting feature map will be 3x3.
+
+A kernel to identify vertical lines:
+1 0 -1
+1 0 -1
+1 0 -1
+
+Convolution against Correlation:
+In correlation the kernel is not inverted before sliding.
+
+Mathematical properties of the Convolution:
+1. Commutativity: f*g = g*f It doesn't matter if the kernel is moving or the picture is moving.
+2. associativity: (f*g)*h = f*(g*h) if we have more than one kernel.
+3. Linearity: you can divide the operation into parts.
+4. Shifting: If the picture shifts to right, the output also shifts to the right. This is in contrast to fully connected.
+
+Convolution is doing matrix multiplication and GPU is best for it.
+
+Picture preprocessing:
+1. Resize: Convert the picture to uniform dimensions, so all pictures will be the same dimensions.
+2. Normalize the pixels values in the range 0 to 1.
+3. Reshape: In color pictures we build 3 layers, so we have a tensor with dimensions of height, width and color.
+These tensors are injected to CNN network that get a matrix in the input (FC network gets a vector in the input).
+
+Normalization strategy:
+1. Min-Max [0, 1]:
+   Values will be between 0 and 1.
+   This is the default.
+   Formula: I(normalize) = (I(before normalization)-min)/(max-min).
+   min = minimum value in the data.
+   max = maximum value in the data.
+2. Min-Max [-1, 1]: 
+   Values will be between -1 and 1.
+   Usage: GANs, Tanh.
+   Formula: I(normalize) = (2*(I(before normalization)-min)/(max-min))-1.
+3. Z-Score:
+   Normalization by the mean and standard deviation.
+   Usage: Standardization.
+   Formula: I(normalize) = (I(before normalization)-μ)/σ
+If the picture is color picture, generally the normalization is done separately on each color.   
+
+Augmentation:
+When we don't have enough pictures, we can add similar pictures by taking the original object, rotate it or shift it, flip it or zoom it. 
+There is a Python package that can do augmentation to pictures. 
+
+The kernel:
+The kernel is actually the weights of the neuron. 
+
+Sobel kernel 3x3:
+Horizontal Gradient (Gx) that detects vertical edges:
+-1 0 +1
+-2 0 +2
+-1 0 +1
+Vertical Gradient (Gy) that detects horizontal edges:
++1 +2 +1
+ 0  0  0
+-1 -2 -1
+
+Prewitt kernel 3x3:
+X-Direction that detects vertical edges:
+-1 0 1
+-1 0 1
+-1 0 1
+Y-Direction that detects horizontal edges:
+ 1  1  1
+ 0  0  0
+-1 -1 -1
+
+Blur kernel:
+1 1 1
+1 1 1
+1 1 1
+The result above need to divide by 9.
+
+Sharpen kernel:
+ 0 -1  0
+-1  5 -1
+ 0 -1  0
+
+Finding the kernel weights in CNN:
+1. Initialize random weights.
+2. Backpropagation.
+3. Find the most relevant patterns for classification.
+This is done in neuron layers while in each layer finds another pattern.
+
+All neurons that use the kernel use the same weights, so we can use the GPU.
+It creates huge efficiency.
+For 3x3 kernel we need only 10 parameters (including the bias).
+This is in contrast to FC network that each neuron use different weights.
+
+Margins problem and padding:
+The kernel cannot process the margins, so we get a smaller output picture.
+The solution is to add cells (padding) around the pictures.
+The padding is with values of 0.
+
+2 padding strategies:
+1. Valid padding:
+   This means no padding.
+   The output is smaller.
+   Formula: O = I - K +1
+2. Same padding:
+   Padding by 0.
+   Output size = Input size.
+   Padding width = K/2.
+
+Stride:
+This is number of steps the kernel moves each time.
+If stride=2 the output picture will be smaller by factor of 2.
+So this is the way to decrease the picture dimensions.
+
+Use of a few kernels:
+Sometimes we use more than one filter to enable us to see a wider picture.
+Each kernel looks for another feature or pattern.
+
+Feature maps:
+If we have in the input a picture 28x28 with gray level (one layer and not 3).
+We apply to it 32 different filters that are located at the first layer of the CNN, each 3x3, not in serial but parallel, we will get a tensor of 26x26x32.
+It means we get 32 feature output maps, each map for each filter.
+We get dimensions of 26x26 because we do not use padding, the original map was 28x28 
+and the filter was 3x3.
+The number of the kernels defines the number of feature maps in the output.
+If we have a few pictures in the input (as a tensor), each filter operates on each input picture and then averages these result pictures to one picture as output picture for this kernel.
+
+Kernel dimensions:
+If the kernel is 3x3 and in the input we have 3 color layers pictures that the kernel need to operate on, then the kernel should be a tensor of 3x3x3.
+
+Output dimensions:
+Hout = ((Hin - K + 2P)/S) +1
+Hout = Output dimensions
+Hin = Input dimensions
+K = Kernel size
+P = Padding size
+S = Stride size
+
+
