@@ -1,0 +1,51 @@
+Author is Yair Levi
+Create Document PRD for Python program that works on Google Colab.
+Besides create the Python instructions with explanation before each section and prepare it as notebook for Google Colab.
+
+The program will do classification that distinguish if an image is a cat or a dog in PyTorch.
+1. Download cats and dogs images database from local computer ./dogs and ./cats folders.
+   Each folder contains 1500 images of dogs or cats.
+   The images mere taken ahead randomly from Kaggle site.
+   The images are in color but different resolutions.
+   Show some pictures of cats and dogs from this pool.
+2. Take 1000 dos images and 1000 cats images randomly for training.
+   Take the rest 500 dogs images and 500 cats images for validation.
+3. Preprocessing:
+   Explain on each step.
+   a. Resize all images to resolution of 150x150.
+   b. Normalization: consider if there is a need to normalize the pixel values between 0 and 1.
+   c. Labels: The labels, dog or cat, are according the folder they were taken from.
+      Need to convert to One-hot encoding to be compared later with output of the network to see if there 
+      is an error, all this is done in PyTorch. 
+4. Build the network architecture in CNN:
+   Explain on layers, input output, hidden layers, convolution layers, MaxPooling layers, activation function and Loss function, number of kernels.
+   Use as last 1 or 2 layers, Fully Connected layers.
+   a. Put the number of layers in the network and number of perceptrons in each layer and number of kernels as the default, but let the user control it.
+   b. Use Softmax as activation function for the output layer and ReLU for the hidden layers.
+   c. Loss Function: Use Cross-Entropy as a Loss Function in classification that measures the performance of a model by calculating the difference between predicted probability distributions.
+   e. Output: 2 output perceptrons with probability, then using SoftMax for decision.
+5. dividing the data:
+   This step is done while loading data, add explanation.
+   Training: 1000 dog images and 1000 cat images.
+   Test: 500 dog images and 500 cat images.
+6. Training (Fit):
+   a. Optimization method: 
+      Use Gradient Descent as optimization method in the training.
+      Use backpropagation with learning rate when using the gradient descent with Adam algorithm.
+      Show the learning step (rate).
+   b. Draw a graph of the Cross-Entropy and evaluation graph to see the improvement with training.
+   c. print model.summary().
+7. Test:
+   a. put a few pictures as output to see if succeed to know the animal type.
+   b. run test on the test group.
+   c. Draw the confusion matrix 2x2.
+   d. In cases it was not correct, explain why it didn't guess correctly.
+8. (manually) Improvement: 
+   Try to improve and show improvement by confusion matrix 2x2.
+   Try play some of the parameters.
+   Explain what caused the improvement.
+   Try once to make the network deeper (more layers) and compare to the regular network that was created.
+   Try to make the network wider (more perceptrons in the layer and compare results to the regular network.
+   Try to change number of kernels if possible.
+
+
