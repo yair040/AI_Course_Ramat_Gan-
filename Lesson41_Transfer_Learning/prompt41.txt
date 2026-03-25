@@ -1,0 +1,63 @@
+Author is Yair Levi
+Create Document PRD for Python program that works on Google Colab.
+Besides create the Python instructions with explanation before each section and prepare it as notebook for Google Colab.
+
+The project purpose is to assess the risk of diabetic retinopathy that causes blindness by examine eye scanning images.
+The image can classified to 1 of 5 categories: 0, 1, 2, 3 and 4.
+The classes are described below while DR means Diabetic Retinopathy:
+0 - No DR
+1 - Mild
+2 - Moderate
+3 - Severe
+4 - Proliferative DR
+
+We have dataset that contains eye images and labels.
+That dataset was taken from Kaggle at https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. 
+The images are located at Google Drive at Diabetic_Retinopathy/images folder while each image has a specific name followed by ".png" suffix.
+The labels are located at Google Drive at Diabetic_Retinopathy as lebels.csv file.
+The labels.csv file contains 2 columns:
+The first column has "id_code" header and contains the names of all the pictures (without the ".png" suffix).
+The second column has "diagnosis" header and contains numbers from 0 to 4 that tells the eye diagnosis as shown before.
+
+Transfer learning:
+Since training would take too much time, we will use a model that was trained already on ImageNet pool, like ResNet-50.
+
+Measure the time of each step (like balance image processing, decrease resolution preprocessing, etc.)
+
+The next steps are 2 preprocessing steps:
+1. Balance image preprocessing.
+2. Decrease Resolution Preprocessing.
+Consider what to do first related to speed and space in the Google Colab.
+
+Balance image preprocessing:
+The categories in the dataset are not balanced.
+Counting the categories we have:
+Category 0: 1806 images.
+Category 1: 371 images.
+Category 2: 1000 images.
+Category 3: 194 images.
+Category 4: 1180 images.
+Throw images from some categories and augment images in other categories, so each category will contain about 1000 images.
+
+Decrease Resolution Preprocessing:
+Decrease the resolution of the images to 224x224. 
+ 
+The program will do classification that classify the image to one of the 5 categories.
+
+Divide the dataset to 2 partitions:
+80% for the training and 20% for the test.
+
+normalize when it is required.
+Use Adam optimizer.
+Let the user control if he will use batch normalization or not.
+
+Display one image from each category for human comparison.
+
+For all tests do also measurements like confusion matrix, accuracy, precision etc.
+
+The program will run the next steps:
+1. run the test on the pretrained model without training it, just to measure success and failure.
+2. Freeze all layers except the last layer of Fully Connected, train the model and test it.
+   Save the model to Google Drive.
+3. Unfreeze some more deep layers, train and compare to previous results.
+   Save the model to Google Drive if there is enough space.
