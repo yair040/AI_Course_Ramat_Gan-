@@ -1,0 +1,148 @@
+2026-03-27 22:38:30,422 [INFO] __main__: Running task(s): all
+2026-03-27 22:38:39,492 [INFO] __main__: --- Starting task 1 ---
+2026-03-27 22:38:39,537 [INFO] autoencoder.preprocessing: === Task 1: Image Preprocessing START ===
+2026-03-27 22:38:39,643 [INFO] autoencoder.preprocessing: Resizing 1500 images from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/cats → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/cats_resized (workers=4)
+2026-03-27 22:38:41,472 [INFO] autoencoder.preprocessing:   Progress: 100/1500
+2026-03-27 22:38:42,976 [INFO] autoencoder.preprocessing:   Progress: 200/1500
+2026-03-27 22:38:44,196 [INFO] autoencoder.preprocessing:   Progress: 300/1500
+2026-03-27 22:38:45,356 [INFO] autoencoder.preprocessing:   Progress: 400/1500
+2026-03-27 22:38:46,604 [INFO] autoencoder.preprocessing:   Progress: 500/1500
+2026-03-27 22:38:47,965 [INFO] autoencoder.preprocessing:   Progress: 600/1500
+2026-03-27 22:38:49,394 [INFO] autoencoder.preprocessing:   Progress: 700/1500
+2026-03-27 22:38:50,694 [INFO] autoencoder.preprocessing:   Progress: 800/1500
+2026-03-27 22:38:52,041 [INFO] autoencoder.preprocessing:   Progress: 900/1500
+2026-03-27 22:38:53,365 [INFO] autoencoder.preprocessing:   Progress: 1000/1500
+2026-03-27 22:38:54,655 [INFO] autoencoder.preprocessing:   Progress: 1100/1500
+2026-03-27 22:38:55,977 [INFO] autoencoder.preprocessing:   Progress: 1200/1500
+2026-03-27 22:38:57,250 [INFO] autoencoder.preprocessing:   Progress: 1300/1500
+2026-03-27 22:38:58,571 [INFO] autoencoder.preprocessing:   Progress: 1400/1500
+2026-03-27 22:39:00,066 [INFO] autoencoder.preprocessing:   Progress: 1500/1500
+2026-03-27 22:39:00,080 [INFO] autoencoder.preprocessing: Resize complete: 1500 ok, 0 errors
+2026-03-27 22:39:00,108 [INFO] autoencoder.preprocessing: Resizing 1500 images from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/dogs → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/dogs_resized (workers=4)
+2026-03-27 22:39:01,798 [INFO] autoencoder.preprocessing:   Progress: 100/1500
+2026-03-27 22:39:03,417 [INFO] autoencoder.preprocessing:   Progress: 200/1500
+2026-03-27 22:39:04,992 [INFO] autoencoder.preprocessing:   Progress: 300/1500
+2026-03-27 22:39:07,074 [INFO] autoencoder.preprocessing:   Progress: 400/1500
+2026-03-27 22:39:08,698 [INFO] autoencoder.preprocessing:   Progress: 500/1500
+2026-03-27 22:39:10,395 [INFO] autoencoder.preprocessing:   Progress: 600/1500
+2026-03-27 22:39:12,049 [INFO] autoencoder.preprocessing:   Progress: 700/1500
+2026-03-27 22:39:13,645 [INFO] autoencoder.preprocessing:   Progress: 800/1500
+2026-03-27 22:39:15,018 [INFO] autoencoder.preprocessing:   Progress: 900/1500
+2026-03-27 22:39:16,288 [INFO] autoencoder.preprocessing:   Progress: 1000/1500
+2026-03-27 22:39:17,648 [INFO] autoencoder.preprocessing:   Progress: 1100/1500
+2026-03-27 22:39:18,921 [INFO] autoencoder.preprocessing:   Progress: 1200/1500
+2026-03-27 22:39:20,191 [INFO] autoencoder.preprocessing:   Progress: 1300/1500
+2026-03-27 22:39:21,554 [INFO] autoencoder.preprocessing:   Progress: 1400/1500
+2026-03-27 22:39:22,938 [INFO] autoencoder.preprocessing:   Progress: 1500/1500
+2026-03-27 22:39:22,950 [INFO] autoencoder.preprocessing: Resize complete: 1500 ok, 0 errors
+2026-03-27 22:39:22,953 [INFO] autoencoder.preprocessing: === Task 1 DONE — elapsed: 42.92s ===
+2026-03-27 22:39:22,954 [INFO] __main__: --- Starting task 2 ---
+2026-03-27 22:39:23,339 [INFO] autoencoder.train_cats: === Task 2: Train Cats AutoEncoder START ===
+2026-03-27 22:39:23,342 [INFO] autoencoder.train_cats: Device: cpu | Epochs: 30 | LR: 0.001 | Loss: mse
+2026-03-27 22:39:23,381 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/cats_resized
+2026-03-27 22:39:23,385 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 22:39:23,520 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 22:40:05,352 [INFO] autoencoder.train_utils: Epoch [  1/30]  loss=0.217008
+2026-03-27 22:40:55,408 [INFO] autoencoder.train_utils: Epoch [  2/30]  loss=0.116540
+2026-03-27 22:41:40,239 [INFO] autoencoder.train_utils: Epoch [  3/30]  loss=0.090794
+2026-03-27 22:42:24,911 [INFO] autoencoder.train_utils: Epoch [  4/30]  loss=0.077466
+2026-03-27 22:43:08,250 [INFO] autoencoder.train_utils: Epoch [  5/30]  loss=0.068236
+2026-03-27 22:43:51,350 [INFO] autoencoder.train_utils: Epoch [  6/30]  loss=0.061262
+2026-03-27 22:44:34,682 [INFO] autoencoder.train_utils: Epoch [  7/30]  loss=0.056138
+2026-03-27 22:45:17,474 [INFO] autoencoder.train_utils: Epoch [  8/30]  loss=0.051872
+2026-03-27 22:46:03,242 [INFO] autoencoder.train_utils: Epoch [  9/30]  loss=0.048211
+2026-03-27 22:46:56,951 [INFO] autoencoder.train_utils: Epoch [ 10/30]  loss=0.045413
+2026-03-27 22:47:52,354 [INFO] autoencoder.train_utils: Epoch [ 11/30]  loss=0.042954
+2026-03-27 22:48:37,406 [INFO] autoencoder.train_utils: Epoch [ 12/30]  loss=0.041319
+2026-03-27 22:49:30,711 [INFO] autoencoder.train_utils: Epoch [ 13/30]  loss=0.039778
+2026-03-27 22:50:27,746 [INFO] autoencoder.train_utils: Epoch [ 14/30]  loss=0.036724
+2026-03-27 22:51:27,205 [INFO] autoencoder.train_utils: Epoch [ 15/30]  loss=0.034832
+2026-03-27 22:52:31,403 [INFO] autoencoder.train_utils: Epoch [ 16/30]  loss=0.034073
+2026-03-27 22:53:36,458 [INFO] autoencoder.train_utils: Epoch [ 17/30]  loss=0.032281
+2026-03-27 22:54:39,154 [INFO] autoencoder.train_utils: Epoch [ 18/30]  loss=0.031129
+2026-03-27 22:55:37,702 [INFO] autoencoder.train_utils: Epoch [ 19/30]  loss=0.029127
+2026-03-27 22:56:40,990 [INFO] autoencoder.train_utils: Epoch [ 20/30]  loss=0.028245
+2026-03-27 22:57:44,940 [INFO] autoencoder.train_utils: Epoch [ 21/30]  loss=0.026351
+2026-03-27 22:58:46,095 [INFO] autoencoder.train_utils: Epoch [ 22/30]  loss=0.026575
+2026-03-27 22:59:49,893 [INFO] autoencoder.train_utils: Epoch [ 23/30]  loss=0.025845
+2026-03-27 23:00:53,467 [INFO] autoencoder.train_utils: Epoch [ 24/30]  loss=0.024303
+2026-03-27 23:01:59,012 [INFO] autoencoder.train_utils: Epoch [ 25/30]  loss=0.022867
+2026-03-27 23:03:02,590 [INFO] autoencoder.train_utils: Epoch [ 26/30]  loss=0.021932
+2026-03-27 23:04:09,076 [INFO] autoencoder.train_utils: Epoch [ 27/30]  loss=0.021091
+2026-03-27 23:05:14,184 [INFO] autoencoder.train_utils: Epoch [ 28/30]  loss=0.020371
+2026-03-27 23:06:00,573 [INFO] autoencoder.train_utils: Epoch [ 29/30]  loss=0.019968
+2026-03-27 23:06:42,377 [INFO] autoencoder.train_utils: Epoch [ 30/30]  loss=0.018932
+2026-03-27 23:06:42,384 [INFO] autoencoder.train_cats: Training complete in 1627.97s
+2026-03-27 23:06:42,896 [INFO] autoencoder.train_cats: Model saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/cats_autoencoder.pth
+2026-03-27 23:06:42,914 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/cats_resized
+2026-03-27 23:06:42,918 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:06:44,455 [INFO] autoencoder.train_utils: Saved reconstruction plot → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/cats_reconstruction.png
+2026-03-27 23:06:44,457 [INFO] autoencoder.train_cats: === Task 2 DONE ===
+2026-03-27 23:06:44,464 [INFO] __main__: --- Starting task 3 ---
+2026-03-27 23:06:44,483 [INFO] autoencoder.train_dogs: === Task 3: Train Dogs AutoEncoder START ===
+2026-03-27 23:06:44,484 [INFO] autoencoder.train_dogs: Device: cpu | Epochs: 30 | LR: 0.001 | Loss: mse
+2026-03-27 23:06:44,494 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/dogs_resized
+2026-03-27 23:06:44,495 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:06:44,552 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 23:07:33,088 [INFO] autoencoder.train_utils: Epoch [  1/30]  loss=0.214783
+2026-03-27 23:08:22,627 [INFO] autoencoder.train_utils: Epoch [  2/30]  loss=0.126836
+2026-03-27 23:09:06,764 [INFO] autoencoder.train_utils: Epoch [  3/30]  loss=0.101135
+2026-03-27 23:09:50,499 [INFO] autoencoder.train_utils: Epoch [  4/30]  loss=0.085836
+2026-03-27 23:10:33,878 [INFO] autoencoder.train_utils: Epoch [  5/30]  loss=0.077619
+2026-03-27 23:11:17,502 [INFO] autoencoder.train_utils: Epoch [  6/30]  loss=0.070281
+2026-03-27 23:12:04,301 [INFO] autoencoder.train_utils: Epoch [  7/30]  loss=0.065264
+2026-03-27 23:12:54,489 [INFO] autoencoder.train_utils: Epoch [  8/30]  loss=0.060392
+2026-03-27 23:13:48,518 [INFO] autoencoder.train_utils: Epoch [  9/30]  loss=0.056726
+2026-03-27 23:14:44,461 [INFO] autoencoder.train_utils: Epoch [ 10/30]  loss=0.053697
+2026-03-27 23:15:40,087 [INFO] autoencoder.train_utils: Epoch [ 11/30]  loss=0.051056
+2026-03-27 23:16:33,253 [INFO] autoencoder.train_utils: Epoch [ 12/30]  loss=0.049797
+2026-03-27 23:17:30,729 [INFO] autoencoder.train_utils: Epoch [ 13/30]  loss=0.047148
+2026-03-27 23:18:33,257 [INFO] autoencoder.train_utils: Epoch [ 14/30]  loss=0.043772
+2026-03-27 23:19:44,039 [INFO] autoencoder.train_utils: Epoch [ 15/30]  loss=0.041054
+2026-03-27 23:20:47,029 [INFO] autoencoder.train_utils: Epoch [ 16/30]  loss=0.038693
+2026-03-27 23:22:01,017 [INFO] autoencoder.train_utils: Epoch [ 17/30]  loss=0.037582
+2026-03-27 23:23:06,883 [INFO] autoencoder.train_utils: Epoch [ 18/30]  loss=0.036386
+2026-03-27 23:23:50,314 [INFO] autoencoder.train_utils: Epoch [ 19/30]  loss=0.034997
+2026-03-27 23:24:32,882 [INFO] autoencoder.train_utils: Epoch [ 20/30]  loss=0.032000
+2026-03-27 23:25:21,637 [INFO] autoencoder.train_utils: Epoch [ 21/30]  loss=0.029973
+2026-03-27 23:26:19,357 [INFO] autoencoder.train_utils: Epoch [ 22/30]  loss=0.028102
+2026-03-27 23:27:20,110 [INFO] autoencoder.train_utils: Epoch [ 23/30]  loss=0.026756
+2026-03-27 23:28:24,002 [INFO] autoencoder.train_utils: Epoch [ 24/30]  loss=0.026303
+2026-03-27 23:29:24,224 [INFO] autoencoder.train_utils: Epoch [ 25/30]  loss=0.025801
+2026-03-27 23:30:33,511 [INFO] autoencoder.train_utils: Epoch [ 26/30]  loss=0.024488
+2026-03-27 23:31:47,920 [INFO] autoencoder.train_utils: Epoch [ 27/30]  loss=0.023554
+2026-03-27 23:33:08,264 [INFO] autoencoder.train_utils: Epoch [ 28/30]  loss=0.022670
+2026-03-27 23:34:18,937 [INFO] autoencoder.train_utils: Epoch [ 29/30]  loss=0.022105
+2026-03-27 23:35:25,257 [INFO] autoencoder.train_utils: Epoch [ 30/30]  loss=0.021464
+2026-03-27 23:35:25,270 [INFO] autoencoder.train_dogs: Training complete in 1702.57s
+2026-03-27 23:35:25,869 [INFO] autoencoder.train_dogs: Model saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/dogs_autoencoder.pth
+2026-03-27 23:35:25,885 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/dogs_resized
+2026-03-27 23:35:25,886 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:35:27,764 [INFO] autoencoder.train_utils: Saved reconstruction plot → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/dogs_reconstruction.png
+2026-03-27 23:35:27,767 [INFO] autoencoder.train_dogs: === Task 3 DONE ===
+2026-03-27 23:35:27,775 [INFO] __main__: --- Starting task 4 ---
+2026-03-27 23:35:27,789 [INFO] autoencoder.cross_cats_enc_dogs_dec: === Task 4: Cats Encoder + Dogs Decoder START ===
+2026-03-27 23:35:28,295 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 23:35:28,299 [INFO] autoencoder.cross_utils: Encoder loaded from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/cats_autoencoder.pth
+2026-03-27 23:35:28,845 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 23:35:28,853 [INFO] autoencoder.cross_utils: Decoder loaded from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/dogs_autoencoder.pth
+2026-03-27 23:35:28,880 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/dogs_resized
+2026-03-27 23:35:28,884 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:35:30,290 [INFO] autoencoder.cross_utils: Cross-domain plot saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/task4_dogs_input.png
+2026-03-27 23:35:30,324 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/cats_resized
+2026-03-27 23:35:30,327 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:35:31,655 [INFO] autoencoder.cross_utils: Cross-domain plot saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/task4_cats_input.png
+2026-03-27 23:35:31,659 [INFO] autoencoder.cross_cats_enc_dogs_dec: === Task 4 DONE ===
+2026-03-27 23:35:31,668 [INFO] __main__: --- Starting task 5 ---
+2026-03-27 23:35:31,695 [INFO] autoencoder.cross_dogs_enc_cats_dec: === Task 5: Dogs Encoder + Cats Decoder START ===
+2026-03-27 23:35:32,785 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 23:35:32,791 [INFO] autoencoder.cross_utils: Encoder loaded from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/dogs_autoencoder.pth
+2026-03-27 23:35:33,820 [INFO] autoencoder.model: AutoEncoder: layers=3, nodes=64, code=128
+2026-03-27 23:35:33,827 [INFO] autoencoder.cross_utils: Decoder loaded from /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/models/cats_autoencoder.pth
+2026-03-27 23:35:33,848 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/cats_resized
+2026-03-27 23:35:33,850 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:35:35,465 [INFO] autoencoder.cross_utils: Cross-domain plot saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/task5_cats_input.png
+2026-03-27 23:35:35,654 [INFO] autoencoder.dataset: Found 1500 images in /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/dogs_resized
+2026-03-27 23:35:35,656 [INFO] autoencoder.dataset: DataLoader ready: 1500 images, batch=32, workers=4
+2026-03-27 23:35:37,431 [INFO] autoencoder.cross_utils: Cross-domain plot saved → /mnt/c/Users/yair0/AI_continue/Lesson42_AutoEncoder/AutoEncoder/output/plots/task5_dogs_input.png
+2026-03-27 23:35:37,433 [INFO] autoencoder.cross_dogs_enc_cats_dec: === Task 5 DONE ===

@@ -1,0 +1,12 @@
+# AutoEncoder Project — Requirements
+# Author: Yair Levi
+# Install inside venv at ../../venv/ relative to project root:
+#   source ../../venv/bin/activate
+#   pip install -r requirements.txt
+
+torch>=2.1.0
+torchvision>=0.16.0
+Pillow>=10.0.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+tqdm>=4.66.0
