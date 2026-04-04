@@ -1,0 +1,41 @@
+Author is Yair Levi
+Create Document PRD for Python program that works on Google Colab.
+Create also readme.md file.
+Besides create the Python instructions with explanation before each section and prepare it as notebook for Google Colab.
+
+The project purpose is to train and test autoencoder that removes noise from a noisy images.
+We will use the a cat dataset located in Google Drive at /cats folder.
+All steps in the Google Colab should be explained in the Colab notebook.
+For each step record the time to perform it.
+
+The next steps are 3 preprocessing steps:
+1. In order to save time, choose only 3000 pictures.
+2. Decrease Resolution to accommodate the input of the AutoEncoder and save in another folder.
+   Show progress bar for this operation.
+3. normalize the images when it is required.
+   Show progress bar for this operation.
+Consider what to do first related to speed and space in the Google Colab.
+
+The resized images are clean from noise and we will work on them.
+4. Add random noise to each picture and save the noisy pictures in another folder.
+   The noise will be from normal distribution.
+   The noise will be maximum 0.01% - 10% of the pixel value.
+   Before running this step, we determine by a GUI slider what is the maximum level.
+   Add also to the GUI, start, stop and pause buttons to control when start or stop the process.
+   For each noisy picture need to remember what is the clean resized picture that is related to it.
+   Show progress bar for this step (the adding noise).
+   Add noise at different level of noise by the slider to all the clean pictures and save each level at different folder.
+5. Show some samples of clean picture and the same picture with different level of noise.
+6. Build AutoEncoder.
+   The autoencoder has hyperparameters. Expose important hyperparameters to the user to be changed. 
+7. Train the Autoencoder with noisy pictures:
+   The input is a noisy picture and output is the picture without the noise.
+   To get the loss function, we need to compare the picture in the output to the related clean picture.
+   Show progress bar for this step.
+   Record the time to run this step.
+8. compare at end of training noisy picture, picture after autodecoder and original clean picture.
+   Show a few samples for human comparison.
+
+
+
+
