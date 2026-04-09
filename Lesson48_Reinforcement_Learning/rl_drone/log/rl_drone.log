@@ -1,0 +1,1328 @@
+2026-04-05 16:27:51 [INFO] main: === RL Drone starting ===
+2026-04-05 16:27:51 [INFO] main: Worker process PID=900
+2026-04-05 16:27:52 [INFO] grid_widget: Drone image resized → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 16:27:52 [INFO] stats_panel: StatsPanel created
+2026-04-05 16:27:52 [INFO] gui: GUI App ready
+2026-04-05 16:27:54 [INFO] worker: RL worker started
+2026-04-05 16:27:54 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 16:27:54 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 16:30:01 [INFO] environment: Structure 1 set at (1,2)
+2026-04-05 16:30:01 [INFO] agent: Soft reset complete
+2026-04-05 16:30:02 [INFO] environment: Structure 1 set at (1,2)
+2026-04-05 16:30:02 [INFO] agent: Soft reset complete
+2026-04-05 16:30:04 [INFO] environment: Structure 1 set at (1,2)
+2026-04-05 16:30:04 [INFO] agent: Soft reset complete
+2026-04-05 16:30:05 [INFO] environment: Structure 1 set at (1,2)
+2026-04-05 16:30:05 [INFO] agent: Soft reset complete
+2026-04-05 16:30:35 [INFO] environment: Structure 3 set at (1,5)
+2026-04-05 16:30:35 [INFO] agent: Soft reset complete
+2026-04-05 16:30:36 [INFO] environment: Structure 3 set at (1,5)
+2026-04-05 16:30:36 [INFO] agent: Soft reset complete
+2026-04-05 16:30:37 [INFO] environment: Structure 3 set at (1,5)
+2026-04-05 16:30:37 [INFO] agent: Soft reset complete
+2026-04-05 16:30:37 [INFO] environment: Structure 3 set at (2,5)
+2026-04-05 16:30:37 [INFO] agent: Soft reset complete
+2026-04-05 16:30:38 [INFO] environment: Structure 3 set at (1,5)
+2026-04-05 16:30:38 [INFO] agent: Soft reset complete
+2026-04-05 16:30:42 [INFO] environment: Structure 3 set at (2,5)
+2026-04-05 16:30:42 [INFO] agent: Soft reset complete
+2026-04-05 16:30:42 [INFO] environment: Structure 3 set at (2,5)
+2026-04-05 16:30:42 [INFO] agent: Soft reset complete
+2026-04-05 16:30:42 [INFO] environment: Structure 3 set at (2,5)
+2026-04-05 16:30:42 [INFO] agent: Soft reset complete
+2026-04-05 16:30:43 [INFO] environment: Structure 3 set at (2,5)
+2026-04-05 16:30:43 [INFO] agent: Soft reset complete
+2026-04-05 16:31:18 [INFO] environment: Structure 3 set at (1,4)
+2026-04-05 16:31:18 [INFO] agent: Soft reset complete
+2026-04-05 16:31:20 [INFO] environment: Structure 3 set at (1,4)
+2026-04-05 16:31:20 [INFO] agent: Soft reset complete
+2026-04-05 16:31:21 [INFO] environment: Structure 3 set at (1,4)
+2026-04-05 16:31:21 [INFO] agent: Soft reset complete
+2026-04-05 16:31:23 [INFO] environment: Structure 2 set at (1,4)
+2026-04-05 16:31:23 [INFO] agent: Soft reset complete
+2026-04-05 16:31:23 [INFO] environment: Structure 2 set at (2,5)
+2026-04-05 16:31:23 [INFO] agent: Soft reset complete
+2026-04-05 16:31:24 [INFO] environment: Structure 2 set at (2,4)
+2026-04-05 16:31:24 [INFO] agent: Soft reset complete
+2026-04-05 16:31:24 [INFO] environment: Structure 2 set at (2,5)
+2026-04-05 16:31:24 [INFO] agent: Soft reset complete
+2026-04-05 16:31:25 [INFO] environment: Structure 2 set at (2,6)
+2026-04-05 16:31:25 [INFO] agent: Soft reset complete
+2026-04-05 16:35:27 [INFO] environment: Structure 1 set at (0,3)
+2026-04-05 16:35:27 [INFO] agent: Soft reset complete
+2026-04-05 16:35:27 [INFO] environment: Structure 1 set at (0,3)
+2026-04-05 16:35:27 [INFO] agent: Soft reset complete
+2026-04-05 16:35:28 [INFO] environment: Structure 1 set at (0,3)
+2026-04-05 16:35:28 [INFO] agent: Soft reset complete
+2026-04-05 16:35:29 [INFO] environment: Structure 1 set at (0,3)
+2026-04-05 16:35:29 [INFO] agent: Soft reset complete
+2026-04-05 16:35:29 [INFO] environment: Structure 1 set at (0,4)
+2026-04-05 16:35:29 [INFO] agent: Soft reset complete
+2026-04-05 16:35:29 [INFO] environment: Structure 1 set at (0,4)
+2026-04-05 16:35:29 [INFO] agent: Soft reset complete
+2026-04-05 16:35:34 [INFO] environment: Structure 0 set at (1,6)
+2026-04-05 16:35:34 [INFO] agent: Soft reset complete
+2026-04-05 16:40:26 [INFO] main: === RL Drone stopped ===
+2026-04-05 16:44:55 [INFO] main: === RL Drone starting ===
+2026-04-05 16:44:55 [INFO] main: Worker process PID=1077
+2026-04-05 16:44:55 [INFO] stats_panel: StatsPanel created
+2026-04-05 16:44:55 [INFO] gui: GUI App ready
+2026-04-05 16:44:56 [INFO] worker: RL worker started
+2026-04-05 16:44:56 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 16:44:56 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 16:45:43 [INFO] environment: Structure 1 set at (1,4)
+2026-04-05 16:45:43 [INFO] agent: Soft reset complete
+2026-04-05 16:45:44 [INFO] environment: Structure 1 set at (1,5)
+2026-04-05 16:45:44 [INFO] agent: Soft reset complete
+2026-04-05 16:45:46 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 16:45:46 [INFO] agent: Soft reset complete
+2026-04-05 16:45:46 [INFO] environment: Structure 1 set at (3,4)
+2026-04-05 16:45:46 [INFO] agent: Soft reset complete
+2026-04-05 16:45:48 [INFO] environment: Structure 1 set at (8,5)
+2026-04-05 16:45:48 [INFO] agent: Soft reset complete
+2026-04-05 16:45:49 [INFO] environment: Structure 1 set at (8,4)
+2026-04-05 16:45:49 [INFO] agent: Soft reset complete
+2026-04-05 16:45:49 [INFO] environment: Structure 1 set at (8,3)
+2026-04-05 16:45:49 [INFO] agent: Soft reset complete
+2026-04-05 16:45:50 [INFO] environment: Structure 1 set at (9,3)
+2026-04-05 16:45:50 [INFO] agent: Soft reset complete
+2026-04-05 16:45:51 [INFO] environment: Structure 1 set at (4,8)
+2026-04-05 16:45:51 [INFO] agent: Soft reset complete
+2026-04-05 16:45:52 [INFO] environment: Structure 1 set at (5,8)
+2026-04-05 16:45:52 [INFO] agent: Soft reset complete
+2026-04-05 16:45:52 [INFO] environment: Structure 1 set at (6,8)
+2026-04-05 16:45:52 [INFO] agent: Soft reset complete
+2026-04-05 16:45:55 [INFO] environment: Structure 1 set at (7,8)
+2026-04-05 16:45:55 [INFO] agent: Soft reset complete
+2026-04-05 16:46:00 [INFO] environment: Structure 2 set at (5,1)
+2026-04-05 16:46:00 [INFO] agent: Soft reset complete
+2026-04-05 16:46:01 [INFO] environment: Structure 2 set at (5,0)
+2026-04-05 16:46:01 [INFO] agent: Soft reset complete
+2026-04-05 16:46:03 [INFO] environment: Structure 2 set at (6,1)
+2026-04-05 16:46:03 [INFO] agent: Soft reset complete
+2026-04-05 16:46:08 [INFO] environment: Structure 3 set at (2,9)
+2026-04-05 16:46:08 [INFO] agent: Soft reset complete
+2026-04-05 16:46:09 [INFO] environment: Structure 3 set at (2,10)
+2026-04-05 16:46:09 [INFO] agent: Soft reset complete
+2026-04-05 16:46:11 [INFO] environment: Structure 3 set at (10,5)
+2026-04-05 16:46:11 [INFO] agent: Soft reset complete
+2026-04-05 16:46:11 [INFO] environment: Structure 3 set at (10,6)
+2026-04-05 16:46:11 [INFO] agent: Soft reset complete
+2026-04-05 16:46:12 [INFO] environment: Structure 3 set at (10,7)
+2026-04-05 16:46:12 [INFO] agent: Soft reset complete
+2026-04-05 16:46:45 [INFO] gui: Run toggled → paused=False
+2026-04-05 16:55:52 [INFO] gui: Run toggled → paused=True
+2026-04-05 16:55:52 [INFO] gui: Run toggled → paused=False
+2026-04-05 16:55:52 [INFO] gui: Run toggled → paused=True
+2026-04-05 16:55:52 [INFO] gui: Run toggled → paused=False
+2026-04-05 16:56:39 [INFO] main: === RL Drone stopped ===
+2026-04-05 16:56:50 [INFO] main: === RL Drone starting ===
+2026-04-05 16:56:50 [INFO] main: Worker process PID=1547
+2026-04-05 16:56:50 [INFO] stats_panel: StatsPanel created
+2026-04-05 16:56:50 [INFO] gui: GUI App ready
+2026-04-05 16:56:51 [INFO] worker: RL worker started
+2026-04-05 16:56:51 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 16:56:51 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 16:56:58 [INFO] environment: Structure 1 set at (2,2)
+2026-04-05 16:56:58 [INFO] agent: Soft reset complete
+2026-04-05 16:56:59 [INFO] environment: Structure 1 set at (2,3)
+2026-04-05 16:56:59 [INFO] agent: Soft reset complete
+2026-04-05 16:56:59 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 16:56:59 [INFO] agent: Soft reset complete
+2026-04-05 16:57:00 [INFO] environment: Structure 1 set at (2,5)
+2026-04-05 16:57:00 [INFO] agent: Soft reset complete
+2026-04-05 16:57:02 [INFO] environment: Structure 1 set at (3,5)
+2026-04-05 16:57:02 [INFO] agent: Soft reset complete
+2026-04-05 16:57:04 [INFO] environment: Structure 2 set at (5,3)
+2026-04-05 16:57:04 [INFO] agent: Soft reset complete
+2026-04-05 16:57:05 [INFO] environment: Structure 2 set at (6,3)
+2026-04-05 16:57:05 [INFO] agent: Soft reset complete
+2026-04-05 16:57:06 [INFO] environment: Structure 2 set at (7,3)
+2026-04-05 16:57:06 [INFO] agent: Soft reset complete
+2026-04-05 16:57:09 [INFO] environment: Structure 3 set at (6,6)
+2026-04-05 16:57:09 [INFO] agent: Soft reset complete
+2026-04-05 16:57:11 [INFO] environment: Structure 3 set at (6,7)
+2026-04-05 16:57:11 [INFO] agent: Soft reset complete
+2026-04-05 16:57:11 [INFO] environment: Structure 3 set at (6,8)
+2026-04-05 16:57:11 [INFO] agent: Soft reset complete
+2026-04-05 16:57:12 [INFO] environment: Structure 3 set at (9,6)
+2026-04-05 16:57:12 [INFO] agent: Soft reset complete
+2026-04-05 16:57:13 [INFO] environment: Structure 3 set at (10,6)
+2026-04-05 16:57:13 [INFO] agent: Soft reset complete
+2026-04-05 16:57:13 [INFO] environment: Structure 3 set at (11,6)
+2026-04-05 16:57:13 [INFO] agent: Soft reset complete
+2026-04-05 16:57:24 [INFO] gui: Run toggled → paused=False
+2026-04-05 16:58:27 [INFO] gui: Run toggled → paused=True
+2026-04-05 16:58:28 [INFO] gui: Run toggled → paused=False
+2026-04-05 16:58:30 [INFO] gui: Run toggled → paused=True
+2026-04-05 16:58:39 [INFO] gui: Run toggled → paused=False
+2026-04-05 17:28:24 [INFO] gui: Run toggled → paused=True
+2026-04-05 17:28:27 [INFO] gui: Run toggled → paused=False
+2026-04-05 17:28:30 [INFO] gui: Run toggled → paused=True
+2026-04-05 17:28:33 [INFO] gui: Run toggled → paused=False
+2026-04-05 17:28:35 [INFO] gui: Run toggled → paused=True
+2026-04-05 17:29:18 [INFO] gui: Run toggled → paused=False
+2026-04-05 17:29:26 [INFO] gui: Run toggled → paused=True
+2026-04-05 17:30:26 [INFO] gui: Run toggled → paused=False
+2026-04-05 17:30:29 [INFO] gui: Run toggled → paused=True
+2026-04-05 18:39:50 [INFO] gui: Run toggled → paused=False
+2026-04-05 20:43:49 [INFO] gui: Run toggled → paused=True
+2026-04-05 20:43:49 [INFO] gui: Run toggled → paused=False
+2026-04-05 20:44:06 [INFO] gui: Run toggled → paused=True
+2026-04-05 20:58:27 [INFO] main: === RL Drone starting ===
+2026-04-05 20:58:27 [INFO] main: Worker process PID=2359
+2026-04-05 20:58:27 [INFO] stats_panel: StatsPanel created
+2026-04-05 20:58:27 [INFO] gui: GUI App ready
+2026-04-05 20:58:33 [INFO] worker: RL worker started
+2026-04-05 20:58:33 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 20:58:33 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 20:58:59 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 20:58:59 [INFO] agent: Soft reset complete
+2026-04-05 20:58:59 [INFO] environment: Structure 1 set at (2,5)
+2026-04-05 20:58:59 [INFO] agent: Soft reset complete
+2026-04-05 20:59:00 [INFO] environment: Structure 1 set at (2,6)
+2026-04-05 20:59:00 [INFO] agent: Soft reset complete
+2026-04-05 20:59:00 [INFO] environment: Structure 1 set at (3,6)
+2026-04-05 20:59:00 [INFO] agent: Soft reset complete
+2026-04-05 20:59:01 [INFO] environment: Structure 1 set at (4,6)
+2026-04-05 20:59:01 [INFO] agent: Soft reset complete
+2026-04-05 20:59:01 [INFO] environment: Structure 1 set at (5,6)
+2026-04-05 20:59:01 [INFO] agent: Soft reset complete
+2026-04-05 20:59:05 [INFO] environment: Structure 2 set at (10,3)
+2026-04-05 20:59:05 [INFO] agent: Soft reset complete
+2026-04-05 20:59:06 [INFO] environment: Structure 2 set at (10,4)
+2026-04-05 20:59:06 [INFO] agent: Soft reset complete
+2026-04-05 20:59:06 [INFO] environment: Structure 2 set at (9,4)
+2026-04-05 20:59:06 [INFO] agent: Soft reset complete
+2026-04-05 20:59:07 [INFO] environment: Structure 2 set at (8,4)
+2026-04-05 20:59:07 [INFO] agent: Soft reset complete
+2026-04-05 20:59:10 [INFO] environment: Structure 2 set at (6,9)
+2026-04-05 20:59:10 [INFO] agent: Soft reset complete
+2026-04-05 20:59:10 [INFO] environment: Structure 2 set at (7,9)
+2026-04-05 20:59:10 [INFO] agent: Soft reset complete
+2026-04-05 20:59:17 [INFO] environment: Structure 0 set at (6,9)
+2026-04-05 20:59:17 [INFO] agent: Soft reset complete
+2026-04-05 20:59:17 [INFO] environment: Structure 0 set at (7,9)
+2026-04-05 20:59:17 [INFO] agent: Soft reset complete
+2026-04-05 20:59:25 [INFO] environment: Structure 3 set at (6,9)
+2026-04-05 20:59:25 [INFO] agent: Soft reset complete
+2026-04-05 20:59:26 [INFO] environment: Structure 3 set at (7,9)
+2026-04-05 20:59:26 [INFO] agent: Soft reset complete
+2026-04-05 20:59:26 [INFO] environment: Structure 3 set at (8,9)
+2026-04-05 20:59:26 [INFO] agent: Soft reset complete
+2026-04-05 20:59:29 [INFO] environment: Structure 3 set at (9,9)
+2026-04-05 20:59:29 [INFO] agent: Soft reset complete
+2026-04-05 20:59:34 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:03:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:06:03 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:06:05 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:06:18 [INFO] main: === RL Drone stopped ===
+2026-04-05 21:15:07 [INFO] main: === RL Drone starting ===
+2026-04-05 21:15:07 [INFO] main: Worker process PID=2467
+2026-04-05 21:15:07 [INFO] stats_panel: StatsPanel created
+2026-04-05 21:15:07 [INFO] gui: GUI App ready
+2026-04-05 21:15:10 [INFO] worker: RL worker started
+2026-04-05 21:15:10 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 21:15:10 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 21:15:23 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 21:15:23 [INFO] agent: Soft reset complete
+2026-04-05 21:15:23 [INFO] environment: Structure 1 set at (2,5)
+2026-04-05 21:15:23 [INFO] agent: Soft reset complete
+2026-04-05 21:15:24 [INFO] environment: Structure 1 set at (3,5)
+2026-04-05 21:15:24 [INFO] agent: Soft reset complete
+2026-04-05 21:15:24 [INFO] environment: Structure 1 set at (4,5)
+2026-04-05 21:15:24 [INFO] agent: Soft reset complete
+2026-04-05 21:15:25 [INFO] environment: Structure 1 set at (5,5)
+2026-04-05 21:15:25 [INFO] agent: Soft reset complete
+2026-04-05 21:15:25 [INFO] environment: Structure 1 set at (5,6)
+2026-04-05 21:15:25 [INFO] agent: Soft reset complete
+2026-04-05 21:15:29 [INFO] environment: Structure 2 set at (8,4)
+2026-04-05 21:15:29 [INFO] agent: Soft reset complete
+2026-04-05 21:15:30 [INFO] environment: Structure 2 set at (9,4)
+2026-04-05 21:15:30 [INFO] agent: Soft reset complete
+2026-04-05 21:15:30 [INFO] environment: Structure 2 set at (10,4)
+2026-04-05 21:15:30 [INFO] agent: Soft reset complete
+2026-04-05 21:15:33 [INFO] environment: Structure 3 set at (5,9)
+2026-04-05 21:15:33 [INFO] agent: Soft reset complete
+2026-04-05 21:15:34 [INFO] environment: Structure 3 set at (6,9)
+2026-04-05 21:15:34 [INFO] agent: Soft reset complete
+2026-04-05 21:15:34 [INFO] environment: Structure 3 set at (7,9)
+2026-04-05 21:15:34 [INFO] agent: Soft reset complete
+2026-04-05 21:15:34 [INFO] environment: Structure 3 set at (8,9)
+2026-04-05 21:15:34 [INFO] agent: Soft reset complete
+2026-04-05 21:15:35 [INFO] environment: Structure 3 set at (8,8)
+2026-04-05 21:15:35 [INFO] agent: Soft reset complete
+2026-04-05 21:15:36 [INFO] environment: Structure 3 set at (8,7)
+2026-04-05 21:15:36 [INFO] agent: Soft reset complete
+2026-04-05 21:15:45 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:15:49 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:16:07 [INFO] environment: Structure 3 set at (0,4)
+2026-04-05 21:16:07 [INFO] agent: Soft reset complete
+2026-04-05 21:16:17 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:16:21 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:16:40 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:16:48 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:16:59 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:16:59 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:17:22 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:17:22 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:53:51 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:53:54 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:53:56 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:53:57 [INFO] gui: Run toggled → paused=True
+2026-04-05 21:53:58 [INFO] gui: Run toggled → paused=False
+2026-04-05 21:54:02 [INFO] gui: Run toggled → paused=True
+2026-04-05 22:09:06 [INFO] main: === RL Drone stopped ===
+2026-04-05 22:09:20 [INFO] main: === RL Drone starting ===
+2026-04-05 22:09:20 [INFO] main: Worker process PID=2736
+2026-04-05 22:09:20 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 22:09:21 [INFO] stats_panel: StatsPanel created
+2026-04-05 22:09:21 [INFO] gui: GUI App ready
+2026-04-05 22:09:27 [INFO] worker: RL worker started
+2026-04-05 22:09:27 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 22:09:27 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 22:09:38 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 22:09:38 [INFO] agent: Soft reset complete
+2026-04-05 22:09:40 [INFO] environment: Structure 1 set at (2,5)
+2026-04-05 22:09:40 [INFO] agent: Soft reset complete
+2026-04-05 22:09:40 [INFO] environment: Structure 1 set at (2,6)
+2026-04-05 22:09:40 [INFO] agent: Soft reset complete
+2026-04-05 22:09:41 [INFO] environment: Structure 1 set at (3,6)
+2026-04-05 22:09:41 [INFO] agent: Soft reset complete
+2026-04-05 22:09:41 [INFO] environment: Structure 1 set at (4,6)
+2026-04-05 22:09:41 [INFO] agent: Soft reset complete
+2026-04-05 22:09:42 [INFO] environment: Structure 1 set at (5,6)
+2026-04-05 22:09:42 [INFO] agent: Soft reset complete
+2026-04-05 22:09:45 [INFO] environment: Structure 2 set at (6,3)
+2026-04-05 22:09:45 [INFO] agent: Soft reset complete
+2026-04-05 22:09:45 [INFO] environment: Structure 2 set at (7,3)
+2026-04-05 22:09:45 [INFO] agent: Soft reset complete
+2026-04-05 22:09:46 [INFO] environment: Structure 2 set at (8,3)
+2026-04-05 22:09:46 [INFO] agent: Soft reset complete
+2026-04-05 22:09:46 [INFO] environment: Structure 2 set at (9,3)
+2026-04-05 22:09:46 [INFO] agent: Soft reset complete
+2026-04-05 22:09:48 [INFO] environment: Structure 2 set at (7,9)
+2026-04-05 22:09:48 [INFO] agent: Soft reset complete
+2026-04-05 22:09:48 [INFO] environment: Structure 2 set at (6,9)
+2026-04-05 22:09:48 [INFO] agent: Soft reset complete
+2026-04-05 22:09:52 [INFO] environment: Structure 3 set at (8,5)
+2026-04-05 22:09:52 [INFO] agent: Soft reset complete
+2026-04-05 22:09:53 [INFO] environment: Structure 3 set at (8,6)
+2026-04-05 22:09:53 [INFO] agent: Soft reset complete
+2026-04-05 22:09:53 [INFO] environment: Structure 3 set at (8,7)
+2026-04-05 22:09:53 [INFO] agent: Soft reset complete
+2026-04-05 22:09:54 [INFO] environment: Structure 3 set at (9,7)
+2026-04-05 22:09:54 [INFO] agent: Soft reset complete
+2026-04-05 22:09:56 [INFO] environment: Structure 3 set at (0,8)
+2026-04-05 22:09:56 [INFO] agent: Soft reset complete
+2026-04-05 22:09:57 [INFO] environment: Structure 3 set at (0,9)
+2026-04-05 22:09:57 [INFO] agent: Soft reset complete
+2026-04-05 22:09:58 [INFO] environment: Structure 3 set at (0,10)
+2026-04-05 22:09:58 [INFO] agent: Soft reset complete
+2026-04-05 22:10:03 [INFO] gui: Run toggled → paused=False
+2026-04-05 22:13:24 [INFO] gui: Run toggled → paused=True
+2026-04-05 22:14:24 [INFO] gui: Run toggled → paused=False
+2026-04-05 22:19:18 [INFO] agent: Best path traced: 8 cells
+2026-04-05 22:19:18 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-05 22:30:45 [INFO] worker: RL worker exiting
+2026-04-05 22:30:45 [INFO] main: === RL Drone stopped ===
+2026-04-05 22:31:12 [INFO] main: === RL Drone starting ===
+2026-04-05 22:31:12 [INFO] main: Worker process PID=2874
+2026-04-05 22:31:12 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 22:31:13 [INFO] stats_panel: StatsPanel created
+2026-04-05 22:31:13 [INFO] gui: GUI App ready
+2026-04-05 22:31:18 [INFO] worker: RL worker started
+2026-04-05 22:31:18 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 22:31:18 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 22:31:55 [INFO] environment: Structure 1 set at (2,3)
+2026-04-05 22:31:55 [INFO] agent: Soft reset complete
+2026-04-05 22:31:55 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 22:31:55 [INFO] agent: Soft reset complete
+2026-04-05 22:31:56 [INFO] environment: Structure 1 set at (2,5)
+2026-04-05 22:31:56 [INFO] agent: Soft reset complete
+2026-04-05 22:31:57 [INFO] environment: Structure 1 set at (3,5)
+2026-04-05 22:31:57 [INFO] agent: Soft reset complete
+2026-04-05 22:31:57 [INFO] environment: Structure 1 set at (4,5)
+2026-04-05 22:31:57 [INFO] agent: Soft reset complete
+2026-04-05 22:31:58 [INFO] environment: Structure 1 set at (8,2)
+2026-04-05 22:31:58 [INFO] agent: Soft reset complete
+2026-04-05 22:31:59 [INFO] environment: Structure 1 set at (9,2)
+2026-04-05 22:31:59 [INFO] agent: Soft reset complete
+2026-04-05 22:32:00 [INFO] environment: Structure 1 set at (10,2)
+2026-04-05 22:32:00 [INFO] agent: Soft reset complete
+2026-04-05 22:32:02 [INFO] environment: Structure 2 set at (5,7)
+2026-04-05 22:32:02 [INFO] agent: Soft reset complete
+2026-04-05 22:32:03 [INFO] environment: Structure 2 set at (6,7)
+2026-04-05 22:32:03 [INFO] agent: Soft reset complete
+2026-04-05 22:32:03 [INFO] environment: Structure 2 set at (7,7)
+2026-04-05 22:32:03 [INFO] agent: Soft reset complete
+2026-04-05 22:32:05 [INFO] environment: Structure 2 set at (10,4)
+2026-04-05 22:32:05 [INFO] agent: Soft reset complete
+2026-04-05 22:32:06 [INFO] environment: Structure 2 set at (10,5)
+2026-04-05 22:32:06 [INFO] agent: Soft reset complete
+2026-04-05 22:32:08 [INFO] environment: Structure 3 set at (1,8)
+2026-04-05 22:32:08 [INFO] agent: Soft reset complete
+2026-04-05 22:32:08 [INFO] environment: Structure 3 set at (1,9)
+2026-04-05 22:32:08 [INFO] agent: Soft reset complete
+2026-04-05 22:32:08 [INFO] environment: Structure 3 set at (1,10)
+2026-04-05 22:32:08 [INFO] agent: Soft reset complete
+2026-04-05 22:32:10 [INFO] environment: Structure 3 set at (5,0)
+2026-04-05 22:32:10 [INFO] agent: Soft reset complete
+2026-04-05 22:32:11 [INFO] environment: Structure 3 set at (6,0)
+2026-04-05 22:32:11 [INFO] agent: Soft reset complete
+2026-04-05 22:32:12 [INFO] environment: Structure 3 set at (6,1)
+2026-04-05 22:32:12 [INFO] agent: Soft reset complete
+2026-04-05 22:32:17 [INFO] gui: Run toggled → paused=False
+2026-04-05 22:33:32 [INFO] gui: Run toggled → paused=True
+2026-04-05 22:34:16 [INFO] gui: Run toggled → paused=False
+2026-04-05 22:39:19 [INFO] agent: Best path traced: 55 cells
+2026-04-05 22:39:19 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-05 22:45:43 [INFO] worker: RL worker exiting
+2026-04-05 22:45:43 [INFO] main: === RL Drone stopped ===
+2026-04-05 22:45:59 [INFO] main: === RL Drone starting ===
+2026-04-05 22:45:59 [INFO] main: Worker process PID=2975
+2026-04-05 22:46:00 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 22:46:00 [INFO] stats_panel: StatsPanel created
+2026-04-05 22:46:00 [INFO] gui: GUI App ready
+2026-04-05 22:46:07 [INFO] worker: RL worker started
+2026-04-05 22:46:07 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 22:46:07 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 22:47:24 [INFO] environment: Structure 1 set at (3,2)
+2026-04-05 22:47:24 [INFO] agent: Soft reset complete
+2026-04-05 22:47:25 [INFO] environment: Structure 1 set at (3,3)
+2026-04-05 22:47:25 [INFO] agent: Soft reset complete
+2026-04-05 22:47:25 [INFO] environment: Structure 1 set at (3,4)
+2026-04-05 22:47:25 [INFO] agent: Soft reset complete
+2026-04-05 22:47:26 [INFO] environment: Structure 1 set at (4,4)
+2026-04-05 22:47:26 [INFO] agent: Soft reset complete
+2026-04-05 22:47:27 [INFO] environment: Structure 1 set at (5,4)
+2026-04-05 22:47:27 [INFO] agent: Soft reset complete
+2026-04-05 22:47:29 [INFO] environment: Structure 2 set at (6,6)
+2026-04-05 22:47:29 [INFO] agent: Soft reset complete
+2026-04-05 22:47:29 [INFO] environment: Structure 2 set at (7,6)
+2026-04-05 22:47:29 [INFO] agent: Soft reset complete
+2026-04-05 22:47:30 [INFO] environment: Structure 2 set at (8,6)
+2026-04-05 22:47:30 [INFO] agent: Soft reset complete
+2026-04-05 22:47:30 [INFO] environment: Structure 2 set at (8,7)
+2026-04-05 22:47:30 [INFO] agent: Soft reset complete
+2026-04-05 22:47:33 [INFO] environment: Structure 3 set at (8,1)
+2026-04-05 22:47:33 [INFO] agent: Soft reset complete
+2026-04-05 22:47:33 [INFO] environment: Structure 3 set at (9,1)
+2026-04-05 22:47:33 [INFO] agent: Soft reset complete
+2026-04-05 22:47:34 [INFO] environment: Structure 3 set at (10,1)
+2026-04-05 22:47:34 [INFO] agent: Soft reset complete
+2026-04-05 22:47:34 [INFO] environment: Structure 3 set at (10,2)
+2026-04-05 22:47:34 [INFO] agent: Soft reset complete
+2026-04-05 22:47:36 [INFO] environment: Structure 3 set at (1,5)
+2026-04-05 22:47:36 [INFO] agent: Soft reset complete
+2026-04-05 22:47:36 [INFO] environment: Structure 3 set at (1,6)
+2026-04-05 22:47:36 [INFO] agent: Soft reset complete
+2026-04-05 22:47:36 [INFO] environment: Structure 3 set at (1,7)
+2026-04-05 22:47:36 [INFO] agent: Soft reset complete
+2026-04-05 22:47:37 [INFO] environment: Structure 3 set at (1,8)
+2026-04-05 22:47:37 [INFO] agent: Soft reset complete
+2026-04-05 22:47:46 [INFO] gui: Run toggled → paused=False
+2026-04-05 22:53:58 [WARNING] agent: trace_best_path: cycle at (0,8) — Q not converged
+2026-04-05 22:53:58 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:55:13 [WARNING] agent: trace_best_path: cycle at (8,0) — Q not converged
+2026-04-05 22:55:13 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:55:53 [WARNING] agent: trace_best_path: cycle at (8,0) — Q not converged
+2026-04-05 22:55:53 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:56:13 [WARNING] agent: trace_best_path: cycle at (0,8) — Q not converged
+2026-04-05 22:56:13 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:56:43 [WARNING] agent: trace_best_path: cycle at (0,8) — Q not converged
+2026-04-05 22:56:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:57:01 [WARNING] agent: trace_best_path: cycle at (0,8) — Q not converged
+2026-04-05 22:57:01 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:57:30 [WARNING] agent: trace_best_path: cycle at (1,10) — Q not converged
+2026-04-05 22:57:30 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:57:35 [WARNING] agent: trace_best_path: cycle at (1,10) — Q not converged
+2026-04-05 22:57:35 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:59:06 [WARNING] agent: trace_best_path: cycle at (9,3) — Q not converged
+2026-04-05 22:59:06 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:59:14 [WARNING] agent: trace_best_path: cycle at (9,3) — Q not converged
+2026-04-05 22:59:14 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:59:43 [WARNING] agent: trace_best_path: cycle at (10,3) — Q not converged
+2026-04-05 22:59:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 22:59:52 [WARNING] agent: trace_best_path: cycle at (10,3) — Q not converged
+2026-04-05 22:59:52 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:00:09 [WARNING] agent: trace_best_path: cycle at (10,3) — Q not converged
+2026-04-05 23:00:09 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:00:12 [WARNING] agent: trace_best_path: cycle at (10,3) — Q not converged
+2026-04-05 23:00:12 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:00:34 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:00:34 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:00:43 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:00:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:01:33 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:01:33 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:02:02 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:02:02 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:02:13 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:02:13 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:02:33 [WARNING] agent: trace_best_path: cycle at (7,3) — Q not converged
+2026-04-05 23:02:33 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:02:38 [WARNING] agent: trace_best_path: cycle at (7,3) — Q not converged
+2026-04-05 23:02:38 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:08 [WARNING] agent: trace_best_path: cycle at (1,10) — Q not converged
+2026-04-05 23:03:08 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:24 [WARNING] agent: trace_best_path: cycle at (0,5) — Q not converged
+2026-04-05 23:03:24 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:41 [WARNING] agent: trace_best_path: cycle at (7,3) — Q not converged
+2026-04-05 23:03:41 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:43 [WARNING] agent: trace_best_path: cycle at (7,3) — Q not converged
+2026-04-05 23:03:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:48 [WARNING] agent: trace_best_path: cycle at (6,3) — Q not converged
+2026-04-05 23:03:48 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:03:52 [WARNING] agent: trace_best_path: cycle at (6,3) — Q not converged
+2026-04-05 23:03:52 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:04:00 [WARNING] agent: trace_best_path: cycle at (7,2) — Q not converged
+2026-04-05 23:04:00 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:04:10 [WARNING] agent: trace_best_path: cycle at (7,3) — Q not converged
+2026-04-05 23:04:10 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:04:20 [WARNING] agent: trace_best_path: cycle at (6,1) — Q not converged
+2026-04-05 23:04:20 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:04:37 [WARNING] agent: trace_best_path: cycle at (6,1) — Q not converged
+2026-04-05 23:04:37 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:04:43 [WARNING] agent: trace_best_path: cycle at (6,1) — Q not converged
+2026-04-05 23:04:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:05:02 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:05:02 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:05:07 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:05:07 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:05:15 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:05:15 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:05:31 [WARNING] agent: trace_best_path: cycle at (8,0) — Q not converged
+2026-04-05 23:05:31 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:05:37 [INFO] agent: Best path traced successfully: 23 cells
+2026-04-05 23:05:37 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-05 23:12:44 [INFO] worker: RL worker exiting
+2026-04-05 23:12:44 [INFO] main: === RL Drone stopped ===
+2026-04-05 23:12:55 [INFO] main: === RL Drone starting ===
+2026-04-05 23:12:55 [INFO] main: Worker process PID=3120
+2026-04-05 23:12:55 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 23:12:55 [INFO] stats_panel: StatsPanel created
+2026-04-05 23:12:55 [INFO] gui: GUI App ready
+2026-04-05 23:12:58 [INFO] worker: RL worker started
+2026-04-05 23:12:58 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 23:12:58 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 23:14:12 [INFO] gui: Run toggled → paused=False
+2026-04-05 23:15:11 [INFO] gui: Run toggled → paused=True
+2026-04-05 23:15:19 [INFO] environment: Structure 1 set at (2,3)
+2026-04-05 23:15:19 [INFO] agent: Soft reset complete
+2026-04-05 23:15:20 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 23:15:20 [INFO] agent: Soft reset complete
+2026-04-05 23:15:21 [INFO] environment: Structure 1 set at (3,4)
+2026-04-05 23:15:21 [INFO] agent: Soft reset complete
+2026-04-05 23:15:21 [INFO] environment: Structure 1 set at (4,4)
+2026-04-05 23:15:21 [INFO] agent: Soft reset complete
+2026-04-05 23:15:22 [INFO] environment: Structure 1 set at (5,4)
+2026-04-05 23:15:22 [INFO] agent: Soft reset complete
+2026-04-05 23:15:24 [INFO] environment: Structure 2 set at (5,2)
+2026-04-05 23:15:24 [INFO] agent: Soft reset complete
+2026-04-05 23:15:25 [INFO] environment: Structure 2 set at (6,2)
+2026-04-05 23:15:25 [INFO] agent: Soft reset complete
+2026-04-05 23:15:25 [INFO] environment: Structure 2 set at (7,2)
+2026-04-05 23:15:25 [INFO] agent: Soft reset complete
+2026-04-05 23:15:26 [INFO] environment: Structure 2 set at (8,2)
+2026-04-05 23:15:26 [INFO] agent: Soft reset complete
+2026-04-05 23:15:27 [INFO] environment: Structure 2 set at (0,6)
+2026-04-05 23:15:27 [INFO] agent: Soft reset complete
+2026-04-05 23:15:28 [INFO] environment: Structure 2 set at (0,7)
+2026-04-05 23:15:28 [INFO] agent: Soft reset complete
+2026-04-05 23:15:28 [INFO] environment: Structure 2 set at (0,8)
+2026-04-05 23:15:28 [INFO] agent: Soft reset complete
+2026-04-05 23:15:29 [INFO] environment: Structure 2 set at (1,8)
+2026-04-05 23:15:29 [INFO] agent: Soft reset complete
+2026-04-05 23:15:33 [INFO] environment: Structure 3 set at (3,6)
+2026-04-05 23:15:33 [INFO] agent: Soft reset complete
+2026-04-05 23:15:33 [INFO] environment: Structure 3 set at (3,7)
+2026-04-05 23:15:33 [INFO] agent: Soft reset complete
+2026-04-05 23:15:34 [INFO] environment: Structure 3 set at (3,8)
+2026-04-05 23:15:34 [INFO] agent: Soft reset complete
+2026-04-05 23:15:34 [INFO] environment: Structure 3 set at (3,9)
+2026-04-05 23:15:34 [INFO] agent: Soft reset complete
+2026-04-05 23:15:35 [INFO] environment: Structure 3 set at (4,9)
+2026-04-05 23:15:35 [INFO] agent: Soft reset complete
+2026-04-05 23:15:35 [INFO] environment: Structure 3 set at (5,9)
+2026-04-05 23:15:35 [INFO] agent: Soft reset complete
+2026-04-05 23:15:37 [INFO] environment: Structure 3 set at (5,8)
+2026-04-05 23:15:37 [INFO] agent: Soft reset complete
+2026-04-05 23:15:43 [INFO] gui: Run toggled → paused=False
+2026-04-05 23:20:06 [WARNING] agent: trace_best_path: cycle at (7,0) — Q not converged
+2026-04-05 23:20:06 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:22:29 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:22:29 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:23:28 [WARNING] agent: trace_best_path: cycle at (7,0) — Q not converged
+2026-04-05 23:23:28 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:23:54 [WARNING] agent: trace_best_path: cycle at (6,5) — Q not converged
+2026-04-05 23:23:54 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:23:59 [WARNING] agent: trace_best_path: cycle at (0,9) — Q not converged
+2026-04-05 23:23:59 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:24:07 [WARNING] agent: trace_best_path: cycle at (0,9) — Q not converged
+2026-04-05 23:24:07 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:24:17 [WARNING] agent: trace_best_path: cycle at (7,0) — Q not converged
+2026-04-05 23:24:17 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:24:58 [WARNING] agent: trace_best_path: cycle at (10,2) — Q not converged
+2026-04-05 23:24:58 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:25:30 [WARNING] agent: trace_best_path: cycle at (10,2) — Q not converged
+2026-04-05 23:25:30 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:25:39 [WARNING] agent: trace_best_path: cycle at (10,2) — Q not converged
+2026-04-05 23:25:39 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:25:47 [WARNING] agent: trace_best_path: cycle at (0,9) — Q not converged
+2026-04-05 23:25:47 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:25:56 [WARNING] agent: trace_best_path: cycle at (2,5) — Q not converged
+2026-04-05 23:25:56 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:26:05 [WARNING] agent: trace_best_path: cycle at (7,4) — Q not converged
+2026-04-05 23:26:05 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:26:31 [WARNING] agent: trace_best_path: cycle at (6,6) — Q not converged
+2026-04-05 23:26:31 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:03 [WARNING] agent: trace_best_path: cycle at (4,6) — Q not converged
+2026-04-05 23:27:03 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:12 [WARNING] agent: trace_best_path: cycle at (4,6) — Q not converged
+2026-04-05 23:27:12 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:22 [WARNING] agent: trace_best_path: cycle at (6,6) — Q not converged
+2026-04-05 23:27:22 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:24 [WARNING] agent: trace_best_path: cycle at (6,6) — Q not converged
+2026-04-05 23:27:24 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:28 [WARNING] agent: trace_best_path: cycle at (6,6) — Q not converged
+2026-04-05 23:27:28 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:37 [WARNING] agent: trace_best_path: cycle at (6,0) — Q not converged
+2026-04-05 23:27:37 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:27:54 [WARNING] agent: trace_best_path: cycle at (6,6) — Q not converged
+2026-04-05 23:27:54 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:28:26 [INFO] agent: Best path traced successfully: 23 cells
+2026-04-05 23:28:26 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-05 23:34:20 [INFO] worker: RL worker exiting
+2026-04-05 23:34:20 [INFO] main: === RL Drone stopped ===
+2026-04-05 23:34:35 [INFO] main: === RL Drone starting ===
+2026-04-05 23:34:35 [INFO] main: Worker process PID=3292
+2026-04-05 23:34:35 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-05 23:34:35 [INFO] stats_panel: StatsPanel created
+2026-04-05 23:34:35 [INFO] gui: GUI App ready
+2026-04-05 23:34:37 [INFO] worker: RL worker started
+2026-04-05 23:34:37 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-05 23:34:37 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-05 23:34:42 [INFO] environment: Structure 1 set at (2,3)
+2026-04-05 23:34:42 [INFO] agent: Soft reset complete
+2026-04-05 23:34:43 [INFO] environment: Structure 1 set at (2,4)
+2026-04-05 23:34:43 [INFO] agent: Soft reset complete
+2026-04-05 23:34:43 [INFO] environment: Structure 1 set at (3,4)
+2026-04-05 23:34:43 [INFO] agent: Soft reset complete
+2026-04-05 23:34:44 [INFO] environment: Structure 1 set at (4,4)
+2026-04-05 23:34:44 [INFO] agent: Soft reset complete
+2026-04-05 23:34:44 [INFO] environment: Structure 1 set at (5,4)
+2026-04-05 23:34:44 [INFO] agent: Soft reset complete
+2026-04-05 23:34:45 [INFO] environment: Structure 1 set at (5,5)
+2026-04-05 23:34:45 [INFO] agent: Soft reset complete
+2026-04-05 23:34:45 [INFO] environment: Structure 1 set at (5,6)
+2026-04-05 23:34:45 [INFO] agent: Soft reset complete
+2026-04-05 23:34:48 [INFO] environment: Structure 2 set at (5,0)
+2026-04-05 23:34:48 [INFO] agent: Soft reset complete
+2026-04-05 23:34:48 [INFO] environment: Structure 2 set at (5,1)
+2026-04-05 23:34:48 [INFO] agent: Soft reset complete
+2026-04-05 23:34:49 [INFO] environment: Structure 2 set at (6,1)
+2026-04-05 23:34:49 [INFO] agent: Soft reset complete
+2026-04-05 23:34:49 [INFO] environment: Structure 2 set at (7,1)
+2026-04-05 23:34:50 [INFO] agent: Soft reset complete
+2026-04-05 23:34:50 [INFO] environment: Structure 2 set at (8,1)
+2026-04-05 23:34:50 [INFO] agent: Soft reset complete
+2026-04-05 23:34:51 [INFO] environment: Structure 2 set at (9,1)
+2026-04-05 23:34:51 [INFO] agent: Soft reset complete
+2026-04-05 23:34:52 [INFO] environment: Structure 2 set at (9,2)
+2026-04-05 23:34:52 [INFO] agent: Soft reset complete
+2026-04-05 23:34:55 [INFO] environment: Structure 2 set at (0,8)
+2026-04-05 23:34:55 [INFO] agent: Soft reset complete
+2026-04-05 23:34:56 [INFO] environment: Structure 2 set at (0,9)
+2026-04-05 23:34:56 [INFO] agent: Soft reset complete
+2026-04-05 23:34:56 [INFO] environment: Structure 2 set at (1,9)
+2026-04-05 23:34:56 [INFO] agent: Soft reset complete
+2026-04-05 23:34:56 [INFO] environment: Structure 2 set at (2,9)
+2026-04-05 23:34:56 [INFO] agent: Soft reset complete
+2026-04-05 23:34:57 [INFO] environment: Structure 2 set at (3,9)
+2026-04-05 23:34:57 [INFO] agent: Soft reset complete
+2026-04-05 23:35:00 [INFO] environment: Structure 3 set at (2,6)
+2026-04-05 23:35:00 [INFO] agent: Soft reset complete
+2026-04-05 23:35:00 [INFO] environment: Structure 3 set at (2,7)
+2026-04-05 23:35:00 [INFO] agent: Soft reset complete
+2026-04-05 23:35:01 [INFO] environment: Structure 3 set at (7,4)
+2026-04-05 23:35:01 [INFO] agent: Soft reset complete
+2026-04-05 23:35:02 [INFO] environment: Structure 3 set at (7,5)
+2026-04-05 23:35:02 [INFO] agent: Soft reset complete
+2026-04-05 23:35:02 [INFO] environment: Structure 3 set at (7,6)
+2026-04-05 23:35:02 [INFO] agent: Soft reset complete
+2026-04-05 23:35:02 [INFO] environment: Structure 3 set at (8,6)
+2026-04-05 23:35:02 [INFO] agent: Soft reset complete
+2026-04-05 23:35:03 [INFO] environment: Structure 3 set at (9,6)
+2026-04-05 23:35:03 [INFO] agent: Soft reset complete
+2026-04-05 23:35:04 [INFO] environment: Structure 3 set at (9,5)
+2026-04-05 23:35:04 [INFO] agent: Soft reset complete
+2026-04-05 23:35:06 [INFO] environment: Structure 3 set at (7,7)
+2026-04-05 23:35:06 [INFO] agent: Soft reset complete
+2026-04-05 23:35:12 [INFO] gui: Run toggled → paused=False
+2026-04-05 23:42:19 [WARNING] agent: trace_best_path: cycle at (1,3) — Q not converged
+2026-04-05 23:42:19 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:42:48 [WARNING] agent: trace_best_path: cycle at (1,3) — Q not converged
+2026-04-05 23:42:48 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:43:43 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:43:43 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:44:22 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:44:22 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:44:34 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:44:34 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:44:51 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:44:51 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:45:33 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:45:33 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:45:44 [WARNING] agent: trace_best_path: cycle at (7,2) — Q not converged
+2026-04-05 23:45:44 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:46:23 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:46:23 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:46:29 [WARNING] agent: trace_best_path: cycle at (1,6) — Q not converged
+2026-04-05 23:46:29 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:46:47 [WARNING] agent: trace_best_path: cycle at (1,6) — Q not converged
+2026-04-05 23:46:47 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:47:16 [WARNING] agent: trace_best_path: cycle at (1,5) — Q not converged
+2026-04-05 23:47:16 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:47:28 [WARNING] agent: trace_best_path: cycle at (3,0) — Q not converged
+2026-04-05 23:47:28 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:47:46 [WARNING] agent: trace_best_path: cycle at (2,0) — Q not converged
+2026-04-05 23:47:46 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:47:51 [WARNING] agent: trace_best_path: cycle at (2,0) — Q not converged
+2026-04-05 23:47:51 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:47:55 [WARNING] agent: trace_best_path: cycle at (2,0) — Q not converged
+2026-04-05 23:47:55 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:05 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:05 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:11 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:11 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:19 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:19 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:28 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:28 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:34 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:34 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:41 [WARNING] agent: trace_best_path: cycle at (0,6) — Q not converged
+2026-04-05 23:48:41 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:48:49 [WARNING] agent: trace_best_path: cycle at (1,8) — Q not converged
+2026-04-05 23:48:49 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:49:07 [WARNING] agent: trace_best_path: cycle at (1,8) — Q not converged
+2026-04-05 23:49:07 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:49:13 [WARNING] agent: trace_best_path: cycle at (1,8) — Q not converged
+2026-04-05 23:49:13 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:49:53 [WARNING] agent: trace_best_path: cycle at (1,7) — Q not converged
+2026-04-05 23:49:53 [INFO] agent: Path had cycle — continuing training for more convergence
+2026-04-05 23:50:22 [INFO] agent: Best path traced successfully: 23 cells
+2026-04-05 23:50:22 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-06 03:53:41 [INFO] gui: Run toggled → paused=True
+2026-04-07 18:58:55 [INFO] main: === RL Drone starting ===
+2026-04-07 18:58:55 [INFO] main: Worker process PID=975
+2026-04-07 18:58:55 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-07 18:58:55 [INFO] stats_panel: StatsPanel created
+2026-04-07 18:58:55 [INFO] gui: GUI App ready
+2026-04-07 18:58:57 [INFO] worker: RL worker started
+2026-04-07 18:58:57 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-07 18:58:57 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-07 18:59:30 [INFO] environment: Structure 1 set at (0,3)
+2026-04-07 18:59:30 [INFO] agent: Soft reset complete
+2026-04-07 18:59:30 [INFO] environment: Structure 1 set at (1,3)
+2026-04-07 18:59:30 [INFO] agent: Soft reset complete
+2026-04-07 18:59:31 [INFO] environment: Structure 1 set at (2,3)
+2026-04-07 18:59:31 [INFO] agent: Soft reset complete
+2026-04-07 18:59:31 [INFO] environment: Structure 1 set at (2,3)
+2026-04-07 18:59:31 [INFO] agent: Soft reset complete
+2026-04-07 18:59:33 [INFO] environment: Structure 1 set at (3,3)
+2026-04-07 18:59:33 [INFO] agent: Soft reset complete
+2026-04-07 18:59:39 [INFO] gui: Run toggled → paused=False
+2026-04-07 18:59:39 [INFO] gui: Run toggled → paused=True
+2026-04-07 18:59:43 [INFO] gui: Run toggled → paused=False
+2026-04-07 18:59:43 [INFO] gui: Run toggled → paused=True
+2026-04-07 18:59:45 [INFO] gui: Run toggled → paused=False
+2026-04-07 18:59:45 [INFO] gui: Run toggled → paused=True
+2026-04-07 18:59:53 [INFO] gui: Run toggled → paused=False
+2026-04-07 18:59:54 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:04:21 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:04:24 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:04:30 [INFO] environment: All structures cleared
+2026-04-07 19:04:30 [INFO] agent: Soft reset complete
+2026-04-07 19:04:30 [INFO] agent: Hard reset complete
+2026-04-07 19:04:32 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:04:34 [INFO] environment: All structures cleared
+2026-04-07 19:04:34 [INFO] agent: Soft reset complete
+2026-04-07 19:04:34 [INFO] agent: Hard reset complete
+2026-04-07 19:04:36 [INFO] environment: All structures cleared
+2026-04-07 19:04:36 [INFO] agent: Soft reset complete
+2026-04-07 19:04:36 [INFO] agent: Hard reset complete
+2026-04-07 19:04:36 [INFO] environment: All structures cleared
+2026-04-07 19:04:36 [INFO] agent: Soft reset complete
+2026-04-07 19:04:36 [INFO] agent: Hard reset complete
+2026-04-07 19:04:39 [INFO] environment: All structures cleared
+2026-04-07 19:04:39 [INFO] agent: Soft reset complete
+2026-04-07 19:04:39 [INFO] agent: Hard reset complete
+2026-04-07 19:04:49 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:04:57 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:04:57 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:05:03 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:05:06 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:05:10 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:05:13 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:08:40 [INFO] main: === RL Drone stopped ===
+2026-04-07 19:08:45 [INFO] main: === RL Drone starting ===
+2026-04-07 19:08:45 [INFO] main: Worker process PID=1481
+2026-04-07 19:08:45 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-07 19:08:45 [INFO] stats_panel: StatsPanel created
+2026-04-07 19:08:45 [INFO] gui: GUI App ready
+2026-04-07 19:08:47 [INFO] worker: RL worker started
+2026-04-07 19:08:47 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-07 19:08:47 [INFO] agent: Agent initialised, epsilon=1.000
+2026-04-07 19:08:55 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:08:59 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:08:59 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:09:02 [INFO] gui: Run toggled → paused=True
+2026-04-07 19:09:02 [INFO] gui: Run toggled → paused=False
+2026-04-07 19:09:02 [INFO] gui: Run toggled → paused=True
+2026-04-08 10:02:43 [INFO] main: === RL Drone stopped ===
+2026-04-08 10:03:01 [INFO] main: === RL Drone starting ===
+2026-04-08 10:03:01 [INFO] main: Worker process PID=2818
+2026-04-08 10:03:02 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 10:03:02 [INFO] stats_panel: StatsPanel created
+2026-04-08 10:03:02 [INFO] gui: GUI App ready
+2026-04-08 10:03:06 [INFO] worker: RL worker started
+2026-04-08 10:03:06 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 10:03:06 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 10:13:20 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 10:13:20 [INFO] agent: Soft reset complete
+2026-04-08 10:13:21 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 10:13:21 [INFO] agent: Soft reset complete
+2026-04-08 10:13:21 [INFO] environment: Structure 1 set at (4,4)
+2026-04-08 10:13:21 [INFO] agent: Soft reset complete
+2026-04-08 10:13:22 [INFO] environment: Structure 1 set at (5,4)
+2026-04-08 10:13:22 [INFO] agent: Soft reset complete
+2026-04-08 10:13:23 [INFO] environment: Structure 1 set at (5,5)
+2026-04-08 10:13:23 [INFO] agent: Soft reset complete
+2026-04-08 10:13:24 [INFO] environment: Structure 1 set at (5,6)
+2026-04-08 10:13:24 [INFO] agent: Soft reset complete
+2026-04-08 10:13:24 [INFO] environment: Structure 1 set at (5,6)
+2026-04-08 10:13:24 [INFO] agent: Soft reset complete
+2026-04-08 10:13:28 [INFO] environment: Structure 2 set at (7,3)
+2026-04-08 10:13:28 [INFO] agent: Soft reset complete
+2026-04-08 10:13:29 [INFO] environment: Structure 2 set at (8,3)
+2026-04-08 10:13:29 [INFO] agent: Soft reset complete
+2026-04-08 10:13:29 [INFO] environment: Structure 2 set at (9,3)
+2026-04-08 10:13:29 [INFO] agent: Soft reset complete
+2026-04-08 10:13:35 [INFO] environment: Structure 3 set at (5,9)
+2026-04-08 10:13:35 [INFO] agent: Soft reset complete
+2026-04-08 10:13:35 [INFO] environment: Structure 3 set at (6,9)
+2026-04-08 10:13:35 [INFO] agent: Soft reset complete
+2026-04-08 10:13:36 [INFO] environment: Structure 3 set at (7,9)
+2026-04-08 10:13:36 [INFO] agent: Soft reset complete
+2026-04-08 10:13:37 [INFO] environment: Structure 3 set at (8,9)
+2026-04-08 10:13:37 [INFO] agent: Soft reset complete
+2026-04-08 10:13:37 [INFO] environment: Structure 3 set at (8,8)
+2026-04-08 10:13:37 [INFO] agent: Soft reset complete
+2026-04-08 10:13:38 [INFO] environment: Structure 3 set at (8,7)
+2026-04-08 10:13:38 [INFO] agent: Soft reset complete
+2026-04-08 10:13:46 [INFO] gui: Run toggled → paused=False
+2026-04-08 10:21:24 [WARNING] agent: trace_best_path: cycle at (7,6)
+2026-04-08 10:21:24 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:21:31 [WARNING] agent: trace_best_path: cycle at (7,6)
+2026-04-08 10:21:31 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:21:57 [WARNING] agent: trace_best_path: cycle at (0,9)
+2026-04-08 10:21:57 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:23:15 [WARNING] agent: trace_best_path: cycle at (0,9)
+2026-04-08 10:23:15 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:23:34 [WARNING] agent: trace_best_path: cycle at (0,9)
+2026-04-08 10:23:34 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:24:01 [WARNING] agent: trace_best_path: cycle at (4,9)
+2026-04-08 10:24:01 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:24:32 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:24:32 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:24:39 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:24:39 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:24:42 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:24:42 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:24:56 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:24:56 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:25:03 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:25:03 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:25:13 [WARNING] agent: trace_best_path: cycle at (2,1)
+2026-04-08 10:25:13 [INFO] agent: Cycle in path — continuing training
+2026-04-08 10:25:19 [INFO] agent: Best path: 23 cells
+2026-04-08 10:25:19 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 12:56:53 [INFO] environment: All structures cleared
+2026-04-08 12:56:53 [INFO] agent: Soft reset complete
+2026-04-08 12:56:53 [INFO] agent: Hard reset complete
+2026-04-08 12:56:56 [INFO] gui: Run toggled → paused=True
+2026-04-08 12:57:09 [INFO] gui: Run toggled → paused=False
+2026-04-08 12:57:13 [INFO] gui: Run toggled → paused=True
+2026-04-08 12:57:18 [INFO] environment: Structure 3 set at (2,4)
+2026-04-08 12:57:18 [INFO] agent: Soft reset complete
+2026-04-08 12:57:21 [INFO] environment: Structure 3 set at (3,4)
+2026-04-08 12:57:21 [INFO] agent: Soft reset complete
+2026-04-08 12:57:21 [INFO] environment: Structure 3 set at (4,4)
+2026-04-08 12:57:21 [INFO] agent: Soft reset complete
+2026-04-08 12:57:24 [INFO] environment: Structure 1 set at (6,5)
+2026-04-08 12:57:24 [INFO] agent: Soft reset complete
+2026-04-08 12:57:25 [INFO] environment: Structure 1 set at (6,6)
+2026-04-08 12:57:25 [INFO] agent: Soft reset complete
+2026-04-08 12:57:25 [INFO] environment: Structure 1 set at (6,7)
+2026-04-08 12:57:25 [INFO] agent: Soft reset complete
+2026-04-08 12:57:26 [INFO] environment: Structure 1 set at (6,7)
+2026-04-08 12:57:26 [INFO] agent: Soft reset complete
+2026-04-08 12:57:26 [INFO] environment: Structure 1 set at (7,7)
+2026-04-08 12:57:26 [INFO] agent: Soft reset complete
+2026-04-08 12:57:27 [INFO] environment: Structure 1 set at (8,7)
+2026-04-08 12:57:27 [INFO] agent: Soft reset complete
+2026-04-08 12:57:41 [INFO] environment: Structure 3 set at (2,3)
+2026-04-08 12:57:41 [INFO] agent: Soft reset complete
+2026-04-08 12:57:42 [INFO] environment: Structure 3 set at (10,3)
+2026-04-08 12:57:42 [INFO] agent: Soft reset complete
+2026-04-08 12:57:43 [INFO] environment: Structure 3 set at (10,2)
+2026-04-08 12:57:43 [INFO] agent: Soft reset complete
+2026-04-08 12:57:44 [INFO] environment: Structure 3 set at (10,4)
+2026-04-08 12:57:44 [INFO] agent: Soft reset complete
+2026-04-08 12:57:52 [INFO] environment: Structure 2 set at (6,1)
+2026-04-08 12:57:52 [INFO] agent: Soft reset complete
+2026-04-08 12:57:53 [INFO] environment: Structure 2 set at (7,1)
+2026-04-08 12:57:53 [INFO] agent: Soft reset complete
+2026-04-08 12:57:53 [INFO] environment: Structure 2 set at (8,1)
+2026-04-08 12:57:53 [INFO] agent: Soft reset complete
+2026-04-08 12:57:57 [INFO] gui: Run toggled → paused=False
+2026-04-08 13:00:47 [WARNING] agent: trace_best_path: cycle at (0,2)
+2026-04-08 13:00:47 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:02:05 [WARNING] agent: trace_best_path: cycle at (1,6)
+2026-04-08 13:02:05 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:02:25 [WARNING] agent: trace_best_path: cycle at (0,2)
+2026-04-08 13:02:25 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:02:36 [WARNING] agent: trace_best_path: cycle at (0,3)
+2026-04-08 13:02:36 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:02:45 [WARNING] agent: trace_best_path: cycle at (1,6)
+2026-04-08 13:02:45 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:03:41 [WARNING] agent: trace_best_path: cycle at (1,6)
+2026-04-08 13:03:41 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:04:41 [WARNING] agent: trace_best_path: cycle at (8,0)
+2026-04-08 13:04:41 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:05:00 [INFO] agent: Best path: 23 cells
+2026-04-08 13:05:00 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 13:07:34 [INFO] environment: All structures cleared
+2026-04-08 13:07:34 [INFO] agent: Soft reset complete
+2026-04-08 13:07:34 [INFO] agent: Hard reset complete
+2026-04-08 13:07:40 [INFO] gui: Run toggled → paused=True
+2026-04-08 13:07:43 [INFO] gui: Run toggled → paused=False
+2026-04-08 13:08:12 [INFO] gui: Run toggled → paused=True
+2026-04-08 13:08:18 [INFO] main: === RL Drone stopped ===
+2026-04-08 13:08:35 [INFO] main: === RL Drone starting ===
+2026-04-08 13:08:35 [INFO] main: Worker process PID=3086
+2026-04-08 13:08:35 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 13:08:35 [INFO] stats_panel: StatsPanel created
+2026-04-08 13:08:35 [INFO] gui: GUI App ready
+2026-04-08 13:08:39 [INFO] worker: RL worker started
+2026-04-08 13:08:39 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 13:08:39 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 13:08:59 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 13:08:59 [INFO] agent: Soft reset complete
+2026-04-08 13:09:00 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 13:09:00 [INFO] agent: Soft reset complete
+2026-04-08 13:09:00 [INFO] environment: Structure 1 set at (4,4)
+2026-04-08 13:09:00 [INFO] agent: Soft reset complete
+2026-04-08 13:09:01 [INFO] environment: Structure 1 set at (5,4)
+2026-04-08 13:09:01 [INFO] agent: Soft reset complete
+2026-04-08 13:09:01 [INFO] environment: Structure 1 set at (5,4)
+2026-04-08 13:09:01 [INFO] agent: Soft reset complete
+2026-04-08 13:09:02 [INFO] environment: Structure 1 set at (6,4)
+2026-04-08 13:09:02 [INFO] agent: Soft reset complete
+2026-04-08 13:09:01 [INFO] environment: Structure 1 set at (6,5)
+2026-04-08 13:09:01 [INFO] agent: Soft reset complete
+2026-04-08 13:09:02 [INFO] environment: Structure 1 set at (6,6)
+2026-04-08 13:09:02 [INFO] agent: Soft reset complete
+2026-04-08 13:09:06 [INFO] environment: Structure 2 set at (8,1)
+2026-04-08 13:09:06 [INFO] agent: Soft reset complete
+2026-04-08 13:09:06 [INFO] environment: Structure 2 set at (8,1)
+2026-04-08 13:09:06 [INFO] agent: Soft reset complete
+2026-04-08 13:09:07 [INFO] environment: Structure 2 set at (9,1)
+2026-04-08 13:09:07 [INFO] agent: Soft reset complete
+2026-04-08 13:09:08 [INFO] environment: Structure 2 set at (9,2)
+2026-04-08 13:09:08 [INFO] agent: Soft reset complete
+2026-04-08 13:09:08 [INFO] environment: Structure 2 set at (9,2)
+2026-04-08 13:09:08 [INFO] agent: Soft reset complete
+2026-04-08 13:09:08 [INFO] environment: Structure 2 set at (9,3)
+2026-04-08 13:09:08 [INFO] agent: Soft reset complete
+2026-04-08 13:09:09 [INFO] environment: Structure 2 set at (10,3)
+2026-04-08 13:09:09 [INFO] agent: Soft reset complete
+2026-04-08 13:09:13 [INFO] environment: Structure 3 set at (0,7)
+2026-04-08 13:09:13 [INFO] agent: Soft reset complete
+2026-04-08 13:09:17 [INFO] environment: Structure 3 set at (1,7)
+2026-04-08 13:09:17 [INFO] agent: Soft reset complete
+2026-04-08 13:09:18 [INFO] environment: Structure 3 set at (2,7)
+2026-04-08 13:09:18 [INFO] agent: Soft reset complete
+2026-04-08 13:09:19 [INFO] environment: Structure 3 set at (7,9)
+2026-04-08 13:09:19 [INFO] agent: Soft reset complete
+2026-04-08 13:09:20 [INFO] environment: Structure 3 set at (7,9)
+2026-04-08 13:09:20 [INFO] agent: Soft reset complete
+2026-04-08 13:09:20 [INFO] environment: Structure 3 set at (8,9)
+2026-04-08 13:09:20 [INFO] agent: Soft reset complete
+2026-04-08 13:09:29 [INFO] gui: Run toggled → paused=False
+2026-04-08 13:13:03 [WARNING] agent: trace_best_path: cycle at (5,5)
+2026-04-08 13:13:03 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:13:42 [WARNING] agent: trace_best_path: cycle at (3,5)
+2026-04-08 13:13:42 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:14:50 [WARNING] agent: trace_best_path: cycle at (3,5)
+2026-04-08 13:14:50 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:14:59 [WARNING] agent: trace_best_path: cycle at (3,5)
+2026-04-08 13:14:59 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:15:07 [WARNING] agent: trace_best_path: cycle at (3,5)
+2026-04-08 13:15:07 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:15:25 [WARNING] agent: trace_best_path: cycle at (3,5)
+2026-04-08 13:15:25 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:15:33 [WARNING] agent: trace_best_path: cycle at (2,5)
+2026-04-08 13:15:33 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:15:59 [WARNING] agent: trace_best_path: cycle at (2,5)
+2026-04-08 13:15:59 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:16:45 [WARNING] agent: trace_best_path: cycle at (2,5)
+2026-04-08 13:16:45 [INFO] agent: Cycle in path — continuing training
+2026-04-08 13:16:51 [INFO] gui: Run toggled → paused=True
+2026-04-08 13:22:04 [INFO] main: === RL Drone stopped ===
+2026-04-08 13:24:57 [INFO] main: === RL Drone starting ===
+2026-04-08 13:24:57 [INFO] main: Worker process PID=3169
+2026-04-08 13:24:58 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 13:24:57 [INFO] stats_panel: StatsPanel created
+2026-04-08 13:24:57 [INFO] gui: GUI App ready
+2026-04-08 13:25:08 [INFO] worker: RL worker started
+2026-04-08 13:25:08 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 13:25:08 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 13:25:08 [INFO] environment: Structure 1 set at (3,3)
+2026-04-08 13:25:08 [INFO] agent: Soft reset complete
+2026-04-08 13:25:08 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 13:25:08 [INFO] agent: Soft reset complete
+2026-04-08 13:25:09 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 13:25:09 [INFO] agent: Soft reset complete
+2026-04-08 13:25:09 [INFO] environment: Structure 1 set at (2,5)
+2026-04-08 13:25:09 [INFO] agent: Soft reset complete
+2026-04-08 13:25:10 [INFO] environment: Structure 1 set at (4,5)
+2026-04-08 13:25:10 [INFO] agent: Soft reset complete
+2026-04-08 13:25:11 [INFO] environment: Structure 1 set at (5,5)
+2026-04-08 13:25:11 [INFO] agent: Soft reset complete
+2026-04-08 13:25:13 [INFO] environment: Structure 2 set at (6,2)
+2026-04-08 13:25:13 [INFO] agent: Soft reset complete
+2026-04-08 13:25:14 [INFO] environment: Structure 2 set at (7,2)
+2026-04-08 13:25:14 [INFO] agent: Soft reset complete
+2026-04-08 13:25:15 [INFO] environment: Structure 2 set at (8,2)
+2026-04-08 13:25:15 [INFO] agent: Soft reset complete
+2026-04-08 13:25:15 [INFO] environment: Structure 2 set at (9,2)
+2026-04-08 13:25:15 [INFO] agent: Soft reset complete
+2026-04-08 13:25:19 [INFO] environment: Structure 3 set at (6,8)
+2026-04-08 13:25:19 [INFO] agent: Soft reset complete
+2026-04-08 13:25:19 [INFO] environment: Structure 3 set at (7,8)
+2026-04-08 13:25:19 [INFO] agent: Soft reset complete
+2026-04-08 13:25:20 [INFO] environment: Structure 3 set at (8,8)
+2026-04-08 13:25:20 [INFO] agent: Soft reset complete
+2026-04-08 13:25:20 [INFO] environment: Structure 3 set at (9,8)
+2026-04-08 13:25:20 [INFO] agent: Soft reset complete
+2026-04-08 13:25:21 [INFO] environment: Structure 3 set at (9,7)
+2026-04-08 13:25:21 [INFO] agent: Soft reset complete
+2026-04-08 13:25:23 [INFO] environment: Structure 3 set at (9,6)
+2026-04-08 13:25:23 [INFO] agent: Soft reset complete
+2026-04-08 13:25:27 [INFO] gui: Run toggled → paused=False
+2026-04-08 13:28:52 [INFO] agent: Dijkstra best path: 23 cells, cost=22.0
+2026-04-08 13:28:52 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 16:33:32 [INFO] worker: RL worker exiting
+2026-04-08 16:33:33 [INFO] main: === RL Drone stopped ===
+2026-04-08 16:33:45 [INFO] main: === RL Drone starting ===
+2026-04-08 16:33:45 [INFO] main: Worker process PID=3727
+2026-04-08 16:33:45 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 16:33:46 [INFO] stats_panel: StatsPanel created
+2026-04-08 16:33:46 [INFO] gui: GUI App ready
+2026-04-08 16:33:51 [INFO] worker: RL worker started
+2026-04-08 16:33:51 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 16:33:51 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 16:33:59 [INFO] environment: Structure 1 set at (0,3)
+2026-04-08 16:33:59 [INFO] agent: Soft reset complete
+2026-04-08 16:33:59 [INFO] environment: Structure 1 set at (1,3)
+2026-04-08 16:33:59 [INFO] agent: Soft reset complete
+2026-04-08 16:34:01 [INFO] environment: Structure 1 set at (2,3)
+2026-04-08 16:34:01 [INFO] agent: Soft reset complete
+2026-04-08 16:34:02 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 16:34:02 [INFO] agent: Soft reset complete
+2026-04-08 16:34:02 [INFO] environment: Structure 1 set at (2,5)
+2026-04-08 16:34:02 [INFO] agent: Soft reset complete
+2026-04-08 16:34:04 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 16:34:04 [INFO] agent: Soft reset complete
+2026-04-08 16:34:06 [INFO] environment: Structure 1 set at (10,4)
+2026-04-08 16:34:06 [INFO] agent: Soft reset complete
+2026-04-08 16:34:10 [INFO] environment: Structure 1 set at (10,3)
+2026-04-08 16:34:10 [INFO] agent: Soft reset complete
+2026-04-08 16:34:19 [INFO] environment: Structure 1 set at (10,3)
+2026-04-08 16:34:19 [INFO] agent: Soft reset complete
+2026-04-08 16:34:23 [INFO] environment: Structure 1 set at (9,4)
+2026-04-08 16:34:23 [INFO] agent: Soft reset complete
+2026-04-08 16:34:25 [INFO] environment: Structure 1 set at (8,4)
+2026-04-08 16:34:25 [INFO] agent: Soft reset complete
+2026-04-08 16:34:29 [INFO] environment: Structure 2 set at (2,7)
+2026-04-08 16:34:29 [INFO] agent: Soft reset complete
+2026-04-08 16:34:30 [INFO] environment: Structure 2 set at (3,7)
+2026-04-08 16:34:30 [INFO] agent: Soft reset complete
+2026-04-08 16:34:30 [INFO] environment: Structure 2 set at (4,7)
+2026-04-08 16:34:30 [INFO] agent: Soft reset complete
+2026-04-08 16:34:31 [INFO] environment: Structure 2 set at (5,7)
+2026-04-08 16:34:31 [INFO] agent: Soft reset complete
+2026-04-08 16:34:32 [INFO] environment: Structure 2 set at (7,1)
+2026-04-08 16:34:32 [INFO] agent: Soft reset complete
+2026-04-08 16:34:32 [INFO] environment: Structure 2 set at (8,1)
+2026-04-08 16:34:32 [INFO] agent: Soft reset complete
+2026-04-08 16:34:33 [INFO] environment: Structure 2 set at (8,0)
+2026-04-08 16:34:33 [INFO] agent: Soft reset complete
+2026-04-08 16:34:38 [INFO] environment: Structure 3 set at (5,9)
+2026-04-08 16:34:38 [INFO] agent: Soft reset complete
+2026-04-08 16:34:38 [INFO] environment: Structure 3 set at (6,9)
+2026-04-08 16:34:38 [INFO] agent: Soft reset complete
+2026-04-08 16:34:39 [INFO] environment: Structure 3 set at (7,9)
+2026-04-08 16:34:39 [INFO] agent: Soft reset complete
+2026-04-08 16:34:39 [INFO] environment: Structure 3 set at (8,9)
+2026-04-08 16:34:39 [INFO] agent: Soft reset complete
+2026-04-08 16:34:40 [INFO] environment: Structure 3 set at (8,8)
+2026-04-08 16:34:40 [INFO] agent: Soft reset complete
+2026-04-08 16:34:40 [INFO] environment: Structure 3 set at (8,7)
+2026-04-08 16:34:40 [INFO] agent: Soft reset complete
+2026-04-08 16:34:48 [INFO] gui: Run toggled → paused=False
+2026-04-08 16:40:14 [INFO] agent: Dijkstra best path: 23 cells, cost=109.9
+2026-04-08 16:40:14 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 21:40:46 [INFO] worker: RL worker exiting
+2026-04-08 21:40:46 [INFO] main: === RL Drone stopped ===
+2026-04-08 21:41:05 [INFO] main: === RL Drone starting ===
+2026-04-08 21:41:05 [INFO] main: Worker process PID=4945
+2026-04-08 21:41:05 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 21:41:05 [INFO] stats_panel: StatsPanel created
+2026-04-08 21:41:05 [INFO] gui: GUI App ready
+2026-04-08 21:41:08 [INFO] worker: RL worker started
+2026-04-08 21:41:08 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 21:41:08 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 21:42:03 [INFO] environment: Structure 1 set at (1,5)
+2026-04-08 21:42:03 [INFO] agent: Soft reset complete
+2026-04-08 21:42:05 [INFO] environment: Structure 1 set at (2,5)
+2026-04-08 21:42:05 [INFO] agent: Soft reset complete
+2026-04-08 21:42:05 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 21:42:05 [INFO] agent: Soft reset complete
+2026-04-08 21:42:06 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 21:42:06 [INFO] agent: Soft reset complete
+2026-04-08 21:42:06 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 21:42:06 [INFO] agent: Soft reset complete
+2026-04-08 21:42:07 [INFO] environment: Structure 1 set at (4,5)
+2026-04-08 21:42:07 [INFO] agent: Soft reset complete
+2026-04-08 21:42:07 [INFO] environment: Structure 1 set at (4,6)
+2026-04-08 21:42:07 [INFO] agent: Soft reset complete
+2026-04-08 21:42:08 [INFO] environment: Structure 1 set at (4,4)
+2026-04-08 21:42:08 [INFO] agent: Soft reset complete
+2026-04-08 21:42:11 [INFO] environment: Structure 1 set at (9,2)
+2026-04-08 21:42:11 [INFO] agent: Soft reset complete
+2026-04-08 21:42:12 [INFO] environment: Structure 1 set at (10,2)
+2026-04-08 21:42:12 [INFO] agent: Soft reset complete
+2026-04-08 21:42:14 [INFO] environment: Structure 2 set at (4,1)
+2026-04-08 21:42:14 [INFO] agent: Soft reset complete
+2026-04-08 21:42:15 [INFO] environment: Structure 2 set at (5,1)
+2026-04-08 21:42:15 [INFO] agent: Soft reset complete
+2026-04-08 21:42:16 [INFO] environment: Structure 2 set at (6,1)
+2026-04-08 21:42:16 [INFO] agent: Soft reset complete
+2026-04-08 21:42:16 [INFO] environment: Structure 2 set at (6,2)
+2026-04-08 21:42:16 [INFO] agent: Soft reset complete
+2026-04-08 21:42:20 [INFO] environment: Structure 3 set at (4,8)
+2026-04-08 21:42:20 [INFO] agent: Soft reset complete
+2026-04-08 21:42:21 [INFO] environment: Structure 3 set at (5,8)
+2026-04-08 21:42:21 [INFO] agent: Soft reset complete
+2026-04-08 21:42:21 [INFO] environment: Structure 3 set at (6,8)
+2026-04-08 21:42:21 [INFO] agent: Soft reset complete
+2026-04-08 21:42:23 [INFO] environment: Structure 3 set at (7,8)
+2026-04-08 21:42:23 [INFO] agent: Soft reset complete
+2026-04-08 21:42:24 [INFO] environment: Structure 3 set at (1,9)
+2026-04-08 21:42:24 [INFO] agent: Soft reset complete
+2026-04-08 21:42:24 [INFO] environment: Structure 3 set at (1,9)
+2026-04-08 21:42:24 [INFO] agent: Soft reset complete
+2026-04-08 21:42:30 [INFO] environment: Structure 2 set at (9,6)
+2026-04-08 21:42:30 [INFO] agent: Soft reset complete
+2026-04-08 21:42:31 [INFO] environment: Structure 2 set at (9,5)
+2026-04-08 21:42:31 [INFO] agent: Soft reset complete
+2026-04-08 21:42:31 [INFO] environment: Structure 2 set at (9,5)
+2026-04-08 21:42:31 [INFO] agent: Soft reset complete
+2026-04-08 21:42:31 [INFO] environment: Structure 2 set at (9,7)
+2026-04-08 21:42:31 [INFO] agent: Soft reset complete
+2026-04-08 21:42:42 [INFO] gui: Run toggled → paused=False
+2026-04-08 21:47:49 [INFO] agent: Dijkstra best path: 23 cells, cost=44.0
+2026-04-08 21:47:49 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 22:38:50 [INFO] worker: RL worker exiting
+2026-04-08 22:38:51 [INFO] main: === RL Drone stopped ===
+2026-04-08 22:39:01 [INFO] main: === RL Drone starting ===
+2026-04-08 22:39:01 [INFO] main: Worker process PID=5146
+2026-04-08 22:39:01 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 22:39:01 [INFO] stats_panel: StatsPanel created
+2026-04-08 22:39:01 [INFO] gui: GUI App ready
+2026-04-08 22:39:04 [INFO] worker: RL worker started
+2026-04-08 22:39:04 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 22:39:04 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 22:40:18 [INFO] environment: Structure 1 set at (0,4)
+2026-04-08 22:40:18 [INFO] agent: Soft reset complete
+2026-04-08 22:40:18 [INFO] environment: Structure 1 set at (1,4)
+2026-04-08 22:40:18 [INFO] agent: Soft reset complete
+2026-04-08 22:40:19 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 22:40:19 [INFO] agent: Soft reset complete
+2026-04-08 22:40:20 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 22:40:20 [INFO] agent: Soft reset complete
+2026-04-08 22:40:20 [INFO] environment: Structure 1 set at (3,3)
+2026-04-08 22:40:20 [INFO] agent: Soft reset complete
+2026-04-08 22:40:23 [INFO] environment: Structure 1 set at (9,1)
+2026-04-08 22:40:23 [INFO] agent: Soft reset complete
+2026-04-08 22:40:24 [INFO] environment: Structure 1 set at (10,1)
+2026-04-08 22:40:24 [INFO] agent: Soft reset complete
+2026-04-08 22:40:26 [INFO] environment: Structure 2 set at (3,7)
+2026-04-08 22:40:26 [INFO] agent: Soft reset complete
+2026-04-08 22:40:27 [INFO] environment: Structure 2 set at (4,7)
+2026-04-08 22:40:27 [INFO] agent: Soft reset complete
+2026-04-08 22:40:27 [INFO] environment: Structure 2 set at (5,7)
+2026-04-08 22:40:27 [INFO] agent: Soft reset complete
+2026-04-08 22:40:27 [INFO] environment: Structure 2 set at (5,6)
+2026-04-08 22:40:27 [INFO] agent: Soft reset complete
+2026-04-08 22:40:28 [INFO] environment: Structure 2 set at (9,3)
+2026-04-08 22:40:28 [INFO] agent: Soft reset complete
+2026-04-08 22:40:30 [INFO] environment: Structure 2 set at (10,3)
+2026-04-08 22:40:30 [INFO] agent: Soft reset complete
+2026-04-08 22:40:35 [INFO] environment: Structure 3 set at (5,4)
+2026-04-08 22:40:35 [INFO] agent: Soft reset complete
+2026-04-08 22:40:36 [INFO] environment: Structure 3 set at (5,4)
+2026-04-08 22:40:36 [INFO] agent: Soft reset complete
+2026-04-08 22:40:36 [INFO] environment: Structure 3 set at (6,4)
+2026-04-08 22:40:36 [INFO] agent: Soft reset complete
+2026-04-08 22:40:38 [INFO] environment: Structure 3 set at (8,8)
+2026-04-08 22:40:38 [INFO] agent: Soft reset complete
+2026-04-08 22:40:39 [INFO] environment: Structure 3 set at (9,8)
+2026-04-08 22:40:39 [INFO] agent: Soft reset complete
+2026-04-08 22:40:44 [INFO] gui: Run toggled → paused=False
+2026-04-08 22:46:09 [INFO] agent: Dijkstra best path: 23 cells, cost=69.6
+2026-04-08 22:46:09 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 22:58:16 [INFO] worker: RL worker exiting
+2026-04-08 22:58:16 [INFO] main: === RL Drone stopped ===
+2026-04-08 22:58:27 [INFO] main: === RL Drone starting ===
+2026-04-08 22:58:27 [INFO] main: Worker process PID=5234
+2026-04-08 22:58:27 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 22:58:27 [INFO] stats_panel: StatsPanel created
+2026-04-08 22:58:27 [INFO] gui: GUI App ready
+2026-04-08 22:58:30 [INFO] worker: RL worker started
+2026-04-08 22:58:30 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 22:58:30 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 22:58:36 [INFO] environment: Structure 1 set at (0,4)
+2026-04-08 22:58:36 [INFO] agent: Soft reset complete
+2026-04-08 22:58:37 [INFO] environment: Structure 1 set at (1,4)
+2026-04-08 22:58:37 [INFO] agent: Soft reset complete
+2026-04-08 22:58:37 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 22:58:37 [INFO] agent: Soft reset complete
+2026-04-08 22:58:38 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 22:58:38 [INFO] agent: Soft reset complete
+2026-04-08 22:58:39 [INFO] environment: Structure 1 set at (3,5)
+2026-04-08 22:58:39 [INFO] agent: Soft reset complete
+2026-04-08 22:58:41 [INFO] environment: Structure 1 set at (9,2)
+2026-04-08 22:58:41 [INFO] agent: Soft reset complete
+2026-04-08 22:58:42 [INFO] environment: Structure 1 set at (10,2)
+2026-04-08 22:58:42 [INFO] agent: Soft reset complete
+2026-04-08 22:58:45 [INFO] environment: Structure 2 set at (3,2)
+2026-04-08 22:58:45 [INFO] agent: Soft reset complete
+2026-04-08 22:58:45 [INFO] environment: Structure 2 set at (4,2)
+2026-04-08 22:58:45 [INFO] agent: Soft reset complete
+2026-04-08 22:58:46 [INFO] environment: Structure 2 set at (5,2)
+2026-04-08 22:58:46 [INFO] agent: Soft reset complete
+2026-04-08 22:58:47 [INFO] environment: Structure 2 set at (2,8)
+2026-04-08 22:58:47 [INFO] agent: Soft reset complete
+2026-04-08 22:58:48 [INFO] environment: Structure 2 set at (2,9)
+2026-04-08 22:58:48 [INFO] agent: Soft reset complete
+2026-04-08 22:58:52 [INFO] environment: Structure 3 set at (5,6)
+2026-04-08 22:58:52 [INFO] agent: Soft reset complete
+2026-04-08 22:58:53 [INFO] environment: Structure 3 set at (6,6)
+2026-04-08 22:58:53 [INFO] agent: Soft reset complete
+2026-04-08 22:58:53 [INFO] environment: Structure 3 set at (6,6)
+2026-04-08 22:58:53 [INFO] agent: Soft reset complete
+2026-04-08 22:58:54 [INFO] environment: Structure 3 set at (7,6)
+2026-04-08 22:58:54 [INFO] agent: Soft reset complete
+2026-04-08 22:58:56 [INFO] environment: Structure 3 set at (8,8)
+2026-04-08 22:58:56 [INFO] agent: Soft reset complete
+2026-04-08 22:58:56 [INFO] environment: Structure 3 set at (9,8)
+2026-04-08 22:58:56 [INFO] agent: Soft reset complete
+2026-04-08 22:59:02 [INFO] gui: Run toggled → paused=False
+2026-04-08 23:05:12 [INFO] agent: Best path traced: 43 cells
+2026-04-08 23:05:12 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-08 23:15:28 [INFO] worker: RL worker exiting
+2026-04-08 23:15:29 [INFO] main: === RL Drone stopped ===
+2026-04-08 23:15:39 [INFO] main: === RL Drone starting ===
+2026-04-08 23:15:39 [INFO] main: Worker process PID=5312
+2026-04-08 23:15:39 [INFO] grid_widget: Drone image prepared at 62px → /mnt/c/Users/yair0/AI_continue/Lesson48_Reinforcement_Learning/Reinforcement_Learning/rl_drone/images/drone_small.png
+2026-04-08 23:15:40 [INFO] stats_panel: StatsPanel created
+2026-04-08 23:15:40 [INFO] gui: GUI App ready
+2026-04-08 23:15:42 [INFO] worker: RL worker started
+2026-04-08 23:15:42 [INFO] environment: Environment initialised  (12x12 grid)
+2026-04-08 23:15:42 [INFO] agent: Agent initialised (Double-Q=True, lambda=0.80)
+2026-04-08 23:15:49 [INFO] environment: Structure 1 set at (0,4)
+2026-04-08 23:15:49 [INFO] agent: Soft reset complete
+2026-04-08 23:15:49 [INFO] environment: Structure 1 set at (1,4)
+2026-04-08 23:15:49 [INFO] agent: Soft reset complete
+2026-04-08 23:15:50 [INFO] environment: Structure 1 set at (2,4)
+2026-04-08 23:15:50 [INFO] agent: Soft reset complete
+2026-04-08 23:15:50 [INFO] environment: Structure 1 set at (3,4)
+2026-04-08 23:15:50 [INFO] agent: Soft reset complete
+2026-04-08 23:15:51 [INFO] environment: Structure 1 set at (3,3)
+2026-04-08 23:15:51 [INFO] agent: Soft reset complete
+2026-04-08 23:15:53 [INFO] environment: Structure 1 set at (8,7)
+2026-04-08 23:15:53 [INFO] agent: Soft reset complete
+2026-04-08 23:15:54 [INFO] environment: Structure 1 set at (9,7)
+2026-04-08 23:15:54 [INFO] agent: Soft reset complete
+2026-04-08 23:16:01 [INFO] environment: Structure 2 set at (4,0)
+2026-04-08 23:16:01 [INFO] agent: Soft reset complete
+2026-04-08 23:16:01 [INFO] environment: Structure 2 set at (5,0)
+2026-04-08 23:16:01 [INFO] agent: Soft reset complete
+2026-04-08 23:16:02 [INFO] environment: Structure 2 set at (6,0)
+2026-04-08 23:16:02 [INFO] agent: Soft reset complete
+2026-04-08 23:16:02 [INFO] environment: Structure 2 set at (6,1)
+2026-04-08 23:16:02 [INFO] agent: Soft reset complete
+2026-04-08 23:16:04 [INFO] environment: Structure 2 set at (3,7)
+2026-04-08 23:16:04 [INFO] agent: Soft reset complete
+2026-04-08 23:16:04 [INFO] environment: Structure 2 set at (4,7)
+2026-04-08 23:16:04 [INFO] agent: Soft reset complete
+2026-04-08 23:16:07 [INFO] environment: Structure 3 set at (8,2)
+2026-04-08 23:16:07 [INFO] agent: Soft reset complete
+2026-04-08 23:16:08 [INFO] environment: Structure 3 set at (9,2)
+2026-04-08 23:16:08 [INFO] agent: Soft reset complete
+2026-04-08 23:16:09 [INFO] environment: Structure 3 set at (6,10)
+2026-04-08 23:16:09 [INFO] agent: Soft reset complete
+2026-04-08 23:16:10 [INFO] environment: Structure 3 set at (7,10)
+2026-04-08 23:16:10 [INFO] agent: Soft reset complete
+2026-04-08 23:16:14 [INFO] gui: Run toggled → paused=False
+2026-04-08 23:23:34 [WARNING] agent: trace_best_path: cycle detected at (4,5) — Q not converged
+2026-04-08 23:23:34 [WARNING] agent: Target unreachable — check for complete wall
+2026-04-08 23:23:43 [WARNING] agent: trace_best_path: cycle detected at (4,5) — Q not converged
+2026-04-08 23:23:43 [WARNING] agent: Target unreachable — check for complete wall
+2026-04-08 23:24:24 [WARNING] agent: trace_best_path: cycle detected at (4,5) — Q not converged
+2026-04-08 23:24:24 [WARNING] agent: Target unreachable — check for complete wall
+2026-04-08 23:24:28 [WARNING] agent: trace_best_path: cycle detected at (4,5) — Q not converged
+2026-04-08 23:24:28 [WARNING] agent: Target unreachable — check for complete wall
+2026-04-08 23:25:01 [INFO] agent: Path traced: 23 cells — validating...
+2026-04-08 23:25:01 [INFO] agent: Path validated OK
+2026-04-08 23:25:01 [INFO] worker: Training complete — 5 target arrivals reached
+2026-04-09 12:37:08 [INFO] worker: RL worker exiting
+2026-04-09 12:37:08 [INFO] main: === RL Drone stopped ===
