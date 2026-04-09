@@ -1,0 +1,106 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson48_Reinforcement_Learning\Reinforcement_Learning\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+Create also readme.md document.
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+At last create also the python program.
+
+The program is Reinforcement Learning by Q table.
+The program will create a table of 12x12 cells.
+A drone can move on this table.
+The start point where the drone starts is located at the left upper cell.
+The end point where the drone should arrive is located at the bottom right cell.
+
+Up to the table add a menu composed of buttons:
+1. Option to pause/resume the run and it is also the start button.
+2. Toggle Editor:
+   When we enable it, in the right side pane appear options to add or remove Building, trap or wind in a cell.
+   Entering a building high negative points, trap is average negative points and wind  less negative.
+3. Toggle heatmap:  
+   Toggle it you can see the buildings, traps etc. for changing them or just view.
+   Toggle it again to get heatmap that is the V value for each cell.
+4. A button that when toggle it shows a slider to set the running speed that can be traced easily by human eye.
+   The running speed will be set by sleep time between each step.
+   The range would be 0 till 0.5 seconds, while 0 value means no sleeping.
+5. Toggle arrows: show or hide the arrows that show the best path from one cell to its neighbor.
+6. Toggle Q and V: Show or hide the Q and V both in each cell (Q has 4 values in each cell).
+6. Soft Reset: Reset all V and Q to 0 values and delete arrows, locate drone at start point but leave 
+   structures in table as are.
+7. Hard Reset: Reset all as in soft reset include structures.
+
+
+Create a view area on the right to the table that shows dynamically:
+1. Episode number that is currently running.
+2. Total rewards for current episode (negative number).
+3. Epsilon value. 
+   This is the probability to do exploration and not exploiting.
+   It is dynamic, at first it is big and with time and improvement it decreases.
+4. Number of step in current episode.
+
+create Legend also on the right side:
+1. Show the color of a building, trap, wind, starting cell, target cell.
+   You can see them in the table when you toggle the heatmap button.
+2. Epsilon value: This value can also be controlled.
+
+The running process:
+1. Before starting, the user will build the structures in the table, like buildings, 
+   traps or wind using the toggle editor button.
+2. At start the Reinforcement Learning (RL) agent will reset in each cell the values of V and Q to zero.
+   Q value is for 4 directions for each cell: up, down, left and right.
+   The exception  for Q value are the extreme cells:
+   a. All the cells that are on the left table border will get high negative Q value to the left direction
+      because you cannot go left from these cells.
+   b. All the cells that are on the right table border will get high negative Q value to the right direction
+      because you cannot go right from these cells.
+   c. All the cells that are on the upper table border will get high negative Q value to the up direction 
+      because you cannot go up from these cells.
+   d. All the cells that are on the bottom table border will get high negative Q value to the down direction 
+      because you cannot go down from these cells.
+   e. The 4 cells that are in the corners will get in 2 directions high negative Q value, 
+      but it is already handled in the above 4 bullets.
+   f. Each cell that has a border with a building, trap or wind, will get Q negative value 
+      in the direction of the blocking object, the value will be in accordance the structure type.
+   g. Besides the above, each step to each direction adds -1 points, 
+      because the purpose is also to get the shortest  best path to the target.
+3. At start the drone will be located at leftmost upper cell.
+   The drone image will be taken from subfolder images/ as "drone.png" image.
+   If required resized it to accommodate to a cell dimensions and save the new image.
+   It will seen on the cell of its current location and hides the cell content, 
+   but when the drove continue to move, the cell content will be seen again.
+   For now the drone.png is attached to the Claude prompt window so resize it if required.
+4. The drone will search the best way (by minimum negative points) to the target 
+   (bottom right cell) using reinforcement learning.
+5. At first when all Q and V are zero, the agent explore by exploration and not exploiting.
+   Then it will use the epsilon for exploring by probability.
+6. Each episode is limited to maximum 60 steps, if not reaching the target after 60 steps, 
+   finish the episode and start a new episode.
+7. Each step in the episode will try to update Q and V values.
+8. When after a cell update, its V and max Q are equal or very close, 
+   it finishes to handle this cell and put an arrow to the maximum Q direction from this cell.
+   If there are 2 identical maximum Q values, the agent will choose arbitrarily one of them.
+   In each cell only one arrow.
+   The arrows show the path to the target.
+   Generally, the agent will build the arrows from the last cell (the target) 
+   to the direction of the start cell. 
+   The arrows direction will point from start cell to the target cell, 
+   but building the arrows will start from the end.
+9. If during the running, the structure is edit (add or remove a building, trap or wind), 
+   the running will reset Q and V and start from the start point.
+10. Show graph of Epsilon on the right pane.
+11. Calculate the average V and average max Q for all cells, update after each step and 
+    plot the graph for V and S with time (or total steps) on the same plot.
+    Both V and max Q will be go up and V is lower than max Q, but becomes closer to it with time.
