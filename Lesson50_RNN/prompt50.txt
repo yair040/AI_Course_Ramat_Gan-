@@ -1,0 +1,38 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson50_RNN\RNN\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+Create also readme.md document.
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+At last create also the python program.
+
+The program has a few parts.
+On each part calculate the time used to run:
+1. Create vector vocabulary of words. This will be used as dataset:
+   a. Choose by random 10,000 words and store them.
+      The user can change the number of words. 10,000 is the default.
+   b. Tokenize the words and then do embedding to vectors. 
+   c. Build from these words 100,000 short sentences, no more than 5 words each. 
+      The user can change the number of sentences. 100,000 is the default.
+2. Divide the sentences to 80% training set and 20% testing set.
+3. Build RNN network.
+   Put default values to the parameters, but let the user control and change the parameters values.
+4. Train the network.
+5. Test the network:
+   Enter from testing sentences dataset, sentences without the last work and see the success rate.
+   Use benchmarks, like confusion matrix and other methods. 
+The program will let the user the option, to start from section 2 (divide to training set and testing set, build RNN  network, train and test it), so the first step of preparing the dataset may be skipped if it was already done earlier. 
+

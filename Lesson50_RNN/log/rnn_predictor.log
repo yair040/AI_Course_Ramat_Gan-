@@ -1,0 +1,690 @@
+2026-04-14 15:43:28 | INFO     | rnn_predictor | Device: cpu
+2026-04-14 15:43:28 | INFO     | rnn_predictor | Config: Config(vocab_size=10000, num_sentences=100000, max_sent_len=5, embed_dim=100, w2v_window=3, train_ratio=0.8, hidden_size=256, num_layers=2, dropout=0.3, lr=0.001, epochs=10, batch_size=64, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-14 15:43:28 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary Sampling (size=10000) ===
+2026-04-14 15:43:28 | INFO     | rnn_predictor.vocab | Sampled 10000 words from NLTK corpus.
+2026-04-14 15:43:28 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl
+2026-04-14 15:43:28 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.19 seconds.
+2026-04-14 15:43:28 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=100) ===
+2026-04-14 15:43:28 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=10000, dim=100
+2026-04-14 15:43:29 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-14 15:43:29 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.68 seconds.
+2026-04-14 15:43:29 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-14 15:43:29 | INFO     | rnn_predictor.sentence_builder | Generating 100000 sentences across 12 processes…
+2026-04-14 15:44:35 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-14 15:44:35 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-14 15:44:35 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 66.44 seconds.
+2026-04-14 15:44:35 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-14 15:44:35 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-14 15:44:36 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-14 15:44:36 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-14 15:44:36 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.51 seconds.
+2026-04-14 15:44:36 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-14 15:44:36 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-14 15:44:36 | INFO     | rnn_predictor.rnn_model | Model built: vocab=10001, embed=100, hidden=256, layers=2 | params=4463285
+2026-04-14 15:44:36 | INFO     | rnn_predictor | Task 3 completed in 0.17 seconds.
+2026-04-14 15:44:36 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=10, batch=64, lr=0.001) ===
+2026-04-14 15:47:20 | INFO     | rnn_predictor.trainer | Epoch 1/10 — train_loss=9.2176  val_loss=9.2195
+2026-04-14 15:47:21 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=9.2195)
+2026-04-14 15:48:04 | INFO     | rnn_predictor.trainer | Epoch 2/10 — train_loss=9.1647  val_loss=9.2403
+2026-04-14 15:48:47 | INFO     | rnn_predictor.trainer | Epoch 3/10 — train_loss=8.9419  val_loss=9.3843
+2026-04-14 15:49:30 | INFO     | rnn_predictor.trainer | Epoch 4/10 — train_loss=8.5328  val_loss=9.6440
+2026-04-14 15:50:13 | INFO     | rnn_predictor.trainer | Epoch 5/10 — train_loss=8.0246  val_loss=9.9952
+2026-04-14 15:50:56 | INFO     | rnn_predictor.trainer | Epoch 6/10 — train_loss=7.4815  val_loss=10.2966
+2026-04-14 15:51:39 | INFO     | rnn_predictor.trainer | Epoch 7/10 — train_loss=6.9559  val_loss=10.5473
+2026-04-14 15:52:20 | INFO     | rnn_predictor.trainer | Epoch 8/10 — train_loss=6.4746  val_loss=10.7709
+2026-04-14 15:52:53 | INFO     | rnn_predictor.trainer | Epoch 9/10 — train_loss=6.0149  val_loss=10.9227
+2026-04-14 15:53:27 | INFO     | rnn_predictor.trainer | Epoch 10/10 — train_loss=5.6021  val_loss=11.1061
+2026-04-14 15:53:27 | INFO     | rnn_predictor.trainer | Task 4 completed in 531.73 seconds. Best val_loss=9.2195
+2026-04-14 15:53:28 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   top1_accuracy          : 0.0001
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   top5_accuracy          : 0.0004
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   perplexity             : 10091.7969
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.0000
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.0002
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.0000
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]]
+Labels: ['retropubic', 'humidor', 'mistrusting', 'nonpartial', 'preaffirmative', 'beatificate', 'longwork', 'worthward', 'rubble', 'oligopetalous', 'counterscrutiny', 'arsoite', 'hydrotechny', 'pataque', 'closestool', 'unimpatient', 'unquizzed', 'pyroligneous', 'unimbodied', 'allineation']
+2026-04-14 15:53:31 | INFO     | rnn_predictor.evaluator | Task 5 completed in 3.54 seconds.
+2026-04-14 15:53:31 | INFO     | rnn_predictor | === Pipeline complete in 603.45 seconds ===
+2026-04-14 16:01:21 | INFO     | rnn_predictor | Device: cpu
+2026-04-14 16:01:21 | INFO     | rnn_predictor | Config: Config(vocab_size=10000, num_sentences=100000, max_sent_len=5, embed_dim=100, w2v_window=3, train_ratio=0.8, hidden_size=256, num_layers=2, dropout=0.3, lr=0.001, epochs=10, batch_size=64, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-14 16:01:21 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary Sampling (size=10000) ===
+2026-04-14 16:01:21 | INFO     | rnn_predictor.vocab | Sampled 10000 words from NLTK corpus.
+2026-04-14 16:01:21 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl
+2026-04-14 16:01:21 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.10 seconds.
+2026-04-14 16:01:21 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=100) ===
+2026-04-14 16:01:21 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=10000, dim=100
+2026-04-14 16:01:21 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-14 16:01:21 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.30 seconds.
+2026-04-14 16:01:21 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-14 16:01:21 | INFO     | rnn_predictor.sentence_builder | Generating 100000 sentences across 12 processes…
+2026-04-14 16:02:13 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-14 16:02:13 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-14 16:02:13 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 51.79 seconds.
+2026-04-14 16:02:13 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-14 16:02:13 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-14 16:02:13 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-14 16:02:13 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-14 16:02:13 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.29 seconds.
+2026-04-14 16:02:13 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-14 16:02:13 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-14 16:02:14 | INFO     | rnn_predictor.rnn_model | Model built: vocab=10001, embed=100, hidden=256, layers=2 | params=4463285
+2026-04-14 16:02:14 | INFO     | rnn_predictor | Task 3 completed in 0.12 seconds.
+2026-04-14 16:02:14 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=10, batch=64, lr=0.001) ===
+2026-04-14 16:03:12 | INFO     | rnn_predictor.trainer | Epoch 1/10 — train_loss=9.2176  val_loss=9.2195
+2026-04-14 16:03:12 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=9.2195)
+2026-04-14 16:03:45 | INFO     | rnn_predictor.trainer | Epoch 2/10 — train_loss=9.1647  val_loss=9.2403
+2026-04-14 16:04:20 | INFO     | rnn_predictor.trainer | Epoch 3/10 — train_loss=8.9419  val_loss=9.3843
+2026-04-14 16:04:55 | INFO     | rnn_predictor.trainer | Epoch 4/10 — train_loss=8.5328  val_loss=9.6440
+2026-04-14 16:05:30 | INFO     | rnn_predictor.trainer | Epoch 5/10 — train_loss=8.0246  val_loss=9.9952
+2026-04-14 16:06:05 | INFO     | rnn_predictor.trainer | Epoch 6/10 — train_loss=7.4815  val_loss=10.2966
+2026-04-14 16:06:39 | INFO     | rnn_predictor.trainer | Epoch 7/10 — train_loss=6.9559  val_loss=10.5473
+2026-04-14 16:07:13 | INFO     | rnn_predictor.trainer | Epoch 8/10 — train_loss=6.4746  val_loss=10.7709
+2026-04-14 16:07:48 | INFO     | rnn_predictor.trainer | Epoch 9/10 — train_loss=6.0149  val_loss=10.9227
+2026-04-14 16:08:22 | INFO     | rnn_predictor.trainer | Epoch 10/10 — train_loss=5.6021  val_loss=11.1061
+2026-04-14 16:08:22 | INFO     | rnn_predictor.trainer | Task 4 completed in 368.90 seconds. Best val_loss=9.2195
+2026-04-14 16:08:23 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   top1_accuracy          : 0.0001
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   top5_accuracy          : 0.0004
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   perplexity             : 10091.7969
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.0000
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.0002
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.0000
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]]
+Labels: ['nub', 'paleostriatum', 'fifteenfold', 'clad', 'mazurian', 'enantiomorphously', 'horse', 'uraniid', 'mannerist', 'axhammered', 'leglessness', 'haggis', 'cadus', 'afterswarm', 'dentirostres', 'giggish', 'unsmoothly', 'bunodont', 'fogy', 'albify']
+2026-04-14 16:08:26 | INFO     | rnn_predictor.evaluator | Task 5 completed in 3.58 seconds.
+2026-04-14 16:08:26 | INFO     | rnn_predictor | === Pipeline complete in 425.35 seconds ===
+2026-04-14 20:43:28 | INFO     | rnn_predictor | Device: cpu
+2026-04-14 20:43:28 | INFO     | rnn_predictor | Config: Config(vocab_size=10000, num_sentences=100000, max_sent_len=5, embed_dim=100, w2v_window=3, train_ratio=0.8, hidden_size=256, num_layers=2, dropout=0.3, lr=0.001, epochs=10, batch_size=64, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-14 20:43:28 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary Sampling (size=10000) ===
+2026-04-14 20:43:36 | INFO     | rnn_predictor.vocab | wordfreq provided 19553 candidate words.
+2026-04-14 20:43:36 | INFO     | rnn_predictor.vocab | Vocabulary of 10000 words from [wordfreq]. Sample: ['the', 'to', 'and', 'of', 'in', 'is', 'for', 'that', 'you', 'it']
+2026-04-14 20:43:36 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl
+2026-04-14 20:43:36 | INFO     | rnn_predictor.vocab | Task 1a completed in 7.85 seconds.
+2026-04-14 20:43:36 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=100) ===
+2026-04-14 20:43:36 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=10000, dim=100
+2026-04-14 20:43:36 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-14 20:43:36 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.28 seconds.
+2026-04-14 20:43:36 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-14 20:43:36 | INFO     | rnn_predictor.sentence_builder | Generating 100000 sentences across 12 processes…
+2026-04-14 20:44:31 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-14 20:44:31 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-14 20:44:31 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 54.33 seconds.
+2026-04-14 20:44:31 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-14 20:44:31 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-14 20:44:31 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-14 20:44:31 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-14 20:44:31 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.29 seconds.
+2026-04-14 20:44:31 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-14 20:44:31 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-14 20:44:31 | INFO     | rnn_predictor.rnn_model | Model built: vocab=10001, embed=100, hidden=256, layers=2 | params=4463285
+2026-04-14 20:44:31 | INFO     | rnn_predictor | Task 3 completed in 0.10 seconds.
+2026-04-14 20:44:31 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=10, batch=64, lr=0.001) ===
+2026-04-14 20:45:37 | INFO     | rnn_predictor.trainer | Epoch 1/10 — train_loss=9.2176  val_loss=9.2195
+2026-04-14 20:45:37 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=9.2195)
+2026-04-14 20:46:12 | INFO     | rnn_predictor.trainer | Epoch 2/10 — train_loss=9.1647  val_loss=9.2403
+2026-04-14 20:46:47 | INFO     | rnn_predictor.trainer | Epoch 3/10 — train_loss=8.9419  val_loss=9.3843
+2026-04-14 20:47:22 | INFO     | rnn_predictor.trainer | Epoch 4/10 — train_loss=8.5328  val_loss=9.6440
+2026-04-14 20:47:57 | INFO     | rnn_predictor.trainer | Epoch 5/10 — train_loss=8.0246  val_loss=9.9952
+2026-04-14 20:48:32 | INFO     | rnn_predictor.trainer | Epoch 6/10 — train_loss=7.4815  val_loss=10.2966
+2026-04-14 20:49:08 | INFO     | rnn_predictor.trainer | Epoch 7/10 — train_loss=6.9559  val_loss=10.5473
+2026-04-14 20:49:43 | INFO     | rnn_predictor.trainer | Epoch 8/10 — train_loss=6.4746  val_loss=10.7709
+2026-04-14 20:50:19 | INFO     | rnn_predictor.trainer | Epoch 9/10 — train_loss=6.0149  val_loss=10.9227
+2026-04-14 20:50:54 | INFO     | rnn_predictor.trainer | Epoch 10/10 — train_loss=5.6021  val_loss=11.1061
+2026-04-14 20:50:54 | INFO     | rnn_predictor.trainer | Task 4 completed in 382.90 seconds. Best val_loss=9.2195
+2026-04-14 20:50:54 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   top1_accuracy          : 0.0001
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   top5_accuracy          : 0.0004
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   perplexity             : 10091.7969
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.0000
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.0002
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.0000
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]]
+Labels: ['lol', 'nations', 'trouble', 'minimum', 'courses', 'deny', 'differently', 'gentleman', 'harbor', 'valve', 'senators', 'colin', 'lined', 'quantum', 'detected', 'inspiring', 'evaluate', 'workshops', 'handbook', 'railways']
+2026-04-14 20:50:58 | INFO     | rnn_predictor.evaluator | Task 5 completed in 3.43 seconds.
+2026-04-14 20:50:58 | INFO     | rnn_predictor | === Pipeline complete in 449.44 seconds ===
+2026-04-15 05:20:28 | INFO     | rnn_predictor | Device: cpu
+2026-04-15 05:20:28 | INFO     | rnn_predictor | Config: Config(vocab_size=500, num_sentences=100000, max_sent_len=5, zipf_exponent=1.2, embed_dim=64, w2v_window=3, train_ratio=0.8, hidden_size=128, num_layers=1, dropout=0.4, lr=0.0005, epochs=30, batch_size=128, patience=4, weight_decay=0.0001, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-15 05:20:28 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary (size cap=500) ===
+2026-04-15 05:20:28 | INFO     | rnn_predictor.vocab | Vocabulary: 204 words (full category list has 204). Sample: ['the', 'a', 'an', 'this', 'that', 'my', 'your', 'our']
+2026-04-15 05:20:28 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl  (204 words)
+2026-04-15 05:20:28 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.01 seconds.
+2026-04-15 05:20:28 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=64) ===
+2026-04-15 05:20:28 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=204, dim=64
+2026-04-15 05:20:28 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-15 05:20:28 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.07 seconds.
+2026-04-15 05:20:28 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-15 05:20:28 | INFO     | rnn_predictor.sentence_builder | Generating 100000 template sentences across 12 processes…
+2026-04-15 05:21:19 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-15 05:21:19 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-15 05:21:19 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 50.58 seconds.
+2026-04-15 05:21:19 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-15 05:21:19 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-15 05:21:19 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-15 05:21:19 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-15 05:21:19 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.24 seconds.
+2026-04-15 05:21:19 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-15 05:21:19 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-15 05:21:19 | INFO     | rnn_predictor.rnn_model | Model built: vocab=205, embed=64, hidden=128, layers=1 | params=138893
+2026-04-15 05:21:19 | INFO     | rnn_predictor | Task 3 completed in 0.11 seconds.
+2026-04-15 05:21:19 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=30, batch=128, lr=0.0005, patience=4) ===
+2026-04-15 05:23:02 | INFO     | rnn_predictor | Device: cpu
+2026-04-15 05:23:02 | INFO     | rnn_predictor | Config: Config(vocab_size=500, num_sentences=100000, max_sent_len=5, zipf_exponent=1.2, embed_dim=64, w2v_window=3, train_ratio=0.8, hidden_size=128, num_layers=1, dropout=0.4, lr=0.0005, epochs=30, batch_size=128, patience=4, weight_decay=0.0001, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-15 05:23:02 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary (size cap=500) ===
+2026-04-15 05:23:02 | INFO     | rnn_predictor.vocab | Vocabulary: 204 words (full category list has 204). Sample: ['the', 'a', 'an', 'this', 'that', 'my', 'your', 'our']
+2026-04-15 05:23:02 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl  (204 words)
+2026-04-15 05:23:03 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.01 seconds.
+2026-04-15 05:23:03 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=64) ===
+2026-04-15 05:23:03 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=204, dim=64
+2026-04-15 05:23:03 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-15 05:23:03 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.03 seconds.
+2026-04-15 05:23:03 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-15 05:23:03 | INFO     | rnn_predictor.sentence_builder | Generating 100000 template sentences across 12 processes…
+2026-04-15 05:23:57 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-15 05:23:57 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-15 05:23:57 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 54.68 seconds.
+2026-04-15 05:23:57 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-15 05:23:57 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-15 05:23:57 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-15 05:23:57 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-15 05:23:57 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.22 seconds.
+2026-04-15 05:23:57 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-15 05:23:58 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-15 05:23:58 | INFO     | rnn_predictor.rnn_model | Model built: vocab=205, embed=64, hidden=128, layers=1 | params=138893
+2026-04-15 05:23:58 | INFO     | rnn_predictor | Task 3 completed in 0.07 seconds.
+2026-04-15 05:23:58 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=30, batch=128, lr=0.0005, patience=4) ===
+2026-04-15 11:51:19 | INFO     | rnn_predictor | Device: cpu
+2026-04-15 11:51:19 | INFO     | rnn_predictor | Config: Config(vocab_size=500, num_sentences=100000, max_sent_len=5, zipf_exponent=1.2, embed_dim=64, w2v_window=3, train_ratio=0.8, hidden_size=128, num_layers=1, dropout=0.4, lr=0.0005, epochs=30, batch_size=128, patience=5, weight_decay=0.0001, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-15 11:51:19 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary (size cap=500) ===
+2026-04-15 11:51:19 | INFO     | rnn_predictor.vocab | Vocabulary: 204 words (full category list has 204). Sample: ['the', 'a', 'an', 'this', 'that', 'my', 'your', 'our']
+2026-04-15 11:51:19 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl  (204 words)
+2026-04-15 11:51:19 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.03 seconds.
+2026-04-15 11:51:19 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=64) ===
+2026-04-15 11:51:19 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=204, dim=64
+2026-04-15 11:51:19 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-15 11:51:19 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.09 seconds.
+2026-04-15 11:51:19 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-15 11:51:19 | INFO     | rnn_predictor.sentence_builder | Generating 100000 template sentences across 12 processes…
+2026-04-15 11:52:36 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-15 11:52:36 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-15 11:52:36 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 76.42 seconds.
+2026-04-15 11:52:36 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-15 11:52:36 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-15 11:52:36 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-15 11:52:36 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-15 11:52:36 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.41 seconds.
+2026-04-15 11:52:36 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-15 11:52:36 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-15 11:52:36 | INFO     | rnn_predictor.rnn_model | Model built: vocab=205, embed=64, hidden=128, layers=1 | params=138893
+2026-04-15 11:52:36 | INFO     | rnn_predictor | Task 3 completed in 0.17 seconds.
+2026-04-15 11:52:36 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=30, batch=128, lr=0.0005, patience=5) ===
+2026-04-15 11:54:17 | INFO     | rnn_predictor.trainer | Epoch 1/30 — train_loss=4.5937  val_loss=3.9664  lr=0.000500
+2026-04-15 11:54:17 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.9664)
+2026-04-15 11:54:22 | INFO     | rnn_predictor.trainer | Epoch 2/30 — train_loss=3.8886  val_loss=3.7899  lr=0.000500
+2026-04-15 11:54:22 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7899)
+2026-04-15 11:54:26 | INFO     | rnn_predictor.trainer | Epoch 3/30 — train_loss=3.8050  val_loss=3.7573  lr=0.000500
+2026-04-15 11:54:26 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7573)
+2026-04-15 11:54:30 | INFO     | rnn_predictor.trainer | Epoch 4/30 — train_loss=3.7794  val_loss=3.7471  lr=0.000500
+2026-04-15 11:54:30 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7471)
+2026-04-15 11:54:34 | INFO     | rnn_predictor.trainer | Epoch 5/30 — train_loss=3.7658  val_loss=3.7383  lr=0.000500
+2026-04-15 11:54:34 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7383)
+2026-04-15 11:54:39 | INFO     | rnn_predictor.trainer | Epoch 6/30 — train_loss=3.7575  val_loss=3.7351  lr=0.000500
+2026-04-15 11:54:39 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7351)
+2026-04-15 11:54:43 | INFO     | rnn_predictor.trainer | Epoch 7/30 — train_loss=3.7525  val_loss=3.7331  lr=0.000500
+2026-04-15 11:54:43 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7331)
+2026-04-15 11:54:47 | INFO     | rnn_predictor.trainer | Epoch 8/30 — train_loss=3.7481  val_loss=3.7324  lr=0.000500
+2026-04-15 11:54:47 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7324)
+2026-04-15 11:54:51 | INFO     | rnn_predictor.trainer | Epoch 9/30 — train_loss=3.7454  val_loss=3.7308  lr=0.000500
+2026-04-15 11:54:51 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7308)
+2026-04-15 11:54:55 | INFO     | rnn_predictor.trainer | Epoch 10/30 — train_loss=3.7432  val_loss=3.7289  lr=0.000500
+2026-04-15 11:54:55 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7289)
+2026-04-15 11:54:59 | INFO     | rnn_predictor.trainer | Epoch 11/30 — train_loss=3.7419  val_loss=3.7311  lr=0.000500
+2026-04-15 11:54:59 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:55:03 | INFO     | rnn_predictor.trainer | Epoch 12/30 — train_loss=3.7399  val_loss=3.7294  lr=0.000500
+2026-04-15 11:55:03 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-15 11:55:07 | INFO     | rnn_predictor.trainer | Epoch 13/30 — train_loss=3.7399  val_loss=3.7276  lr=0.000500
+2026-04-15 11:55:07 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7276)
+2026-04-15 11:55:12 | INFO     | rnn_predictor.trainer | Epoch 14/30 — train_loss=3.7383  val_loss=3.7281  lr=0.000500
+2026-04-15 11:55:12 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:55:16 | INFO     | rnn_predictor.trainer | Epoch 15/30 — train_loss=3.7370  val_loss=3.7324  lr=0.000500
+2026-04-15 11:55:16 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-15 11:55:20 | INFO     | rnn_predictor.trainer | Epoch 16/30 — train_loss=3.7366  val_loss=3.7277  lr=0.000250
+2026-04-15 11:55:20 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-15 11:55:24 | INFO     | rnn_predictor.trainer | Epoch 17/30 — train_loss=3.7322  val_loss=3.7242  lr=0.000250
+2026-04-15 11:55:24 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7242)
+2026-04-15 11:55:28 | INFO     | rnn_predictor.trainer | Epoch 18/30 — train_loss=3.7302  val_loss=3.7228  lr=0.000250
+2026-04-15 11:55:28 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7228)
+2026-04-15 11:55:32 | INFO     | rnn_predictor.trainer | Epoch 19/30 — train_loss=3.7302  val_loss=3.7237  lr=0.000250
+2026-04-15 11:55:32 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:55:37 | INFO     | rnn_predictor.trainer | Epoch 20/30 — train_loss=3.7301  val_loss=3.7226  lr=0.000250
+2026-04-15 11:55:37 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7226)
+2026-04-15 11:55:41 | INFO     | rnn_predictor.trainer | Epoch 21/30 — train_loss=3.7292  val_loss=3.7232  lr=0.000125
+2026-04-15 11:55:41 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:55:45 | INFO     | rnn_predictor.trainer | Epoch 22/30 — train_loss=3.7265  val_loss=3.7214  lr=0.000125
+2026-04-15 11:55:45 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7214)
+2026-04-15 11:55:49 | INFO     | rnn_predictor.trainer | Epoch 23/30 — train_loss=3.7261  val_loss=3.7217  lr=0.000125
+2026-04-15 11:55:49 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:55:53 | INFO     | rnn_predictor.trainer | Epoch 24/30 — train_loss=3.7262  val_loss=3.7215  lr=0.000125
+2026-04-15 11:55:53 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-15 11:55:57 | INFO     | rnn_predictor.trainer | Epoch 25/30 — train_loss=3.7261  val_loss=3.7217  lr=0.000063
+2026-04-15 11:55:57 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-15 11:56:02 | INFO     | rnn_predictor.trainer | Epoch 26/30 — train_loss=3.7244  val_loss=3.7212  lr=0.000063
+2026-04-15 11:56:02 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7212)
+2026-04-15 11:56:06 | INFO     | rnn_predictor.trainer | Epoch 27/30 — train_loss=3.7238  val_loss=3.7208  lr=0.000063
+2026-04-15 11:56:06 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7208)
+2026-04-15 11:56:10 | INFO     | rnn_predictor.trainer | Epoch 28/30 — train_loss=3.7241  val_loss=3.7208  lr=0.000063
+2026-04-15 11:56:10 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-15 11:56:15 | INFO     | rnn_predictor.trainer | Epoch 29/30 — train_loss=3.7239  val_loss=3.7206  lr=0.000063
+2026-04-15 11:56:15 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7206)
+2026-04-15 11:56:19 | INFO     | rnn_predictor.trainer | Epoch 30/30 — train_loss=3.7237  val_loss=3.7203  lr=0.000063
+2026-04-15 11:56:19 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=3.7203)
+2026-04-15 11:56:19 | INFO     | rnn_predictor.trainer | Task 4 completed in 222.76 seconds. Best val_loss=3.7203
+2026-04-15 11:56:19 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | Sentences tested : 20000
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | Top-1 correct    : 592  (2.96%)
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | Top-5 correct    : 2676  (13.38%)
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────────────────
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   Sentences tested     : 20000
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   Top-1 correct        : 592  (2.96%)
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   Top-5 correct        : 2676  (13.38%)
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   perplexity             : 41.3073
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.0042
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.0235
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.0038
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────────────────
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[  0   0   0   9   0   0   0   1   0   0 103  22   0   0   0   0   0   0
+    0   0]
+ [  0   0   0   6   0   0   0   0   0   0  87  25   0   0   2   0   0   0
+    0   0]
+ [  0   0   0   8   0   0   0   1   0   0  51  25   0   0   0   0   0   0
+    0   0]
+ [  0   0   0  10   0   0   0   0   0   0  83  20   0   0   1   0   0   1
+    0   0]
+ [  0   0   0  12   0   0   0   0   0   0  78  17   0   0   1   0   0   0
+    0   0]
+ [  0   0   0  13   0   0   0   1   0   0  80  21   0   0   0   0   0   0
+    0   0]
+ [  0   0   0   3   0   0   0   0   0   0  72  20   0   0   0   0   0   1
+    0   0]
+ [  0   0   0   7   0   0   0   0   0   0  71  24   0   0   1   0   0   0
+    0   0]
+ [  0   0   0  13   0   0   0   0   0   0  93  19   0   0   2   0   0   0
+    0   0]
+ [  0   0   0  14   0   0   0   0   0   0  76  14   0   0   2   0   0   2
+    0   0]
+ [  0   0   0   7   0   0   0   0   0   0 101  20   0   0   1   0   0   0
+    0   0]
+ [  0   0   0   7   0   0   0   0   0   0  65  22   0   0   1   0   0   0
+    0   0]
+ [  0   0   0  11   0   0   0   0   0   0  70  17   0   0   2   0   0   0
+    0   0]
+ [  0   0   0  10   0   0   0   0   0   0  87  16   0   0   1   0   0   0
+    0   0]
+ [  0   0   0  13   0   0   0   1   0   0  98  15   0   0   3   0   0   2
+    0   0]
+ [  0   0   0   8   0   0   0   1   0   0  80  22   0   0   2   0   0   0
+    0   0]
+ [  0   0   0  11   0   0   0   0   0   0  75  13   0   0   1   0   0   0
+    0   0]
+ [  0   0   0  12   0   0   0   0   0   0  83  20   0   0   2   0   0   2
+    0   0]
+ [  0   0   0   5   0   0   0   0   0   0  88  20   0   0   1   0   0   2
+    0   0]
+ [  0   0   0   9   0   0   0   1   0   0  85  23   0   0   3   0   0   0
+    0   0]]
+Labels: ['water', 'hand', 'eye', 'day', 'time', 'door', 'book', 'light', 'house', 'road', 'sky', 'name', 'word', 'place', 'them', 'us', 'him', 'her', 'one', 'thing']
+2026-04-15 11:56:20 | INFO     | rnn_predictor.evaluator | Task 5 completed in 1.00 seconds.
+2026-04-15 11:56:20 | INFO     | rnn_predictor | === Pipeline complete in 301.05 seconds ===
+2026-04-16 12:03:03 | INFO     | rnn_predictor | Device: cpu
+2026-04-16 12:03:03 | INFO     | rnn_predictor | Config: Config(vocab_size=500, num_sentences=100000, max_sent_len=5, zipf_exponent=1.2, embed_dim=64, w2v_window=3, train_ratio=0.8, hidden_size=128, num_layers=1, dropout=0.4, lr=0.0005, epochs=30, batch_size=128, patience=5, weight_decay=0.0001, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-16 12:03:03 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary (size cap=500) ===
+2026-04-16 12:03:03 | INFO     | rnn_predictor.vocab | Vocabulary: 57 words (full category list has 57). Sample: ['the', 'a', 'this', 'that', 'my', 'your', 'some', 'every']
+2026-04-16 12:03:03 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl  (57 words)
+2026-04-16 12:03:03 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.02 seconds.
+2026-04-16 12:03:03 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=64) ===
+2026-04-16 12:03:03 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=57, dim=64
+2026-04-16 12:03:03 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-16 12:03:03 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.16 seconds.
+2026-04-16 12:03:03 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-16 12:03:03 | INFO     | rnn_predictor.sentence_builder | Generating 100000 biased sentences across 12 processes (bias=70%)…
+2026-04-16 12:04:12 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-16 12:04:12 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-16 12:04:12 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 71.59 seconds.
+2026-04-16 12:04:12 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-16 12:04:12 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-16 12:04:13 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-16 12:04:13 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-16 12:04:13 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.42 seconds.
+2026-04-16 12:04:13 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-16 12:04:13 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-16 12:04:13 | INFO     | rnn_predictor.rnn_model | Model built: vocab=58, embed=64, hidden=128, layers=1 | params=110522
+2026-04-16 12:04:13 | INFO     | rnn_predictor | Task 3 completed in 0.11 seconds.
+2026-04-16 12:04:13 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=30, batch=128, lr=0.0005, patience=5) ===
+2026-04-16 12:05:56 | INFO     | rnn_predictor.trainer | Epoch 1/30 — train_loss=2.7706  val_loss=1.9942  lr=0.000500
+2026-04-16 12:05:57 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.9942)
+2026-04-16 12:06:01 | INFO     | rnn_predictor.trainer | Epoch 2/30 — train_loss=1.9041  val_loss=1.8064  lr=0.000500
+2026-04-16 12:06:01 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.8064)
+2026-04-16 12:06:05 | INFO     | rnn_predictor.trainer | Epoch 3/30 — train_loss=1.8132  val_loss=1.7703  lr=0.000500
+2026-04-16 12:06:05 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7703)
+2026-04-16 12:06:09 | INFO     | rnn_predictor.trainer | Epoch 4/30 — train_loss=1.7892  val_loss=1.7621  lr=0.000500
+2026-04-16 12:06:09 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7621)
+2026-04-16 12:06:14 | INFO     | rnn_predictor.trainer | Epoch 5/30 — train_loss=1.7809  val_loss=1.7558  lr=0.000500
+2026-04-16 12:06:14 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7558)
+2026-04-16 12:06:18 | INFO     | rnn_predictor.trainer | Epoch 6/30 — train_loss=1.7766  val_loss=1.7548  lr=0.000500
+2026-04-16 12:06:18 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7548)
+2026-04-16 12:06:22 | INFO     | rnn_predictor.trainer | Epoch 7/30 — train_loss=1.7710  val_loss=1.7520  lr=0.000500
+2026-04-16 12:06:22 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7520)
+2026-04-16 12:06:25 | INFO     | rnn_predictor.trainer | Epoch 8/30 — train_loss=1.7676  val_loss=1.7531  lr=0.000500
+2026-04-16 12:06:25 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:06:30 | INFO     | rnn_predictor.trainer | Epoch 9/30 — train_loss=1.7666  val_loss=1.7513  lr=0.000500
+2026-04-16 12:06:30 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7513)
+2026-04-16 12:06:34 | INFO     | rnn_predictor.trainer | Epoch 10/30 — train_loss=1.7651  val_loss=1.7507  lr=0.000500
+2026-04-16 12:06:34 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7507)
+2026-04-16 12:06:38 | INFO     | rnn_predictor.trainer | Epoch 11/30 — train_loss=1.7634  val_loss=1.7518  lr=0.000500
+2026-04-16 12:06:38 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:06:43 | INFO     | rnn_predictor.trainer | Epoch 12/30 — train_loss=1.7628  val_loss=1.7534  lr=0.000500
+2026-04-16 12:06:43 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 12:06:47 | INFO     | rnn_predictor.trainer | Epoch 13/30 — train_loss=1.7609  val_loss=1.7509  lr=0.000250
+2026-04-16 12:06:47 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 12:06:51 | INFO     | rnn_predictor.trainer | Epoch 14/30 — train_loss=1.7558  val_loss=1.7482  lr=0.000250
+2026-04-16 12:06:51 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7482)
+2026-04-16 12:06:55 | INFO     | rnn_predictor.trainer | Epoch 15/30 — train_loss=1.7563  val_loss=1.7496  lr=0.000250
+2026-04-16 12:06:55 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:06:59 | INFO     | rnn_predictor.trainer | Epoch 16/30 — train_loss=1.7553  val_loss=1.7463  lr=0.000250
+2026-04-16 12:06:59 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7463)
+2026-04-16 12:07:04 | INFO     | rnn_predictor.trainer | Epoch 17/30 — train_loss=1.7565  val_loss=1.7481  lr=0.000250
+2026-04-16 12:07:04 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:07:08 | INFO     | rnn_predictor.trainer | Epoch 18/30 — train_loss=1.7541  val_loss=1.7483  lr=0.000250
+2026-04-16 12:07:08 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 12:07:12 | INFO     | rnn_predictor.trainer | Epoch 19/30 — train_loss=1.7532  val_loss=1.7486  lr=0.000125
+2026-04-16 12:07:12 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 12:07:16 | INFO     | rnn_predictor.trainer | Epoch 20/30 — train_loss=1.7528  val_loss=1.7459  lr=0.000125
+2026-04-16 12:07:16 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7459)
+2026-04-16 12:07:19 | INFO     | rnn_predictor.trainer | Epoch 21/30 — train_loss=1.7511  val_loss=1.7465  lr=0.000125
+2026-04-16 12:07:19 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:07:23 | INFO     | rnn_predictor.trainer | Epoch 22/30 — train_loss=1.7511  val_loss=1.7470  lr=0.000125
+2026-04-16 12:07:23 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 12:07:27 | INFO     | rnn_predictor.trainer | Epoch 23/30 — train_loss=1.7504  val_loss=1.7459  lr=0.000063
+2026-04-16 12:07:27 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 12:07:31 | INFO     | rnn_predictor.trainer | Epoch 24/30 — train_loss=1.7508  val_loss=1.7457  lr=0.000063
+2026-04-16 12:07:31 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7457)
+2026-04-16 12:07:35 | INFO     | rnn_predictor.trainer | Epoch 25/30 — train_loss=1.7506  val_loss=1.7463  lr=0.000063
+2026-04-16 12:07:35 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:07:39 | INFO     | rnn_predictor.trainer | Epoch 26/30 — train_loss=1.7505  val_loss=1.7454  lr=0.000063
+2026-04-16 12:07:39 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7454)
+2026-04-16 12:07:43 | INFO     | rnn_predictor.trainer | Epoch 27/30 — train_loss=1.7494  val_loss=1.7455  lr=0.000063
+2026-04-16 12:07:43 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 12:07:47 | INFO     | rnn_predictor.trainer | Epoch 28/30 — train_loss=1.7497  val_loss=1.7456  lr=0.000063
+2026-04-16 12:07:47 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 12:07:51 | INFO     | rnn_predictor.trainer | Epoch 29/30 — train_loss=1.7491  val_loss=1.7453  lr=0.000031
+2026-04-16 12:07:51 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7453)
+2026-04-16 12:07:55 | INFO     | rnn_predictor.trainer | Epoch 30/30 — train_loss=1.7486  val_loss=1.7450  lr=0.000031
+2026-04-16 12:07:55 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7450)
+2026-04-16 12:07:55 | INFO     | rnn_predictor.trainer | Task 4 completed in 228.99 seconds. Best val_loss=1.7450
+2026-04-16 12:07:55 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | Sentences tested : 20000
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | Top-1 correct    : 11329  (56.65%)
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | Top-5 correct    : 14442  (72.21%)
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────────────────
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   Sentences tested     : 20000
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   Top-1 correct        : 11329  (56.65%)
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   Top-5 correct        : 14442  (72.21%)
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   perplexity             : 5.7210
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.2670
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.3315
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.2901
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────────────────
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[   0   40    0    0    0    0    0    0    0   86   95  144   64   12
+     0    0    0    0    0    0]
+ [   0  827    0    0    0    0    0    0    0   52   54   72   27    7
+     0    0    0    0    0    0]
+ [   0    0  683   36   25   51   51    5   28    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   27  695   17   46   49    8   22    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   29   35  540   51   39   20   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   25   30   19  994   59   11   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   35   26   16   34 1216   13   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   26   36   20   41   72  260   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   22   27   29   40   53   17  481    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0   28    0    0    0    0    0    0    0 1335   48   73   26    6
+     0    0    0    0    0    0]
+ [   0   42    0    0    0    0    0    0    0   60 1230   73   33    8
+     0    0    0    0    0    0]
+ [   0   39    0    0    0    0    0    0    0   64   52 2011   35    7
+     0    0    0    0    0    0]
+ [   0   37    0    0    0    0    0    0    0   60   51   82  878   12
+     0    0    0    0    0    0]
+ [   0   32    0    0    0    0    0    0    0   52   64   93   51  179
+     0    0    0    0    0    0]
+ [   0   48    0    0    0    0    0    0    0   90   86  152   56   11
+     0    0    0    0    0    0]
+ [   0   50    0    0    0    0    0    0    0   99   97  144   50   20
+     0    0    0    0    0    0]
+ [   0   47    0    0    0    0    0    0    0   94  102  139   47   10
+     0    0    0    0    0    0]
+ [   0   53    0    0    0    0    0    0    0   86   87  162   63   15
+     0    0    0    0    0    0]
+ [   0   56    0    0    0    0    0    0    0   91   97  127   66   11
+     0    0    0    0    0    0]
+ [   0   50    0    0    0    0    0    0    0   98   85  162   58   14
+     0    0    0    0    0    0]]
+Labels: ['that', 'fast', 'runs', 'sleeps', 'falls', 'grows', 'moves', 'stays', 'calls', 'slowly', 'still', 'away', 'back', 'soon', 'it', 'us', 'me', 'you', 'him', 'her']
+2026-04-16 12:07:56 | INFO     | rnn_predictor.evaluator | Task 5 completed in 0.73 seconds.
+2026-04-16 12:07:56 | INFO     | rnn_predictor | === Pipeline complete in 302.18 seconds ===
+2026-04-16 13:59:48 | INFO     | rnn_predictor | Device: cpu
+2026-04-16 13:59:48 | INFO     | rnn_predictor | Config: Config(vocab_size=500, num_sentences=100000, max_sent_len=5, zipf_exponent=1.2, embed_dim=64, w2v_window=3, train_ratio=0.8, hidden_size=128, num_layers=1, dropout=0.4, lr=0.0005, epochs=30, batch_size=128, patience=5, weight_decay=0.0001, seed=42, skip_vocab=False, vocab_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl'), embed_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl'), sentences_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl'), train_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl'), test_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl'), model_path=PosixPath('/mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/best_model.pt'))
+2026-04-16 13:59:48 | INFO     | rnn_predictor.vocab | === Task 1a: Vocabulary (size cap=500) ===
+2026-04-16 13:59:48 | INFO     | rnn_predictor.vocab | Vocabulary: 57 words (full category list has 57). Sample: ['the', 'a', 'this', 'that', 'my', 'your', 'some', 'every']
+2026-04-16 13:59:48 | INFO     | rnn_predictor.vocab | Vocabulary saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/vocabulary.pkl  (57 words)
+2026-04-16 13:59:48 | INFO     | rnn_predictor.vocab | Task 1a completed in 0.02 seconds.
+2026-04-16 13:59:48 | INFO     | rnn_predictor.tokenizer | === Task 1b: Tokenization & Embedding (dim=64) ===
+2026-04-16 13:59:48 | INFO     | rnn_predictor.tokenizer | Word2Vec trained: vocab=57, dim=64
+2026-04-16 13:59:48 | INFO     | rnn_predictor.tokenizer | Embeddings saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/embeddings.pkl
+2026-04-16 13:59:48 | INFO     | rnn_predictor.tokenizer | Task 1b completed in 0.06 seconds.
+2026-04-16 13:59:48 | INFO     | rnn_predictor.sentence_builder | === Task 1c: Sentence Generation (n=100000, max_len=5) ===
+2026-04-16 13:59:48 | INFO     | rnn_predictor.sentence_builder | Generating 100000 biased sentences across 12 processes (bias=70%)…
+2026-04-16 14:00:53 | INFO     | rnn_predictor.sentence_builder | Generated 100000 sentences.
+2026-04-16 14:00:53 | INFO     | rnn_predictor.sentence_builder | Sentences saved to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/sentences.pkl
+2026-04-16 14:00:53 | INFO     | rnn_predictor.sentence_builder | Task 1c completed in 68.18 seconds.
+2026-04-16 14:00:53 | INFO     | rnn_predictor.data_splitter | === Task 2: Train/Test Split (ratio=0.80) ===
+2026-04-16 14:00:53 | INFO     | rnn_predictor.data_splitter | Split: 80000 train / 20000 test (ratio=0.80)
+2026-04-16 14:00:54 | INFO     | rnn_predictor.data_splitter | Saved 80000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/train.pkl
+2026-04-16 14:00:54 | INFO     | rnn_predictor.data_splitter | Saved 20000 samples to /mnt/c/Users/yair0/AI_continue/Lesson50_RNN/RNN/data/test.pkl
+2026-04-16 14:00:54 | INFO     | rnn_predictor.data_splitter | Task 2 completed in 0.34 seconds.
+2026-04-16 14:00:54 | INFO     | rnn_predictor | === Task 3: Building RNN model ===
+2026-04-16 14:00:54 | INFO     | rnn_predictor.rnn_model | Pre-trained embeddings loaded into model.
+2026-04-16 14:00:54 | INFO     | rnn_predictor.rnn_model | Model built: vocab=58, embed=64, hidden=128, layers=1 | params=110522
+2026-04-16 14:00:54 | INFO     | rnn_predictor | Task 3 completed in 0.11 seconds.
+2026-04-16 14:00:54 | INFO     | rnn_predictor.trainer | === Task 4: Training (epochs=30, batch=128, lr=0.0005, patience=5) ===
+2026-04-16 14:02:02 | INFO     | rnn_predictor.trainer | Epoch 1/30 — train_loss=2.7706  val_loss=1.9942  lr=0.000500
+2026-04-16 14:02:03 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.9942)
+2026-04-16 14:02:07 | INFO     | rnn_predictor.trainer | Epoch 2/30 — train_loss=1.9041  val_loss=1.8064  lr=0.000500
+2026-04-16 14:02:07 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.8064)
+2026-04-16 14:02:11 | INFO     | rnn_predictor.trainer | Epoch 3/30 — train_loss=1.8132  val_loss=1.7703  lr=0.000500
+2026-04-16 14:02:11 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7703)
+2026-04-16 14:02:15 | INFO     | rnn_predictor.trainer | Epoch 4/30 — train_loss=1.7892  val_loss=1.7621  lr=0.000500
+2026-04-16 14:02:15 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7621)
+2026-04-16 14:02:19 | INFO     | rnn_predictor.trainer | Epoch 5/30 — train_loss=1.7809  val_loss=1.7558  lr=0.000500
+2026-04-16 14:02:19 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7558)
+2026-04-16 14:02:23 | INFO     | rnn_predictor.trainer | Epoch 6/30 — train_loss=1.7766  val_loss=1.7548  lr=0.000500
+2026-04-16 14:02:23 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7548)
+2026-04-16 14:02:27 | INFO     | rnn_predictor.trainer | Epoch 7/30 — train_loss=1.7710  val_loss=1.7520  lr=0.000500
+2026-04-16 14:02:27 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7520)
+2026-04-16 14:02:29 | INFO     | rnn_predictor.trainer | Epoch 8/30 — train_loss=1.7676  val_loss=1.7531  lr=0.000500
+2026-04-16 14:02:29 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:02:33 | INFO     | rnn_predictor.trainer | Epoch 9/30 — train_loss=1.7666  val_loss=1.7513  lr=0.000500
+2026-04-16 14:02:33 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7513)
+2026-04-16 14:02:37 | INFO     | rnn_predictor.trainer | Epoch 10/30 — train_loss=1.7651  val_loss=1.7507  lr=0.000500
+2026-04-16 14:02:37 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7507)
+2026-04-16 14:02:42 | INFO     | rnn_predictor.trainer | Epoch 11/30 — train_loss=1.7634  val_loss=1.7518  lr=0.000500
+2026-04-16 14:02:42 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:02:45 | INFO     | rnn_predictor.trainer | Epoch 12/30 — train_loss=1.7628  val_loss=1.7534  lr=0.000500
+2026-04-16 14:02:46 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 14:02:49 | INFO     | rnn_predictor.trainer | Epoch 13/30 — train_loss=1.7609  val_loss=1.7509  lr=0.000250
+2026-04-16 14:02:49 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 14:02:53 | INFO     | rnn_predictor.trainer | Epoch 14/30 — train_loss=1.7558  val_loss=1.7482  lr=0.000250
+2026-04-16 14:02:53 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7482)
+2026-04-16 14:02:57 | INFO     | rnn_predictor.trainer | Epoch 15/30 — train_loss=1.7563  val_loss=1.7496  lr=0.000250
+2026-04-16 14:02:57 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:03:00 | INFO     | rnn_predictor.trainer | Epoch 16/30 — train_loss=1.7553  val_loss=1.7463  lr=0.000250
+2026-04-16 14:03:00 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7463)
+2026-04-16 14:03:04 | INFO     | rnn_predictor.trainer | Epoch 17/30 — train_loss=1.7565  val_loss=1.7481  lr=0.000250
+2026-04-16 14:03:04 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:03:08 | INFO     | rnn_predictor.trainer | Epoch 18/30 — train_loss=1.7541  val_loss=1.7483  lr=0.000250
+2026-04-16 14:03:08 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 14:03:12 | INFO     | rnn_predictor.trainer | Epoch 19/30 — train_loss=1.7532  val_loss=1.7486  lr=0.000125
+2026-04-16 14:03:12 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 14:03:16 | INFO     | rnn_predictor.trainer | Epoch 20/30 — train_loss=1.7528  val_loss=1.7459  lr=0.000125
+2026-04-16 14:03:16 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7459)
+2026-04-16 14:03:20 | INFO     | rnn_predictor.trainer | Epoch 21/30 — train_loss=1.7511  val_loss=1.7465  lr=0.000125
+2026-04-16 14:03:20 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:03:24 | INFO     | rnn_predictor.trainer | Epoch 22/30 — train_loss=1.7511  val_loss=1.7470  lr=0.000125
+2026-04-16 14:03:24 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 14:03:28 | INFO     | rnn_predictor.trainer | Epoch 23/30 — train_loss=1.7504  val_loss=1.7459  lr=0.000063
+2026-04-16 14:03:28 | INFO     | rnn_predictor.trainer |   No improvement for 3/5 epochs.
+2026-04-16 14:03:30 | INFO     | rnn_predictor.trainer | Epoch 24/30 — train_loss=1.7508  val_loss=1.7457  lr=0.000063
+2026-04-16 14:03:30 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7457)
+2026-04-16 14:03:34 | INFO     | rnn_predictor.trainer | Epoch 25/30 — train_loss=1.7506  val_loss=1.7463  lr=0.000063
+2026-04-16 14:03:34 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:03:38 | INFO     | rnn_predictor.trainer | Epoch 26/30 — train_loss=1.7505  val_loss=1.7454  lr=0.000063
+2026-04-16 14:03:38 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7454)
+2026-04-16 14:03:42 | INFO     | rnn_predictor.trainer | Epoch 27/30 — train_loss=1.7494  val_loss=1.7455  lr=0.000063
+2026-04-16 14:03:42 | INFO     | rnn_predictor.trainer |   No improvement for 1/5 epochs.
+2026-04-16 14:03:46 | INFO     | rnn_predictor.trainer | Epoch 28/30 — train_loss=1.7497  val_loss=1.7456  lr=0.000063
+2026-04-16 14:03:46 | INFO     | rnn_predictor.trainer |   No improvement for 2/5 epochs.
+2026-04-16 14:03:50 | INFO     | rnn_predictor.trainer | Epoch 29/30 — train_loss=1.7491  val_loss=1.7453  lr=0.000031
+2026-04-16 14:03:50 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7453)
+2026-04-16 14:03:54 | INFO     | rnn_predictor.trainer | Epoch 30/30 — train_loss=1.7486  val_loss=1.7450  lr=0.000031
+2026-04-16 14:03:54 | INFO     | rnn_predictor.trainer |   ✓ New best model saved (val_loss=1.7450)
+2026-04-16 14:03:54 | INFO     | rnn_predictor.trainer | Task 4 completed in 188.88 seconds. Best val_loss=1.7450
+2026-04-16 14:03:54 | INFO     | rnn_predictor.evaluator | === Task 5: Evaluation ===
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | Sentences tested : 20000
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | Top-1 correct    : 11329  (56.65%)
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | Top-5 correct    : 14442  (72.21%)
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | ─── Results ───────────────────────────────────────────
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   Sentences tested     : 20000
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   Top-1 correct        : 11329  (56.65%)
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   Top-5 correct        : 14442  (72.21%)
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   perplexity             : 5.7210
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   precision_macro        : 0.2670
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   recall_macro           : 0.3315
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator |   f1_macro               : 0.2901
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | ───────────────────────────────────────────────────────
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | Confusion matrix (top-20 classes):
+[[   0   40    0    0    0    0    0    0    0   86   95  144   64   12
+     0    0    0    0    0    0]
+ [   0  827    0    0    0    0    0    0    0   52   54   72   27    7
+     0    0    0    0    0    0]
+ [   0    0  683   36   25   51   51    5   28    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   27  695   17   46   49    8   22    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   29   35  540   51   39   20   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   25   30   19  994   59   11   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   35   26   16   34 1216   13   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   26   36   20   41   72  260   18    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0    0   22   27   29   40   53   17  481    0    0    0    0    0
+     0    0    0    0    0    0]
+ [   0   28    0    0    0    0    0    0    0 1335   48   73   26    6
+     0    0    0    0    0    0]
+ [   0   42    0    0    0    0    0    0    0   60 1230   73   33    8
+     0    0    0    0    0    0]
+ [   0   39    0    0    0    0    0    0    0   64   52 2011   35    7
+     0    0    0    0    0    0]
+ [   0   37    0    0    0    0    0    0    0   60   51   82  878   12
+     0    0    0    0    0    0]
+ [   0   32    0    0    0    0    0    0    0   52   64   93   51  179
+     0    0    0    0    0    0]
+ [   0   48    0    0    0    0    0    0    0   90   86  152   56   11
+     0    0    0    0    0    0]
+ [   0   50    0    0    0    0    0    0    0   99   97  144   50   20
+     0    0    0    0    0    0]
+ [   0   47    0    0    0    0    0    0    0   94  102  139   47   10
+     0    0    0    0    0    0]
+ [   0   53    0    0    0    0    0    0    0   86   87  162   63   15
+     0    0    0    0    0    0]
+ [   0   56    0    0    0    0    0    0    0   91   97  127   66   11
+     0    0    0    0    0    0]
+ [   0   50    0    0    0    0    0    0    0   98   85  162   58   14
+     0    0    0    0    0    0]]
+Labels: ['that', 'fast', 'runs', 'sleeps', 'falls', 'grows', 'moves', 'stays', 'calls', 'slowly', 'still', 'away', 'back', 'soon', 'it', 'us', 'me', 'you', 'him', 'her']
+2026-04-16 14:03:55 | INFO     | rnn_predictor.evaluator | Task 5 completed in 0.79 seconds.
+2026-04-16 14:03:55 | INFO     | rnn_predictor | === Pipeline complete in 258.51 seconds ===

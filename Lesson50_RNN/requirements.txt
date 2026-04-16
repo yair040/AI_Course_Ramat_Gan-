@@ -1,0 +1,20 @@
+# requirements.txt — RNN Word Prediction
+# Install: pip install -r requirements.txt
+# Venv location: ../../venv (relative to project root)
+
+# Deep learning
+torch>=2.2.0
+torchvision>=0.17.0
+
+# NLP
+nltk>=3.8.1
+gensim>=4.3.2
+wordfreq>=3.0.2        # common-word frequency lists (used by vocab.py)
+
+# Scientific / evaluation
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+
+# Utilities
+tqdm>=4.66.0           # progress bars in training, evaluation, sentence generation
