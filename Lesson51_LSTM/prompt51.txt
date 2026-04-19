@@ -1,0 +1,79 @@
+The current folder is C:\Users\yair0\AI_continue\Lesson5_LSTM\LSTM\.
+Put all artifact there but use relative paths for all purpose.
+
+Author is Yair Levi
+Create PRD for Python program that works on WSL in virtual environment.
+The main program will call tasks.
+Each Python file no more than 150 lines.
+The venv folder will be at ../../ of the current folder.
+Create also Claude.md, planning.md and tasks.md.
+Create also requirements.txt file for the virtual environment. 
+Create also readme.md document.
+The program will be created as a package including __init.py__ and the necessary settings.
+The program will use relative paths and not absolute.
+Use multiprocessing if it possible.
+Use logging, starting from INFO level.
+The log will be in the format of Ring buffer of 20 files.
+Each file is up to 16MB.
+When the last file is full the first file will start to be overwritten.
+The log files will be in the "log" subfolder.
+At last create also the python program.
+On each part calculate the time used to run.
+
+The program:
+On each part calculate the time used to run that part.
+1. Create 4 sinus signals by using the below equation for each signal:
+   y(t) = A*sin(2πft+φ)
+   y is the signal.
+   A is the amplitude and equal to 1.
+   f is the frequency.
+   φ is the phase.
+   f the frequency will be 1 Hz, 3 Hz, 5 Hz and 7 Hz related to the specific signal.
+2. Show the signals on graph on 10 seconds interval.
+   Show also the summation of these signals to one composite signal, but divide its amplitude by 4.
+3. Sample the 4 originals signals: 
+   1KHz sample freqency for 10 seconds, so we get 10,000 samples for each signal.
+   This means that we get 4 vectors, each 10,000 dimensions.
+4. Show the sampled signals on graph on 10 seconds interval.
+   Show also the summation of these sampled signals to one composite signal, but divide its amplitude by 4.
+5. Add arbitrary noise to the 4 sampled signals:
+   Use the same equation and the same sampling rate.
+   The equation is y(t) = A*sin(2πft+φ), but this time add arbitrary noise.
+   The noise will be on both amplitude A and phase φ. 
+   The noise for amplitude A can be plus minus 0.2 (reminder: A is 1) from uniform distribution. 
+   The noise for the phase φ can be plus minus π/5.
+6. Show the sampled noised signals on graph on 10 seconds interval.
+   Show also the summation of these sampled noised signals to one composite signal, but divide its amplitude by 4.
+7. The dataset cntains 3 columns: 
+   1. vector of 4 dimensions. all zero except one of them.
+      It tells the network what signal need to filter from the combined noised signal.
+      Since the frequencies are 1 Hz, 3 Hz, 5 Hz and 7 Hz, then vector [1,0,0,0] means filter out from the combined signal only the first frequency that is 1 Hz. [0,1,0,0] means filter the second frequency and so on.
+   2. Group of samples of noisy the noisy combined signal. Each contains 10 continous samples starting in arbitrary sample (no higher than location 9989).
+      For example if the filter related to the first signal, starting from arbitrary location, choose 10 sample values of the first noisy signal.
+   3. The same like the above, but this time take the value of the clean (not noisy) signal that is related to the filter, the samples will be taken from the same location of the samples of the noisy combined samples. This is the label column, the desired result.
+8. Create the dataset:
+   1. for the first coloumn (signal filter), choose arbitrarily from one of these 4 vectors (signal folter): [1,0,0,0], [0,1,0,0], [0,0,1,0] or [0,0,0,1].
+   2. for the second coloumn (the noisy sample), pick an arbitrary integer number between 1 to 9989, then take a series of 10 samples from the noisy combined signal, starting from the arbitrary location you picked.	
+   3. For the third coloumn (the clean signal), using the same arbitrary number that was choosen in the previous step, take a series of 10 samples from the clean signal that is the signal that was choosen in the first coloumn, starting from the location you picked. This coloumn will be the labels.
+   4. Till now you created one row in the dataset. Repeat the process untill you have 8000 rows in the dataset.
+9. Divide the dataset to 80% training and 20% testing. 
+10. Build a LSTM network:
+    The network will get 2 inputs.
+    First input is the 4 dimension vector filter from the first coloumn
+    Second input is the noisy combine signal from the second coloumn. 
+    We need to get in the output the label that is seen in the third column.
+    The loss function is the difference between the output and the label that is located in the third coloumn.
+11. train the network.
+12. test the network.   
+13. Let the user option to control the next parameters:
+    1. number of network layers.
+    2. noise value added to the amplitude.
+    3. noise value added to the phase.
+    4. frequencies values.
+    5. sample frequency (default 1 KHz).
+    6. time to sample (default 10 seconds).
+    7. number of records in the dataset (default 8000).
+14. Show the loss function graph with time.
+    How also metrics for evaluation the test sucess. 
+    Show also samples of combined signal, the output signal and clean signal in various signals.
+   

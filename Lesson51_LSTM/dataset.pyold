@@ -1,0 +1,102 @@
+"""
+dataset.py — Tasks 7 & 8: Build the training dataset in parallel.
+Author: Yair Levi
+
+Schema (one row) — strictly per PRD:
+  col0 — filter vector : one-hot 4-d, e.g. [1,0,0,0] means extract 1 Hz signal
+  col1 — noisy window  : 10 consecutive samples from the noisy COMPOSITE signal
+  col2 — clean label   : 10 samples of the CLEAN target signal at the same location
+"""
+
+import logging
+import os
+import pickle
+import time
+from multiprocessing import Pool, cpu_count
+from typing import Dict, List, Tuple
+
+import numpy as np
+
+from config import Config
+
+logger = logging.getLogger(__name__)
+DATA_DIR = "data"
+
+
+def _build_chunk(args: Tuple) -> List[Tuple]:
+    """Worker: build a chunk of dataset rows."""
+    (chunk_size, n_signals, window,
+     noisy_composite, clean_arrays, max_start, seed_offset) = args
+
+    rng = np.random.default_rng(seed_offset)
+    rows: List[Tuple] = []
+    eye = np.eye(n_signals, dtype=np.float32)
+
+    for _ in range(chunk_size):
+        sig_idx = rng.integers(0, n_signals)
+        start   = int(rng.integers(1, max_start + 1))
+        end     = start + window
+
+        filter_vec  = eye[sig_idx]                                      # (4,)
+        noisy_win   = noisy_composite[start:end].astype(np.float32)     # (window,)
+        clean_label = clean_arrays[sig_idx][start:end].astype(np.float32)  # (window,)
+
+        rows.append((filter_vec, noisy_win, clean_label))
+
+    return rows
+
+
+def build_dataset(
+    cfg: Config,
+    sampled: Dict[float, np.ndarray],
+    noisy: Dict[float, np.ndarray],
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """
+    Tasks 7 & 8 — Build dataset in parallel.
+
+    Returns:
+        filters:      (N, 4)        one-hot filter vectors
+        noisy_wins:   (N, window)   windows of noisy composite
+        clean_labels: (N, window)   corresponding clean signal windows
+    """
+    t_start = time.perf_counter()
+    logger.info("Tasks 7-8 -- Building dataset (%d rows, window=%d) ...",
+                cfg.records, cfg.window)
+
+    freqs        = list(sampled.keys())
+    clean_arrays = np.stack([sampled[f] for f in freqs], axis=0)   # (n_sig, T)
+    noisy_arrays = np.stack([noisy[f]   for f in freqs], axis=0)   # (n_sig, T)
+    noisy_composite = noisy_arrays.sum(axis=0) / len(freqs)         # (T,)
+
+    max_start = cfg.n_samples - cfg.window - 1
+
+    n_workers  = min(cfg.n_signals, max(1, cpu_count() - 1))
+    chunk_size = cfg.records // n_workers
+    remainder  = cfg.records % n_workers
+
+    worker_args = []
+    for i in range(n_workers):
+        cs = chunk_size + (1 if i < remainder else 0)
+        worker_args.append((
+            cs, cfg.n_signals, cfg.window,
+            noisy_composite, clean_arrays, max_start, cfg.seed + i,
+        ))
+
+    with Pool(processes=n_workers) as pool:
+        chunks = pool.map(_build_chunk, worker_args)
+
+    rows = [row for chunk in chunks for row in chunk]
+
+    filters      = np.stack([r[0] for r in rows])   # (N, 4)
+    noisy_wins   = np.stack([r[1] for r in rows])   # (N, window)
+    clean_labels = np.stack([r[2] for r in rows])   # (N, window)
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    pkl_path = os.path.join(DATA_DIR, "dataset.pkl")
+    with open(pkl_path, "wb") as fh:
+        pickle.dump((filters, noisy_wins, clean_labels), fh)
+
+    elapsed = time.perf_counter() - t_start
+    logger.info("Tasks 7-8 completed: %d rows -> %s (%.4f s)",
+                len(rows), pkl_path, elapsed)
+    return filters, noisy_wins, clean_labels

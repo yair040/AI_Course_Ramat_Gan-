@@ -1,0 +1,98 @@
+"""
+config.py — CLI argument parsing and default configuration.
+Author: Yair Levi
+"""
+
+import argparse
+import math
+from dataclasses import dataclass, field
+from typing import List
+
+
+@dataclass
+class Config:
+    # Signal parameters
+    freqs:     List[float] = field(default_factory=lambda: [1.0, 3.0, 5.0, 7.0])
+    amplitude: float = 1.0
+    phase:     float = 0.0
+
+    # Sampling
+    sample_rate: int = 1000   # Hz
+    duration:    int = 10     # seconds
+
+    # Noise
+    amp_noise:   float = 0.2
+    phase_noise: float = math.pi / 5
+
+    # Dataset
+    records: int = 8000
+    window:  int = 100        # samples per row (100 ms @ 1 kHz)
+
+    # Network
+    lstm_layers: int   = 2
+    hidden_size: int   = 128
+    epochs:      int   = 150
+    batch_size:  int   = 64
+    learning_rate: float = 1e-3
+
+    # Misc
+    seed:       int   = 42
+    test_ratio: float = 0.2
+
+    @property
+    def n_samples(self) -> int:
+        return self.sample_rate * self.duration
+
+    @property
+    def n_signals(self) -> int:
+        return len(self.freqs)
+
+
+def parse_args() -> Config:
+    """Parse CLI flags and return a Config dataclass."""
+    parser = argparse.ArgumentParser(
+        description="LSTM Signal Filter — Yair Levi",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument("--layers",       type=int,   default=2,
+                        help="Number of LSTM layers")
+    parser.add_argument("--amp-noise",    type=float, default=0.2,
+                        help="Amplitude noise magnitude (±)")
+    parser.add_argument("--phase-noise",  type=float, default=math.pi / 5,
+                        help="Phase noise magnitude (± rad)")
+    parser.add_argument("--freqs",        type=float, nargs="+",
+                        default=[1.0, 3.0, 5.0, 7.0],
+                        help="Signal frequencies in Hz")
+    parser.add_argument("--sample-rate",  type=int,   default=1000,
+                        help="Sampling frequency (Hz)")
+    parser.add_argument("--duration",     type=int,   default=10,
+                        help="Duration to sample (seconds)")
+    parser.add_argument("--records",      type=int,   default=8000,
+                        help="Number of dataset rows")
+    parser.add_argument("--epochs",       type=int,   default=150,
+                        help="Training epochs")
+    parser.add_argument("--batch-size",   type=int,   default=64,
+                        help="Mini-batch size")
+    parser.add_argument("--hidden-size",  type=int,   default=128,
+                        help="LSTM hidden units")
+    parser.add_argument("--window",       type=int,   default=100,
+                        help="Samples per dataset window")
+    parser.add_argument("--seed",         type=int,   default=42,
+                        help="Random seed")
+
+    args = parser.parse_args()
+
+    return Config(
+        freqs        = args.freqs,
+        sample_rate  = args.sample_rate,
+        duration     = args.duration,
+        amp_noise    = args.amp_noise,
+        phase_noise  = args.phase_noise,
+        records      = args.records,
+        lstm_layers  = args.layers,
+        hidden_size  = args.hidden_size,
+        window       = args.window,
+        epochs       = args.epochs,
+        batch_size   = args.batch_size,
+        seed         = args.seed,
+    )

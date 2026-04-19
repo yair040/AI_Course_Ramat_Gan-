@@ -1,0 +1,127 @@
+"""
+model.py — Task 10: Dual-input LSTM network.
+Author: Yair Levi
+
+Strictly per PRD:
+  Input A: 4-d one-hot filter vector  (which frequency to extract)
+  Input B: noisy composite window     (window,) — the mixed signal
+  Output:  clean signal estimate      (window,)
+
+Architecture:
+  The filter vector is projected to an embedding and used to initialise
+  the LSTM hidden state. This way the filter STEERS the LSTM to attend
+  to the correct frequency inside the composite — rather than just being
+  concatenated at each step (which is weaker).
+
+  Additionally the filter embedding is concatenated at every time step
+  so the network is reminded of the target frequency throughout.
+"""
+
+import logging
+import time
+
+import torch
+import torch.nn as nn
+
+logger = logging.getLogger(__name__)
+
+
+class LSTMFilter(nn.Module):
+    """
+    LSTM signal filter driven by a one-hot frequency selector.
+
+    The filter vector controls BOTH:
+      1. The initial hidden/cell state of the LSTM
+      2. A per-step conditioning signal concatenated with each input
+    """
+
+    def __init__(
+        self,
+        n_signals: int   = 4,
+        hidden_size: int = 128,
+        num_layers: int  = 2,
+        window: int      = 100,
+    ) -> None:
+        super().__init__()
+        self.window      = window
+        self.hidden_size = hidden_size
+        self.num_layers  = num_layers
+
+        # --- Filter branch ---
+        # Projects 4-d one-hot -> hidden embedding used in two ways
+        self.filter_embed = nn.Sequential(
+            nn.Linear(n_signals, hidden_size * 2),
+            nn.Tanh(),
+            nn.Linear(hidden_size * 2, hidden_size),
+            nn.Tanh(),
+        )
+
+        # Separate projections to initialise h_0 and c_0 for each layer
+        self.h0_proj = nn.Linear(hidden_size, num_layers * hidden_size)
+        self.c0_proj = nn.Linear(hidden_size, num_layers * hidden_size)
+
+        # --- Sequence branch ---
+        # Input: composite sample (1) + filter embedding (hidden_size) per step
+        self.lstm = nn.LSTM(
+            input_size  = 1 + hidden_size,
+            hidden_size = hidden_size,
+            num_layers  = num_layers,
+            batch_first = True,
+            dropout     = 0.2 if num_layers > 1 else 0.0,
+        )
+
+        # --- Output head ---
+        self.output_head = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size),
+            nn.ReLU(),
+            nn.Linear(hidden_size, 1),
+        )
+
+    def forward(
+        self,
+        filter_vec: torch.Tensor,   # (batch, 4)
+        noisy_seq:  torch.Tensor,   # (batch, window)
+    ) -> torch.Tensor:              # (batch, window)
+
+        batch = filter_vec.size(0)
+
+        # --- Build filter embedding ---
+        f_emb = self.filter_embed(filter_vec)   # (batch, hidden)
+
+        # Initialise LSTM hidden/cell state from filter embedding
+        h0 = self.h0_proj(f_emb)               # (batch, num_layers * hidden)
+        c0 = self.c0_proj(f_emb)
+        # Reshape to (num_layers, batch, hidden)
+        h0 = h0.view(batch, self.num_layers, self.hidden_size).permute(1, 0, 2).contiguous()
+        c0 = c0.view(batch, self.num_layers, self.hidden_size).permute(1, 0, 2).contiguous()
+
+        # --- Build per-step input: composite + repeated filter embedding ---
+        # noisy_seq: (batch, window) -> (batch, window, 1)
+        seq = noisy_seq.unsqueeze(-1)
+
+        # Expand filter embedding across time: (batch, window, hidden)
+        f_exp = f_emb.unsqueeze(1).expand(-1, self.window, -1)
+
+        # Concatenate: (batch, window, 1 + hidden)
+        lstm_input = torch.cat([seq, f_exp], dim=-1)
+
+        # --- LSTM with filter-conditioned initial state ---
+        lstm_out, _ = self.lstm(lstm_input, (h0, c0))   # (batch, window, hidden)
+
+        # --- Project to output ---
+        out = self.output_head(lstm_out).squeeze(-1)     # (batch, window)
+        return out
+
+
+def build_model(cfg) -> LSTMFilter:
+    t_start = time.perf_counter()
+    model = LSTMFilter(
+        n_signals   = cfg.n_signals,
+        hidden_size = cfg.hidden_size,
+        num_layers  = cfg.lstm_layers,
+        window      = cfg.window,
+    )
+    n_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    elapsed  = time.perf_counter() - t_start
+    logger.info("Task 10 -- Model built: %d trainable params (%.4f s)", n_params, elapsed)
+    return model
